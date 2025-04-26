@@ -1,6 +1,6 @@
 
 async function getApiKey() {
-    const response = await fetch('/api-key');
+    const response = await fetch('/api/google_maps_key');
     const data = await response.json();
     return data.key;
 }
@@ -33,7 +33,6 @@ async function loadGoogleMapsAPI() {
         console.error('Google Maps API key is not defined.');
         return;
     }
-    console.log('API Key:', apiKey);
 
     const script = document.createElement('script');
     script.type = 'text/javascript';
