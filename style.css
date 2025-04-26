@@ -1,16 +1,79 @@
+.site-header {
+    background-color: #222;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.site-header h1 {
+    font-family: 'GFS Didot', serif;
+    font-size: 36px;
+    margin: 0;
+}
+
+.site-nav {
+    margin-top: 10px;
+}
+
+.site-nav a {
+    color: #4CAF50;
+    /* Same green accent you used */
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.site-nav a:hover {
+    text-decoration: underline;
+}
+
+.site-header {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
 body {
     background-color: #f0f8ff;
     font-family: 'GFS Didot', serif;
     text-align: center;
     margin-top: 50px;
-  }
-  
-  h1 {
+}
+
+h1 {
     color: #4CAF50;
     font-size: 48px;
-  }
-  
-  p {
+}
+
+p {
     color: #555;
     font-size: 20px;
-  }
+}
+
+.map-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.site-footer {
+    background-color: #222;
+    color: #ccc;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    margin-top: 50px;
+}
+
+.site-footer p {
+    margin: 5px 0;
+}
+
+.site-footer a {
+    color: #4CAF50;
+    /* or any color you like */
+    text-decoration: none;
+}
+
+.site-footer a:hover {
+    text-decoration: underline;
+}
