@@ -11,6 +11,21 @@
     margin: 0;
 }
 
+.logo img {
+    width: 60px;
+    /* adjust size as needed */
+    height: auto;
+    vertical-align: middle;
+    margin-bottom: 10px;
+}
+
+.site-header .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;  
+}
+
 .site-nav {
     margin-top: 10px;
 }
