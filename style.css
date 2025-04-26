@@ -1,0 +1,16 @@
+body {
+    background-color: #f0f8ff;
+    font-family: 'GFS Didot', serif;
+    text-align: center;
+    margin-top: 50px;
+  }
+  
+  h1 {
+    color: #4CAF50;
+    font-size: 48px;
+  }
+  
+  p {
+    color: #555;
+    font-size: 20px;
+  }
