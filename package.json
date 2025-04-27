@@ -5,5 +5,8 @@
   "type": "module",
   "scripts": {
     "build": "echo 'Nothing to build'"
+  },
+  "dependencies": {
+    "mongodb": "^6.16.0"
   }
 }
