@@ -7,22 +7,21 @@ async function getApiKey() {
 
 async function initMap() {
     const center = { lat: 31.77846303313139, lng: 35.22971821508876 }; // The Holy Sepulchre
-
-    const map = new google.maps.Map(document.getElementById("map"), {
+    const { Map } = await google.maps.importLibrary("maps");
+    const map = new Map(document.getElementById("map"), {
         zoom: 14,
         center: center,
+        mapId: "MAIN_MAP_ID",
     });
 
-    const markers = [
-        { position: center, title: "Holy Sepulchre" },
-        { position: { lat: 48.8606, lng: 2.3376 }, title: "The Louvre" },
-    ];
-
-    markers.forEach(markerInfo => {
-        new google.maps.Marker({
-            position: markerInfo.position,
+    const response = await fetch('/api/markers');
+    const markers = await response.json();  
+    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+    markers.forEach(marker => {
+        new AdvancedMarkerElement({
             map: map,
-            title: markerInfo.title,
+            title: marker.title,
+            position: { lat: marker.lat, lng: marker.lng },
         });
     });
 }
