@@ -12,20 +12,26 @@ const client = new MongoClient(uri, {
 });
 
 export default async function handler(req, res) {
-    try {
-        await client.connect();
-        const db = client.db("hagioi-maps");
-        const collection = db.collection("markers");
+    if (req.method !== 'GET') {
+        return res.status(405).json({ message: 'Method Not Allowed' });
+    }
+    // Currently, the API only supports GET requests
+    if (req.method === 'GET') {
+        try {
+            await client.connect();
+            const db = client.db("hagioi-maps");
+            const collection = db.collection("markers");
 
-        const markers = await collection.find({}).toArray();
-        res.status(200).json(markers);
+            const markers = await collection.find({}).toArray();
+            res.status(200).json(markers);
 
-    } catch (error) {
-        console.error("Error connecting to MongoDB:", error);
-        res.status(500).json({ message: "Error fetching markers from MongoDB" });
+        } catch (error) {
+            console.error("Error connecting to MongoDB:", error);
+            res.status(500).json({ message: "Error fetching markers from MongoDB" });
 
-    } finally {
-        // Ensures that the client will close when you finish/error
-        await client.close();
+        } finally {
+            // Ensures that the client will close when you finish/error
+            await client.close();
+        }
     }
 }
