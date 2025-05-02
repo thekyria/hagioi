@@ -37,10 +37,15 @@ async function loadGoogleMapsAPI() {
         return null;
     }
     const token = read_data.token;
+    const apiKey = token.apiKey;
+    if (!apiKey) {
+        console.error('API key is not available.');
+        return null;
+    }
 
     const script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${token}&loading=async&callback=initMap`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&loading=async&callback=initMap`;
     script.async = true;
     script.defer = true;
     document.head.appendChild(script);
