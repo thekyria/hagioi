@@ -8,7 +8,7 @@ async function initMap() {
         mapId: "MAIN_MAP_ID",
     });
 
-    const response = await fetch('/api/markers');
+    const response = await fetch('/api/v1/markers');
     const markers = await response.json();  
     const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
     markers.forEach(marker => {
@@ -21,12 +21,12 @@ async function initMap() {
 }
 
 async function loadGoogleMapsAPI() {
-    const set_response = await fetch('/api/set_cookie');
+    const set_response = await fetch('/api/v1/set_cookie');
     if (!set_response.ok) {
         console.error('Failed to set cookie.');
         return null;
     }
-    const read_response = await fetch('/api/read_cookie');
+    const read_response = await fetch('/api/v1/read_cookie');
     if (!read_response.ok) {
         console.error('Failed to read cookie.');
         return null;
