@@ -1,10 +1,4 @@
 
-async function getApiKey() {
-    const response = await fetch('/api/google_maps_key');
-    const data = await response.json();
-    return data.key;
-}
-
 async function initMap() {
     const center = { lat: 31.77846303313139, lng: 35.22971821508876 }; // The Holy Sepulchre
     const { Map } = await google.maps.importLibrary("maps");
@@ -27,15 +21,26 @@ async function initMap() {
 }
 
 async function loadGoogleMapsAPI() {
-    const apiKey = await getApiKey();
-    if (!apiKey) {
-        console.error('Google Maps API key is not defined.');
-        return;
+    const set_response = await fetch('/api/set_cookie');
+    if (!set_response.ok) {
+        console.error('Failed to set cookie.');
+        return null;
     }
+    const read_response = await fetch('/api/read_cookie');
+    if (!read_response.ok) {
+        console.error('Failed to read cookie.');
+        return null;
+    }
+    const read_data = await read_response.json();
+    if (read_data.token === 'None') {
+        console.error('Google Maps API key is None.');
+        return null;
+    }
+    const token = read_data.token;
 
     const script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&loading=async&callback=initMap`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${token}&loading=async&callback=initMap`;
     script.async = true;
     script.defer = true;
     document.head.appendChild(script);
