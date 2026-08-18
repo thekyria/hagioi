@@ -5,10 +5,5 @@
   "type": "module",
   "scripts": {
     "build": "echo 'Nothing to build'"
-  },
-  "dependencies": {
-    "cookie": "^1.0.2",
-    "jsonwebtoken": "^9.0.2",
-    "mongodb": "^6.16.0"
   }
 }

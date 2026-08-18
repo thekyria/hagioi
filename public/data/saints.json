@@ -1,0 +1,36 @@
+[
+  {
+    "id": "john-chrysostom",
+    "name": "St. John Chrysostom",
+    "feastDay": "November 13",
+    "title": "Archbishop of Constantinople",
+    "icon": "john-chrysostom.jpg",
+    "bio": "Renowned preacher and Archbishop of Constantinople, celebrated for his eloquence and his liturgy still used in the Orthodox Church today.",
+    "locations": [
+      { "label": "Birthplace \u2014 Antioch", "lat": 36.2021, "lng": 36.1603 },
+      { "label": "Place of death \u2014 Comana Pontica", "lat": 40.4667, "lng": 36.55 }
+    ]
+  },
+  {
+    "id": "george",
+    "name": "St. George",
+    "feastDay": "April 23",
+    "title": "Great Martyr",
+    "icon": "george.jpg",
+    "bio": "A Roman soldier martyred for his Christian faith, venerated across the Orthodox world as a symbol of courage and the slayer of the dragon.",
+    "locations": [
+      { "label": "Place of martyrdom \u2014 Lydda (Diospolis)", "lat": 31.9516, "lng": 34.8878 }
+    ]
+  },
+  {
+    "id": "mary-of-egypt",
+    "name": "St. Mary of Egypt",
+    "feastDay": "April 1",
+    "title": "Venerable",
+    "icon": "mary-of-egypt.jpg",
+    "bio": "A former sinner who repented and lived decades alone in the desert beyond the Jordan, becoming a model of repentance and asceticism.",
+    "locations": [
+      { "label": "Desert of repentance \u2014 beyond the Jordan", "lat": 31.8394, "lng": 35.5451 }
+    ]
+  }
+]

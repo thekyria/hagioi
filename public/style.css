@@ -100,3 +100,31 @@ p {
 .site-footer a:hover {
     text-decoration: underline;
 }
+
+.saint-info {
+    max-width: 220px;
+    text-align: left;
+}
+
+.saint-info img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.saint-info h2 {
+    font-size: 20px;
+    margin: 8px 0 4px;
+}
+
+.saint-info .saint-meta,
+.saint-info .saint-location {
+    color: #555;
+    font-size: 13px;
+    margin: 2px 0;
+}
+
+.saint-info p {
+    font-size: 14px;
+    margin: 6px 0 0;
+}

@@ -1,43 +1,50 @@
 
 async function initMap() {
     const center = { lat: 31.77846303313139, lng: 35.22971821508876 }; // The Holy Sepulchre
-    const { Map } = await google.maps.importLibrary("maps");
+    const { Map, InfoWindow } = await google.maps.importLibrary("maps");
     const map = new Map(document.getElementById("map"), {
-        zoom: 14,
+        zoom: 8,
         center: center,
         mapId: "MAIN_MAP_ID",
     });
 
-    const response = await fetch('/api/v1/markers');
-    const markers = await response.json();  
+    const response = await fetch('/data/saints.json');
+    const saints = await response.json();
     const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
-    markers.forEach(marker => {
-        new AdvancedMarkerElement({
-            map: map,
-            title: marker.title,
-            position: { lat: marker.lat, lng: marker.lng },
+    const infoWindow = new InfoWindow();
+
+    saints.forEach(saint => {
+        saint.locations.forEach(location => {
+            const marker = new AdvancedMarkerElement({
+                map: map,
+                title: `${saint.name} \u2014 ${location.label}`,
+                position: { lat: location.lat, lng: location.lng },
+            });
+
+            marker.addListener('click', () => {
+                infoWindow.setContent(`
+                    <div class="saint-info">
+                        <img src="assets/icons/${saint.icon}" alt="Icon of ${saint.name}" onerror="this.onerror=null;this.src='assets/avatar-placeholder.svg';">
+                        <h2>${saint.name}</h2>
+                        <p class="saint-meta">${saint.title} \u2014 Feast day: ${saint.feastDay}</p>
+                        <p class="saint-location">${location.label}</p>
+                        <p>${saint.bio}</p>
+                    </div>
+                `);
+                infoWindow.open(map, marker);
+            });
         });
     });
 }
 
 async function loadGoogleMapsAPI() {
-    const set_response = await fetch('/api/v1/set_cookie');
-    if (!set_response.ok) {
-        console.error('Failed to set cookie.');
+    const config_response = await fetch('/api/v1/config');
+    if (!config_response.ok) {
+        console.error('Failed to load config.');
         return null;
     }
-    const read_response = await fetch('/api/v1/read_cookie');
-    if (!read_response.ok) {
-        console.error('Failed to read cookie.');
-        return null;
-    }
-    const read_data = await read_response.json();
-    if (read_data.token === 'None') {
-        console.error('Google Maps API key is None.');
-        return null;
-    }
-    const token = read_data.token;
-    const apiKey = token.apiKey;
+    const config = await config_response.json();
+    const apiKey = config.apiKey;
     if (!apiKey) {
         console.error('API key is not available.');
         return null;
