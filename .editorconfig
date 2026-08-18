@@ -1,0 +1,17 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+insert_final_newline = true
+trim_trailing_whitespace = true
+indent_style = space
+indent_size = 2
+
+# script.js and style.css are already written with 4-space indentation
+[*.{js,css}]
+indent_size = 4
+
+# trailing whitespace is meaningful in Markdown (forces a line break)
+[*.md]
+trim_trailing_whitespace = false
