@@ -70,12 +70,104 @@ p {
     margin-top: 30px;
 }
 
+#app-layout {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 30px;
+}
+
 #map {
     height: 500px;
-    width: 100%;
+    flex: 1;
+    min-width: 0;
+}
+
+#saints-panel {
+    width: 280px;
+    flex-shrink: 0;
+    height: 500px;
     display: flex;
-    justify-content: center;
-    margin-top: 30px;
+    flex-direction: column;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    padding: 15px;
+    text-align: left;
+}
+
+#saints-panel h2 {
+    font-size: 20px;
+    margin: 0 0 10px;
+    color: #4CAF50;
+}
+
+.date-filter-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 8px;
+}
+
+.date-filter-group label {
+    width: 40px;
+    font-size: 14px;
+}
+
+.date-filter-group select {
+    flex: 1;
+    min-width: 0;
+    font-family: inherit;
+    font-size: 13px;
+}
+
+#saints-list {
+    list-style: none;
+    margin: 10px 0 0;
+    padding: 0;
+    overflow-y: auto;
+    flex: 1;
+}
+
+#saints-list li {
+    padding: 8px 6px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+#saints-list li:hover {
+    background: #f0f8ff;
+}
+
+.saint-list-name {
+    display: block;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.saint-list-meta {
+    display: block;
+    color: #555;
+    font-size: 12px;
+}
+
+/* non-matching markers, styled via a PinElement content node */
+.marker-dimmed {
+    filter: grayscale(1) opacity(0.5);
+    transform: scale(0.7);
+    transform-origin: bottom center;
+}
+
+@media (max-width: 768px) {
+    #app-layout {
+        flex-direction: column;
+    }
+
+    #map,
+    #saints-panel {
+        width: 100%;
+        height: 400px;
+    }
 }
 
 .site-footer {

@@ -32,5 +32,171 @@
     "locations": [
       { "label": "Desert of repentance \u2014 beyond the Jordan", "lat": 31.8394, "lng": 35.5451 }
     ]
+  },
+  {
+    "id": "gregory-palamas",
+    "name": "St. Gregory Palamas",
+    "feastDay": "November 14",
+    "title": "Archbishop of Thessalonica",
+    "icon": "gregory-palamas.jpg",
+    "bio": "A monk of Mount Athos and later Archbishop of Thessalonica, he defended the hesychast practice of contemplative prayer against the rationalist Barlaam of Calabria, teaching that God's uncreated energies can truly be experienced by the faithful.",
+    "locations": [
+      { "label": "Birthplace \u2014 Constantinople", "lat": 41.0082, "lng": 28.9784 },
+      { "label": "Monastic life \u2014 Mount Athos", "lat": 40.1572, "lng": 24.3264 },
+      { "label": "Archbishopric and relics \u2014 Thessaloniki", "lat": 40.6401, "lng": 22.9444 }
+    ]
+  },
+  {
+    "id": "nectarios-of-aegina",
+    "name": "St. Nectarios of Aegina",
+    "feastDay": "November 9",
+    "title": "Metropolitan of Pentapolis, Wonderworker",
+    "icon": "nectarios-of-aegina.jpg",
+    "bio": "Born Anastasios Cephalas, he served as Metropolitan of Pentapolis before being unjustly removed from his post; he later founded Holy Trinity Monastery on Aegina, where he spent his final years and is remembered for many posthumous healing miracles.",
+    "locations": [
+      { "label": "Birthplace \u2014 Selymbria, Thrace", "lat": 41.0736, "lng": 28.2467 },
+      { "label": "Monastery and relics \u2014 Aegina", "lat": 37.7461, "lng": 23.4297 }
+    ]
+  },
+  {
+    "id": "spyridon-of-trimythous",
+    "name": "St. Spyridon of Trimythous",
+    "feastDay": "December 12",
+    "title": "Bishop, Wonderworker",
+    "icon": "spyridon-of-trimythous.jpg",
+    "bio": "A simple Cypriot shepherd who became Bishop of Trimythous and attended the First Ecumenical Council of Nicaea, where he famously explained the Holy Trinity using a piece of brick; his incorrupt relics are now venerated in Corfu, of which he is patron saint.",
+    "locations": [
+      { "label": "Episcopal see and death \u2014 Trimythous, Cyprus", "lat": 35.0740, "lng": 33.6288 },
+      { "label": "Relics \u2014 Corfu", "lat": 39.6243, "lng": 19.9217 }
+    ]
+  },
+  {
+    "id": "dionysios-of-zakynthos",
+    "name": "St. Dionysios of Zakynthos",
+    "feastDay": "December 17",
+    "title": "Archbishop, Venerable",
+    "icon": "dionysios-of-zakynthos.jpg",
+    "bio": "Born Draganigos Sigouros, he became a monk and later Archbishop of Aegina before retiring to a monastery on his native Zakynthos; he is remembered above all for forgiving the man who, unknowingly, had killed his own brother.",
+    "locations": [
+      { "label": "Birthplace, monastic life, and relics \u2014 Zakynthos", "lat": 37.7834, "lng": 20.8994 }
+    ]
+  },
+  {
+    "id": "cosmas-of-aetolia",
+    "name": "St. Cosmas of Aetolia",
+    "feastDay": "August 24",
+    "title": "Hieromartyr, Equal-to-the-Apostles",
+    "icon": "cosmas-of-aetolia.jpg",
+    "bio": "A monk of Mount Athos who spent 25 years traveling on foot throughout Greece and Albania, founding over 200 schools and preaching to villagers left without churches or priests after centuries of Ottoman rule, before being martyred on charges brought against him.",
+    "locations": [
+      { "label": "Birthplace \u2014 Mega Dendron, Aetolia", "lat": 38.6339, "lng": 21.6874 },
+      { "label": "Place of martyrdom \u2014 Albania", "lat": 40.7058, "lng": 19.9522 }
+    ]
+  },
+  {
+    "id": "basil-the-great",
+    "name": "St. Basil the Great",
+    "feastDay": "January 1",
+    "title": "Archbishop of Caesarea, one of the Three Holy Hierarchs",
+    "icon": "basil-the-great.jpg",
+    "bio": "Bishop of Caesarea in Cappadocia and a leading 4th-century theologian, he defended Orthodoxy against Arianism and founded the Basiliad, a combined poorhouse, hospital, and hostel for the destitute outside his city.",
+    "locations": [
+      { "label": "Birthplace, episcopal see, and death \u2014 Caesarea, Cappadocia", "lat": 38.7312, "lng": 35.4787 }
+    ]
+  },
+  {
+    "id": "gregory-the-theologian",
+    "name": "St. Gregory the Theologian",
+    "feastDay": "January 25",
+    "title": "Archbishop of Constantinople, one of the Three Holy Hierarchs",
+    "icon": "gregory-the-theologian.jpg",
+    "bio": "A close friend of St. Basil the Great, he was chosen Archbishop of Constantinople by the Second Ecumenical Council for his defense of the Trinity against Arianism, before retiring to Nazianzus for the rest of his life.",
+    "locations": [
+      { "label": "Birthplace and death \u2014 Nazianzus, Cappadocia", "lat": 38.1500, "lng": 29.7200 },
+      { "label": "Archbishopric \u2014 Constantinople", "lat": 41.0082, "lng": 28.9784 }
+    ]
+  },
+  {
+    "id": "catherine-of-alexandria",
+    "name": "St. Catherine of Alexandria",
+    "feastDay": "November 25",
+    "title": "Great Martyr",
+    "icon": "catherine-of-alexandria.jpg",
+    "bio": "A learned and noble young woman of Alexandria who confounded fifty pagan philosophers sent to refute her Christian faith and was martyred under Emperor Maximinus; her relics were later found at the monastery bearing her name on Mount Sinai.",
+    "locations": [
+      { "label": "Place of martyrdom \u2014 Alexandria", "lat": 31.2001, "lng": 29.9187 },
+      { "label": "Relics \u2014 St. Catherine's Monastery, Sinai", "lat": 28.5561, "lng": 33.9750 }
+    ]
+  },
+  {
+    "id": "panteleimon",
+    "name": "St. Panteleimon",
+    "feastDay": "July 27",
+    "title": "Great Martyr, Unmercenary Healer",
+    "icon": "panteleimon.jpg",
+    "bio": "A physician of Nicomedia who treated the poor and sick without charge in the name of Christ, he was martyred under Emperor Maximian after healing a paralyzed man before the emperor's own eyes; he is invoked among the unmercenary healer-saints.",
+    "locations": [
+      { "label": "Place of martyrdom \u2014 Nicomedia", "lat": 40.7654, "lng": 29.9408 }
+    ]
+  },
+  {
+    "id": "anthony-the-great",
+    "name": "St. Anthony the Great",
+    "feastDay": "January 17",
+    "title": "Venerable, Father of Monasticism",
+    "icon": "anthony-the-great.jpg",
+    "bio": "Born to a wealthy family in Egypt, he sold his possessions to follow Christ's call to the poor and withdrew into the desert, becoming the leader of the Desert Fathers and the model for all later Christian monasticism.",
+    "locations": [
+      { "label": "Birthplace \u2014 Upper Egypt", "lat": 29.0661, "lng": 31.0914 },
+      { "label": "Monastery and relics \u2014 Eastern Desert, Egypt", "lat": 28.9236, "lng": 32.3608 }
+    ]
+  },
+  {
+    "id": "sabbas-the-sanctified",
+    "name": "St. Sabbas the Sanctified",
+    "feastDay": "December 5",
+    "title": "Venerable",
+    "icon": "sabbas-the-sanctified.jpg",
+    "bio": "A Cappadocian monastic who settled in the Judean desert and founded the Great Lavra (Mar Saba), composing the Jerusalem Typikon that shaped monastic and liturgical practice across the Orthodox world.",
+    "locations": [
+      { "label": "Birthplace \u2014 near Caesarea, Cappadocia", "lat": 38.7312, "lng": 35.4787 },
+      { "label": "Monastery and relics \u2014 Mar Saba, Judean Desert", "lat": 31.7061, "lng": 35.3389 }
+    ]
+  },
+  {
+    "id": "demetrius-of-thessaloniki",
+    "name": "St. Demetrius of Thessaloniki",
+    "feastDay": "October 26",
+    "title": "Great Martyr, Myrrh-streamer",
+    "icon": "demetrius-of-thessaloniki.jpg",
+    "bio": "A high-ranking Christian official martyred under Emperor Galerius, he is venerated as the patron and protector of Thessaloniki, where a miraculous flow of fragrant myrrh was later found at his tomb.",
+    "locations": [
+      { "label": "Place of martyrdom and relics \u2014 Thessaloniki", "lat": 40.6401, "lng": 22.9444 }
+    ]
+  },
+  {
+    "id": "paisios-of-mount-athos",
+    "name": "St. Paisios of Mount Athos",
+    "feastDay": "July 12",
+    "title": "Venerable, Elder",
+    "icon": "paisios-of-mount-athos.jpg",
+    "bio": "Born Arsenios Eznepidis, his family fled Asia Minor for Greece in his infancy; he became a monk of Mount Athos known for his gentle counsel to the thousands of pilgrims who sought him out, and was canonized in 2015.",
+    "locations": [
+      { "label": "Birthplace \u2014 Farasa, Cappadocia", "lat": 38.32, "lng": 35.65 },
+      { "label": "Monastic life \u2014 Mount Athos", "lat": 40.1572, "lng": 24.3264 },
+      { "label": "Death and relics \u2014 Souroti, near Thessaloniki", "lat": 40.4167, "lng": 23.2833 }
+    ]
+  },
+  {
+    "id": "gerasimos-of-kephalonia",
+    "name": "St. Gerasimos of Kephalonia",
+    "feastDay": "October 20",
+    "title": "Venerable, Wonderworker",
+    "icon": "gerasimos-of-kephalonia.jpg",
+    "bio": "Born to a noble Byzantine family, he lived as a hermit on Mount Athos, in Jerusalem, Sinai, Egypt, Crete, and Zakynthos before settling in a cave in Kephalonia, where he restored a church and founded a convent; he is now the island's patron saint.",
+    "locations": [
+      { "label": "Birthplace \u2014 Trikala, Corinthia", "lat": 37.9058, "lng": 22.4667 },
+      { "label": "Monastery and relics \u2014 Kephalonia", "lat": 38.1926, "lng": 20.5347 }
+    ]
   }
 ]

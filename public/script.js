@@ -1,4 +1,50 @@
 
+const MONTH_NAMES = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December"
+];
+// non-leap-year day counts, since feast days recur every year with no fixed year
+const DAYS_IN_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+
+function parseFeastDay(feastDay) {
+    const [monthName, dayStr] = feastDay.split(' ');
+    return { month: MONTH_NAMES.indexOf(monthName), day: parseInt(dayStr, 10) };
+}
+
+function dayCode(month, day) {
+    return month * 100 + day;
+}
+
+function isInRange(fromCode, toCode, testCode) {
+    if (fromCode <= toCode) {
+        return testCode >= fromCode && testCode <= toCode;
+    }
+    // wraps around the Dec 31 -> Jan 1 boundary
+    return testCode >= fromCode || testCode <= toCode;
+}
+
+function populateMonthSelect(select) {
+    MONTH_NAMES.forEach((name, index) => {
+        const option = document.createElement('option');
+        option.value = index;
+        option.textContent = name;
+        select.appendChild(option);
+    });
+}
+
+function populateDaySelect(select, month) {
+    const daysInMonth = DAYS_IN_MONTH[month];
+    const previousValue = Number(select.value) || 1;
+    select.innerHTML = '';
+    for (let day = 1; day <= daysInMonth; day++) {
+        const option = document.createElement('option');
+        option.value = day;
+        option.textContent = day;
+        select.appendChild(option);
+    }
+    select.value = Math.min(previousValue, daysInMonth);
+}
+
 async function initMap() {
     const center = { lat: 31.77846303313139, lng: 35.22971821508876 }; // The Holy Sepulchre
     const { Map, InfoWindow } = await google.maps.importLibrary("maps");
@@ -10,31 +56,121 @@ async function initMap() {
 
     const response = await fetch('/data/saints.json');
     const saints = await response.json();
-    const { AdvancedMarkerElement } = await google.maps.importLibrary("marker");
+    const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary("marker");
     const infoWindow = new InfoWindow();
 
-    saints.forEach(saint => {
-        saint.locations.forEach(location => {
+    function showInfoWindow(saint, location, marker) {
+        infoWindow.setContent(`
+            <div class="saint-info">
+                <img src="assets/icons/${saint.icon}" alt="Icon of ${saint.name}" onerror="this.onerror=null;this.src='assets/avatar-placeholder.svg';">
+                <h2>${saint.name}</h2>
+                <p class="saint-meta">${saint.title} \u2014 Feast day: ${saint.feastDay}</p>
+                <p class="saint-location">${location.label}</p>
+                <p>${saint.bio}</p>
+            </div>
+        `);
+        infoWindow.open(map, marker);
+    }
+
+    // one entry per saint, with all of its markers and its parsed feast day
+    const entries = saints.map(saint => {
+        const markers = saint.locations.map(location => {
+            const pin = new PinElement();
             const marker = new AdvancedMarkerElement({
                 map: map,
                 title: `${saint.name} \u2014 ${location.label}`,
                 position: { lat: location.lat, lng: location.lng },
+                content: pin.element,
+            });
+            marker.addListener('click', () => showInfoWindow(saint, location, marker));
+            return { location, marker, pinElement: pin.element };
+        });
+        return { saint, feast: parseFeastDay(saint.feastDay), markers };
+    });
+
+    const saintsList = document.getElementById('saints-list');
+    const fromMonthSelect = document.getElementById('from-month');
+    const fromDaySelect = document.getElementById('from-day');
+    const toMonthSelect = document.getElementById('to-month');
+    const toDaySelect = document.getElementById('to-day');
+
+    function applyFilter() {
+        const fromCode = dayCode(Number(fromMonthSelect.value), Number(fromDaySelect.value));
+        const toCode = dayCode(Number(toMonthSelect.value), Number(toDaySelect.value));
+
+        saintsList.innerHTML = '';
+
+        entries.forEach(({ saint, feast, markers }) => {
+            const matches = isInRange(fromCode, toCode, dayCode(feast.month, feast.day));
+
+            markers.forEach(({ pinElement }) => {
+                pinElement.classList.toggle('marker-dimmed', !matches);
             });
 
-            marker.addListener('click', () => {
-                infoWindow.setContent(`
-                    <div class="saint-info">
-                        <img src="assets/icons/${saint.icon}" alt="Icon of ${saint.name}" onerror="this.onerror=null;this.src='assets/avatar-placeholder.svg';">
-                        <h2>${saint.name}</h2>
-                        <p class="saint-meta">${saint.title} \u2014 Feast day: ${saint.feastDay}</p>
-                        <p class="saint-location">${location.label}</p>
-                        <p>${saint.bio}</p>
-                    </div>
-                `);
-                infoWindow.open(map, marker);
+            if (!matches) {
+                return;
+            }
+
+            const item = document.createElement('li');
+
+            const nameSpan = document.createElement('span');
+            nameSpan.className = 'saint-list-name';
+            nameSpan.textContent = saint.name;
+
+            const metaSpan = document.createElement('span');
+            metaSpan.className = 'saint-list-meta';
+            metaSpan.textContent = `${saint.title} — ${saint.feastDay}`;
+
+            item.append(nameSpan, metaSpan);
+            item.tabIndex = 0;
+            item.setAttribute('role', 'button');
+
+            const activate = () => {
+                const first = markers[0];
+                map.panTo(first.location);
+                showInfoWindow(saint, first.location, first.marker);
+            };
+
+            item.addEventListener('click', activate);
+            item.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    activate();
+                }
             });
+            saintsList.appendChild(item);
         });
-    });
+    }
+
+    function initDateFilterControls() {
+        [fromMonthSelect, toMonthSelect].forEach(populateMonthSelect);
+
+        const today = new Date();
+        const month = today.getMonth();
+        const day = today.getDate();
+        const clampedDay = Math.min(day, DAYS_IN_MONTH[month]);
+
+        fromMonthSelect.value = month;
+        toMonthSelect.value = month;
+        populateDaySelect(fromDaySelect, month);
+        populateDaySelect(toDaySelect, month);
+        fromDaySelect.value = clampedDay;
+        toDaySelect.value = clampedDay;
+
+        fromMonthSelect.addEventListener('change', () => {
+            populateDaySelect(fromDaySelect, Number(fromMonthSelect.value));
+            applyFilter();
+        });
+        toMonthSelect.addEventListener('change', () => {
+            populateDaySelect(toDaySelect, Number(toMonthSelect.value));
+            applyFilter();
+        });
+        fromDaySelect.addEventListener('change', applyFilter);
+        toDaySelect.addEventListener('change', applyFilter);
+    }
+
+    initDateFilterControls();
+    applyFilter();
 }
 
 async function loadGoogleMapsAPI() {
