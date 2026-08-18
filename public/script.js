@@ -112,14 +112,31 @@ async function initMap() {
             }
 
             const item = document.createElement('li');
-            item.innerHTML = `
-                <span class="saint-list-name">${saint.name}</span>
-                <span class="saint-list-meta">${saint.title} \u2014 ${saint.feastDay}</span>
-            `;
-            item.addEventListener('click', () => {
+
+            const nameSpan = document.createElement('span');
+            nameSpan.className = 'saint-list-name';
+            nameSpan.textContent = saint.name;
+
+            const metaSpan = document.createElement('span');
+            metaSpan.className = 'saint-list-meta';
+            metaSpan.textContent = `${saint.title} — ${saint.feastDay}`;
+
+            item.append(nameSpan, metaSpan);
+            item.tabIndex = 0;
+            item.setAttribute('role', 'button');
+
+            const activate = () => {
                 const first = markers[0];
                 map.panTo(first.location);
                 showInfoWindow(saint, first.location, first.marker);
+            };
+
+            item.addEventListener('click', activate);
+            item.addEventListener('keydown', (e) => {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    activate();
+                }
             });
             saintsList.appendChild(item);
         });
@@ -129,12 +146,16 @@ async function initMap() {
         [fromMonthSelect, toMonthSelect].forEach(populateMonthSelect);
 
         const today = new Date();
-        fromMonthSelect.value = today.getMonth();
-        toMonthSelect.value = today.getMonth();
-        populateDaySelect(fromDaySelect, today.getMonth());
-        populateDaySelect(toDaySelect, today.getMonth());
-        fromDaySelect.value = today.getDate();
-        toDaySelect.value = today.getDate();
+        const month = today.getMonth();
+        const day = today.getDate();
+        const clampedDay = Math.min(day, DAYS_IN_MONTH[month]);
+
+        fromMonthSelect.value = month;
+        toMonthSelect.value = month;
+        populateDaySelect(fromDaySelect, month);
+        populateDaySelect(toDaySelect, month);
+        fromDaySelect.value = clampedDay;
+        toDaySelect.value = clampedDay;
 
         fromMonthSelect.addEventListener('change', () => {
             populateDaySelect(fromDaySelect, Number(fromMonthSelect.value));
