@@ -1,0 +1,56 @@
+name: Suggest a Saint
+description: Propose a saint to add to the map (no code changes needed).
+title: "Add saint: "
+labels:
+  - saint-suggestion
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Saint's name
+      placeholder: "St. John Chrysostom"
+    validations:
+      required: true
+
+  - type: input
+    id: feast-day
+    attributes:
+      label: Feast day
+      placeholder: "November 13"
+    validations:
+      required: true
+
+  - type: input
+    id: title
+    attributes:
+      label: Title / rank
+      placeholder: "Martyr, Hierarch, Venerable, Apostle, etc."
+    validations:
+      required: false
+
+  - type: textarea
+    id: locations
+    attributes:
+      label: Notable locations
+      description: One per line, with a short label (e.g. birthplace, place of martyrdom, relics).
+      placeholder: |
+        Birthplace — Antioch
+        Place of death — Comana Pontica
+    validations:
+      required: true
+
+  - type: textarea
+    id: bio
+    attributes:
+      label: Short bio
+      description: A few sentences, plus any sources you used.
+    validations:
+      required: true
+
+  - type: input
+    id: icon-source
+    attributes:
+      label: Icon image source & license
+      description: Link to the icon image and its license/attribution. Only public-domain icons or ones with clear iconographer attribution can be used.
+    validations:
+      required: false

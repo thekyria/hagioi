@@ -1,0 +1,19 @@
+# Hagioi
+
+> An interactive map of Orthodox Christian saints. Each saint has one or more map markers (birthplace, place of martyrdom, place of relics, etc.); clicking a marker shows the saint's icon, feast day, and a short biography.
+
+Static frontend (vanilla HTML/CSS/JS), no build step or framework, backed by a couple of small Vercel serverless functions and a static JSON data file — there is no database.
+
+## Docs
+
+- [README.md](README.md): project summary and local development setup
+- [AGENTS.md](AGENTS.md): data model, runtime conventions, and environment variables for contributors/agents working on this repo
+
+## Data
+
+- [public/data/saints.json](public/data/saints.json): the full list of saints, each with name, feast day, title, icon filename, bio, and one or more `{ label, lat, lng }` locations
+- [public/assets/icons/](public/assets/icons/): saint icon images referenced by filename from saints.json, falling back to [public/assets/avatar-placeholder.svg](public/assets/avatar-placeholder.svg) when missing
+
+## API
+
+- [api/v1/config.js](api/v1/config.js): returns the Google Maps API key to the client; secured via HTTP-referrer restriction on the key, not server-side auth

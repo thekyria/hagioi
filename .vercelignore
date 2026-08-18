@@ -1,0 +1,17 @@
+# Vercel deploys public/ (static) and api/ (functions) — everything else here
+# is repo/dev tooling that doesn't need to be uploaded.
+.vscode
+.github
+.git
+.gitignore
+.gitattributes
+.editorconfig
+.codespellrc
+CODEOWNERS
+AGENTS.md
+CLAUDE.md
+CONTRIBUTING.md
+SECURITY.md
+README.md
+llms.txt
+.env.local.example
