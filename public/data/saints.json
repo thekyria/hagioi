@@ -198,5 +198,231 @@
       { "label": "Birthplace \u2014 Trikala, Corinthia", "lat": 37.9058, "lng": 22.4667 },
       { "label": "Monastery and relics \u2014 Kephalonia", "lat": 38.1926, "lng": 20.5347 }
     ]
+  },
+  {
+    "id": "nicholas-of-myra",
+    "name": "St. Nicholas of Myra",
+    "feastDay": "December 6",
+    "title": "Archbishop of Myra, Wonderworker",
+    "icon": "nicholas-of-myra.jpg",
+    "bio": "Bishop of Myra in Lycia and participant in the First Ecumenical Council of Nicaea, he is venerated throughout the world for his generosity to the poor and his protection of sailors, children, and the falsely accused. His relics were translated to Bari, Italy in 1087.",
+    "locations": [
+      { "label": "Birthplace \u2014 Patara, Lycia", "lat": 36.2616, "lng": 29.3184 },
+      { "label": "Episcopal see and death \u2014 Myra (Demre), Lycia", "lat": 36.2589, "lng": 29.9823 },
+      { "label": "Relics \u2014 Bari, Italy", "lat": 41.1282, "lng": 16.8709 }
+    ]
+  },
+  {
+    "id": "john-the-baptist",
+    "name": "St. John the Baptist",
+    "feastDay": "January 7",
+    "title": "Prophet, Forerunner, Baptist",
+    "icon": "john-the-baptist.jpg",
+    "bio": "The last of the Old Testament prophets and Forerunner of Christ, he proclaimed repentance in the Judean desert, baptized Jesus in the Jordan, and was martyred by Herod Antipas at the request of Salome. He holds the unique liturgical title \u201cGreater than the prophets.\u201d",
+    "locations": [
+      { "label": "Birth \u2014 Ein Kerem, near Jerusalem", "lat": 31.7643, "lng": 35.1553 },
+      { "label": "Baptism of Christ \u2014 Qasr al-Yahud, Jordan River", "lat": 31.8417, "lng": 35.5517 },
+      { "label": "Imprisonment and martyrdom \u2014 Machaerus fortress", "lat": 31.5500, "lng": 35.6500 }
+    ]
+  },
+  {
+    "id": "athanasios-the-great",
+    "name": "St. Athanasios the Great",
+    "feastDay": "May 2",
+    "title": "Archbishop of Alexandria",
+    "icon": "athanasios-the-great.jpg",
+    "bio": "Archbishop of Alexandria who championed Nicene orthodoxy against Arianism throughout his life, enduring five exiles at the hands of Arian emperors. His phrase \u201cAthanasios contra mundum\u201d captures his solitary defense of the full divinity of Christ.",
+    "locations": [
+      { "label": "Birthplace, episcopal see, and relics \u2014 Alexandria", "lat": 31.2001, "lng": 29.9187 }
+    ]
+  },
+  {
+    "id": "cyril-of-alexandria",
+    "name": "St. Cyril of Alexandria",
+    "feastDay": "June 9",
+    "title": "Archbishop of Alexandria",
+    "icon": "cyril-of-alexandria.jpg",
+    "bio": "Archbishop of Alexandria who presided over the Third Ecumenical Council of Ephesus (431 AD), which confirmed the title Theotokos (\u201cGod-bearer\u201d) for the Virgin Mary against the teaching of Nestorius. His prolific theological writings earned him the title \u201cSeal of the Fathers.\u201d",
+    "locations": [
+      { "label": "Episcopal see and death \u2014 Alexandria", "lat": 31.2001, "lng": 29.9187 },
+      { "label": "Council of Ephesus \u2014 Ephesus", "lat": 37.9395, "lng": 27.3408 }
+    ]
+  },
+  {
+    "id": "makarios-of-egypt",
+    "name": "St. Makarios of Egypt",
+    "feastDay": "January 19",
+    "title": "Venerable, Desert Father",
+    "icon": "makarios-of-egypt.jpg",
+    "bio": "A disciple of St. Anthony the Great who settled in the Scetis desert of Egypt and became one of the most celebrated Desert Fathers, attracting thousands of monks to the Wadi Natrun. He is the reputed author of the Fifty Spiritual Homilies on the life of inner prayer.",
+    "locations": [
+      { "label": "Birthplace \u2014 Shabsheer, Egypt", "lat": 30.5500, "lng": 30.9000 },
+      { "label": "Monastic life and relics \u2014 Wadi el-Natrun (Scetis)", "lat": 30.3500, "lng": 30.3333 }
+    ]
+  },
+  {
+    "id": "seraphim-of-sarov",
+    "name": "St. Seraphim of Sarov",
+    "feastDay": "January 15",
+    "title": "Venerable, Wonderworker",
+    "icon": "seraphim-of-sarov.jpg",
+    "bio": "A monk of Sarov in Russia who spent years in hermitage and later opened his cell to thousands of pilgrims, greeting each with the words \u201cMy joy!\u201d He taught that the aim of the Christian life is the acquisition of the Holy Spirit, and remains one of the most beloved saints of the Russian Church.",
+    "locations": [
+      { "label": "Birthplace \u2014 Kursk, Russia", "lat": 51.7304, "lng": 36.1927 },
+      { "label": "Monastic life and death \u2014 Sarov, Russia", "lat": 54.9333, "lng": 43.3167 },
+      { "label": "Relics \u2014 Diveyevo Monastery, Russia", "lat": 55.0333, "lng": 43.2333 }
+    ]
+  },
+  {
+    "id": "porphyrios-of-kafsokalyvia",
+    "name": "St. Porphyrios of Kafsokalyvia",
+    "feastDay": "December 2",
+    "title": "Venerable, Elder",
+    "icon": "porphyrios-of-kafsokalyvia.jpg",
+    "bio": "A Greek elder who spent decades as a confessor near Athens, renowned for his gift of clairvoyance and his joyful, Christ-centred spiritual direction. He was canonized in 2013 and his collected conversations have been read by millions across the Orthodox world.",
+    "locations": [
+      { "label": "Birthplace \u2014 Agios Ioannis Karystos, Evia", "lat": 38.0167, "lng": 24.0833 },
+      { "label": "Monastic formation \u2014 Mount Athos", "lat": 40.1572, "lng": 24.3264 },
+      { "label": "Priestly ministry and death \u2014 Milesi, near Athens", "lat": 38.1333, "lng": 23.9000 }
+    ]
+  },
+  {
+    "id": "abercius-of-hierapolis",
+    "name": "St. Abercius of Hierapolis",
+    "feastDay": "October 22",
+    "title": "Bishop, Equal-to-the-Apostles",
+    "icon": "abercius-of-hierapolis.jpg",
+    "bio": "Bishop of Hierapolis in Phrygia in the late 2nd century, renowned as a missionary and wonder-worker. His famous epitaph, discovered in 1882, is one of the oldest Christian inscriptions and describes his travels to Rome and Mesopotamia proclaiming the faith.",
+    "locations": [
+      { "label": "Episcopal see and death \u2014 Hierapolis (Pamukkale), Phrygia", "lat": 37.9265, "lng": 29.1265 }
+    ]
+  },
+  {
+    "id": "agafia-of-rome",
+    "name": "St. Agafia (Agatha) of Rome",
+    "feastDay": "February 5",
+    "title": "Virgin Martyr",
+    "icon": "agafia-of-rome.jpg",
+    "bio": "A young noblewoman of Sicily martyred under Emperor Decius around 250 AD for refusing to renounce her Christian faith and her vow of virginity. She is venerated as the patron saint of Catania and of Sicily, and is invoked against fire and breast diseases.",
+    "locations": [
+      { "label": "Birthplace and martyrdom \u2014 Catania, Sicily", "lat": 37.5023, "lng": 15.0873 }
+    ]
+  },
+  {
+    "id": "alexander-of-alexandria",
+    "name": "St. Alexander of Alexandria",
+    "feastDay": "May 29",
+    "title": "Archbishop of Alexandria",
+    "icon": "alexander-of-alexandria.jpg",
+    "bio": "Archbishop of Alexandria who convened the local synod that first condemned Arianism, then led the Orthodox delegation to the First Ecumenical Council of Nicaea in 325 AD alongside his deacon Athanasios. He is venerated for his defense of the full divinity of Christ before it was formally defined.",
+    "locations": [
+      { "label": "Episcopal see and death \u2014 Alexandria", "lat": 31.2001, "lng": 29.9187 },
+      { "label": "Council of Nicaea", "lat": 40.4228, "lng": 29.7192 }
+    ]
+  },
+  {
+    "id": "alexios-man-of-god",
+    "name": "St. Alexios, Man of God",
+    "feastDay": "March 17",
+    "title": "Venerable",
+    "icon": "alexios-man-of-god.jpg",
+    "bio": "Born to a noble Roman family, Alexios fled his arranged marriage on his wedding night, lived as a beggar in Edessa for seventeen years, then returned to Rome and lived unknown under the staircase of his own family's house until his death. He is a celebrated model of radical humility and voluntary poverty.",
+    "locations": [
+      { "label": "Birthplace and death \u2014 Rome", "lat": 41.9028, "lng": 12.4964 },
+      { "label": "Seventeen years as a beggar \u2014 Edessa (Sanl\u0131urfa)", "lat": 37.1591, "lng": 38.7969 }
+    ]
+  },
+  {
+    "id": "ambrose-of-milan",
+    "name": "St. Ambrose of Milan",
+    "feastDay": "December 7",
+    "title": "Bishop of Milan",
+    "icon": "ambrose-of-milan.jpg",
+    "bio": "Governor of Milan unexpectedly acclaimed as its bishop by the people in 374 AD while still a catechumen. He became one of the great Latin Fathers, championed orthodoxy against Arianism, penned celebrated hymns still sung today, and boldly confronted the Emperor Theodosius over the Massacre of Thessalonica.",
+    "locations": [
+      { "label": "Episcopal see and death \u2014 Milan", "lat": 45.4654, "lng": 9.1859 }
+    ]
+  },
+  {
+    "id": "anastasia-the-great-martyr",
+    "name": "St. Anastasia the Great Martyr",
+    "feastDay": "December 22",
+    "title": "Great Martyr, Deliverer from Potions",
+    "icon": "anastasia-the-great-martyr.jpg",
+    "bio": "A Roman noblewoman who used her wealth to minister to Christians imprisoned under Emperor Diocletian, traveling from prison to prison to care for confessors. She was martyred in Sirmium around 304 AD and is venerated across the Orthodox world with the epithet \u201cDeliverer from Potions\u201d for her healing intercessions.",
+    "locations": [
+      { "label": "Birthplace \u2014 Rome", "lat": 41.9028, "lng": 12.4964 },
+      { "label": "Place of martyrdom \u2014 Sirmium (Sremska Mitrovica)", "lat": 44.9706, "lng": 19.6125 }
+    ]
+  },
+  {
+    "id": "andronikos-and-athanasia",
+    "name": "Sts. Andronikos and Athanasia",
+    "feastDay": "October 9",
+    "title": "Venerable",
+    "icon": "andronikos-and-athanasia.jpg",
+    "bio": "A married couple of Antioch who, after the death of their two children, mutually agreed to live in consecrated celibacy. Andronikos became a monk in Egypt; Athanasia, unknown to him, also became a monk disguised as a man. They met again years later, and Andronikos only discovered her identity after her death.",
+    "locations": [
+      { "label": "Home \u2014 Antioch", "lat": 36.2021, "lng": 36.1603 },
+      { "label": "Monastic life \u2014 Wadi el-Natrun (Scetis), Egypt", "lat": 30.3500, "lng": 30.3333 }
+    ]
+  },
+  {
+    "id": "antipa-of-pergamon",
+    "name": "St. Antipa of Pergamon",
+    "feastDay": "April 11",
+    "title": "Hieromartyr, Bishop",
+    "icon": "antipa-of-pergamon.jpg",
+    "bio": "Bishop of Pergamon in Asia Minor, mentioned in the Book of Revelation (2:13) as \u201cmy faithful witness who was killed among you.\u201d He was martyred under Emperor Domitian, traditionally by being cast into a red-hot bronze bull used for pagan sacrifices. He is invoked for toothaches.",
+    "locations": [
+      { "label": "Episcopate and martyrdom \u2014 Pergamon (Bergama)", "lat": 39.1212, "lng": 27.1837 }
+    ]
+  },
+  {
+    "id": "apollinaris-of-ravenna",
+    "name": "St. Apollinaris of Ravenna",
+    "feastDay": "July 23",
+    "title": "Hieromartyr, Bishop",
+    "icon": "apollinaris-of-ravenna.jpg",
+    "bio": "Traditionally a disciple of St. Peter the Apostle, he became the first bishop of Ravenna and was martyred after several exiles for refusing to offer sacrifice to pagan gods. The magnificent Byzantine basilicas of Sant\u2019Apollinare in Classe and Sant\u2019Apollinare Nuovo in Ravenna are dedicated to him.",
+    "locations": [
+      { "label": "Episcopal see and martyrdom \u2014 Ravenna", "lat": 44.4184, "lng": 12.2035 }
+    ]
+  },
+  {
+    "id": "aquila-and-priscilla",
+    "name": "Sts. Aquila and Priscilla",
+    "feastDay": "February 13",
+    "title": "Apostles",
+    "icon": "aquila-and-priscilla.jpg",
+    "bio": "Jewish Christian tentmakers mentioned repeatedly in the New Testament as close companions of St. Paul the Apostle, who worked alongside him in Corinth and Ephesus. They hosted a church in their home and personally instructed the eloquent Apollos in the Christian faith.",
+    "locations": [
+      { "label": "Tent-making ministry with Paul \u2014 Corinth", "lat": 37.9077, "lng": 22.8779 },
+      { "label": "Church in their home \u2014 Ephesus", "lat": 37.9395, "lng": 27.3408 }
+    ]
+  },
+  {
+    "id": "arsenios-the-great",
+    "name": "St. Arsenios the Great",
+    "feastDay": "May 8",
+    "title": "Venerable, Desert Father",
+    "icon": "arsenios-the-great.jpg",
+    "bio": "A highly educated Roman deacon who served as tutor to the imperial princes Arcadius and Honorius in Constantinople, then at the age of forty renounced everything and became a monk in the Egyptian desert. He is remembered for his maxim: \u201cI have often repented of having spoken, but never of having been silent.\u201d",
+    "locations": [
+      { "label": "Court tutorship \u2014 Constantinople", "lat": 41.0082, "lng": 28.9784 },
+      { "label": "Desert asceticism \u2014 Scetis (Wadi el-Natrun), Egypt", "lat": 30.3500, "lng": 30.3333 }
+    ]
+  },
+  {
+    "id": "athanasios-of-athos",
+    "name": "St. Athanasios of Athos",
+    "feastDay": "July 5",
+    "title": "Venerable",
+    "icon": "athanasios-of-athos.jpg",
+    "bio": "Founder of the Great Lavra, the oldest and most prestigious monastery on Mount Athos, established in 963 AD with the patronage of Emperor Nikephoros Phokas. He organized cenobitic monastic life on the Holy Mountain and shaped Athonite monasticism for centuries to come.",
+    "locations": [
+      { "label": "Birthplace \u2014 Trebizond", "lat": 41.0015, "lng": 39.7178 },
+      { "label": "Foundation of the Great Lavra \u2014 Mount Athos", "lat": 40.1572, "lng": 24.3264 }
+    ]
   }
 ]
