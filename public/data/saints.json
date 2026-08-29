@@ -198,5 +198,92 @@
       { "label": "Birthplace \u2014 Trikala, Corinthia", "lat": 37.9058, "lng": 22.4667 },
       { "label": "Monastery and relics \u2014 Kephalonia", "lat": 38.1926, "lng": 20.5347 }
     ]
+  },
+  {
+    "id": "nicholas-of-myra",
+    "name": "St. Nicholas of Myra",
+    "feastDay": "December 6",
+    "title": "Archbishop of Myra, Wonderworker",
+    "icon": "nicholas-of-myra.jpg",
+    "bio": "Bishop of Myra in Lycia and participant in the First Ecumenical Council of Nicaea, he is venerated throughout the world for his generosity to the poor and his protection of sailors, children, and the falsely accused. His relics were translated to Bari, Italy in 1087.",
+    "locations": [
+      { "label": "Birthplace \u2014 Patara, Lycia", "lat": 36.2616, "lng": 29.3184 },
+      { "label": "Episcopal see and death \u2014 Myra (Demre), Lycia", "lat": 36.2589, "lng": 29.9823 },
+      { "label": "Relics \u2014 Bari, Italy", "lat": 41.1282, "lng": 16.8709 }
+    ]
+  },
+  {
+    "id": "john-the-baptist",
+    "name": "St. John the Baptist",
+    "feastDay": "January 7",
+    "title": "Prophet, Forerunner, Baptist",
+    "icon": "john-the-baptist.jpg",
+    "bio": "The last of the Old Testament prophets and Forerunner of Christ, he proclaimed repentance in the Judean desert, baptized Jesus in the Jordan, and was martyred by Herod Antipas at the request of Salome. He holds the unique liturgical title \u201cGreater than the prophets.\u201d",
+    "locations": [
+      { "label": "Birth \u2014 Ein Kerem, near Jerusalem", "lat": 31.7643, "lng": 35.1553 },
+      { "label": "Baptism of Christ \u2014 Qasr al-Yahud, Jordan River", "lat": 31.8417, "lng": 35.5517 },
+      { "label": "Imprisonment and martyrdom \u2014 Machaerus fortress", "lat": 31.5500, "lng": 35.6500 }
+    ]
+  },
+  {
+    "id": "athanasios-the-great",
+    "name": "St. Athanasios the Great",
+    "feastDay": "May 2",
+    "title": "Archbishop of Alexandria",
+    "icon": "athanasios-the-great.jpg",
+    "bio": "Archbishop of Alexandria who championed Nicene orthodoxy against Arianism throughout his life, enduring five exiles at the hands of Arian emperors. His phrase \u201cAthanasios contra mundum\u201d captures his solitary defense of the full divinity of Christ.",
+    "locations": [
+      { "label": "Birthplace, episcopal see, and relics \u2014 Alexandria", "lat": 31.2001, "lng": 29.9187 }
+    ]
+  },
+  {
+    "id": "cyril-of-alexandria",
+    "name": "St. Cyril of Alexandria",
+    "feastDay": "June 9",
+    "title": "Archbishop of Alexandria",
+    "icon": "cyril-of-alexandria.jpg",
+    "bio": "Archbishop of Alexandria who presided over the Third Ecumenical Council of Ephesus (431 AD), which confirmed the title Theotokos (\u201cGod-bearer\u201d) for the Virgin Mary against the teaching of Nestorius. His prolific theological writings earned him the title \u201cSeal of the Fathers.\u201d",
+    "locations": [
+      { "label": "Episcopal see and death \u2014 Alexandria", "lat": 31.2001, "lng": 29.9187 },
+      { "label": "Council of Ephesus \u2014 Ephesus", "lat": 37.9395, "lng": 27.3408 }
+    ]
+  },
+  {
+    "id": "makarios-of-egypt",
+    "name": "St. Makarios of Egypt",
+    "feastDay": "January 19",
+    "title": "Venerable, Desert Father",
+    "icon": "makarios-of-egypt.jpg",
+    "bio": "A disciple of St. Anthony the Great who settled in the Scetis desert of Egypt and became one of the most celebrated Desert Fathers, attracting thousands of monks to the Wadi Natrun. He is the reputed author of the Fifty Spiritual Homilies on the life of inner prayer.",
+    "locations": [
+      { "label": "Birthplace \u2014 Shabsheer, Egypt", "lat": 30.5500, "lng": 30.9000 },
+      { "label": "Monastic life and relics \u2014 Wadi el-Natrun (Scetis)", "lat": 30.3500, "lng": 30.3333 }
+    ]
+  },
+  {
+    "id": "seraphim-of-sarov",
+    "name": "St. Seraphim of Sarov",
+    "feastDay": "January 15",
+    "title": "Venerable, Wonderworker",
+    "icon": "seraphim-of-sarov.jpg",
+    "bio": "A monk of Sarov in Russia who spent years in hermitage and later opened his cell to thousands of pilgrims, greeting each with the words \u201cMy joy!\u201d He taught that the aim of the Christian life is the acquisition of the Holy Spirit, and remains one of the most beloved saints of the Russian Church.",
+    "locations": [
+      { "label": "Birthplace \u2014 Kursk, Russia", "lat": 51.7304, "lng": 36.1927 },
+      { "label": "Monastic life and death \u2014 Sarov, Russia", "lat": 54.9333, "lng": 43.3167 },
+      { "label": "Relics \u2014 Diveyevo Monastery, Russia", "lat": 55.0333, "lng": 43.2333 }
+    ]
+  },
+  {
+    "id": "porphyrios-of-kafsokalyvia",
+    "name": "St. Porphyrios of Kafsokalyvia",
+    "feastDay": "December 2",
+    "title": "Venerable, Elder",
+    "icon": "porphyrios-of-kafsokalyvia.jpg",
+    "bio": "A Greek elder who spent decades as a confessor near Athens, renowned for his gift of clairvoyance and his joyful, Christ-centred spiritual direction. He was canonized in 2013 and his collected conversations have been read by millions across the Orthodox world.",
+    "locations": [
+      { "label": "Birthplace \u2014 Agios Ioannis Karystos, Evia", "lat": 38.0167, "lng": 24.0833 },
+      { "label": "Monastic formation \u2014 Mount Athos", "lat": 40.1572, "lng": 24.3264 },
+      { "label": "Priestly ministry and death \u2014 Milesi, near Athens", "lat": 38.1333, "lng": 23.9000 }
+    ]
   }
 ]
