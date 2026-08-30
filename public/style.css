@@ -247,6 +247,7 @@ p {
     #map {
         width: 100%;
         height: 400px;
+        flex: none;
     }
 
     #saints-panel {
