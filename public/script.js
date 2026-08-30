@@ -52,6 +52,10 @@ async function initMap() {
         zoom: 8,
         center: center,
         mapId: "MAIN_MAP_ID",
+        // Require two fingers to pan the map on touch devices, so a single-finger
+        // swipe that starts over the map still scrolls the page instead of getting
+        // trapped by the map.
+        gestureHandling: "cooperative",
     });
 
     const response = await fetch('/data/saints.json');
