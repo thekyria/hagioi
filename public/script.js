@@ -52,10 +52,30 @@ function initSaintsPanelToggle() {
         return;
     }
 
+    const mq = window.matchMedia('(max-width: 768px)');
+
+    function syncAriaExpanded() {
+        toggleButton.setAttribute(
+            'aria-expanded',
+            String(mq.matches ? panel.classList.contains('is-open') : true),
+        );
+    }
+
     toggleButton.addEventListener('click', () => {
+        if (!mq.matches) {
+            return;
+        }
         const isOpen = panel.classList.toggle('is-open');
         toggleButton.setAttribute('aria-expanded', String(isOpen));
     });
+
+    if (mq.addEventListener) {
+        mq.addEventListener('change', syncAriaExpanded);
+    } else {
+        mq.addListener(syncAriaExpanded);
+    }
+
+    syncAriaExpanded();
 }
 
 async function initMap() {

@@ -151,6 +151,7 @@ p {
     }
 
     .saints-panel-toggle-icon {
+        display: inline-block;
         font-size: 14px;
         transition: transform 0.2s ease;
     }
