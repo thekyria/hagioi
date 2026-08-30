@@ -47,8 +47,8 @@ function populateDaySelect(select, month) {
 
 async function initMap() {
     const center = { lat: 31.77846303313139, lng: 35.22971821508876 }; // The Holy Sepulchre
-    const { Map, InfoWindow } = await google.maps.importLibrary("maps");
-    const map = new Map(document.getElementById("map"), {
+    const { Map: GoogleMap, InfoWindow } = await google.maps.importLibrary("maps");
+    const map = new GoogleMap(document.getElementById("map"), {
         zoom: 8,
         center: center,
         mapId: "MAIN_MAP_ID",
@@ -141,10 +141,6 @@ async function initMap() {
             list.appendChild(item);
         });
 
-        content.appendChild(list);
-        infoWindow.setContent(content);
-        infoWindow.open(map, marker);
-
         google.maps.event.addListenerOnce(infoWindow, 'domready', () => {
             list.querySelectorAll('li').forEach((item) => {
                 const activate = () => {
@@ -161,6 +157,10 @@ async function initMap() {
                 });
             });
         });
+
+        content.appendChild(list);
+        infoWindow.setContent(content);
+        infoWindow.open(map, marker);
     }
 
     const markerGroupsByKey = new Map();
