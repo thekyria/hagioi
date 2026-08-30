@@ -56,20 +56,25 @@
     <div id="app-layout">
       <div id="map"></div>
       <aside id="saints-panel">
-        <h2>Feast Days</h2>
-        <div id="date-filter">
-          <div class="date-filter-group">
-            <label for="from-month">From</label>
-            <select id="from-month" aria-label="From month"></select>
-            <select id="from-day" aria-label="From day"></select>
+        <button type="button" id="saints-panel-toggle" class="saints-panel-toggle" aria-expanded="false" aria-controls="saints-panel-content">
+          <span>Feast Days</span>
+          <span class="saints-panel-toggle-icon" aria-hidden="true">&#9662;</span>
+        </button>
+        <div id="saints-panel-content">
+          <div id="date-filter">
+            <div class="date-filter-group">
+              <label for="from-month">From</label>
+              <select id="from-month" aria-label="From month"></select>
+              <select id="from-day" aria-label="From day"></select>
+            </div>
+            <div class="date-filter-group">
+              <label for="to-month">To</label>
+              <select id="to-month" aria-label="To month"></select>
+              <select id="to-day" aria-label="To day"></select>
+            </div>
           </div>
-          <div class="date-filter-group">
-            <label for="to-month">To</label>
-            <select id="to-month" aria-label="To month"></select>
-            <select id="to-day" aria-label="To day"></select>
-          </div>
+          <ul id="saints-list"></ul>
         </div>
-        <ul id="saints-list"></ul>
       </aside>
     </div>
   </main>

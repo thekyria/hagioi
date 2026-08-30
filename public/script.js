@@ -45,6 +45,39 @@ function populateDaySelect(select, month) {
     select.value = Math.min(previousValue, daysInMonth);
 }
 
+function initSaintsPanelToggle() {
+    const toggleButton = document.getElementById('saints-panel-toggle');
+    const panel = document.getElementById('saints-panel');
+    if (!toggleButton || !panel) {
+        return;
+    }
+
+    const mq = window.matchMedia('(max-width: 768px)');
+
+    function syncAriaExpanded() {
+        toggleButton.setAttribute(
+            'aria-expanded',
+            String(mq.matches ? panel.classList.contains('is-open') : true),
+        );
+    }
+
+    toggleButton.addEventListener('click', () => {
+        if (!mq.matches) {
+            return;
+        }
+        const isOpen = panel.classList.toggle('is-open');
+        toggleButton.setAttribute('aria-expanded', String(isOpen));
+    });
+
+    if (mq.addEventListener) {
+        mq.addEventListener('change', syncAriaExpanded);
+    } else {
+        mq.addListener(syncAriaExpanded);
+    }
+
+    syncAriaExpanded();
+}
+
 async function initMap() {
     const center = { lat: 31.77846303313139, lng: 35.22971821508876 }; // The Holy Sepulchre
     const { Map: GoogleMap, InfoWindow } = await google.maps.importLibrary("maps");
@@ -52,6 +85,27 @@ async function initMap() {
         zoom: 8,
         center: center,
         mapId: "MAIN_MAP_ID",
+        // Require two fingers to pan the map on touch devices, so a single-finger
+        // swipe that starts over the map still scrolls the page instead of getting
+        // trapped by the map.
+        gestureHandling: "cooperative",
+    });
+
+    // Defensive fix: on some mobile browsers the map can initialize with a
+    // stale/incorrect size (e.g. tiles render blank) if its container's size
+    // changes shortly after load (viewport settling, orientation change,
+    // toggling the collapsible saints panel, etc.). Nudging Google Maps with
+    // a 'resize' event recalculates its internal size and repaints the tiles.
+    let resizeTimeoutId;
+    window.addEventListener('resize', () => {
+        clearTimeout(resizeTimeoutId);
+        resizeTimeoutId = setTimeout(() => {
+            const currentCenter = map.getCenter();
+            google.maps.event.trigger(map, 'resize');
+            if (currentCenter) {
+                map.setCenter(currentCenter);
+            }
+        }, 150);
     });
 
     const response = await fetch('/data/saints.json');
@@ -363,4 +417,7 @@ async function loadGoogleMapsAPI() {
 }
 
 // Start loading after DOM is ready
-document.addEventListener('DOMContentLoaded', loadGoogleMapsAPI);
+document.addEventListener('DOMContentLoaded', () => {
+    initSaintsPanelToggle();
+    loadGoogleMapsAPI();
+});
