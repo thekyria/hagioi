@@ -59,31 +59,168 @@ async function initMap() {
     const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary("marker");
     const infoWindow = new InfoWindow();
 
-    function showInfoWindow(saint, location, marker) {
-        infoWindow.setContent(`
-            <div class="saint-info">
-                <img src="assets/icons/${saint.icon}" alt="Icon of ${saint.name}" onerror="this.onerror=null;this.src='assets/avatar-placeholder.svg';">
-                <h2>${saint.name}</h2>
-                <p class="saint-meta">${saint.title} \u2014 Feast day: ${saint.feastDay}</p>
-                <p class="saint-location">${location.label}</p>
-                <p>${saint.bio}</p>
-            </div>
-        `);
+    function createIconImage(saint) {
+        const image = document.createElement('img');
+        image.src = `assets/icons/${saint.icon}`;
+        image.alt = `Icon of ${saint.name}`;
+        image.addEventListener('error', () => {
+            image.src = 'assets/avatar-placeholder.svg';
+        }, { once: true });
+        return image;
+    }
+
+    function openSaintInfo(saint, location, marker, placements = null) {
+        const content = document.createElement('div');
+        content.className = 'saint-info';
+
+        if (placements) {
+            const backLink = document.createElement('a');
+            backLink.href = '#';
+            backLink.className = 'location-picker-back';
+            backLink.textContent = '\u2190 Back to list';
+            content.appendChild(backLink);
+
+            google.maps.event.addListenerOnce(infoWindow, 'domready', () => {
+                backLink.addEventListener('click', (event) => {
+                    event.preventDefault();
+                    openLocationPicker(placements, marker);
+                });
+            });
+        }
+
+        const title = document.createElement('h2');
+        title.textContent = saint.name;
+
+        const meta = document.createElement('p');
+        meta.className = 'saint-meta';
+        meta.textContent = `${saint.title} — Feast day: ${saint.feastDay}`;
+
+        const locationLabel = document.createElement('p');
+        locationLabel.className = 'saint-location';
+        locationLabel.textContent = location.label;
+
+        const bio = document.createElement('p');
+        bio.textContent = saint.bio;
+
+        content.append(
+            createIconImage(saint),
+            title,
+            meta,
+            locationLabel,
+            bio
+        );
+
+        infoWindow.setContent(content);
         infoWindow.open(map, marker);
     }
 
-    // one entry per saint, with all of its markers and its parsed feast day
-    const entries = saints.map(saint => {
-        const markers = saint.locations.map(location => {
-            const pin = new PinElement();
-            const marker = new AdvancedMarkerElement({
-                map: map,
-                title: `${saint.name} \u2014 ${location.label}`,
-                position: { lat: location.lat, lng: location.lng },
-                content: pin.element,
+    function openLocationPicker(placements, marker) {
+        const content = document.createElement('div');
+        const list = document.createElement('ul');
+        list.className = 'location-picker';
+
+        placements.forEach(({ saint, location }, index) => {
+            const item = document.createElement('li');
+            item.dataset.index = index;
+            item.tabIndex = 0;
+            item.setAttribute('role', 'button');
+
+            const image = createIconImage(saint);
+            const text = document.createElement('div');
+
+            const name = document.createElement('span');
+            name.className = 'saint-list-name';
+            name.textContent = saint.name;
+
+            const label = document.createElement('span');
+            label.className = 'saint-list-meta';
+            label.textContent = location.label;
+
+            text.append(name, label);
+            item.append(image, text);
+            list.appendChild(item);
+        });
+
+        content.appendChild(list);
+        infoWindow.setContent(content);
+        infoWindow.open(map, marker);
+
+        google.maps.event.addListenerOnce(infoWindow, 'domready', () => {
+            list.querySelectorAll('li').forEach((item) => {
+                const activate = () => {
+                    const placement = placements[Number(item.dataset.index)];
+                    openSaintInfo(placement.saint, placement.location, marker, placements);
+                };
+
+                item.addEventListener('click', activate);
+                item.addEventListener('keydown', (event) => {
+                    if (event.key === 'Enter' || event.key === ' ') {
+                        event.preventDefault();
+                        activate();
+                    }
+                });
             });
-            marker.addListener('click', () => showInfoWindow(saint, location, marker));
-            return { location, marker, pinElement: pin.element };
+        });
+    }
+
+    const markerGroupsByKey = new Map();
+    const markerGroups = [];
+
+    saints
+        .flatMap((saint) => saint.locations.map((location) => ({ saint, location })))
+        .forEach((placement) => {
+            const key = `${placement.location.lat},${placement.location.lng}`;
+            let group = markerGroupsByKey.get(key);
+
+            if (!group) {
+                group = {
+                    position: { lat: placement.location.lat, lng: placement.location.lng },
+                    placements: [],
+                };
+                markerGroupsByKey.set(key, group);
+                markerGroups.push(group);
+            }
+
+            group.placements.push(placement);
+        });
+
+    markerGroups.forEach((group) => {
+        const pin = group.placements.length > 1
+            ? new PinElement({ glyph: String(group.placements.length), background: '#4CAF50' })
+            : new PinElement();
+        const marker = new AdvancedMarkerElement({
+            map: map,
+            title: group.placements.length === 1
+                ? `${group.placements[0].saint.name} \u2014 ${group.placements[0].location.label}`
+                : group.placements.map((placement) => placement.saint.name).join(', '),
+            position: group.position,
+            content: pin.element,
+        });
+
+        marker.addListener('click', () => {
+            if (group.placements.length === 1) {
+                const [placement] = group.placements;
+                openSaintInfo(placement.saint, placement.location, marker);
+                return;
+            }
+
+            openLocationPicker(group.placements, marker);
+        });
+
+        group.marker = marker;
+        group.pinElement = pin.element;
+    });
+
+    // one entry per saint, with all of its markers and its parsed feast day
+    const entries = saints.map((saint) => {
+        const markers = saint.locations.map((location) => {
+            const group = markerGroupsByKey.get(`${location.lat},${location.lng}`);
+            return {
+                location,
+                marker: group.marker,
+                pinElement: group.pinElement,
+                placements: group.placements,
+            };
         });
         return { saint, feast: parseFeastDay(saint.feastDay), markers };
     });
@@ -99,17 +236,16 @@ async function initMap() {
         const toCode = dayCode(Number(toMonthSelect.value), Number(toDaySelect.value));
 
         saintsList.innerHTML = '';
+        const visiblePins = new Set();
 
         entries.forEach(({ saint, feast, markers }) => {
             const matches = isInRange(fromCode, toCode, dayCode(feast.month, feast.day));
 
-            markers.forEach(({ pinElement }) => {
-                pinElement.classList.toggle('marker-dimmed', !matches);
-            });
-
             if (!matches) {
                 return;
             }
+
+            markers.forEach(({ pinElement }) => visiblePins.add(pinElement));
 
             const item = document.createElement('li');
 
@@ -127,8 +263,8 @@ async function initMap() {
 
             const activate = () => {
                 const first = markers[0];
-                map.panTo(first.location);
-                showInfoWindow(saint, first.location, first.marker);
+                map.panTo({ lat: first.location.lat, lng: first.location.lng });
+                openSaintInfo(saint, first.location, first.marker);
             };
 
             item.addEventListener('click', activate);
@@ -139,6 +275,10 @@ async function initMap() {
                 }
             });
             saintsList.appendChild(item);
+        });
+
+        markerGroups.forEach(({ pinElement }) => {
+            pinElement.classList.toggle('marker-dimmed', !visiblePins.has(pinElement));
         });
     }
 
