@@ -158,6 +158,18 @@ p {
     transform-origin: bottom center;
 }
 
+/* marker whose info window / location picker is currently open */
+.marker-active {
+    transform: scale(1.2);
+    transform-origin: bottom center;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.6));
+}
+
+/* preserve dimmed styling if an out-of-range marker is activated */
+.marker-dimmed.marker-active {
+    filter: grayscale(1) opacity(0.5) drop-shadow(0 0 4px rgba(0, 0, 0, 0.6));
+}
+
 @media (max-width: 768px) {
     #app-layout {
         flex-direction: column;

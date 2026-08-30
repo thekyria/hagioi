@@ -59,6 +59,27 @@ async function initMap() {
     const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary("marker");
     const infoWindow = new InfoWindow();
 
+    let activePinElement = null;
+
+    function setActiveMarker(pinElement) {
+        if (activePinElement === pinElement) {
+            return;
+        }
+        if (activePinElement) {
+            activePinElement.classList.remove('marker-active');
+        }
+        activePinElement = pinElement;
+        if (activePinElement) {
+            activePinElement.classList.add('marker-active');
+        }
+    }
+
+    infoWindow.addListener('closeclick', () => setActiveMarker(null));
+map.addListener('click', () => {
+    infoWindow.close();
+    setActiveMarker(null);
+});
+
     function createIconImage(saint) {
         const image = document.createElement('img');
         image.src = `assets/icons/${saint.icon}`;
@@ -198,6 +219,8 @@ async function initMap() {
         });
 
         marker.addListener('click', () => {
+            setActiveMarker(pin.element);
+
             if (group.placements.length === 1) {
                 const [placement] = group.placements;
                 openSaintInfo(placement.saint, placement.location, marker);
@@ -264,6 +287,7 @@ async function initMap() {
             const activate = () => {
                 const first = markers[0];
                 map.panTo({ lat: first.location.lat, lng: first.location.lng });
+                setActiveMarker(first.pinElement);
                 openSaintInfo(saint, first.location, first.marker);
             };
 
