@@ -238,10 +238,14 @@ p {
     cursor: pointer;
 }
 
-.location-picker li:hover,
-.location-picker li:focus {
+.location-picker li:hover {
     background: #f0f8ff;
-    outline: none;
+}
+
+.location-picker li:focus-visible {
+    background: #f0f8ff;
+    outline: 2px solid #4CAF50;
+    outline-offset: 2px;
 }
 
 .location-picker img {
