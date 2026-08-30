@@ -424,5 +424,176 @@
       { "label": "Birthplace \u2014 Trebizond", "lat": 41.0015, "lng": 39.7178 },
       { "label": "Foundation of the Great Lavra \u2014 Mount Athos", "lat": 40.1572, "lng": 24.3264 }
     ]
+  },
+  {
+    "id": "barbara-the-great-martyr",
+    "name": "St. Barbara the Great Martyr",
+    "feastDay": "December 4",
+    "title": "Great Martyr",
+    "icon": "barbara-the-great-martyr.jpg",
+    "bio": "Daughter of a wealthy pagan of Nicomedia who was locked in a tower by her father to keep her from suitors, she secretly embraced Christianity and had a third window added to her bathhouse in honor of the Trinity. She was tortured and beheaded by her own father after refusing to renounce her faith.",
+    "locations": [
+      { "label": "Martyrdom \u2014 Nicomedia (Izmit)", "lat": 40.7654, "lng": 29.9408 }
+    ]
+  },
+  {
+    "id": "blaise-of-sebaste",
+    "name": "St. Blaise of Sebaste",
+    "feastDay": "February 11",
+    "title": "Hieromartyr",
+    "icon": "blaise-of-sebaste.jpg",
+    "bio": "Bishop of Sebaste in Armenia and a physician who was said to heal both people and wild animals, he withdrew to a cave during a persecution where he continued his healing ministry. He was arrested, tortured with iron combs, and beheaded, and is invoked to this day against ailments of the throat.",
+    "locations": [
+      { "label": "Episcopal see \u2014 Sebaste (Sivas)", "lat": 39.7477, "lng": 37.0179 }
+    ]
+  },
+  {
+    "id": "boniface-of-tarsus",
+    "name": "St. Boniface of Tarsus",
+    "feastDay": "December 19",
+    "title": "Martyr",
+    "icon": "boniface-of-tarsus.jpg",
+    "bio": "A Roman servant of dissolute life who was sent by his mistress Aglaida to collect the relics of martyrs in the East, he was so moved by witnessing their courage under torture in Tarsus that he confessed Christ himself and was executed. His own relics were then brought back to Rome by the astonished servants who had accompanied him.",
+    "locations": [
+      { "label": "Martyrdom \u2014 Tarsus", "lat": 36.9187, "lng": 34.8946 },
+      { "label": "Enshrinement of relics \u2014 Rome", "lat": 41.9028, "lng": 12.4964 }
+    ]
+  },
+  {
+    "id": "charalambos",
+    "name": "St. Charalambos",
+    "feastDay": "February 10",
+    "title": "Hieromartyr",
+    "icon": "charalambos.jpg",
+    "bio": "An elderly bishop of Magnesia who, at over a hundred years old, was seized during the persecutions of Septimius Severus for continuing to preach Christ. He endured his flesh being flayed with iron hooks without complaint, converting the very soldiers and governor sent to torment him.",
+    "locations": [
+      { "label": "Episcopal see and martyrdom \u2014 Magnesia (Manisa)", "lat": 38.6191, "lng": 27.4289 }
+    ]
+  },
+  {
+    "id": "christina-of-tyre",
+    "name": "St. Christina the Great Martyr",
+    "feastDay": "July 24",
+    "title": "Great Martyr",
+    "icon": "christina-of-tyre.jpg",
+    "bio": "A young woman of Tyre who smashed her father's golden idols and distributed the metal to the poor, she was subjected by him and later by Roman governors to a horrific series of tortures, including being thrown into the sea, all of which she miraculously survived before her eventual martyrdom.",
+    "locations": [
+      { "label": "Martyrdom \u2014 Tyre", "lat": 33.2704, "lng": 35.2038 }
+    ]
+  },
+  {
+    "id": "clement-of-rome",
+    "name": "St. Clement of Rome",
+    "feastDay": "November 24",
+    "title": "Hieromartyr, Pope of Rome",
+    "icon": "clement-of-rome.jpg",
+    "bio": "A disciple of the Apostles Peter and Paul who became the fourth Bishop of Rome, he authored an epistle to the Corinthians that is among the earliest surviving Christian writings outside the New Testament. Exiled to Crimea for his preaching, he was drowned in the Black Sea with an anchor tied to his neck.",
+    "locations": [
+      { "label": "Episcopal see \u2014 Rome", "lat": 41.9028, "lng": 12.4964 },
+      { "label": "Exile and martyrdom \u2014 Chersonesus, Crimea", "lat": 44.6046, "lng": 33.4894 }
+    ]
+  },
+  {
+    "id": "cyprian-and-justina",
+    "name": "Sts. Cyprian and Justina",
+    "feastDay": "October 2",
+    "title": "Hieromartyrs",
+    "icon": "cyprian-and-justina.jpg",
+    "bio": "A renowned pagan sorcerer of Antioch hired to ensnare the Christian maiden Justina, Cyprian found his magic powerless against her prayers and, astonished, converted and burned his books of spells before becoming a bishop. He and Justina were later arrested together and beheaded under Diocletian.",
+    "locations": [
+      { "label": "Conversion and martyrdom \u2014 Antioch", "lat": 36.2021, "lng": 36.1604 }
+    ]
+  },
+  {
+    "id": "daniel-the-stylite",
+    "name": "St. Daniel the Stylite",
+    "feastDay": "December 11",
+    "title": "Venerable",
+    "icon": "daniel-the-stylite.jpg",
+    "bio": "Inspired by St. Symeon the Stylite whom he visited as a young monk, Daniel took up the ascetic discipline of pillar-standing near Constantinople, enduring decades of exposure to the elements. Emperors and patriarchs sought his counsel, and he was even ordained a priest atop his own pillar.",
+    "locations": [
+      { "label": "Pillar asceticism \u2014 Anaplous, near Constantinople", "lat": 41.0082, "lng": 28.9784 }
+    ]
+  },
+  {
+    "id": "david-of-thessaloniki",
+    "name": "St. David of Thessaloniki",
+    "feastDay": "June 26",
+    "title": "Venerable",
+    "icon": "david-of-thessaloniki.jpg",
+    "bio": "A monk who lived for years in the branches of an almond tree outside Thessaloniki as an extreme act of asceticism, praying exposed to sun and frost. He later left his tree to intercede successfully with the Emperor in Constantinople on behalf of his city, before returning to his monastery to die in peace.",
+    "locations": [
+      { "label": "Ascetic life \u2014 Thessaloniki", "lat": 40.6401, "lng": 22.9444 }
+    ]
+  },
+  {
+    "id": "dionysius-the-areopagite",
+    "name": "St. Dionysius the Areopagite",
+    "feastDay": "October 3",
+    "title": "Hieromartyr",
+    "icon": "dionysius-the-areopagite.jpg",
+    "bio": "A judge of the Areopagus court in Athens who was converted by hearing the Apostle Paul's sermon on the \u201cUnknown God\u201d, he became the first bishop of Athens. Tradition holds he later traveled west to preach the Gospel and was martyred in Lutetia (Paris).",
+    "locations": [
+      { "label": "Conversion and episcopal see \u2014 Athens", "lat": 37.9838, "lng": 23.7275 },
+      { "label": "Missionary work and martyrdom \u2014 Lutetia (Paris)", "lat": 48.8566, "lng": 2.3522 }
+    ]
+  },
+  {
+    "id": "ephraim-the-syrian",
+    "name": "St. Ephraim the Syrian",
+    "feastDay": "January 28",
+    "title": "Venerable",
+    "icon": "ephraim-the-syrian.jpg",
+    "bio": "A deacon and prolific hymnographer of Nisibis and later Edessa, he composed hundreds of hymns and homilies in Syriac defending Orthodox teaching against heresy, many of which remain in liturgical use. His Lenten prayer, \u201cO Lord and Master of my life,\u201d is recited throughout Great Lent in Orthodox churches.",
+    "locations": [
+      { "label": "Early ministry \u2014 Nisibis (Nusaybin)", "lat": 37.0745, "lng": 41.2153 },
+      { "label": "Later ministry and repose \u2014 Edessa (\u015eanl\u0131urfa)", "lat": 37.1591, "lng": 38.7969 }
+    ]
+  },
+  {
+    "id": "eugenia-of-rome",
+    "name": "St. Eugenia of Rome",
+    "feastDay": "December 24",
+    "title": "Martyr",
+    "icon": "eugenia-of-rome.jpg",
+    "bio": "Daughter of a Roman prefect of Egypt, she disguised herself as a man to enter a monastery near Alexandria, eventually being chosen as its abbot without her true identity being known. She was later falsely accused, revealed her identity to clear herself, and was ultimately martyred in Rome under Valerian.",
+    "locations": [
+      { "label": "Monastic life \u2014 near Alexandria", "lat": 31.2001, "lng": 29.9187 },
+      { "label": "Martyrdom \u2014 Rome", "lat": 41.9028, "lng": 12.4964 }
+    ]
+  },
+  {
+    "id": "eustathios-placidas",
+    "name": "St. Eustathios Placidas",
+    "feastDay": "September 20",
+    "title": "Great Martyr",
+    "icon": "eustathios-placidas.jpg",
+    "bio": "A Roman general known as Placidas who converted to Christianity after seeing a vision of Christ between the antlers of a stag while hunting, taking the name Eustathios at baptism. After enduring the loss of his family and fortune as trials of faith, he was ultimately martyred with his wife and sons by being roasted alive in a bronze bull.",
+    "locations": [
+      { "label": "Military service and martyrdom \u2014 Rome", "lat": 41.9028, "lng": 12.4964 }
+    ]
+  },
+  {
+    "id": "euthymios-the-great",
+    "name": "St. Euthymios the Great",
+    "feastDay": "January 20",
+    "title": "Venerable",
+    "icon": "euthymios-the-great.jpg",
+    "bio": "Born in Melitene in Armenia, he journeyed to the Judean Desert and founded a renowned lavra that became a center of monastic and doctrinal formation, playing a key role in defending Orthodoxy at the Council of Chalcedon. He is honored as one of the great founders of Palestinian monasticism.",
+    "locations": [
+      { "label": "Birthplace \u2014 Melitene (Malatya)", "lat": 38.3552, "lng": 38.3095 },
+      { "label": "Foundation of his Lavra \u2014 Judean Desert", "lat": 31.7683, "lng": 35.2137 }
+    ]
+  },
+  {
+    "id": "fanourios",
+    "name": "St. Fanourios the Newly-Revealed",
+    "feastDay": "August 27",
+    "title": "Great Martyr",
+    "icon": "fanourios.jpg",
+    "bio": "Known only from an icon discovered amid the ruins of an ancient church during the excavation of the city walls of Rhodes, depicting scenes of his martyrdom alongside his name, with no other historical record surviving. Devotion to him spread quickly, and to this day the faithful bake \u201cfanouropita\u201d cakes in his honor when seeking help to find lost things.",
+    "locations": [
+      { "label": "Discovery of his icon \u2014 Rhodes", "lat": 36.4341, "lng": 28.2176 }
+    ]
   }
 ]
