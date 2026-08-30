@@ -75,7 +75,10 @@ async function initMap() {
     }
 
     infoWindow.addListener('closeclick', () => setActiveMarker(null));
-    map.addListener('click', () => setActiveMarker(null));
+map.addListener('click', () => {
+    infoWindow.close();
+    setActiveMarker(null);
+});
 
     function createIconImage(saint) {
         const image = document.createElement('img');
