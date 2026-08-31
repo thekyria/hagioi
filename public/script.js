@@ -113,26 +113,25 @@ async function initMap() {
     const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary("marker");
     const infoWindow = new InfoWindow();
 
-    let activePinElement = null;
+    let activePinElements = [];
+    let activeInfoWindows = [];
 
-    function setActiveMarker(pinElement) {
-        if (activePinElement === pinElement) {
-            return;
-        }
-        if (activePinElement) {
-            activePinElement.classList.remove('marker-active');
-        }
-        activePinElement = pinElement;
-        if (activePinElement) {
-            activePinElement.classList.add('marker-active');
-        }
+    function clearSelection() {
+        activePinElements.forEach((pinElement) => pinElement.classList.remove('marker-active'));
+        activePinElements = [];
+        activeInfoWindows.forEach((infoWin) => infoWin.close());
+        activeInfoWindows = [];
+        infoWindow.close();
     }
 
-    infoWindow.addListener('closeclick', () => setActiveMarker(null));
-map.addListener('click', () => {
-    infoWindow.close();
-    setActiveMarker(null);
-});
+    function setActiveMarkers(pinElements) {
+        activePinElements.forEach((pinElement) => pinElement.classList.remove('marker-active'));
+        activePinElements = pinElements;
+        activePinElements.forEach((pinElement) => pinElement.classList.add('marker-active'));
+    }
+
+    infoWindow.addListener('closeclick', () => clearSelection());
+    map.addListener('click', () => clearSelection());
 
     function createIconImage(saint) {
         const image = document.createElement('img');
@@ -144,7 +143,7 @@ map.addListener('click', () => {
         return image;
     }
 
-    function openSaintInfo(saint, location, marker, placements = null) {
+    function buildSaintInfoContent(saint, location, marker, placements, targetWindow) {
         const content = document.createElement('div');
         content.className = 'saint-info';
 
@@ -155,7 +154,7 @@ map.addListener('click', () => {
             backLink.textContent = '\u2190 Back to list';
             content.appendChild(backLink);
 
-            google.maps.event.addListenerOnce(infoWindow, 'domready', () => {
+            google.maps.event.addListenerOnce(targetWindow, 'domready', () => {
                 backLink.addEventListener('click', (event) => {
                     event.preventDefault();
                     openLocationPicker(placements, marker);
@@ -185,8 +184,34 @@ map.addListener('click', () => {
             bio
         );
 
-        infoWindow.setContent(content);
-        infoWindow.open(map, marker);
+        return content;
+    }
+
+    // Selects a saint: highlights and pops up an info window on every one of
+    // their markers, and zooms/pans the map to fit all of them.
+    // `sourceMarker`/`sourcePlacements` let the info window opened on the
+    // marker the user actually clicked keep a "back to list" link when that
+    // marker is shared with other saints.
+    function selectSaint(saint, markers, sourceMarker = null, sourcePlacements = null) {
+        clearSelection();
+        setActiveMarkers(markers.map(({ pinElement }) => pinElement));
+
+        activeInfoWindows = markers.map(({ location, marker, placements }) => {
+            const infoWin = new InfoWindow();
+            const placementsForBackLink = (marker === sourceMarker) ? sourcePlacements : null;
+            infoWin.setContent(buildSaintInfoContent(saint, location, marker, placementsForBackLink, infoWin));
+            infoWin.addListener('closeclick', () => clearSelection());
+            infoWin.open(map, marker);
+            return infoWin;
+        });
+
+        if (markers.length > 1) {
+            const bounds = new google.maps.LatLngBounds();
+            markers.forEach(({ location }) => bounds.extend({ lat: location.lat, lng: location.lng }));
+            map.fitBounds(bounds, 60);
+        } else {
+            map.panTo({ lat: markers[0].location.lat, lng: markers[0].location.lng });
+        }
     }
 
     function openLocationPicker(placements, marker) {
@@ -220,7 +245,7 @@ map.addListener('click', () => {
             list.querySelectorAll('li').forEach((item) => {
                 const activate = () => {
                     const placement = placements[Number(item.dataset.index)];
-                    openSaintInfo(placement.saint, placement.location, marker, placements);
+                    selectSaint(placement.saint, saintMarkersById.get(placement.saint.id), marker, placements);
                 };
 
                 item.addEventListener('click', activate);
@@ -272,18 +297,6 @@ map.addListener('click', () => {
             content: pin.element,
         });
 
-        marker.addListener('click', () => {
-            setActiveMarker(pin.element);
-
-            if (group.placements.length === 1) {
-                const [placement] = group.placements;
-                openSaintInfo(placement.saint, placement.location, marker);
-                return;
-            }
-
-            openLocationPicker(group.placements, marker);
-        });
-
         group.marker = marker;
         group.pinElement = pin.element;
     });
@@ -300,6 +313,22 @@ map.addListener('click', () => {
             };
         });
         return { saint, feast: parseFeastDay(saint.feastDay), markers };
+    });
+
+    const saintMarkersById = new Map(entries.map(({ saint, markers }) => [saint.id, markers]));
+
+    markerGroups.forEach((group) => {
+        const { marker } = group;
+
+        marker.addListener('click', () => {
+            if (group.placements.length === 1) {
+                const [placement] = group.placements;
+                selectSaint(placement.saint, saintMarkersById.get(placement.saint.id));
+                return;
+            }
+
+            openLocationPicker(group.placements, marker);
+        });
     });
 
     const saintsList = document.getElementById('saints-list');
@@ -338,12 +367,7 @@ map.addListener('click', () => {
             item.tabIndex = 0;
             item.setAttribute('role', 'button');
 
-            const activate = () => {
-                const first = markers[0];
-                map.panTo({ lat: first.location.lat, lng: first.location.lng });
-                setActiveMarker(first.pinElement);
-                openSaintInfo(saint, first.location, first.marker);
-            };
+            const activate = () => selectSaint(saint, markers);
 
             item.addEventListener('click', activate);
             item.addEventListener('keydown', (e) => {
