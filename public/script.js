@@ -157,6 +157,7 @@ async function initMap() {
             google.maps.event.addListenerOnce(targetWindow, 'domready', () => {
                 backLink.addEventListener('click', (event) => {
                     event.preventDefault();
+                    clearSelection();
                     openLocationPicker(placements, marker);
                 });
             });
@@ -327,6 +328,7 @@ async function initMap() {
                 return;
             }
 
+            clearSelection();
             openLocationPicker(group.placements, marker);
         });
     });
