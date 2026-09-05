@@ -294,7 +294,8 @@
     "icon": "abercius-of-hierapolis.jpg",
     "bio": "Bishop of Hierapolis in Phrygia in the late 2nd century, renowned as a missionary and wonder-worker. His famous epitaph, discovered in 1882, is one of the oldest Christian inscriptions and describes his travels to Rome and Mesopotamia proclaiming the faith.",
     "locations": [
-      { "label": "Episcopal see and death \u2014 Hierapolis (Pamukkale), Phrygia", "lat": 37.9265, "lng": 29.1265 }
+      { "label": "Episcopal see and death \u2014 Hierapolis (Pamukkale), Phrygia", "lat": 37.9265, "lng": 29.1265 },
+      { "label": "Missionary journey \u2014 Rome", "lat": 41.9028, "lng": 12.4964 }
     ]
   },
   {
@@ -523,7 +524,8 @@
     "icon": "david-of-thessaloniki.jpg",
     "bio": "A monk who lived for years in the branches of an almond tree outside Thessaloniki as an extreme act of asceticism, praying exposed to sun and frost. He later left his tree to intercede successfully with the Emperor in Constantinople on behalf of his city, before returning to his monastery to die in peace.",
     "locations": [
-      { "label": "Ascetic life \u2014 Thessaloniki", "lat": 40.6401, "lng": 22.9444 }
+      { "label": "Ascetic life \u2014 Thessaloniki", "lat": 40.6401, "lng": 22.9444 },
+      { "label": "Intercession with the Emperor \u2014 Constantinople", "lat": 41.0082, "lng": 28.9784 }
     ]
   },
   {
@@ -627,7 +629,8 @@
     "icon": "irenaeus-of-lyons.jpg",
     "bio": "Bishop of Lyons and student of Polycarp, whose writings against heresies shaped early Christian theology.",
     "locations": [
-      { "label": "Bishopric — Lyons", "lat": 45.764, "lng": 4.8357 }
+      { "label": "Bishopric — Lyons", "lat": 45.764, "lng": 4.8357 },
+      { "label": "Formation under Polycarp — Smyrna", "lat": 38.4237, "lng": 27.1428 }
     ]
   },
   {
@@ -738,7 +741,8 @@
     "icon": "hilarion-the-great.jpg",
     "bio": "A disciple of Anthony the Great who brought monasticism from Egypt to Palestine.",
     "locations": [
-      { "label": "Birthplace — Gaza", "lat": 31.5017, "lng": 34.4668 }
+      { "label": "Birthplace — Gaza", "lat": 31.5017, "lng": 34.4668 },
+      { "label": "Discipleship under Anthony the Great — Eastern Desert, Egypt", "lat": 28.9236, "lng": 32.3608 }
     ]
   },
   {
@@ -995,7 +999,8 @@
     "icon": "joseph-of-arimathea.jpg",
     "bio": "A secret disciple of Christ who donated his own tomb for the Lord's burial after the Crucifixion.",
     "locations": [
-      { "label": "Home — Arimathea", "lat": 31.9833, "lng": 34.9333 }
+      { "label": "Home — Arimathea", "lat": 31.9833, "lng": 34.9333 },
+      { "label": "Donated tomb for Christ's burial — Jerusalem", "lat": 31.7683, "lng": 35.2137 }
     ]
   },
   {
@@ -1017,6 +1022,7 @@
     "icon": "apostle-thomas.jpg",
     "bio": "One of the Twelve Apostles, who doubted the Resurrection until he touched Christ's wounds, later evangelized India.",
     "locations": [
+      { "label": "Doubted the Resurrection — Jerusalem", "lat": 31.7683, "lng": 35.2137 },
       { "label": "Place of martyrdom — Mylapore, India", "lat": 13.0343, "lng": 80.2698 }
     ]
   },
@@ -1039,6 +1045,7 @@
     "icon": "apostle-philip.jpg",
     "bio": "One of the Twelve Apostles who brought Nathanael to Christ and was later martyred in Hierapolis.",
     "locations": [
+      { "label": "Birthplace — Bethsaida", "lat": 32.8828, "lng": 35.6267 },
       { "label": "Place of martyrdom — Hierapolis", "lat": 37.9242, "lng": 29.1245 }
     ]
   },
@@ -1072,6 +1079,7 @@
     "icon": "apostle-andrew.jpg",
     "bio": "Brother of Peter and the first disciple called by Christ, later crucified on an X-shaped cross in Patras.",
     "locations": [
+      { "label": "Birthplace — Bethsaida", "lat": 32.8828, "lng": 35.6267 },
       { "label": "Place of martyrdom — Patras", "lat": 38.2466, "lng": 21.7346 }
     ]
   },
@@ -1083,6 +1091,7 @@
     "icon": "apostle-peter.jpg",
     "bio": "A fisherman called by Christ who became the foremost of the Apostles, martyred by crucifixion upside down in Rome.",
     "locations": [
+      { "label": "Birthplace — Bethsaida", "lat": 32.8828, "lng": 35.6267 },
       { "label": "Place of martyrdom — Rome", "lat": 41.9028, "lng": 12.4964 }
     ]
   },
@@ -1140,17 +1149,6 @@
     "bio": "A Roman centurion in Caesarea who became the first Gentile convert baptized by the Apostle Peter.",
     "locations": [
       { "label": "Home — Caesarea Maritima", "lat": 32.5, "lng": 34.9 }
-    ]
-  },
-  {
-    "id": "nina-equal-to-the-apostles",
-    "name": "St. Nina, Equal-to-the-Apostles",
-    "feastDay": "January 14",
-    "title": "Equal-to-the-Apostles",
-    "icon": "nina-equal-to-the-apostles.jpg",
-    "bio": "A woman who brought Christianity to Georgia through her preaching and miracles in the 4th century.",
-    "locations": [
-      { "label": "Mission — Mtskheta, Georgia", "lat": 41.8433, "lng": 44.7192 }
     ]
   },
   {
@@ -1504,17 +1502,6 @@
     "bio": "A young Christian craftsman martyred in Ottoman-ruled Ioannina after refusing to convert to Islam.",
     "locations": [
       { "label": "Place of martyrdom — Ioannina", "lat": 39.665, "lng": 20.8537 }
-    ]
-  },
-  {
-    "id": "kosmas-aitolos",
-    "name": "St. Cosmas of Aetolia the Equal-to-the-Apostles",
-    "feastDay": "August 24",
-    "title": "Equal-to-the-Apostles",
-    "icon": "kosmas-aitolos.jpg",
-    "bio": "A traveling preacher and educator across Ottoman Greece who founded hundreds of schools before his martyrdom.",
-    "locations": [
-      { "label": "Place of martyrdom — Kolikontasi, Albania", "lat": 40.7833, "lng": 19.9167 }
     ]
   },
   {
@@ -1888,7 +1875,8 @@
     "icon": "gregory-palamas-companion-mark.jpg",
     "bio": "The sole bishop who refused to sign the Council of Florence's union with Rome, defending Orthodoxy alone.",
     "locations": [
-      { "label": "Bishopric — Ephesus", "lat": 37.9407, "lng": 27.343 }
+      { "label": "Bishopric — Ephesus", "lat": 37.9407, "lng": 27.343 },
+      { "label": "Council of Florence — Florence, Italy", "lat": 43.7696, "lng": 11.2558 }
     ]
   },
   {
@@ -2053,7 +2041,8 @@
     "icon": "meletios-of-antioch.jpg",
     "bio": "Bishop of Antioch who presided at the opening of the Second Ecumenical Council in Constantinople.",
     "locations": [
-      { "label": "Bishopric — Antioch", "lat": 36.2021, "lng": 36.1603 }
+      { "label": "Bishopric — Antioch", "lat": 36.2021, "lng": 36.1603 },
+      { "label": "Second Ecumenical Council — Constantinople", "lat": 41.0082, "lng": 28.9784 }
     ]
   },
   {
@@ -2075,7 +2064,8 @@
     "icon": "flavian-of-constantinople.jpg",
     "bio": "Patriarch who was beaten and exiled at the 'Robber Council' of Ephesus for upholding Orthodox Christology.",
     "locations": [
-      { "label": "Patriarchate — Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      { "label": "Patriarchate — Constantinople", "lat": 41.0082, "lng": 28.9784 },
+      { "label": "'Robber Council' — Ephesus", "lat": 37.9407, "lng": 27.343 }
     ]
   },
   {
@@ -2222,11 +2212,11 @@
     ]
   },
   {
-    "id": "george-kordikas-of-serbia",
+    "id": "peter-of-korisha",
     "name": "St. Peter of Korisha",
     "feastDay": "June 5",
     "title": "Venerable",
-    "icon": "george-kordikas-of-serbia.jpg",
+    "icon": "peter-of-korisha.jpg",
     "bio": "A Serbian hermit who lived in a cave near Korisha, renowned for his solitude and gift of healing.",
     "locations": [
       { "label": "Hermitage — Korisha, Kosovo", "lat": 42.5667, "lng": 20.2833 }
@@ -2354,11 +2344,11 @@
     ]
   },
   {
-    "id": "gerontios-of-nikomedia",
+    "id": "anthimus-of-nicomedia",
     "name": "St. Anthimus of Nicomedia",
     "feastDay": "September 3",
     "title": "Hieromartyr",
-    "icon": "gerontios-of-nikomedia.jpg",
+    "icon": "anthimus-of-nicomedia.jpg",
     "bio": "Bishop of Nicomedia martyred during Diocletian's persecution after refusing to abandon his flock.",
     "locations": [
       { "label": "Bishopric — Nicomedia", "lat": 40.7654, "lng": 29.9408 }
@@ -2605,6 +2595,7 @@
     "icon": "nino.jpg",
     "bio": "A woman of Cappadocian origin who preached the Gospel in Georgia and, through miracles and her cross of grapevines, brought the Georgian royal court to Christianity.",
     "locations": [
+      { "label": "Birthplace — Cappadocia", "lat": 38.6431, "lng": 34.8306 },
       { "label": "Missionary work — Mtskheta, Georgia", "lat": 41.8433, "lng": 44.7192 }
     ]
   },
@@ -2715,6 +2706,7 @@
     "icon": "nil-sorsky.jpg",
     "bio": "A Russian monastic reformer who, after studying hesychasm on Mount Athos, promoted a life of poverty and inner prayer among Russian monks.",
     "locations": [
+      { "label": "Monastic formation — Mount Athos", "lat": 40.1572, "lng": 24.3264 },
       { "label": "Hermitage — Sora River, Russia", "lat": 59.6167, "lng": 38.4167 }
     ]
   },
@@ -2767,7 +2759,7 @@
     "id": "apostle-james-son-of-alphaeus",
     "name": "Apostle James, Son of Alphaeus",
     "feastDay": "October 9",
-    "title": "Apostle of the Seventy",
+    "title": "Apostle",
     "icon": "apostle-james-son-of-alphaeus.jpg",
     "bio": "One of the Twelve Apostles who preached the Gospel in Judea and Egypt, where he was crucified for his faith.",
     "locations": [
@@ -2829,6 +2821,7 @@
     "bio": "Ascetic bishop of the Russian diaspora renowned for his humility and miracles, who cared for orphans in Shanghai and led the Church in Western Europe and San Francisco.",
     "locations": [
       { "label": "Birthplace — Adamivka, Ukraine", "lat": 49.9, "lng": 36.2 },
+      { "label": "Care for orphans — Shanghai, China", "lat": 31.2304, "lng": 121.4737 },
       { "label": "Place of death — Seattle, USA", "lat": 47.6062, "lng": -122.3321 }
     ]
   },
@@ -2853,6 +2846,7 @@
     "bio": "Russian émigré nun who sheltered Jews and resistance members in Nazi-occupied Paris, dying in the Ravensbrück concentration camp.",
     "locations": [
       { "label": "Birthplace — Riga, Latvia", "lat": 56.9496, "lng": 24.1052 },
+      { "label": "Sheltered refugees — Paris, France", "lat": 48.8566, "lng": 2.3522 },
       { "label": "Place of death — Ravensbrück, Germany", "lat": 53.19, "lng": 13.17 }
     ]
   },
