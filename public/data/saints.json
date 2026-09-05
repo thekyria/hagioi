@@ -2750,5 +2750,236 @@
     "locations": [
       { "label": "Missionary work — Vagharshapat, Armenia", "lat": 40.1608, "lng": 44.2900 }
     ]
+  },
+  {
+    "id": "apostle-john-the-theologian",
+    "name": "Apostle and Evangelist John the Theologian",
+    "feastDay": "September 26",
+    "title": "Apostle, Evangelist and Theologian",
+    "icon": "apostle-john-the-theologian.jpg",
+    "bio": "Beloved disciple of Christ, author of the Fourth Gospel, three Epistles and the Book of Revelation, who reposed peacefully in old age at Ephesus.",
+    "locations": [
+      { "label": "Exile — Patmos", "lat": 37.3, "lng": 26.55 },
+      { "label": "Place of death — Ephesus", "lat": 37.9407, "lng": 27.3427 }
+    ]
+  },
+  {
+    "id": "apostle-james-son-of-alphaeus",
+    "name": "Apostle James, Son of Alphaeus",
+    "feastDay": "October 9",
+    "title": "Apostle of the Seventy",
+    "icon": "apostle-james-son-of-alphaeus.jpg",
+    "bio": "One of the Twelve Apostles who preached the Gospel in Judea and Egypt, where he was crucified for his faith.",
+    "locations": [
+      { "label": "Martyrdom — Ostrakine, Egypt", "lat": 31.13, "lng": 33.08 }
+    ]
+  },
+  {
+    "id": "apostle-simon-the-zealot",
+    "name": "Apostle Simon the Zealot",
+    "feastDay": "May 10",
+    "title": "Apostle",
+    "icon": "apostle-simon-the-zealot.jpg",
+    "bio": "One of the Twelve Apostles, formerly a Zealot, who preached in Egypt, Africa and the Caucasus before being martyred in Abkhazia.",
+    "locations": [
+      { "label": "Martyrdom — Nikopsis, Abkhazia", "lat": 43.05, "lng": 40.1 }
+    ]
+  },
+  {
+    "id": "apostle-matthias",
+    "name": "Apostle Matthias",
+    "feastDay": "August 9",
+    "title": "Apostle",
+    "icon": "apostle-matthias.jpg",
+    "bio": "Chosen by lot to replace Judas Iscariot among the Twelve, he preached in Judea and Cappadocia before his martyrdom in Jerusalem.",
+    "locations": [
+      { "label": "Martyrdom — Jerusalem", "lat": 31.7683, "lng": 35.2137 }
+    ]
+  },
+  {
+    "id": "apostle-barnabas",
+    "name": "Apostle Barnabas",
+    "feastDay": "June 11",
+    "title": "Apostle of the Seventy",
+    "icon": "apostle-barnabas.jpg",
+    "bio": "A Cypriot Levite and close companion of the Apostle Paul on his early missionary journeys, and the first bishop of Cyprus, martyred at Salamis.",
+    "locations": [
+      { "label": "Birthplace — Cyprus", "lat": 35.1264, "lng": 33.4299 },
+      { "label": "Martyrdom — Salamis, Cyprus", "lat": 35.1856, "lng": 33.9 }
+    ]
+  },
+  {
+    "id": "nicholas-of-japan",
+    "name": "St. Nicholas of Japan",
+    "feastDay": "February 3",
+    "title": "Equal-to-the-Apostles, Enlightener of Japan",
+    "icon": "nicholas-of-japan.jpg",
+    "bio": "Russian missionary bishop who founded the Orthodox Church in Japan, translating the Scriptures and services into Japanese over half a century of ministry.",
+    "locations": [
+      { "label": "Birthplace — Smolensk region, Russia", "lat": 55.0, "lng": 32.0 },
+      { "label": "Place of death — Tokyo, Japan", "lat": 35.6895, "lng": 139.6917 }
+    ]
+  },
+  {
+    "id": "john-maximovitch",
+    "name": "St. John of Shanghai and San Francisco",
+    "feastDay": "July 2",
+    "title": "Wonderworker of Shanghai and San Francisco",
+    "icon": "john-maximovitch.jpg",
+    "bio": "Ascetic bishop of the Russian diaspora renowned for his humility and miracles, who cared for orphans in Shanghai and led the Church in Western Europe and San Francisco.",
+    "locations": [
+      { "label": "Birthplace — Adamivka, Ukraine", "lat": 49.9, "lng": 36.2 },
+      { "label": "Place of death — Seattle, USA", "lat": 47.6062, "lng": -122.3321 }
+    ]
+  },
+  {
+    "id": "sophrony-of-essex",
+    "name": "St. Sophrony of Essex",
+    "feastDay": "July 11",
+    "title": "Elder of Essex",
+    "icon": "sophrony-of-essex.jpg",
+    "bio": "Disciple of St. Silouan the Athonite who brought hesychast monastic tradition to Western Europe, founding the Monastery of St. John the Baptist in Essex, England.",
+    "locations": [
+      { "label": "Birthplace — Moscow, Russia", "lat": 55.7558, "lng": 37.6173 },
+      { "label": "Monastery — Essex, England", "lat": 51.8, "lng": 0.6 }
+    ]
+  },
+  {
+    "id": "maria-of-paris",
+    "name": "St. Maria of Paris",
+    "feastDay": "July 20",
+    "title": "New Martyr of Paris",
+    "icon": "maria-of-paris.jpg",
+    "bio": "Russian émigré nun who sheltered Jews and resistance members in Nazi-occupied Paris, dying in the Ravensbrück concentration camp.",
+    "locations": [
+      { "label": "Birthplace — Riga, Latvia", "lat": 56.9496, "lng": 24.1052 },
+      { "label": "Place of death — Ravensbrück, Germany", "lat": 53.19, "lng": 13.17 }
+    ]
+  },
+  {
+    "id": "justin-popovic",
+    "name": "St. Justin (Popović) of Ćelije",
+    "feastDay": "June 1",
+    "title": "New Chrysostom of Serbia",
+    "icon": "justin-popovic.jpg",
+    "bio": "Serbian theologian and monk celebrated for his writings on Orthodox dogmatics, who spent his final decades confined to Ćelije Monastery.",
+    "locations": [
+      { "label": "Birthplace — Vranje, Serbia", "lat": 42.5556, "lng": 21.8997 },
+      { "label": "Monastery — Ćelije, Valjevo", "lat": 44.27, "lng": 19.89 }
+    ]
+  },
+  {
+    "id": "gabriel-of-georgia",
+    "name": "St. Gabriel (Urgebadze) of Georgia",
+    "feastDay": "November 2",
+    "title": "Fool-for-Christ of Georgia",
+    "icon": "gabriel-of-georgia.jpg",
+    "bio": "Beloved Georgian elder and fool-for-Christ, famed for his boldness of faith under Soviet rule and his ministry at Samtavro Convent.",
+    "locations": [
+      { "label": "Birthplace — Tbilisi, Georgia", "lat": 41.7151, "lng": 44.8271 },
+      { "label": "Monastery — Samtavro Convent, Mtskheta", "lat": 41.8467, "lng": 44.7183 }
+    ]
+  },
+  {
+    "id": "genevieve-of-paris",
+    "name": "St. Genevieve of Paris",
+    "feastDay": "January 3",
+    "title": "Patroness of Paris",
+    "icon": "genevieve-of-paris.jpg",
+    "bio": "Fifth-century ascetic credited with saving Paris from Attila the Hun through prayer, venerated ever since as the city's patroness.",
+    "locations": [
+      { "label": "Birthplace — Nanterre, France", "lat": 48.8924, "lng": 2.2065 },
+      { "label": "Ministry — Paris, France", "lat": 48.8566, "lng": 2.3522 }
+    ]
+  },
+  {
+    "id": "alban-of-britain",
+    "name": "St. Alban of Britain",
+    "feastDay": "June 22",
+    "title": "Protomartyr of Britain",
+    "icon": "alban-of-britain.jpg",
+    "bio": "The first recorded Christian martyr of Britain, executed for sheltering a persecuted priest and taking his place at the executioner's block.",
+    "locations": [
+      { "label": "Martyrdom — Verulamium (St Albans), England", "lat": 51.75, "lng": -0.336 }
+    ]
+  },
+  {
+    "id": "augustine-of-canterbury",
+    "name": "St. Augustine of Canterbury",
+    "feastDay": "May 26",
+    "title": "Apostle to the English, first Archbishop of Canterbury",
+    "icon": "augustine-of-canterbury.jpg",
+    "bio": "Roman monk sent by Pope Gregory the Dialogist to evangelize the Anglo-Saxons, becoming the first Archbishop of Canterbury.",
+    "locations": [
+      { "label": "Mission sent from — Rome", "lat": 41.9028, "lng": 12.4964 },
+      { "label": "See — Canterbury, England", "lat": 51.2802, "lng": 1.0789 }
+    ]
+  },
+  {
+    "id": "gregory-the-dialogist",
+    "name": "St. Gregory the Dialogist",
+    "feastDay": "March 12",
+    "title": "Pope of Rome",
+    "icon": "gregory-the-dialogist.jpg",
+    "bio": "Pope of Rome and prolific author of the 'Dialogues,' who reformed the liturgy and sent missionaries to evangelize England.",
+    "locations": [
+      { "label": "See — Rome", "lat": 41.9028, "lng": 12.4964 }
+    ]
+  },
+  {
+    "id": "brigid-of-kildare",
+    "name": "St. Brigid of Kildare",
+    "feastDay": "February 1",
+    "title": "Abbess of Kildare",
+    "icon": "brigid-of-kildare.jpg",
+    "bio": "One of Ireland's most beloved saints, founder of the monastery at Kildare and renowned for her charity toward the poor.",
+    "locations": [
+      { "label": "Monastery — Kildare, Ireland", "lat": 53.1589, "lng": -6.9109 }
+    ]
+  },
+  {
+    "id": "columba-of-iona",
+    "name": "St. Columba of Iona",
+    "feastDay": "June 9",
+    "title": "Apostle to the Picts, Abbot of Iona",
+    "icon": "columba-of-iona.jpg",
+    "bio": "Irish monk who founded the monastery of Iona, from which he evangelized the Picts of Scotland.",
+    "locations": [
+      { "label": "Birthplace — Gartan, Ireland", "lat": 54.95, "lng": -7.9 },
+      { "label": "Monastery — Iona, Scotland", "lat": 56.3286, "lng": -6.3925 }
+    ]
+  },
+  {
+    "id": "cuthbert-of-lindisfarne",
+    "name": "St. Cuthbert of Lindisfarne",
+    "feastDay": "March 20",
+    "title": "Bishop of Lindisfarne",
+    "icon": "cuthbert-of-lindisfarne.jpg",
+    "bio": "Beloved bishop and hermit of Northumbria, celebrated for his miracles and his love of solitude on the Farne Islands.",
+    "locations": [
+      { "label": "See — Lindisfarne, England", "lat": 55.6689, "lng": -1.8025 }
+    ]
+  },
+  {
+    "id": "david-of-wales",
+    "name": "St. David of Wales",
+    "feastDay": "March 1",
+    "title": "Patron of Wales, Archbishop of Menevia",
+    "icon": "david-of-wales.jpg",
+    "bio": "Ascetic monk-bishop and founder of monasteries across Wales, revered ever since as the nation's patron saint.",
+    "locations": [
+      { "label": "See — St Davids, Wales", "lat": 51.8825, "lng": -5.2678 }
+    ]
+  },
+  {
+    "id": "kevin-of-glendalough",
+    "name": "St. Kevin of Glendalough",
+    "feastDay": "June 3",
+    "title": "Abbot of Glendalough",
+    "icon": "kevin-of-glendalough.jpg",
+    "bio": "Irish hermit whose life of prayer amid the wilderness of Glendalough attracted disciples and gave rise to a great monastic settlement.",
+    "locations": [
+      { "label": "Monastery — Glendalough, Ireland", "lat": 53.0089, "lng": -6.3272 }
+    ]
   }
 ]
