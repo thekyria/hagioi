@@ -84,7 +84,7 @@ async function initMap() {
     const map = new GoogleMap(document.getElementById("map"), {
         zoom: 8,
         center: center,
-        mapId: "MAIN_MAP_ID",
+        mapId: "c7635b66539b4115befcbad4",
         // Require two fingers to pan the map on touch devices, so a single-finger
         // swipe that starts over the map still scrolls the page instead of getting
         // trapped by the map.
