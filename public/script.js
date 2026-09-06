@@ -182,23 +182,22 @@ async function initMap() {
         return content;
     }
 
-    // Selects a saint: highlights and pops up an info window on every one of
-    // their markers, and zooms/pans the map to fit all of them.
-    // `sourceMarker`/`sourcePlacements` let the info window opened on the
-    // marker the user actually clicked keep a "back to list" link when that
-    // marker is shared with other saints.
+    // Selects a saint: highlights all of their markers, pops up a single info
+    // window on the marker that was actually clicked (or the first one, if
+    // none was specified), and zooms/pans the map to fit all of them.
+    // `sourceMarker`/`sourcePlacements` let the info window keep a "back to
+    // list" link when the clicked marker is shared with other saints.
     function selectSaint(saint, markers, sourceMarker = null, sourcePlacements = null) {
         clearSelection();
         setActiveMarkers(markers.map(({ pinElement }) => pinElement));
 
-        activeInfoWindows = markers.map(({ location, marker, placements }) => {
-            const infoWin = new InfoWindow();
-            const placementsForBackLink = (marker === sourceMarker) ? sourcePlacements : null;
-            infoWin.setContent(buildSaintInfoContent(saint, location, marker, placementsForBackLink, infoWin));
-            infoWin.addListener('closeclick', () => clearSelection());
-            infoWin.open(map, marker);
-            return infoWin;
-        });
+        const targetEntry = markers.find(({ marker }) => marker === sourceMarker) || markers[0];
+        const infoWin = new InfoWindow();
+        const placementsForBackLink = (targetEntry.marker === sourceMarker) ? sourcePlacements : null;
+        infoWin.setContent(buildSaintInfoContent(saint, targetEntry.location, targetEntry.marker, placementsForBackLink, infoWin));
+        infoWin.addListener('closeclick', () => clearSelection());
+        infoWin.open(map, targetEntry.marker);
+        activeInfoWindows = [infoWin];
 
         if (markers.length > 1) {
             const bounds = new google.maps.LatLngBounds();
@@ -318,7 +317,7 @@ async function initMap() {
         marker.addListener('click', () => {
             if (group.placements.length === 1) {
                 const [placement] = group.placements;
-                selectSaint(placement.saint, saintMarkersById.get(placement.saint.id));
+                selectSaint(placement.saint, saintMarkersById.get(placement.saint.id), marker);
                 return;
             }
 
