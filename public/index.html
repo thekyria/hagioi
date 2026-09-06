@@ -55,11 +55,13 @@
   <main>
     <div id="app-layout">
       <div id="map"></div>
+      <button type="button" id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="saints-panel" aria-label="Open Feast Days panel">
+        <span class="menu-toggle-icon" aria-hidden="true">&#9776;</span>
+      </button>
       <aside id="saints-panel">
-        <button type="button" id="saints-panel-toggle" class="saints-panel-toggle" aria-expanded="false" aria-controls="saints-panel-content">
+        <div class="saints-panel-header">
           <span>Feast Days</span>
-          <span class="saints-panel-toggle-icon" aria-hidden="true">&#9662;</span>
-        </button>
+        </div>
         <div id="saints-panel-content">
           <div id="date-filter">
             <div class="date-filter-group">

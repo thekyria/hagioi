@@ -46,36 +46,17 @@ function populateDaySelect(select, month) {
 }
 
 function initSaintsPanelToggle() {
-    const toggleButton = document.getElementById('saints-panel-toggle');
+    const toggleButton = document.getElementById('menu-toggle');
     const panel = document.getElementById('saints-panel');
     if (!toggleButton || !panel) {
         return;
     }
 
-    const mq = window.matchMedia('(max-width: 768px)');
-
-    function syncAriaExpanded() {
-        toggleButton.setAttribute(
-            'aria-expanded',
-            String(mq.matches ? panel.classList.contains('is-open') : true),
-        );
-    }
-
     toggleButton.addEventListener('click', () => {
-        if (!mq.matches) {
-            return;
-        }
         const isOpen = panel.classList.toggle('is-open');
         toggleButton.setAttribute('aria-expanded', String(isOpen));
+        toggleButton.setAttribute('aria-label', isOpen ? 'Close Feast Days panel' : 'Open Feast Days panel');
     });
-
-    if (mq.addEventListener) {
-        mq.addEventListener('change', syncAriaExpanded);
-    } else {
-        mq.addListener(syncAriaExpanded);
-    }
-
-    syncAriaExpanded();
 }
 
 async function initMap() {
@@ -287,7 +268,7 @@ async function initMap() {
 
     markerGroups.forEach((group) => {
         const pin = group.placements.length > 1
-            ? new PinElement({ glyph: String(group.placements.length), background: '#4CAF50' })
+            ? new PinElement({ glyph: String(group.placements.length), background: '#c9a227', borderColor: '#0a2342', glyphColor: '#0a2342' })
             : new PinElement();
         const marker = new AdvancedMarkerElement({
             map: map,
