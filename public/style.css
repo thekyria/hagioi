@@ -302,6 +302,29 @@ main {
     text-decoration: underline;
 }
 
+.site-footer a:focus-visible,
+.support-links summary:focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 2px;
+}
+
+.support-links {
+    margin-top: 8px;
+}
+
+.support-links summary {
+    color: var(--color-gold-light);
+    cursor: pointer;
+}
+
+.support-links div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 4px 14px;
+    margin-top: 8px;
+}
+
 .saint-info {
     max-width: 220px;
     text-align: left;

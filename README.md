@@ -18,3 +18,10 @@ See [AGENTS.md](AGENTS.md) for more on the data model and conventions.
 ## Contributing
 
 See [CONTRIBUTING.md](CONTRIBUTING.md). For security concerns, see [SECURITY.md](SECURITY.md).
+
+## Support
+
+- [Buy Me a Coffee](https://buymeacoffee.com/thekyria)
+- [Ko-fi](https://ko-fi.com/thekyria)
+- [PayPal](https://paypal.me/TheodorosKyriakidis)
+- [Patreon](https://www.patreon.com/c/thekyria)
