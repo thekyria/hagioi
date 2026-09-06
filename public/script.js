@@ -52,10 +52,23 @@ function initSaintsPanelToggle() {
         return;
     }
 
-    toggleButton.addEventListener('click', () => {
-        const isOpen = panel.classList.toggle('is-open');
+    const setPanelState = (isOpen) => {
+        panel.classList.toggle('is-open', isOpen);
+        panel.setAttribute('aria-hidden', String(!isOpen));
+        if (isOpen) {
+            panel.removeAttribute('inert');
+        } else {
+            panel.setAttribute('inert', '');
+        }
         toggleButton.setAttribute('aria-expanded', String(isOpen));
         toggleButton.setAttribute('aria-label', isOpen ? 'Close Feast Days panel' : 'Open Feast Days panel');
+    };
+
+    setPanelState(panel.classList.contains('is-open'));
+
+    toggleButton.addEventListener('click', () => {
+        const isOpen = !panel.classList.contains('is-open');
+        setPanelState(isOpen);
     });
 }
 
