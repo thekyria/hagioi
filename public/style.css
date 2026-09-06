@@ -235,12 +235,13 @@ main {
 /* marker shown while its info window / location picker is open (see
    `activePinElement` in script.js, swapped in via `marker.content`) */
 .marker-active {
+    opacity: 1;
     filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.6));
 }
 
-/* preserve dimmed styling if an out-of-range marker is activated while restoring native scale */
+/* preserve dimmed scale if an out-of-range marker is activated, but still show it fully opaque while selected */
 .marker-dimmed.marker-active {
-    opacity: 0.5;
+    opacity: 1;
     transform: none;
     filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.6));
 }
