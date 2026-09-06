@@ -222,9 +222,9 @@ async function initMap() {
         if (markers.length > 1) {
             const bounds = new google.maps.LatLngBounds();
             markers.forEach(({ location }) => bounds.extend({ lat: location.lat, lng: location.lng }));
-            // Generous padding so the fitted markers aren't crammed against
-            // the edges of the map (or hidden behind the saints panel).
-            map.fitBounds(bounds, 120);
+            // Generous padding with extra bottom padding so fitted markers
+            // aren't crammed against map edges, panel, or bottom controls/footer.
+            map.fitBounds(bounds, { top: 100, right: 100, bottom: 240, left: 100 });
         } else {
             map.panTo({ lat: markers[0].location.lat, lng: markers[0].location.lng });
         }
@@ -305,7 +305,7 @@ async function initMap() {
 
         // Unselected markers use a muted, faint grey so they recede into the
         // map; the saint's icon/name (shown in the info window) still carries
-        // the color. Selected markers use the site's navy accent and a
+        // the color. Selected markers use a vibrant, intense crimson red and a
         // larger scale, applied by swapping `marker.content` on selection.
         const defaultPin = new PinElement({
             glyph,
@@ -315,9 +315,9 @@ async function initMap() {
         });
         const activePin = new PinElement({
             glyph,
-            background: '#0a2342',
-            borderColor: '#10375c',
-            glyphColor: '#e6c669',
+            background: '#e63946',
+            borderColor: '#9b111e',
+            glyphColor: '#ffffff',
             scale: 1.3,
         });
         activePin.element.classList.add('marker-active');
