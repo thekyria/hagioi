@@ -2975,5 +2975,230 @@
     "locations": [
       { "label": "Monastery — Glendalough, Ireland", "lat": 53.0089, "lng": -6.3272 }
     ]
+  },
+  {
+    "id": "arsenios-of-cappadocia",
+    "name": "St. Arsenios of Cappadocia",
+    "feastDay": "November 10",
+    "title": "Priest-Confessor, Wonderworker",
+    "icon": "arsenios-of-cappadocia.jpg",
+    "bio": "Beloved priest of Farasa, Cappadocia, known for his ascetic life and miracles; he baptized and blessed St. Paisios of Mount Athos as an infant.",
+    "locations": [
+      { "label": "Ministry — Farasa, Cappadocia", "lat": 38.1613, "lng": 35.4547 },
+      { "label": "Place of repose — Corfu, Greece", "lat": 39.6243, "lng": 19.9217 }
+    ]
+  },
+  {
+    "id": "cyril-of-jerusalem",
+    "name": "St. Cyril of Jerusalem",
+    "feastDay": "March 18",
+    "title": "Archbishop of Jerusalem",
+    "icon": "cyril-of-jerusalem.jpg",
+    "bio": "Fourth-century Archbishop of Jerusalem whose catechetical lectures remain foundational teachings on Christian doctrine and the sacraments.",
+    "locations": [
+      { "label": "See of Jerusalem", "lat": 31.7683, "lng": 35.2137 }
+    ]
+  },
+  {
+    "id": "sisoes-the-great",
+    "name": "St. Sisoes the Great",
+    "feastDay": "July 6",
+    "title": "Venerable, Desert Father",
+    "icon": "sisoes-the-great.jpg",
+    "bio": "Egyptian desert father who succeeded St. Anthony the Great's disciple at the mountain of Anthony, renowned for his humility and profound sayings preserved in the Apophthegmata.",
+    "locations": [
+      { "label": "Ascetic labors — Skete, Egypt", "lat": 30.3743, "lng": 30.3287 }
+    ]
+  },
+  {
+    "id": "boris-and-gleb",
+    "name": "Sts. Boris and Gleb",
+    "feastDay": "May 2",
+    "title": "Passion-Bearers, Princes",
+    "icon": "boris-and-gleb.jpg",
+    "bio": "Sons of St. Vladimir of Kiev, princes who accepted death without resistance rather than take up arms against their brother, becoming Russia's first canonized saints.",
+    "locations": [
+      { "label": "Birthplace — Kiev, Rus'", "lat": 50.4501, "lng": 30.5234 },
+      { "label": "Martyrdom of St. Gleb — near Smolensk", "lat": 54.7818, "lng": 32.0401 }
+    ]
+  },
+  {
+    "id": "alexander-nevsky",
+    "name": "St. Alexander Nevsky",
+    "feastDay": "November 23",
+    "title": "Grand Prince, Righteous",
+    "icon": "alexander-nevsky.jpg",
+    "bio": "Prince of Novgorod and Grand Prince of Vladimir who defended Rus' from Swedish and Teutonic invasion while preserving peace with the Golden Horde, later taking monastic vows.",
+    "locations": [
+      { "label": "Birthplace — Pereslavl-Zalessky", "lat": 56.7333, "lng": 38.85 },
+      { "label": "Place of repose — Gorodets", "lat": 56.6497, "lng": 43.4737 }
+    ]
+  },
+  {
+    "id": "job-of-pochaev",
+    "name": "St. Job of Pochaev",
+    "feastDay": "October 28",
+    "title": "Abbot, Wonderworker",
+    "icon": "job-of-pochaev.jpg",
+    "bio": "Abbot of the Pochaev Lavra who defended Orthodoxy in Ukraine against the pressures of the Union of Brest and is venerated as a great ascetic and wonderworker.",
+    "locations": [
+      { "label": "Monastery — Pochaev, Ukraine", "lat": 49.9903, "lng": 25.5271 }
+    ]
+  },
+  {
+    "id": "aidan-of-lindisfarne",
+    "name": "St. Aidan of Lindisfarne",
+    "feastDay": "August 31",
+    "title": "Bishop, Enlightener of Northumbria",
+    "icon": "aidan-of-lindisfarne.jpg",
+    "bio": "Irish monk from Iona sent to found the monastery of Lindisfarne, from which he evangelized the kingdom of Northumbria with gentleness and simplicity of life.",
+    "locations": [
+      { "label": "Tonsured — Iona, Scotland", "lat": 56.3286, "lng": -6.4109 },
+      { "label": "Monastery — Lindisfarne, England", "lat": 55.6683, "lng": -1.8025 }
+    ]
+  },
+  {
+    "id": "chad-of-mercia",
+    "name": "St. Chad of Mercia",
+    "feastDay": "March 2",
+    "title": "Bishop of Lichfield",
+    "icon": "chad-of-mercia.jpg",
+    "bio": "English bishop known for his humility and pastoral zeal, traveling on foot throughout his diocese to preach and founding the see of Lichfield.",
+    "locations": [
+      { "label": "See — Lichfield, England", "lat": 52.6816, "lng": -1.8298 }
+    ]
+  },
+  {
+    "id": "edmund-the-martyr",
+    "name": "St. Edmund the Martyr",
+    "feastDay": "November 20",
+    "title": "King and Martyr",
+    "icon": "edmund-the-martyr.jpg",
+    "bio": "King of East Anglia martyred by invading Danes for refusing to renounce Christ or rule as a vassal of a pagan overlord, venerated as a patron of England.",
+    "locations": [
+      { "label": "Shrine — Bury St Edmunds, England", "lat": 52.2464, "lng": 0.7118 }
+    ]
+  },
+  {
+    "id": "elizabeth-the-new-martyr",
+    "name": "St. Elizabeth the New Martyr",
+    "feastDay": "July 18",
+    "title": "New Martyr, Grand Duchess",
+    "icon": "elizabeth-the-new-martyr.jpg",
+    "bio": "Grand Duchess of Russia who founded a convent of mercy after her husband's assassination and was cast alive into a mineshaft by Bolsheviks for her faith.",
+    "locations": [
+      { "label": "Birthplace — Darmstadt, Germany", "lat": 49.8728, "lng": 8.6512 },
+      { "label": "Martyrdom — Alapaevsk, Russia", "lat": 57.848, "lng": 61.673 }
+    ]
+  },
+  {
+    "id": "barsanuphius-of-optina",
+    "name": "St. Barsanuphius of Optina",
+    "feastDay": "April 1",
+    "title": "Venerable, Elder",
+    "icon": "barsanuphius-of-optina.jpg",
+    "bio": "One of the renowned Optina Elders, a former military officer who became a monk and spiritual father noted for his gift of discernment and pastoral wisdom.",
+    "locations": [
+      { "label": "Monastery — Optina Pustyn, Russia", "lat": 54.0503, "lng": 35.9906 }
+    ]
+  },
+  {
+    "id": "anatoly-of-optina",
+    "name": "St. Anatoly of Optina",
+    "feastDay": "January 25",
+    "title": "Venerable, Elder",
+    "icon": "anatoly-of-optina.jpg",
+    "bio": "Optina Elder celebrated for his humility, comforting counsel, and care for the many pilgrims and monastics who sought his guidance.",
+    "locations": [
+      { "label": "Monastery — Optina Pustyn, Russia", "lat": 54.0503, "lng": 35.9906 }
+    ]
+  },
+  {
+    "id": "philothei-of-athens",
+    "name": "St. Philothei of Athens",
+    "feastDay": "February 19",
+    "title": "Venerable Martyr",
+    "icon": "philothei-of-athens.jpg",
+    "bio": "Athenian noblewoman who founded a convent to shelter and ransom women enslaved under Ottoman rule, martyred for her charitable works.",
+    "locations": [
+      { "label": "Convent — Athens, Greece", "lat": 37.9838, "lng": 23.7275 }
+    ]
+  },
+  {
+    "id": "zacharias-and-elizabeth",
+    "name": "Sts. Zacharias and Elizabeth",
+    "feastDay": "September 5",
+    "title": "Righteous, Parents of the Forerunner",
+    "icon": "zacharias-and-elizabeth.jpg",
+    "bio": "Priest and his wife, the aged and childless couple granted a son, John the Baptist, in fulfillment of the angel Gabriel's promise.",
+    "locations": [
+      { "label": "Home — Ein Karem, near Jerusalem", "lat": 31.7644, "lng": 35.1512 }
+    ]
+  },
+  {
+    "id": "simeon-the-god-receiver",
+    "name": "St. Simeon the God-Receiver",
+    "feastDay": "February 3",
+    "title": "Righteous",
+    "icon": "simeon-the-god-receiver.jpg",
+    "bio": "Righteous elder who, promised he would not see death before beholding the Messiah, received the infant Christ in the Temple and proclaimed the Nunc Dimittis.",
+    "locations": [
+      { "label": "Temple — Jerusalem", "lat": 31.7683, "lng": 35.2137 }
+    ]
+  },
+  {
+    "id": "anna-the-prophetess",
+    "name": "St. Anna the Prophetess",
+    "feastDay": "February 3",
+    "title": "Righteous, Prophetess",
+    "icon": "anna-the-prophetess.jpg",
+    "bio": "Elderly widow who served God with fasting and prayer in the Temple and, present at the Presentation of Christ, recognized and proclaimed Him as the Messiah.",
+    "locations": [
+      { "label": "Temple — Jerusalem", "lat": 31.7767, "lng": 35.2345 }
+    ]
+  },
+  {
+    "id": "tabitha-of-joppa",
+    "name": "St. Tabitha of Joppa",
+    "feastDay": "October 25",
+    "title": "Righteous",
+    "icon": "tabitha-of-joppa.jpg",
+    "bio": "Disciple in Joppa known for her charitable works, raised from the dead by the Apostle Peter as recounted in the Acts of the Apostles.",
+    "locations": [
+      { "label": "Joppa (Jaffa)", "lat": 32.0533, "lng": 34.7514 }
+    ]
+  },
+  {
+    "id": "dorotheos-of-gaza",
+    "name": "St. Dorotheos of Gaza",
+    "feastDay": "June 5",
+    "title": "Venerable",
+    "icon": "dorotheos-of-gaza.jpg",
+    "bio": "Sixth-century monk and abbot whose collected spiritual instructions on humility and obedience became a classic guide to monastic and Christian life.",
+    "locations": [
+      { "label": "Monastery — near Gaza", "lat": 31.5017, "lng": 34.4668 }
+    ]
+  },
+  {
+    "id": "poemen-the-great",
+    "name": "St. Poemen the Great",
+    "feastDay": "August 27",
+    "title": "Venerable, Desert Father",
+    "icon": "poemen-the-great.jpg",
+    "bio": "Widely quoted desert father of Egypt's Scetis whose sayings on humility, discretion, and compassion form a large part of the Apophthegmata Patrum.",
+    "locations": [
+      { "label": "Ascetic labors — Skete, Egypt", "lat": 30.3743, "lng": 30.3287 }
+    ]
+  },
+  {
+    "id": "theodore-of-sykeon",
+    "name": "St. Theodore of Sykeon",
+    "feastDay": "April 22",
+    "title": "Bishop, Wonderworker",
+    "icon": "theodore-of-sykeon.jpg",
+    "bio": "Byzantine bishop of Anastasioupolis renowned for extreme asceticism and healing miracles, whose life is preserved in one of the richest hagiographies of the era.",
+    "locations": [
+      { "label": "Birthplace — Sykeon, Galatia", "lat": 40.1667, "lng": 31.55 }
+    ]
   }
 ]
