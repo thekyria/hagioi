@@ -7,8 +7,16 @@
     "icon": "john-chrysostom.jpg",
     "bio": "Renowned preacher and Archbishop of Constantinople, celebrated for his eloquence and his liturgy still used in the Orthodox Church today.",
     "locations": [
-      { "label": "Birthplace \u2014 Antioch", "lat": 36.2021, "lng": 36.1603 },
-      { "label": "Place of death \u2014 Comana Pontica", "lat": 40.4667, "lng": 36.55 }
+      {
+        "label": "Birthplace — Antioch",
+        "lat": 36.2021,
+        "lng": 36.1603
+      },
+      {
+        "label": "Place of death — Comana Pontica",
+        "lat": 40.4667,
+        "lng": 36.55
+      }
     ]
   },
   {
@@ -19,7 +27,11 @@
     "icon": "george.jpg",
     "bio": "A Roman soldier martyred for his Christian faith, venerated across the Orthodox world as a symbol of courage and the slayer of the dragon.",
     "locations": [
-      { "label": "Place of martyrdom \u2014 Lydda (Diospolis)", "lat": 31.9516, "lng": 34.8878 }
+      {
+        "label": "Place of martyrdom — Lydda (Diospolis)",
+        "lat": 31.9516,
+        "lng": 34.8878
+      }
     ]
   },
   {
@@ -30,7 +42,11 @@
     "icon": "mary-of-egypt.jpg",
     "bio": "A former sinner who repented and lived decades alone in the desert beyond the Jordan, becoming a model of repentance and asceticism.",
     "locations": [
-      { "label": "Desert of repentance \u2014 beyond the Jordan", "lat": 31.8394, "lng": 35.5451 }
+      {
+        "label": "Desert of repentance — beyond the Jordan",
+        "lat": 31.8394,
+        "lng": 35.5451
+      }
     ]
   },
   {
@@ -41,9 +57,21 @@
     "icon": "gregory-palamas.jpg",
     "bio": "A monk of Mount Athos and later Archbishop of Thessalonica, he defended the hesychast practice of contemplative prayer against the rationalist Barlaam of Calabria, teaching that God's uncreated energies can truly be experienced by the faithful.",
     "locations": [
-      { "label": "Birthplace \u2014 Constantinople", "lat": 41.0082, "lng": 28.9784 },
-      { "label": "Monastic life \u2014 Mount Athos", "lat": 40.1572, "lng": 24.3264 },
-      { "label": "Archbishopric and relics \u2014 Thessaloniki", "lat": 40.6401, "lng": 22.9444 }
+      {
+        "label": "Birthplace — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      },
+      {
+        "label": "Monastic life — Mount Athos",
+        "lat": 40.1572,
+        "lng": 24.3264
+      },
+      {
+        "label": "Archbishopric and relics — Thessaloniki",
+        "lat": 40.6401,
+        "lng": 22.9444
+      }
     ]
   },
   {
@@ -54,8 +82,16 @@
     "icon": "nectarios-of-aegina.jpg",
     "bio": "Born Anastasios Cephalas, he served as Metropolitan of Pentapolis before being unjustly removed from his post; he later founded Holy Trinity Monastery on Aegina, where he spent his final years and is remembered for many posthumous healing miracles.",
     "locations": [
-      { "label": "Birthplace \u2014 Selymbria, Thrace", "lat": 41.0736, "lng": 28.2467 },
-      { "label": "Monastery and relics \u2014 Aegina", "lat": 37.7461, "lng": 23.4297 }
+      {
+        "label": "Birthplace — Selymbria, Thrace",
+        "lat": 41.0736,
+        "lng": 28.2467
+      },
+      {
+        "label": "Monastery and relics — Aegina",
+        "lat": 37.7461,
+        "lng": 23.4297
+      }
     ]
   },
   {
@@ -66,8 +102,16 @@
     "icon": "spyridon-of-trimythous.jpg",
     "bio": "A simple Cypriot shepherd who became Bishop of Trimythous and attended the First Ecumenical Council of Nicaea, where he famously explained the Holy Trinity using a piece of brick; his incorrupt relics are now venerated in Corfu, of which he is patron saint.",
     "locations": [
-      { "label": "Episcopal see and death \u2014 Trimythous, Cyprus", "lat": 35.0740, "lng": 33.6288 },
-      { "label": "Relics \u2014 Corfu", "lat": 39.6243, "lng": 19.9217 }
+      {
+        "label": "Episcopal see and death — Trimythous, Cyprus",
+        "lat": 35.074,
+        "lng": 33.6288
+      },
+      {
+        "label": "Relics — Corfu",
+        "lat": 39.6243,
+        "lng": 19.9217
+      }
     ]
   },
   {
@@ -78,7 +122,11 @@
     "icon": "dionysios-of-zakynthos.jpg",
     "bio": "Born Draganigos Sigouros, he became a monk and later Archbishop of Aegina before retiring to a monastery on his native Zakynthos; he is remembered above all for forgiving the man who, unknowingly, had killed his own brother.",
     "locations": [
-      { "label": "Birthplace, monastic life, and relics \u2014 Zakynthos", "lat": 37.7834, "lng": 20.8994 }
+      {
+        "label": "Birthplace, monastic life, and relics — Zakynthos",
+        "lat": 37.7834,
+        "lng": 20.8994
+      }
     ]
   },
   {
@@ -89,8 +137,16 @@
     "icon": "cosmas-of-aetolia.jpg",
     "bio": "A monk of Mount Athos who spent 25 years traveling on foot throughout Greece and Albania, founding over 200 schools and preaching to villagers left without churches or priests after centuries of Ottoman rule, before being martyred on charges brought against him.",
     "locations": [
-      { "label": "Birthplace \u2014 Mega Dendron, Aetolia", "lat": 38.6339, "lng": 21.6874 },
-      { "label": "Place of martyrdom \u2014 Albania", "lat": 40.7058, "lng": 19.9522 }
+      {
+        "label": "Birthplace — Mega Dendron, Aetolia",
+        "lat": 38.6339,
+        "lng": 21.6874
+      },
+      {
+        "label": "Place of martyrdom — Albania",
+        "lat": 40.7058,
+        "lng": 19.9522
+      }
     ]
   },
   {
@@ -101,7 +157,11 @@
     "icon": "basil-the-great.jpg",
     "bio": "Bishop of Caesarea in Cappadocia and a leading 4th-century theologian, he defended Orthodoxy against Arianism and founded the Basiliad, a combined poorhouse, hospital, and hostel for the destitute outside his city.",
     "locations": [
-      { "label": "Birthplace, episcopal see, and death \u2014 Caesarea, Cappadocia", "lat": 38.7312, "lng": 35.4787 }
+      {
+        "label": "Birthplace, episcopal see, and death — Caesarea, Cappadocia",
+        "lat": 38.7312,
+        "lng": 35.4787
+      }
     ]
   },
   {
@@ -112,8 +172,16 @@
     "icon": "gregory-the-theologian.jpg",
     "bio": "A close friend of St. Basil the Great, he was chosen Archbishop of Constantinople by the Second Ecumenical Council for his defense of the Trinity against Arianism, before retiring to Nazianzus for the rest of his life.",
     "locations": [
-      { "label": "Birthplace and death \u2014 Nazianzus, Cappadocia", "lat": 38.1500, "lng": 29.7200 },
-      { "label": "Archbishopric \u2014 Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Birthplace and death — Nazianzus, Cappadocia",
+        "lat": 38.15,
+        "lng": 29.72
+      },
+      {
+        "label": "Archbishopric — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -124,8 +192,16 @@
     "icon": "catherine-of-alexandria.jpg",
     "bio": "A learned and noble young woman of Alexandria who confounded fifty pagan philosophers sent to refute her Christian faith and was martyred under Emperor Maximinus; her relics were later found at the monastery bearing her name on Mount Sinai.",
     "locations": [
-      { "label": "Place of martyrdom \u2014 Alexandria", "lat": 31.2001, "lng": 29.9187 },
-      { "label": "Relics \u2014 St. Catherine's Monastery, Sinai", "lat": 28.5561, "lng": 33.9750 }
+      {
+        "label": "Place of martyrdom — Alexandria",
+        "lat": 31.2001,
+        "lng": 29.9187
+      },
+      {
+        "label": "Relics — St. Catherine's Monastery, Sinai",
+        "lat": 28.5561,
+        "lng": 33.975
+      }
     ]
   },
   {
@@ -136,7 +212,11 @@
     "icon": "panteleimon.jpg",
     "bio": "A physician of Nicomedia who treated the poor and sick without charge in the name of Christ, he was martyred under Emperor Maximian after healing a paralyzed man before the emperor's own eyes; he is invoked among the unmercenary healer-saints.",
     "locations": [
-      { "label": "Place of martyrdom \u2014 Nicomedia", "lat": 40.7654, "lng": 29.9408 }
+      {
+        "label": "Place of martyrdom — Nicomedia",
+        "lat": 40.7654,
+        "lng": 29.9408
+      }
     ]
   },
   {
@@ -147,8 +227,16 @@
     "icon": "anthony-the-great.jpg",
     "bio": "Born to a wealthy family in Egypt, he sold his possessions to follow Christ's call to the poor and withdrew into the desert, becoming the leader of the Desert Fathers and the model for all later Christian monasticism.",
     "locations": [
-      { "label": "Birthplace \u2014 Upper Egypt", "lat": 29.0661, "lng": 31.0914 },
-      { "label": "Monastery and relics \u2014 Eastern Desert, Egypt", "lat": 28.9236, "lng": 32.3608 }
+      {
+        "label": "Birthplace — Upper Egypt",
+        "lat": 29.0661,
+        "lng": 31.0914
+      },
+      {
+        "label": "Monastery and relics — Eastern Desert, Egypt",
+        "lat": 28.9236,
+        "lng": 32.3608
+      }
     ]
   },
   {
@@ -159,8 +247,16 @@
     "icon": "sabbas-the-sanctified.jpg",
     "bio": "A Cappadocian monastic who settled in the Judean desert and founded the Great Lavra (Mar Saba), composing the Jerusalem Typikon that shaped monastic and liturgical practice across the Orthodox world.",
     "locations": [
-      { "label": "Birthplace \u2014 near Caesarea, Cappadocia", "lat": 38.7312, "lng": 35.4787 },
-      { "label": "Monastery and relics \u2014 Mar Saba, Judean Desert", "lat": 31.7061, "lng": 35.3389 }
+      {
+        "label": "Birthplace — near Caesarea, Cappadocia",
+        "lat": 38.7312,
+        "lng": 35.4787
+      },
+      {
+        "label": "Monastery and relics — Mar Saba, Judean Desert",
+        "lat": 31.7061,
+        "lng": 35.3389
+      }
     ]
   },
   {
@@ -171,7 +267,11 @@
     "icon": "demetrius-of-thessaloniki.jpg",
     "bio": "A high-ranking Christian official martyred under Emperor Galerius, he is venerated as the patron and protector of Thessaloniki, where a miraculous flow of fragrant myrrh was later found at his tomb.",
     "locations": [
-      { "label": "Place of martyrdom and relics \u2014 Thessaloniki", "lat": 40.6401, "lng": 22.9444 }
+      {
+        "label": "Place of martyrdom and relics — Thessaloniki",
+        "lat": 40.6401,
+        "lng": 22.9444
+      }
     ]
   },
   {
@@ -182,9 +282,21 @@
     "icon": "paisios-of-mount-athos.jpg",
     "bio": "Born Arsenios Eznepidis, his family fled Asia Minor for Greece in his infancy; he became a monk of Mount Athos known for his gentle counsel to the thousands of pilgrims who sought him out, and was canonized in 2015.",
     "locations": [
-      { "label": "Birthplace \u2014 Farasa, Cappadocia", "lat": 38.32, "lng": 35.65 },
-      { "label": "Monastic life \u2014 Mount Athos", "lat": 40.1572, "lng": 24.3264 },
-      { "label": "Death and relics \u2014 Souroti, near Thessaloniki", "lat": 40.4167, "lng": 23.2833 }
+      {
+        "label": "Birthplace — Farasa, Cappadocia",
+        "lat": 38.32,
+        "lng": 35.65
+      },
+      {
+        "label": "Monastic life — Mount Athos",
+        "lat": 40.1572,
+        "lng": 24.3264
+      },
+      {
+        "label": "Death and relics — Souroti, near Thessaloniki",
+        "lat": 40.4167,
+        "lng": 23.2833
+      }
     ]
   },
   {
@@ -195,8 +307,16 @@
     "icon": "gerasimos-of-kephalonia.jpg",
     "bio": "Born to a noble Byzantine family, he lived as a hermit on Mount Athos, in Jerusalem, Sinai, Egypt, Crete, and Zakynthos before settling in a cave in Kephalonia, where he restored a church and founded a convent; he is now the island's patron saint.",
     "locations": [
-      { "label": "Birthplace \u2014 Trikala, Corinthia", "lat": 37.9058, "lng": 22.4667 },
-      { "label": "Monastery and relics \u2014 Kephalonia", "lat": 38.1926, "lng": 20.5347 }
+      {
+        "label": "Birthplace — Trikala, Corinthia",
+        "lat": 37.9058,
+        "lng": 22.4667
+      },
+      {
+        "label": "Monastery and relics — Kephalonia",
+        "lat": 38.1926,
+        "lng": 20.5347
+      }
     ]
   },
   {
@@ -207,9 +327,21 @@
     "icon": "nicholas-of-myra.jpg",
     "bio": "Bishop of Myra in Lycia and participant in the First Ecumenical Council of Nicaea, he is venerated throughout the world for his generosity to the poor and his protection of sailors, children, and the falsely accused. His relics were translated to Bari, Italy in 1087.",
     "locations": [
-      { "label": "Birthplace \u2014 Patara, Lycia", "lat": 36.2616, "lng": 29.3184 },
-      { "label": "Episcopal see and death \u2014 Myra (Demre), Lycia", "lat": 36.2589, "lng": 29.9823 },
-      { "label": "Relics \u2014 Bari, Italy", "lat": 41.1282, "lng": 16.8709 }
+      {
+        "label": "Birthplace — Patara, Lycia",
+        "lat": 36.2616,
+        "lng": 29.3184
+      },
+      {
+        "label": "Episcopal see and death — Myra (Demre), Lycia",
+        "lat": 36.2589,
+        "lng": 29.9823
+      },
+      {
+        "label": "Relics — Bari, Italy",
+        "lat": 41.1282,
+        "lng": 16.8709
+      }
     ]
   },
   {
@@ -218,11 +350,23 @@
     "feastDay": "January 7",
     "title": "Prophet, Forerunner, Baptist",
     "icon": "john-the-baptist.jpg",
-    "bio": "The last of the Old Testament prophets and Forerunner of Christ, he proclaimed repentance in the Judean desert, baptized Jesus in the Jordan, and was martyred by Herod Antipas at the request of Salome. He holds the unique liturgical title \u201cGreater than the prophets.\u201d",
+    "bio": "The last of the Old Testament prophets and Forerunner of Christ, he proclaimed repentance in the Judean desert, baptized Jesus in the Jordan, and was martyred by Herod Antipas at the request of Salome. He holds the unique liturgical title “Greater than the prophets.”",
     "locations": [
-      { "label": "Birth \u2014 Ein Kerem, near Jerusalem", "lat": 31.7643, "lng": 35.1553 },
-      { "label": "Baptism of Christ \u2014 Qasr al-Yahud, Jordan River", "lat": 31.8417, "lng": 35.5517 },
-      { "label": "Imprisonment and martyrdom \u2014 Machaerus fortress", "lat": 31.5500, "lng": 35.6500 }
+      {
+        "label": "Birth — Ein Kerem, near Jerusalem",
+        "lat": 31.7643,
+        "lng": 35.1553
+      },
+      {
+        "label": "Baptism of Christ — Qasr al-Yahud, Jordan River",
+        "lat": 31.8417,
+        "lng": 35.5517
+      },
+      {
+        "label": "Imprisonment and martyrdom — Machaerus fortress",
+        "lat": 31.55,
+        "lng": 35.65
+      }
     ]
   },
   {
@@ -231,9 +375,13 @@
     "feastDay": "May 2",
     "title": "Archbishop of Alexandria",
     "icon": "athanasios-the-great.jpg",
-    "bio": "Archbishop of Alexandria who championed Nicene orthodoxy against Arianism throughout his life, enduring five exiles at the hands of Arian emperors. His phrase \u201cAthanasios contra mundum\u201d captures his solitary defense of the full divinity of Christ.",
+    "bio": "Archbishop of Alexandria who championed Nicene orthodoxy against Arianism throughout his life, enduring five exiles at the hands of Arian emperors. His phrase “Athanasios contra mundum” captures his solitary defense of the full divinity of Christ.",
     "locations": [
-      { "label": "Birthplace, episcopal see, and relics \u2014 Alexandria", "lat": 31.2001, "lng": 29.9187 }
+      {
+        "label": "Birthplace, episcopal see, and relics — Alexandria",
+        "lat": 31.2001,
+        "lng": 29.9187
+      }
     ]
   },
   {
@@ -242,10 +390,18 @@
     "feastDay": "June 9",
     "title": "Archbishop of Alexandria",
     "icon": "cyril-of-alexandria.jpg",
-    "bio": "Archbishop of Alexandria who presided over the Third Ecumenical Council of Ephesus (431 AD), which confirmed the title Theotokos (\u201cGod-bearer\u201d) for the Virgin Mary against the teaching of Nestorius. His prolific theological writings earned him the title \u201cSeal of the Fathers.\u201d",
+    "bio": "Archbishop of Alexandria who presided over the Third Ecumenical Council of Ephesus (431 AD), which confirmed the title Theotokos (“God-bearer”) for the Virgin Mary against the teaching of Nestorius. His prolific theological writings earned him the title “Seal of the Fathers.”",
     "locations": [
-      { "label": "Episcopal see and death \u2014 Alexandria", "lat": 31.2001, "lng": 29.9187 },
-      { "label": "Council of Ephesus \u2014 Ephesus", "lat": 37.9395, "lng": 27.3408 }
+      {
+        "label": "Episcopal see and death — Alexandria",
+        "lat": 31.2001,
+        "lng": 29.9187
+      },
+      {
+        "label": "Council of Ephesus — Ephesus",
+        "lat": 37.9395,
+        "lng": 27.3408
+      }
     ]
   },
   {
@@ -256,8 +412,16 @@
     "icon": "makarios-of-egypt.jpg",
     "bio": "A disciple of St. Anthony the Great who settled in the Scetis desert of Egypt and became one of the most celebrated Desert Fathers, attracting thousands of monks to the Wadi Natrun. He is the reputed author of the Fifty Spiritual Homilies on the life of inner prayer.",
     "locations": [
-      { "label": "Birthplace \u2014 Shabsheer, Egypt", "lat": 30.5500, "lng": 30.9000 },
-      { "label": "Monastic life and relics \u2014 Wadi el-Natrun (Scetis)", "lat": 30.3500, "lng": 30.3333 }
+      {
+        "label": "Birthplace — Shabsheer, Egypt",
+        "lat": 30.55,
+        "lng": 30.9
+      },
+      {
+        "label": "Monastic life and relics — Wadi el-Natrun (Scetis)",
+        "lat": 30.35,
+        "lng": 30.3333
+      }
     ]
   },
   {
@@ -266,11 +430,23 @@
     "feastDay": "January 15",
     "title": "Venerable, Wonderworker",
     "icon": "seraphim-of-sarov.jpg",
-    "bio": "A monk of Sarov in Russia who spent years in hermitage and later opened his cell to thousands of pilgrims, greeting each with the words \u201cMy joy!\u201d He taught that the aim of the Christian life is the acquisition of the Holy Spirit, and remains one of the most beloved saints of the Russian Church.",
+    "bio": "A monk of Sarov in Russia who spent years in hermitage and later opened his cell to thousands of pilgrims, greeting each with the words “My joy!” He taught that the aim of the Christian life is the acquisition of the Holy Spirit, and remains one of the most beloved saints of the Russian Church.",
     "locations": [
-      { "label": "Birthplace \u2014 Kursk, Russia", "lat": 51.7304, "lng": 36.1927 },
-      { "label": "Monastic life and death \u2014 Sarov, Russia", "lat": 54.9333, "lng": 43.3167 },
-      { "label": "Relics \u2014 Diveyevo Monastery, Russia", "lat": 55.0333, "lng": 43.2333 }
+      {
+        "label": "Birthplace — Kursk, Russia",
+        "lat": 51.7304,
+        "lng": 36.1927
+      },
+      {
+        "label": "Monastic life and death — Sarov, Russia",
+        "lat": 54.9333,
+        "lng": 43.3167
+      },
+      {
+        "label": "Relics — Diveyevo Monastery, Russia",
+        "lat": 55.0333,
+        "lng": 43.2333
+      }
     ]
   },
   {
@@ -281,9 +457,21 @@
     "icon": "porphyrios-of-kafsokalyvia.jpg",
     "bio": "A Greek elder who spent decades as a confessor near Athens, renowned for his gift of clairvoyance and his joyful, Christ-centred spiritual direction. He was canonized in 2013 and his collected conversations have been read by millions across the Orthodox world.",
     "locations": [
-      { "label": "Birthplace \u2014 Agios Ioannis Karystos, Evia", "lat": 38.0167, "lng": 24.0833 },
-      { "label": "Monastic formation \u2014 Mount Athos", "lat": 40.1572, "lng": 24.3264 },
-      { "label": "Priestly ministry and death \u2014 Milesi, near Athens", "lat": 38.1333, "lng": 23.9000 }
+      {
+        "label": "Birthplace — Agios Ioannis Karystos, Evia",
+        "lat": 38.0167,
+        "lng": 24.0833
+      },
+      {
+        "label": "Monastic formation — Mount Athos",
+        "lat": 40.1572,
+        "lng": 24.3264
+      },
+      {
+        "label": "Priestly ministry and death — Milesi, near Athens",
+        "lat": 38.1333,
+        "lng": 23.9
+      }
     ]
   },
   {
@@ -294,8 +482,16 @@
     "icon": "abercius-of-hierapolis.jpg",
     "bio": "Bishop of Hierapolis in Phrygia in the late 2nd century, renowned as a missionary and wonder-worker. His famous epitaph, discovered in 1882, is one of the oldest Christian inscriptions and describes his travels to Rome and Mesopotamia proclaiming the faith.",
     "locations": [
-      { "label": "Episcopal see and death \u2014 Hierapolis (Pamukkale), Phrygia", "lat": 37.9265, "lng": 29.1265 },
-      { "label": "Missionary journey \u2014 Rome", "lat": 41.9028, "lng": 12.4964 }
+      {
+        "label": "Episcopal see and death — Hierapolis (Pamukkale), Phrygia",
+        "lat": 37.9265,
+        "lng": 29.1265
+      },
+      {
+        "label": "Missionary journey — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      }
     ]
   },
   {
@@ -306,7 +502,11 @@
     "icon": "agafia-of-rome.jpg",
     "bio": "A young noblewoman of Sicily martyred under Emperor Decius around 250 AD for refusing to renounce her Christian faith and her vow of virginity. She is venerated as the patron saint of Catania and of Sicily, and is invoked against fire and breast diseases.",
     "locations": [
-      { "label": "Birthplace and martyrdom \u2014 Catania, Sicily", "lat": 37.5023, "lng": 15.0873 }
+      {
+        "label": "Birthplace and martyrdom — Catania, Sicily",
+        "lat": 37.5023,
+        "lng": 15.0873
+      }
     ]
   },
   {
@@ -317,8 +517,16 @@
     "icon": "alexander-of-alexandria.jpg",
     "bio": "Archbishop of Alexandria who convened the local synod that first condemned Arianism, then led the Orthodox delegation to the First Ecumenical Council of Nicaea in 325 AD alongside his deacon Athanasios. He is venerated for his defense of the full divinity of Christ before it was formally defined.",
     "locations": [
-      { "label": "Episcopal see and death \u2014 Alexandria", "lat": 31.2001, "lng": 29.9187 },
-      { "label": "Council of Nicaea", "lat": 40.4228, "lng": 29.7192 }
+      {
+        "label": "Episcopal see and death — Alexandria",
+        "lat": 31.2001,
+        "lng": 29.9187
+      },
+      {
+        "label": "Council of Nicaea",
+        "lat": 40.4228,
+        "lng": 29.7192
+      }
     ]
   },
   {
@@ -329,8 +537,16 @@
     "icon": "alexios-man-of-god.jpg",
     "bio": "Born to a noble Roman family, Alexios fled his arranged marriage on his wedding night, lived as a beggar in Edessa for seventeen years, then returned to Rome and lived unknown under the staircase of his own family's house until his death. He is a celebrated model of radical humility and voluntary poverty.",
     "locations": [
-      { "label": "Birthplace and death \u2014 Rome", "lat": 41.9028, "lng": 12.4964 },
-      { "label": "Seventeen years as a beggar \u2014 Edessa (Sanl\u0131urfa)", "lat": 37.1591, "lng": 38.7969 }
+      {
+        "label": "Birthplace and death — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      },
+      {
+        "label": "Seventeen years as a beggar — Edessa (Sanlıurfa)",
+        "lat": 37.1591,
+        "lng": 38.7969
+      }
     ]
   },
   {
@@ -341,7 +557,11 @@
     "icon": "ambrose-of-milan.jpg",
     "bio": "Governor of Milan unexpectedly acclaimed as its bishop by the people in 374 AD while still a catechumen. He became one of the great Latin Fathers, championed orthodoxy against Arianism, penned celebrated hymns still sung today, and boldly confronted the Emperor Theodosius over the Massacre of Thessalonica.",
     "locations": [
-      { "label": "Episcopal see and death \u2014 Milan", "lat": 45.4654, "lng": 9.1859 }
+      {
+        "label": "Episcopal see and death — Milan",
+        "lat": 45.4654,
+        "lng": 9.1859
+      }
     ]
   },
   {
@@ -350,10 +570,18 @@
     "feastDay": "December 22",
     "title": "Great Martyr, Deliverer from Potions",
     "icon": "anastasia-the-great-martyr.jpg",
-    "bio": "A Roman noblewoman who used her wealth to minister to Christians imprisoned under Emperor Diocletian, traveling from prison to prison to care for confessors. She was martyred in Sirmium around 304 AD and is venerated across the Orthodox world with the epithet \u201cDeliverer from Potions\u201d for her healing intercessions.",
+    "bio": "A Roman noblewoman who used her wealth to minister to Christians imprisoned under Emperor Diocletian, traveling from prison to prison to care for confessors. She was martyred in Sirmium around 304 AD and is venerated across the Orthodox world with the epithet “Deliverer from Potions” for her healing intercessions.",
     "locations": [
-      { "label": "Birthplace \u2014 Rome", "lat": 41.9028, "lng": 12.4964 },
-      { "label": "Place of martyrdom \u2014 Sirmium (Sremska Mitrovica)", "lat": 44.9706, "lng": 19.6125 }
+      {
+        "label": "Birthplace — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      },
+      {
+        "label": "Place of martyrdom — Sirmium (Sremska Mitrovica)",
+        "lat": 44.9706,
+        "lng": 19.6125
+      }
     ]
   },
   {
@@ -364,8 +592,16 @@
     "icon": "andronikos-and-athanasia.jpg",
     "bio": "A married couple of Antioch who, after the death of their two children, mutually agreed to live in consecrated celibacy. Andronikos became a monk in Egypt; Athanasia, unknown to him, also became a monk disguised as a man. They met again years later, and Andronikos only discovered her identity after her death.",
     "locations": [
-      { "label": "Home \u2014 Antioch", "lat": 36.2021, "lng": 36.1603 },
-      { "label": "Monastic life \u2014 Wadi el-Natrun (Scetis), Egypt", "lat": 30.3500, "lng": 30.3333 }
+      {
+        "label": "Home — Antioch",
+        "lat": 36.2021,
+        "lng": 36.1603
+      },
+      {
+        "label": "Monastic life — Wadi el-Natrun (Scetis), Egypt",
+        "lat": 30.35,
+        "lng": 30.3333
+      }
     ]
   },
   {
@@ -374,9 +610,13 @@
     "feastDay": "April 11",
     "title": "Hieromartyr, Bishop",
     "icon": "antipa-of-pergamon.jpg",
-    "bio": "Bishop of Pergamon in Asia Minor, mentioned in the Book of Revelation (2:13) as \u201cmy faithful witness who was killed among you.\u201d He was martyred under Emperor Domitian, traditionally by being cast into a red-hot bronze bull used for pagan sacrifices. He is invoked for toothaches.",
+    "bio": "Bishop of Pergamon in Asia Minor, mentioned in the Book of Revelation (2:13) as “my faithful witness who was killed among you.” He was martyred under Emperor Domitian, traditionally by being cast into a red-hot bronze bull used for pagan sacrifices. He is invoked for toothaches.",
     "locations": [
-      { "label": "Episcopate and martyrdom \u2014 Pergamon (Bergama)", "lat": 39.1212, "lng": 27.1837 }
+      {
+        "label": "Episcopate and martyrdom — Pergamon (Bergama)",
+        "lat": 39.1212,
+        "lng": 27.1837
+      }
     ]
   },
   {
@@ -385,9 +625,13 @@
     "feastDay": "July 23",
     "title": "Hieromartyr, Bishop",
     "icon": "apollinaris-of-ravenna.jpg",
-    "bio": "Traditionally a disciple of St. Peter the Apostle, he became the first bishop of Ravenna and was martyred after several exiles for refusing to offer sacrifice to pagan gods. The magnificent Byzantine basilicas of Sant\u2019Apollinare in Classe and Sant\u2019Apollinare Nuovo in Ravenna are dedicated to him.",
+    "bio": "Traditionally a disciple of St. Peter the Apostle, he became the first bishop of Ravenna and was martyred after several exiles for refusing to offer sacrifice to pagan gods. The magnificent Byzantine basilicas of Sant’Apollinare in Classe and Sant’Apollinare Nuovo in Ravenna are dedicated to him.",
     "locations": [
-      { "label": "Episcopal see and martyrdom \u2014 Ravenna", "lat": 44.4184, "lng": 12.2035 }
+      {
+        "label": "Episcopal see and martyrdom — Ravenna",
+        "lat": 44.4184,
+        "lng": 12.2035
+      }
     ]
   },
   {
@@ -398,8 +642,16 @@
     "icon": "aquila-and-priscilla.jpg",
     "bio": "Jewish Christian tentmakers mentioned repeatedly in the New Testament as close companions of St. Paul the Apostle, who worked alongside him in Corinth and Ephesus. They hosted a church in their home and personally instructed the eloquent Apollos in the Christian faith.",
     "locations": [
-      { "label": "Tent-making ministry with Paul \u2014 Corinth", "lat": 37.9077, "lng": 22.8779 },
-      { "label": "Church in their home \u2014 Ephesus", "lat": 37.9395, "lng": 27.3408 }
+      {
+        "label": "Tent-making ministry with Paul — Corinth",
+        "lat": 37.9077,
+        "lng": 22.8779
+      },
+      {
+        "label": "Church in their home — Ephesus",
+        "lat": 37.9395,
+        "lng": 27.3408
+      }
     ]
   },
   {
@@ -408,10 +660,18 @@
     "feastDay": "May 8",
     "title": "Venerable, Desert Father",
     "icon": "arsenios-the-great.jpg",
-    "bio": "A highly educated Roman deacon who served as tutor to the imperial princes Arcadius and Honorius in Constantinople, then at the age of forty renounced everything and became a monk in the Egyptian desert. He is remembered for his maxim: \u201cI have often repented of having spoken, but never of having been silent.\u201d",
+    "bio": "A highly educated Roman deacon who served as tutor to the imperial princes Arcadius and Honorius in Constantinople, then at the age of forty renounced everything and became a monk in the Egyptian desert. He is remembered for his maxim: “I have often repented of having spoken, but never of having been silent.”",
     "locations": [
-      { "label": "Court tutorship \u2014 Constantinople", "lat": 41.0082, "lng": 28.9784 },
-      { "label": "Desert asceticism \u2014 Scetis (Wadi el-Natrun), Egypt", "lat": 30.3500, "lng": 30.3333 }
+      {
+        "label": "Court tutorship — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      },
+      {
+        "label": "Desert asceticism — Scetis (Wadi el-Natrun), Egypt",
+        "lat": 30.35,
+        "lng": 30.3333
+      }
     ]
   },
   {
@@ -422,8 +682,16 @@
     "icon": "athanasios-of-athos.jpg",
     "bio": "Founder of the Great Lavra, the oldest and most prestigious monastery on Mount Athos, established in 963 AD with the patronage of Emperor Nikephoros Phokas. He organized cenobitic monastic life on the Holy Mountain and shaped Athonite monasticism for centuries to come.",
     "locations": [
-      { "label": "Birthplace \u2014 Trebizond", "lat": 41.0015, "lng": 39.7178 },
-      { "label": "Foundation of the Great Lavra \u2014 Mount Athos", "lat": 40.1572, "lng": 24.3264 }
+      {
+        "label": "Birthplace — Trebizond",
+        "lat": 41.0015,
+        "lng": 39.7178
+      },
+      {
+        "label": "Foundation of the Great Lavra — Mount Athos",
+        "lat": 40.1572,
+        "lng": 24.3264
+      }
     ]
   },
   {
@@ -434,7 +702,11 @@
     "icon": "barbara-the-great-martyr.jpg",
     "bio": "Daughter of a wealthy pagan of Nicomedia who was locked in a tower by her father to keep her from suitors, she secretly embraced Christianity and had a third window added to her bathhouse in honor of the Trinity. She was tortured and beheaded by her own father after refusing to renounce her faith.",
     "locations": [
-      { "label": "Martyrdom \u2014 Nicomedia (Izmit)", "lat": 40.7654, "lng": 29.9408 }
+      {
+        "label": "Martyrdom — Nicomedia (Izmit)",
+        "lat": 40.7654,
+        "lng": 29.9408
+      }
     ]
   },
   {
@@ -445,7 +717,11 @@
     "icon": "blaise-of-sebaste.jpg",
     "bio": "Bishop of Sebaste in Armenia and a physician who was said to heal both people and wild animals, he withdrew to a cave during a persecution where he continued his healing ministry. He was arrested, tortured with iron combs, and beheaded, and is invoked to this day against ailments of the throat.",
     "locations": [
-      { "label": "Episcopal see \u2014 Sebaste (Sivas)", "lat": 39.7477, "lng": 37.0179 }
+      {
+        "label": "Episcopal see — Sebaste (Sivas)",
+        "lat": 39.7477,
+        "lng": 37.0179
+      }
     ]
   },
   {
@@ -456,8 +732,16 @@
     "icon": "boniface-of-tarsus.jpg",
     "bio": "A Roman servant of dissolute life who was sent by his mistress Aglaida to collect the relics of martyrs in the East, he was so moved by witnessing their courage under torture in Tarsus that he confessed Christ himself and was executed. His own relics were then brought back to Rome by the astonished servants who had accompanied him.",
     "locations": [
-      { "label": "Martyrdom \u2014 Tarsus", "lat": 36.9187, "lng": 34.8946 },
-      { "label": "Enshrinement of relics \u2014 Rome", "lat": 41.9028, "lng": 12.4964 }
+      {
+        "label": "Martyrdom — Tarsus",
+        "lat": 36.9187,
+        "lng": 34.8946
+      },
+      {
+        "label": "Enshrinement of relics — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      }
     ]
   },
   {
@@ -468,7 +752,11 @@
     "icon": "charalambos.jpg",
     "bio": "An elderly bishop of Magnesia who, at over a hundred years old, was seized during the persecutions of Septimius Severus for continuing to preach Christ. He endured his flesh being flayed with iron hooks without complaint, converting the very soldiers and governor sent to torment him.",
     "locations": [
-      { "label": "Episcopal see and martyrdom \u2014 Magnesia (Manisa)", "lat": 38.6191, "lng": 27.4289 }
+      {
+        "label": "Episcopal see and martyrdom — Magnesia (Manisa)",
+        "lat": 38.6191,
+        "lng": 27.4289
+      }
     ]
   },
   {
@@ -479,7 +767,11 @@
     "icon": "christina-of-tyre.jpg",
     "bio": "A young woman of Tyre who smashed her father's golden idols and distributed the metal to the poor, she was subjected by him and later by Roman governors to a horrific series of tortures, including being thrown into the sea, all of which she miraculously survived before her eventual martyrdom.",
     "locations": [
-      { "label": "Martyrdom \u2014 Tyre", "lat": 33.2704, "lng": 35.2038 }
+      {
+        "label": "Martyrdom — Tyre",
+        "lat": 33.2704,
+        "lng": 35.2038
+      }
     ]
   },
   {
@@ -490,8 +782,16 @@
     "icon": "clement-of-rome.jpg",
     "bio": "A disciple of the Apostles Peter and Paul who became the fourth Bishop of Rome, he authored an epistle to the Corinthians that is among the earliest surviving Christian writings outside the New Testament. Exiled to Crimea for his preaching, he was drowned in the Black Sea with an anchor tied to his neck.",
     "locations": [
-      { "label": "Episcopal see \u2014 Rome", "lat": 41.9028, "lng": 12.4964 },
-      { "label": "Exile and martyrdom \u2014 Chersonesus, Crimea", "lat": 44.6046, "lng": 33.4894 }
+      {
+        "label": "Episcopal see — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      },
+      {
+        "label": "Exile and martyrdom — Chersonesus, Crimea",
+        "lat": 44.6046,
+        "lng": 33.4894
+      }
     ]
   },
   {
@@ -502,7 +802,11 @@
     "icon": "cyprian-and-justina.jpg",
     "bio": "A renowned pagan sorcerer of Antioch hired to ensnare the Christian maiden Justina, Cyprian found his magic powerless against her prayers and, astonished, converted and burned his books of spells before becoming a bishop. He and Justina were later arrested together and beheaded under Diocletian.",
     "locations": [
-      { "label": "Conversion and martyrdom \u2014 Antioch", "lat": 36.2021, "lng": 36.1604 }
+      {
+        "label": "Conversion and martyrdom — Antioch",
+        "lat": 36.2021,
+        "lng": 36.1604
+      }
     ]
   },
   {
@@ -513,7 +817,11 @@
     "icon": "daniel-the-stylite.jpg",
     "bio": "Inspired by St. Symeon the Stylite whom he visited as a young monk, Daniel took up the ascetic discipline of pillar-standing near Constantinople, enduring decades of exposure to the elements. Emperors and patriarchs sought his counsel, and he was even ordained a priest atop his own pillar.",
     "locations": [
-      { "label": "Pillar asceticism \u2014 Anaplous, near Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Pillar asceticism — Anaplous, near Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -524,8 +832,16 @@
     "icon": "david-of-thessaloniki.jpg",
     "bio": "A monk who lived for years in the branches of an almond tree outside Thessaloniki as an extreme act of asceticism, praying exposed to sun and frost. He later left his tree to intercede successfully with the Emperor in Constantinople on behalf of his city, before returning to his monastery to die in peace.",
     "locations": [
-      { "label": "Ascetic life \u2014 Thessaloniki", "lat": 40.6401, "lng": 22.9444 },
-      { "label": "Intercession with the Emperor \u2014 Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Ascetic life — Thessaloniki",
+        "lat": 40.6401,
+        "lng": 22.9444
+      },
+      {
+        "label": "Intercession with the Emperor — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -534,10 +850,18 @@
     "feastDay": "October 3",
     "title": "Hieromartyr",
     "icon": "dionysius-the-areopagite.jpg",
-    "bio": "A judge of the Areopagus court in Athens who was converted by hearing the Apostle Paul's sermon on the \u201cUnknown God\u201d, he became the first bishop of Athens. Tradition holds he later traveled west to preach the Gospel and was martyred in Lutetia (Paris).",
+    "bio": "A judge of the Areopagus court in Athens who was converted by hearing the Apostle Paul's sermon on the “Unknown God”, he became the first bishop of Athens. Tradition holds he later traveled west to preach the Gospel and was martyred in Lutetia (Paris).",
     "locations": [
-      { "label": "Conversion and episcopal see \u2014 Athens", "lat": 37.9838, "lng": 23.7275 },
-      { "label": "Missionary work and martyrdom \u2014 Lutetia (Paris)", "lat": 48.8566, "lng": 2.3522 }
+      {
+        "label": "Conversion and episcopal see — Athens",
+        "lat": 37.9838,
+        "lng": 23.7275
+      },
+      {
+        "label": "Missionary work and martyrdom — Lutetia (Paris)",
+        "lat": 48.8566,
+        "lng": 2.3522
+      }
     ]
   },
   {
@@ -546,10 +870,18 @@
     "feastDay": "January 28",
     "title": "Venerable",
     "icon": "ephraim-the-syrian.jpg",
-    "bio": "A deacon and prolific hymnographer of Nisibis and later Edessa, he composed hundreds of hymns and homilies in Syriac defending Orthodox teaching against heresy, many of which remain in liturgical use. His Lenten prayer, \u201cO Lord and Master of my life,\u201d is recited throughout Great Lent in Orthodox churches.",
+    "bio": "A deacon and prolific hymnographer of Nisibis and later Edessa, he composed hundreds of hymns and homilies in Syriac defending Orthodox teaching against heresy, many of which remain in liturgical use. His Lenten prayer, “O Lord and Master of my life,” is recited throughout Great Lent in Orthodox churches.",
     "locations": [
-      { "label": "Early ministry \u2014 Nisibis (Nusaybin)", "lat": 37.0745, "lng": 41.2153 },
-      { "label": "Later ministry and repose \u2014 Edessa (\u015eanl\u0131urfa)", "lat": 37.1591, "lng": 38.7969 }
+      {
+        "label": "Early ministry — Nisibis (Nusaybin)",
+        "lat": 37.0745,
+        "lng": 41.2153
+      },
+      {
+        "label": "Later ministry and repose — Edessa (Şanlıurfa)",
+        "lat": 37.1591,
+        "lng": 38.7969
+      }
     ]
   },
   {
@@ -560,8 +892,16 @@
     "icon": "eugenia-of-rome.jpg",
     "bio": "Daughter of a Roman prefect of Egypt, she disguised herself as a man to enter a monastery near Alexandria, eventually being chosen as its abbot without her true identity being known. She was later falsely accused, revealed her identity to clear herself, and was ultimately martyred in Rome under Valerian.",
     "locations": [
-      { "label": "Monastic life \u2014 near Alexandria", "lat": 31.2001, "lng": 29.9187 },
-      { "label": "Martyrdom \u2014 Rome", "lat": 41.9028, "lng": 12.4964 }
+      {
+        "label": "Monastic life — near Alexandria",
+        "lat": 31.2001,
+        "lng": 29.9187
+      },
+      {
+        "label": "Martyrdom — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      }
     ]
   },
   {
@@ -572,7 +912,11 @@
     "icon": "eustathios-placidas.jpg",
     "bio": "A Roman general known as Placidas who converted to Christianity after seeing a vision of Christ between the antlers of a stag while hunting, taking the name Eustathios at baptism. After enduring the loss of his family and fortune as trials of faith, he was ultimately martyred with his wife and sons by being roasted alive in a bronze bull.",
     "locations": [
-      { "label": "Military service and martyrdom \u2014 Rome", "lat": 41.9028, "lng": 12.4964 }
+      {
+        "label": "Military service and martyrdom — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      }
     ]
   },
   {
@@ -583,8 +927,16 @@
     "icon": "euthymios-the-great.jpg",
     "bio": "Born in Melitene in Armenia, he journeyed to the Judean Desert and founded a renowned lavra that became a center of monastic and doctrinal formation, playing a key role in defending Orthodoxy at the Council of Chalcedon. He is honored as one of the great founders of Palestinian monasticism.",
     "locations": [
-      { "label": "Birthplace \u2014 Melitene (Malatya)", "lat": 38.3552, "lng": 38.3095 },
-      { "label": "Foundation of his Lavra \u2014 Judean Desert", "lat": 31.7683, "lng": 35.2137 }
+      {
+        "label": "Birthplace — Melitene (Malatya)",
+        "lat": 38.3552,
+        "lng": 38.3095
+      },
+      {
+        "label": "Foundation of his Lavra — Judean Desert",
+        "lat": 31.7683,
+        "lng": 35.2137
+      }
     ]
   },
   {
@@ -593,9 +945,13 @@
     "feastDay": "August 27",
     "title": "Great Martyr",
     "icon": "fanourios.jpg",
-    "bio": "Known only from an icon discovered amid the ruins of an ancient church during the excavation of the city walls of Rhodes, depicting scenes of his martyrdom alongside his name, with no other historical record surviving. Devotion to him spread quickly, and to this day the faithful bake \u201cfanouropita\u201d cakes in his honor when seeking help to find lost things.",
+    "bio": "Known only from an icon discovered amid the ruins of an ancient church during the excavation of the city walls of Rhodes, depicting scenes of his martyrdom alongside his name, with no other historical record surviving. Devotion to him spread quickly, and to this day the faithful bake “fanouropita” cakes in his honor when seeking help to find lost things.",
     "locations": [
-      { "label": "Discovery of his icon \u2014 Rhodes", "lat": 36.4341, "lng": 28.2176 }
+      {
+        "label": "Discovery of his icon — Rhodes",
+        "lat": 36.4341,
+        "lng": 28.2176
+      }
     ]
   },
   {
@@ -606,8 +962,16 @@
     "icon": "ignatius-of-antioch.jpg",
     "bio": "Bishop of Antioch and disciple of the Apostles, thrown to wild beasts in Rome, whose letters to the early Church remain foundational Christian writings.",
     "locations": [
-      { "label": "Bishopric — Antioch", "lat": 36.2021, "lng": 36.1603 },
-      { "label": "Place of martyrdom — Rome", "lat": 41.9028, "lng": 12.4964 }
+      {
+        "label": "Bishopric — Antioch",
+        "lat": 36.2021,
+        "lng": 36.1603
+      },
+      {
+        "label": "Place of martyrdom — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      }
     ]
   },
   {
@@ -618,7 +982,11 @@
     "icon": "polycarp-of-smyrna.jpg",
     "bio": "Bishop of Smyrna and disciple of the Apostle John, burned at the stake for refusing to renounce Christ in old age.",
     "locations": [
-      { "label": "Place of martyrdom — Smyrna", "lat": 38.4237, "lng": 27.1428 }
+      {
+        "label": "Place of martyrdom — Smyrna",
+        "lat": 38.4237,
+        "lng": 27.1428
+      }
     ]
   },
   {
@@ -629,8 +997,16 @@
     "icon": "irenaeus-of-lyons.jpg",
     "bio": "Bishop of Lyons and student of Polycarp, whose writings against heresies shaped early Christian theology.",
     "locations": [
-      { "label": "Bishopric — Lyons", "lat": 45.764, "lng": 4.8357 },
-      { "label": "Formation under Polycarp — Smyrna", "lat": 38.4237, "lng": 27.1428 }
+      {
+        "label": "Bishopric — Lyons",
+        "lat": 45.764,
+        "lng": 4.8357
+      },
+      {
+        "label": "Formation under Polycarp — Smyrna",
+        "lat": 38.4237,
+        "lng": 27.1428
+      }
     ]
   },
   {
@@ -641,7 +1017,11 @@
     "icon": "cyprian-of-carthage.jpg",
     "bio": "Bishop of Carthage martyred under Emperor Valerian, celebrated for his writings on Church unity.",
     "locations": [
-      { "label": "Place of martyrdom — Carthage", "lat": 36.8531, "lng": 10.3236 }
+      {
+        "label": "Place of martyrdom — Carthage",
+        "lat": 36.8531,
+        "lng": 10.3236
+      }
     ]
   },
   {
@@ -652,8 +1032,16 @@
     "icon": "justin-martyr.jpg",
     "bio": "A pagan philosopher converted to Christianity who defended the faith in his writings before being martyred in Rome.",
     "locations": [
-      { "label": "Birthplace — Flavia Neapolis (Nablus)", "lat": 32.2211, "lng": 35.2544 },
-      { "label": "Place of martyrdom — Rome", "lat": 41.9028, "lng": 12.4964 }
+      {
+        "label": "Birthplace — Flavia Neapolis (Nablus)",
+        "lat": 32.2211,
+        "lng": 35.2544
+      },
+      {
+        "label": "Place of martyrdom — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      }
     ]
   },
   {
@@ -664,7 +1052,11 @@
     "icon": "lawrence-of-rome.jpg",
     "bio": "A deacon of Rome martyred on a gridiron for distributing the Church's wealth to the poor rather than surrendering it to the state.",
     "locations": [
-      { "label": "Place of martyrdom — Rome", "lat": 41.9028, "lng": 12.4964 }
+      {
+        "label": "Place of martyrdom — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      }
     ]
   },
   {
@@ -675,7 +1067,11 @@
     "icon": "sebastian-of-rome.jpg",
     "bio": "A Roman soldier martyred for aiding imprisoned Christians, shot with arrows and later clubbed to death.",
     "locations": [
-      { "label": "Place of martyrdom — Rome", "lat": 41.9028, "lng": 12.4964 }
+      {
+        "label": "Place of martyrdom — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      }
     ]
   },
   {
@@ -686,7 +1082,11 @@
     "icon": "agnes-of-rome.jpg",
     "bio": "A young Roman girl martyred for her consecrated virginity, venerated as a model of purity and courage.",
     "locations": [
-      { "label": "Place of martyrdom — Rome", "lat": 41.9028, "lng": 12.4964 }
+      {
+        "label": "Place of martyrdom — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      }
     ]
   },
   {
@@ -697,7 +1097,11 @@
     "icon": "cecilia-of-rome.jpg",
     "bio": "A Roman noblewoman martyred for her faith, traditionally venerated as patroness of church music.",
     "locations": [
-      { "label": "Place of martyrdom — Rome", "lat": 41.9028, "lng": 12.4964 }
+      {
+        "label": "Place of martyrdom — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      }
     ]
   },
   {
@@ -708,7 +1112,11 @@
     "icon": "valentine-of-rome.jpg",
     "bio": "A priest of Rome martyred under Claudius II for secretly marrying Christian couples and aiding persecuted believers.",
     "locations": [
-      { "label": "Place of martyrdom — Rome", "lat": 41.9028, "lng": 12.4964 }
+      {
+        "label": "Place of martyrdom — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      }
     ]
   },
   {
@@ -719,7 +1127,11 @@
     "icon": "pachomius-the-great.jpg",
     "bio": "An Egyptian monk who founded the first cenobitic monastery, organizing communal monastic life along the Nile.",
     "locations": [
-      { "label": "Monastery — Tabennisi, Egypt", "lat": 25.95, "lng": 32.7 }
+      {
+        "label": "Monastery — Tabennisi, Egypt",
+        "lat": 25.95,
+        "lng": 32.7
+      }
     ]
   },
   {
@@ -730,7 +1142,11 @@
     "icon": "paul-of-thebes.jpg",
     "bio": "Regarded as the first Christian hermit, who lived nearly a century alone in the Egyptian desert.",
     "locations": [
-      { "label": "Hermitage — Eastern Desert, Egypt", "lat": 26.5, "lng": 33.5 }
+      {
+        "label": "Hermitage — Eastern Desert, Egypt",
+        "lat": 26.5,
+        "lng": 33.5
+      }
     ]
   },
   {
@@ -741,8 +1157,16 @@
     "icon": "hilarion-the-great.jpg",
     "bio": "A disciple of Anthony the Great who brought monasticism from Egypt to Palestine.",
     "locations": [
-      { "label": "Birthplace — Gaza", "lat": 31.5017, "lng": 34.4668 },
-      { "label": "Discipleship under Anthony the Great — Eastern Desert, Egypt", "lat": 28.9236, "lng": 32.3608 }
+      {
+        "label": "Birthplace — Gaza",
+        "lat": 31.5017,
+        "lng": 34.4668
+      },
+      {
+        "label": "Discipleship under Anthony the Great — Eastern Desert, Egypt",
+        "lat": 28.9236,
+        "lng": 32.3608
+      }
     ]
   },
   {
@@ -753,7 +1177,11 @@
     "icon": "john-climacus.jpg",
     "bio": "Abbot of Sinai and author of 'The Ladder of Divine Ascent,' a foundational text of Orthodox spirituality.",
     "locations": [
-      { "label": "Monastery — Mount Sinai", "lat": 28.5392, "lng": 33.9734 }
+      {
+        "label": "Monastery — Mount Sinai",
+        "lat": 28.5392,
+        "lng": 33.9734
+      }
     ]
   },
   {
@@ -764,7 +1192,11 @@
     "icon": "gregory-of-sinai.jpg",
     "bio": "A monk who revived the practice of hesychasm and spread it among monasteries in Greece and the Balkans.",
     "locations": [
-      { "label": "Monastery — Mount Sinai", "lat": 28.5392, "lng": 33.9734 }
+      {
+        "label": "Monastery — Mount Sinai",
+        "lat": 28.5392,
+        "lng": 33.9734
+      }
     ]
   },
   {
@@ -775,7 +1207,11 @@
     "icon": "symeon-the-new-theologian.jpg",
     "bio": "A Byzantine monk and mystic whose writings on the vision of divine light influenced Orthodox spirituality.",
     "locations": [
-      { "label": "Monastery — Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Monastery — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -786,8 +1222,16 @@
     "icon": "maximus-the-confessor.jpg",
     "bio": "A monk and theologian who had his tongue and right hand cut off for defending Orthodox Christology, yet never wavered.",
     "locations": [
-      { "label": "Birthplace — Constantinople", "lat": 41.0082, "lng": 28.9784 },
-      { "label": "Place of exile — Lazica", "lat": 42.25, "lng": 41.6667 }
+      {
+        "label": "Birthplace — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      },
+      {
+        "label": "Place of exile — Lazica",
+        "lat": 42.25,
+        "lng": 41.6667
+      }
     ]
   },
   {
@@ -798,7 +1242,11 @@
     "icon": "theodore-the-studite.jpg",
     "bio": "Abbot of the Stoudios Monastery who defended the veneration of icons against iconoclast emperors.",
     "locations": [
-      { "label": "Monastery — Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Monastery — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -809,8 +1257,16 @@
     "icon": "john-of-damascus.jpg",
     "bio": "A monk and hymnographer of Mar Saba whose writings defended icons and systematized Orthodox theology.",
     "locations": [
-      { "label": "Birthplace — Damascus", "lat": 33.5138, "lng": 36.2765 },
-      { "label": "Monastery — Mar Saba, Judean Desert", "lat": 31.7133, "lng": 35.3608 }
+      {
+        "label": "Birthplace — Damascus",
+        "lat": 33.5138,
+        "lng": 36.2765
+      },
+      {
+        "label": "Monastery — Mar Saba, Judean Desert",
+        "lat": 31.7133,
+        "lng": 35.3608
+      }
     ]
   },
   {
@@ -821,7 +1277,11 @@
     "icon": "sophia-and-her-daughters.jpg",
     "bio": "A widow martyred in Rome alongside her three young daughters, Faith, Hope, and Love, for refusing to worship idols.",
     "locations": [
-      { "label": "Place of martyrdom — Rome", "lat": 41.9028, "lng": 12.4964 }
+      {
+        "label": "Place of martyrdom — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      }
     ]
   },
   {
@@ -832,7 +1292,11 @@
     "icon": "marina-the-great-martyr.jpg",
     "bio": "A young woman of Antioch in Pisidia tortured and beheaded for her faith, widely venerated across the Orthodox world.",
     "locations": [
-      { "label": "Place of martyrdom — Antioch of Pisidia", "lat": 38.3049, "lng": 31.1898 }
+      {
+        "label": "Place of martyrdom — Antioch of Pisidia",
+        "lat": 38.3049,
+        "lng": 31.1898
+      }
     ]
   },
   {
@@ -843,7 +1307,11 @@
     "icon": "euphemia-the-great-martyr.jpg",
     "bio": "A martyr of Chalcedon whose tomb miraculously confirmed the Orthodox faith at the Fourth Ecumenical Council.",
     "locations": [
-      { "label": "Place of martyrdom — Chalcedon", "lat": 40.9923, "lng": 29.0244 }
+      {
+        "label": "Place of martyrdom — Chalcedon",
+        "lat": 40.9923,
+        "lng": 29.0244
+      }
     ]
   },
   {
@@ -854,7 +1322,11 @@
     "icon": "paraskevi-of-rome.jpg",
     "bio": "A Roman virgin martyred for her faith, widely venerated as a healer, especially of eye ailments.",
     "locations": [
-      { "label": "Place of martyrdom — Rome", "lat": 41.9028, "lng": 12.4964 }
+      {
+        "label": "Place of martyrdom — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      }
     ]
   },
   {
@@ -865,7 +1337,11 @@
     "icon": "kyriaki-the-great-martyr.jpg",
     "bio": "A young woman of Nicomedia tortured extensively but preserved by God before dying peacefully in prayer.",
     "locations": [
-      { "label": "Place of martyrdom — Nicomedia", "lat": 40.7654, "lng": 29.9408 }
+      {
+        "label": "Place of martyrdom — Nicomedia",
+        "lat": 40.7654,
+        "lng": 29.9408
+      }
     ]
   },
   {
@@ -876,7 +1352,11 @@
     "icon": "irene-of-thessaloniki.jpg",
     "bio": "A young woman converted by St. Timothy and martyred for destroying her family's idols and preaching Christ.",
     "locations": [
-      { "label": "Place of martyrdom — Thessaloniki region", "lat": 40.6401, "lng": 22.9444 }
+      {
+        "label": "Place of martyrdom — Thessaloniki region",
+        "lat": 40.6401,
+        "lng": 22.9444
+      }
     ]
   },
   {
@@ -887,7 +1367,11 @@
     "icon": "menas-of-egypt.jpg",
     "bio": "An Egyptian soldier martyred for confessing Christ, whose shrine near Alexandria became a major pilgrimage site.",
     "locations": [
-      { "label": "Shrine — near Alexandria", "lat": 30.8514, "lng": 29.6572 }
+      {
+        "label": "Shrine — near Alexandria",
+        "lat": 30.8514,
+        "lng": 29.6572
+      }
     ]
   },
   {
@@ -898,7 +1382,11 @@
     "icon": "theodore-the-tyro.jpg",
     "bio": "A young Roman soldier burned to death for setting fire to a pagan temple, remembered for the miracle of kolyva.",
     "locations": [
-      { "label": "Place of martyrdom — Amasea", "lat": 40.65, "lng": 35.8333 }
+      {
+        "label": "Place of martyrdom — Amasea",
+        "lat": 40.65,
+        "lng": 35.8333
+      }
     ]
   },
   {
@@ -909,7 +1397,11 @@
     "icon": "theodore-stratelates.jpg",
     "bio": "A military commander of Heraclea Pontica beheaded for his faith after destroying an idol of Artemis.",
     "locations": [
-      { "label": "Place of martyrdom — Heraclea Pontica", "lat": 41.2803, "lng": 31.4067 }
+      {
+        "label": "Place of martyrdom — Heraclea Pontica",
+        "lat": 41.2803,
+        "lng": 31.4067
+      }
     ]
   },
   {
@@ -920,7 +1412,11 @@
     "icon": "artemios-of-antioch.jpg",
     "bio": "A Roman general martyred under Emperor Julian the Apostate for protesting the persecution of Christians.",
     "locations": [
-      { "label": "Place of martyrdom — Antioch", "lat": 36.2021, "lng": 36.1603 }
+      {
+        "label": "Place of martyrdom — Antioch",
+        "lat": 36.2021,
+        "lng": 36.1603
+      }
     ]
   },
   {
@@ -931,7 +1427,11 @@
     "icon": "mercurius-of-caesarea.jpg",
     "bio": "A Roman soldier martyred for his faith, later venerated for miraculously striking down Julian the Apostate.",
     "locations": [
-      { "label": "Place of martyrdom — Caesarea Cappadocia", "lat": 38.7312, "lng": 35.4787 }
+      {
+        "label": "Place of martyrdom — Caesarea Cappadocia",
+        "lat": 38.7312,
+        "lng": 35.4787
+      }
     ]
   },
   {
@@ -942,7 +1442,11 @@
     "icon": "eustratius-of-sebaste.jpg",
     "bio": "One of the Five Martyrs of Sebaste, a military officer burned alive for his unwavering confession of Christ.",
     "locations": [
-      { "label": "Place of martyrdom — Sebaste", "lat": 39.7477, "lng": 37.0179 }
+      {
+        "label": "Place of martyrdom — Sebaste",
+        "lat": 39.7477,
+        "lng": 37.0179
+      }
     ]
   },
   {
@@ -953,7 +1457,11 @@
     "icon": "forty-martyrs-of-sebaste.jpg",
     "bio": "Forty Roman soldiers who froze to death on a lake for refusing to renounce Christianity, encouraging one another to the end.",
     "locations": [
-      { "label": "Place of martyrdom — Sebaste", "lat": 39.7477, "lng": 37.0179 }
+      {
+        "label": "Place of martyrdom — Sebaste",
+        "lat": 39.7477,
+        "lng": 37.0179
+      }
     ]
   },
   {
@@ -964,7 +1472,11 @@
     "icon": "acacius-of-sinai.jpg",
     "bio": "A monk celebrated by St. John Climacus for his perfect obedience even after death.",
     "locations": [
-      { "label": "Monastery — Mount Sinai", "lat": 28.5392, "lng": 33.9734 }
+      {
+        "label": "Monastery — Mount Sinai",
+        "lat": 28.5392,
+        "lng": 33.9734
+      }
     ]
   },
   {
@@ -975,8 +1487,16 @@
     "icon": "mary-magdalene.jpg",
     "bio": "A devoted follower of Christ, first witness of His Resurrection, later a missionary who reposed in Ephesus.",
     "locations": [
-      { "label": "Home — Magdala", "lat": 32.8214, "lng": 35.5133 },
-      { "label": "Reposed — Ephesus", "lat": 37.9407, "lng": 27.343 }
+      {
+        "label": "Home — Magdala",
+        "lat": 32.8214,
+        "lng": 35.5133
+      },
+      {
+        "label": "Reposed — Ephesus",
+        "lat": 37.9407,
+        "lng": 27.343
+      }
     ]
   },
   {
@@ -987,8 +1507,16 @@
     "icon": "lazarus-of-bethany.jpg",
     "bio": "Friend of Christ raised from the dead after four days, who later served as bishop of Kition in Cyprus.",
     "locations": [
-      { "label": "Home — Bethany", "lat": 31.7719, "lng": 35.2556 },
-      { "label": "Bishopric — Kition, Cyprus", "lat": 34.9167, "lng": 33.6333 }
+      {
+        "label": "Home — Bethany",
+        "lat": 31.7719,
+        "lng": 35.2556
+      },
+      {
+        "label": "Bishopric — Kition, Cyprus",
+        "lat": 34.9167,
+        "lng": 33.6333
+      }
     ]
   },
   {
@@ -999,8 +1527,16 @@
     "icon": "joseph-of-arimathea.jpg",
     "bio": "A secret disciple of Christ who donated his own tomb for the Lord's burial after the Crucifixion.",
     "locations": [
-      { "label": "Home — Arimathea", "lat": 31.9833, "lng": 34.9333 },
-      { "label": "Donated tomb for Christ's burial — Jerusalem", "lat": 31.7683, "lng": 35.2137 }
+      {
+        "label": "Home — Arimathea",
+        "lat": 31.9833,
+        "lng": 34.9333
+      },
+      {
+        "label": "Donated tomb for Christ's burial — Jerusalem",
+        "lat": 31.7683,
+        "lng": 35.2137
+      }
     ]
   },
   {
@@ -1011,7 +1547,11 @@
     "icon": "nicodemus-the-pharisee.jpg",
     "bio": "A Pharisee who visited Christ by night and later helped prepare His body for burial.",
     "locations": [
-      { "label": "Home — Jerusalem", "lat": 31.7683, "lng": 35.2137 }
+      {
+        "label": "Home — Jerusalem",
+        "lat": 31.7683,
+        "lng": 35.2137
+      }
     ]
   },
   {
@@ -1022,8 +1562,16 @@
     "icon": "apostle-thomas.jpg",
     "bio": "One of the Twelve Apostles, who doubted the Resurrection until he touched Christ's wounds, later evangelized India.",
     "locations": [
-      { "label": "Doubted the Resurrection — Jerusalem", "lat": 31.7683, "lng": 35.2137 },
-      { "label": "Place of martyrdom — Mylapore, India", "lat": 13.0343, "lng": 80.2698 }
+      {
+        "label": "Doubted the Resurrection — Jerusalem",
+        "lat": 31.7683,
+        "lng": 35.2137
+      },
+      {
+        "label": "Place of martyrdom — Mylapore, India",
+        "lat": 13.0343,
+        "lng": 80.2698
+      }
     ]
   },
   {
@@ -1034,7 +1582,11 @@
     "icon": "apostle-bartholomew.jpg",
     "bio": "One of the Twelve Apostles who preached in Armenia, where he was martyred by flaying.",
     "locations": [
-      { "label": "Place of martyrdom — Albac, Armenia", "lat": 38.75, "lng": 44.5 }
+      {
+        "label": "Place of martyrdom — Albac, Armenia",
+        "lat": 38.75,
+        "lng": 44.5
+      }
     ]
   },
   {
@@ -1045,8 +1597,16 @@
     "icon": "apostle-philip.jpg",
     "bio": "One of the Twelve Apostles who brought Nathanael to Christ and was later martyred in Hierapolis.",
     "locations": [
-      { "label": "Birthplace — Bethsaida", "lat": 32.8828, "lng": 35.6267 },
-      { "label": "Place of martyrdom — Hierapolis", "lat": 37.9242, "lng": 29.1245 }
+      {
+        "label": "Birthplace — Bethsaida",
+        "lat": 32.8828,
+        "lng": 35.6267
+      },
+      {
+        "label": "Place of martyrdom — Hierapolis",
+        "lat": 37.9242,
+        "lng": 29.1245
+      }
     ]
   },
   {
@@ -1057,7 +1617,11 @@
     "icon": "apostle-matthew.jpg",
     "bio": "A former tax collector called by Christ to be an Apostle, author of the first Gospel.",
     "locations": [
-      { "label": "Place of ministry — Capernaum", "lat": 32.8797, "lng": 35.5753 }
+      {
+        "label": "Place of ministry — Capernaum",
+        "lat": 32.8797,
+        "lng": 35.5753
+      }
     ]
   },
   {
@@ -1068,7 +1632,11 @@
     "icon": "apostle-james-son-of-zebedee.jpg",
     "bio": "Brother of John the Theologian and one of the Twelve, the first Apostle to be martyred, beheaded in Jerusalem.",
     "locations": [
-      { "label": "Place of martyrdom — Jerusalem", "lat": 31.7683, "lng": 35.2137 }
+      {
+        "label": "Place of martyrdom — Jerusalem",
+        "lat": 31.7683,
+        "lng": 35.2137
+      }
     ]
   },
   {
@@ -1079,8 +1647,16 @@
     "icon": "apostle-andrew.jpg",
     "bio": "Brother of Peter and the first disciple called by Christ, later crucified on an X-shaped cross in Patras.",
     "locations": [
-      { "label": "Birthplace — Bethsaida", "lat": 32.8828, "lng": 35.6267 },
-      { "label": "Place of martyrdom — Patras", "lat": 38.2466, "lng": 21.7346 }
+      {
+        "label": "Birthplace — Bethsaida",
+        "lat": 32.8828,
+        "lng": 35.6267
+      },
+      {
+        "label": "Place of martyrdom — Patras",
+        "lat": 38.2466,
+        "lng": 21.7346
+      }
     ]
   },
   {
@@ -1091,8 +1667,16 @@
     "icon": "apostle-peter.jpg",
     "bio": "A fisherman called by Christ who became the foremost of the Apostles, martyred by crucifixion upside down in Rome.",
     "locations": [
-      { "label": "Birthplace — Bethsaida", "lat": 32.8828, "lng": 35.6267 },
-      { "label": "Place of martyrdom — Rome", "lat": 41.9028, "lng": 12.4964 }
+      {
+        "label": "Birthplace — Bethsaida",
+        "lat": 32.8828,
+        "lng": 35.6267
+      },
+      {
+        "label": "Place of martyrdom — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      }
     ]
   },
   {
@@ -1103,8 +1687,16 @@
     "icon": "apostle-paul.jpg",
     "bio": "Former persecutor of Christians converted on the road to Damascus, becoming the great Apostle to the Gentiles.",
     "locations": [
-      { "label": "Birthplace — Tarsus", "lat": 36.9161, "lng": 34.8958 },
-      { "label": "Place of martyrdom — Rome", "lat": 41.9028, "lng": 12.4964 }
+      {
+        "label": "Birthplace — Tarsus",
+        "lat": 36.9161,
+        "lng": 34.8958
+      },
+      {
+        "label": "Place of martyrdom — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      }
     ]
   },
   {
@@ -1115,7 +1707,11 @@
     "icon": "apostle-luke.jpg",
     "bio": "A physician and companion of Paul who wrote the Gospel of Luke and the Acts of the Apostles.",
     "locations": [
-      { "label": "Birthplace — Antioch", "lat": 36.2021, "lng": 36.1603 }
+      {
+        "label": "Birthplace — Antioch",
+        "lat": 36.2021,
+        "lng": 36.1603
+      }
     ]
   },
   {
@@ -1126,7 +1722,11 @@
     "icon": "apostle-mark.jpg",
     "bio": "Author of the Gospel of Mark and founder of the Church of Alexandria, martyred by being dragged through the streets.",
     "locations": [
-      { "label": "Place of martyrdom — Alexandria", "lat": 31.2001, "lng": 29.9187 }
+      {
+        "label": "Place of martyrdom — Alexandria",
+        "lat": 31.2001,
+        "lng": 29.9187
+      }
     ]
   },
   {
@@ -1137,7 +1737,11 @@
     "icon": "stephen-the-protomartyr.jpg",
     "bio": "The first of the seven deacons and the first Christian martyr, stoned to death in Jerusalem.",
     "locations": [
-      { "label": "Place of martyrdom — Jerusalem", "lat": 31.7683, "lng": 35.2137 }
+      {
+        "label": "Place of martyrdom — Jerusalem",
+        "lat": 31.7683,
+        "lng": 35.2137
+      }
     ]
   },
   {
@@ -1148,7 +1752,11 @@
     "icon": "cornelius-the-centurion.jpg",
     "bio": "A Roman centurion in Caesarea who became the first Gentile convert baptized by the Apostle Peter.",
     "locations": [
-      { "label": "Home — Caesarea Maritima", "lat": 32.5, "lng": 34.9 }
+      {
+        "label": "Home — Caesarea Maritima",
+        "lat": 32.5,
+        "lng": 34.9
+      }
     ]
   },
   {
@@ -1159,7 +1767,11 @@
     "icon": "helen-equal-to-the-apostles.jpg",
     "bio": "Mother of Emperor Constantine who discovered the True Cross in Jerusalem and built many churches.",
     "locations": [
-      { "label": "Discovery of the Cross — Jerusalem", "lat": 31.7683, "lng": 35.2137 }
+      {
+        "label": "Discovery of the Cross — Jerusalem",
+        "lat": 31.7683,
+        "lng": 35.2137
+      }
     ]
   },
   {
@@ -1170,7 +1782,11 @@
     "icon": "constantine-equal-to-the-apostles.jpg",
     "bio": "The first Christian Roman Emperor, who legalized Christianity and founded Constantinople as the new capital.",
     "locations": [
-      { "label": "Founded — Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Founded — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -1181,7 +1797,11 @@
     "icon": "vladimir-of-kiev.jpg",
     "bio": "Grand Prince of Kiev who converted from paganism and brought Christianity to the Rus' people.",
     "locations": [
-      { "label": "Baptism of Rus' — Kiev", "lat": 50.4501, "lng": 30.5234 }
+      {
+        "label": "Baptism of Rus' — Kiev",
+        "lat": 50.4501,
+        "lng": 30.5234
+      }
     ]
   },
   {
@@ -1192,7 +1812,11 @@
     "icon": "olga-of-kiev.jpg",
     "bio": "Grandmother of St. Vladimir and the first ruler of Rus' to embrace Christianity, laying the groundwork for its spread.",
     "locations": [
-      { "label": "Reign — Kiev", "lat": 50.4501, "lng": 30.5234 }
+      {
+        "label": "Reign — Kiev",
+        "lat": 50.4501,
+        "lng": 30.5234
+      }
     ]
   },
   {
@@ -1203,8 +1827,16 @@
     "icon": "cyril-and-methodius.jpg",
     "bio": "Brothers from Thessaloniki who created the Slavic alphabet and translated Scripture, evangelizing the Slavic peoples.",
     "locations": [
-      { "label": "Birthplace — Thessaloniki", "lat": 40.6401, "lng": 22.9444 },
-      { "label": "Mission — Great Moravia", "lat": 49.05, "lng": 17.4 }
+      {
+        "label": "Birthplace — Thessaloniki",
+        "lat": 40.6401,
+        "lng": 22.9444
+      },
+      {
+        "label": "Mission — Great Moravia",
+        "lat": 49.05,
+        "lng": 17.4
+      }
     ]
   },
   {
@@ -1215,7 +1847,11 @@
     "icon": "patrick-of-ireland.jpg",
     "bio": "A Romano-British missionary who brought Christianity to Ireland after years of captivity there as a youth.",
     "locations": [
-      { "label": "Mission — Ireland", "lat": 53.4129, "lng": -8.2439 }
+      {
+        "label": "Mission — Ireland",
+        "lat": 53.4129,
+        "lng": -8.2439
+      }
     ]
   },
   {
@@ -1226,7 +1862,11 @@
     "icon": "sergius-of-radonezh.jpg",
     "bio": "Founder of the Holy Trinity Monastery near Moscow, one of the most beloved monastic saints of Russia.",
     "locations": [
-      { "label": "Monastery — Sergiyev Posad", "lat": 56.3106, "lng": 38.133 }
+      {
+        "label": "Monastery — Sergiyev Posad",
+        "lat": 56.3106,
+        "lng": 38.133
+      }
     ]
   },
   {
@@ -1237,7 +1877,11 @@
     "icon": "seraphim-of-vyritsa.jpg",
     "bio": "A successful merchant who became a monk and elder, known for prayer and prophecy during Soviet persecution.",
     "locations": [
-      { "label": "Monastic life — Vyritsa, Russia", "lat": 59.4083, "lng": 30.3167 }
+      {
+        "label": "Monastic life — Vyritsa, Russia",
+        "lat": 59.4083,
+        "lng": 30.3167
+      }
     ]
   },
   {
@@ -1248,7 +1892,11 @@
     "icon": "xenia-of-petersburg.jpg",
     "bio": "A widow who gave away all her possessions and lived as a homeless fool-for-Christ, beloved for her clairvoyance and charity.",
     "locations": [
-      { "label": "Ascetic life — St. Petersburg", "lat": 59.9311, "lng": 30.3609 }
+      {
+        "label": "Ascetic life — St. Petersburg",
+        "lat": 59.9311,
+        "lng": 30.3609
+      }
     ]
   },
   {
@@ -1259,7 +1907,11 @@
     "icon": "john-of-kronstadt.jpg",
     "bio": "A married parish priest renowned for his fervent liturgical life, healings, and care for the poor of Kronstadt.",
     "locations": [
-      { "label": "Ministry — Kronstadt, Russia", "lat": 59.9911, "lng": 29.7728 }
+      {
+        "label": "Ministry — Kronstadt, Russia",
+        "lat": 59.9911,
+        "lng": 29.7728
+      }
     ]
   },
   {
@@ -1270,7 +1922,11 @@
     "icon": "tikhon-of-moscow.jpg",
     "bio": "Patriarch of Moscow during the Bolshevik Revolution, who steadfastly guided the Church through severe persecution.",
     "locations": [
-      { "label": "Patriarchate — Moscow", "lat": 55.7558, "lng": 37.6173 }
+      {
+        "label": "Patriarchate — Moscow",
+        "lat": 55.7558,
+        "lng": 37.6173
+      }
     ]
   },
   {
@@ -1281,7 +1937,11 @@
     "icon": "nikolai-velimirovic.jpg",
     "bio": "Serbian bishop, theologian, and prisoner at Dachau, celebrated for his writings and pastoral zeal.",
     "locations": [
-      { "label": "Bishopric — Ohrid, Serbia", "lat": 41.1231, "lng": 20.8016 }
+      {
+        "label": "Bishopric — Ohrid, Serbia",
+        "lat": 41.1231,
+        "lng": 20.8016
+      }
     ]
   },
   {
@@ -1292,7 +1952,11 @@
     "icon": "sava-of-serbia.jpg",
     "bio": "First Archbishop of the autocephalous Serbian Church and founder of Hilandar Monastery on Mount Athos.",
     "locations": [
-      { "label": "Monastery — Hilandar, Mount Athos", "lat": 40.2667, "lng": 24.2167 }
+      {
+        "label": "Monastery — Hilandar, Mount Athos",
+        "lat": 40.2667,
+        "lng": 24.2167
+      }
     ]
   },
   {
@@ -1303,7 +1967,11 @@
     "icon": "simeon-the-myrrh-gusher.jpg",
     "bio": "Founder of the Serbian medieval state who became a monk in old age, his relics later streamed myrrh.",
     "locations": [
-      { "label": "Monastery — Hilandar, Mount Athos", "lat": 40.2667, "lng": 24.2167 }
+      {
+        "label": "Monastery — Hilandar, Mount Athos",
+        "lat": 40.2667,
+        "lng": 24.2167
+      }
     ]
   },
   {
@@ -1314,7 +1982,11 @@
     "icon": "john-of-rila.jpg",
     "bio": "Bulgaria's patron saint, a hermit whose cave and later monastery became the spiritual heart of Bulgarian monasticism.",
     "locations": [
-      { "label": "Hermitage — Rila Mountains, Bulgaria", "lat": 42.1333, "lng": 23.3417 }
+      {
+        "label": "Hermitage — Rila Mountains, Bulgaria",
+        "lat": 42.1333,
+        "lng": 23.3417
+      }
     ]
   },
   {
@@ -1325,7 +1997,11 @@
     "icon": "joasaph-of-belgorod.jpg",
     "bio": "An 18th-century Russian bishop renowned for his ascetic life, care for the poor, and incorrupt relics.",
     "locations": [
-      { "label": "Bishopric — Belgorod, Russia", "lat": 50.5997, "lng": 36.5983 }
+      {
+        "label": "Bishopric — Belgorod, Russia",
+        "lat": 50.5997,
+        "lng": 36.5983
+      }
     ]
   },
   {
@@ -1336,7 +2012,11 @@
     "icon": "innocent-of-alaska.jpg",
     "bio": "A missionary priest and later Metropolitan of Moscow who evangelized Alaska and the peoples of the Russian Far East.",
     "locations": [
-      { "label": "Mission — Unalaska, Alaska", "lat": 53.8734, "lng": -166.5347 }
+      {
+        "label": "Mission — Unalaska, Alaska",
+        "lat": 53.8734,
+        "lng": -166.5347
+      }
     ]
   },
   {
@@ -1347,7 +2027,11 @@
     "icon": "herman-of-alaska.jpg",
     "bio": "A Russian monk missionary to Alaska who defended the native Aleut people and lived in ascetic simplicity on Spruce Island.",
     "locations": [
-      { "label": "Hermitage — Spruce Island, Alaska", "lat": 57.8167, "lng": -152.3833 }
+      {
+        "label": "Hermitage — Spruce Island, Alaska",
+        "lat": 57.8167,
+        "lng": -152.3833
+      }
     ]
   },
   {
@@ -1358,7 +2042,11 @@
     "icon": "raphael-of-brooklyn.jpg",
     "bio": "The first Orthodox bishop consecrated in North America, serving Arab Orthodox immigrants across the continent.",
     "locations": [
-      { "label": "Ministry — Brooklyn, New York", "lat": 40.6782, "lng": -73.9442 }
+      {
+        "label": "Ministry — Brooklyn, New York",
+        "lat": 40.6782,
+        "lng": -73.9442
+      }
     ]
   },
   {
@@ -1369,7 +2057,11 @@
     "icon": "alexis-toth.jpg",
     "bio": "A priest who led the return of many Carpatho-Rusyn parishes in America to Orthodoxy, called the 'Father of the Orthodox Church in America.'",
     "locations": [
-      { "label": "Ministry — Minneapolis, USA", "lat": 44.9778, "lng": -93.265 }
+      {
+        "label": "Ministry — Minneapolis, USA",
+        "lat": 44.9778,
+        "lng": -93.265
+      }
     ]
   },
   {
@@ -1380,7 +2072,11 @@
     "icon": "luke-of-crimea.jpg",
     "bio": "A surgeon and archbishop who continued practicing medicine and healing the sick even through Soviet imprisonment and exile.",
     "locations": [
-      { "label": "Bishopric — Simferopol, Crimea", "lat": 44.9521, "lng": 34.1024 }
+      {
+        "label": "Bishopric — Simferopol, Crimea",
+        "lat": 44.9521,
+        "lng": 34.1024
+      }
     ]
   },
   {
@@ -1391,7 +2087,11 @@
     "icon": "matrona-of-moscow.jpg",
     "bio": "A blind and paralyzed woman renowned for her prophetic gifts and healings during some of Russia's darkest years.",
     "locations": [
-      { "label": "Ascetic life — Moscow", "lat": 55.7558, "lng": 37.6173 }
+      {
+        "label": "Ascetic life — Moscow",
+        "lat": 55.7558,
+        "lng": 37.6173
+      }
     ]
   },
   {
@@ -1402,7 +2102,11 @@
     "icon": "anthony-of-kiev-caves.jpg",
     "bio": "Founder of the Kiev Caves Lavra, bringing the monastic tradition of Mount Athos to the Rus' lands.",
     "locations": [
-      { "label": "Monastery — Kiev Caves Lavra", "lat": 50.431, "lng": 30.558 }
+      {
+        "label": "Monastery — Kiev Caves Lavra",
+        "lat": 50.431,
+        "lng": 30.558
+      }
     ]
   },
   {
@@ -1413,7 +2117,11 @@
     "icon": "theodosius-of-kiev-caves.jpg",
     "bio": "Co-founder of the Kiev Caves Lavra known for his humility, hospitality, and organization of communal monastic life.",
     "locations": [
-      { "label": "Monastery — Kiev Caves Lavra", "lat": 50.431, "lng": 30.558 }
+      {
+        "label": "Monastery — Kiev Caves Lavra",
+        "lat": 50.431,
+        "lng": 30.558
+      }
     ]
   },
   {
@@ -1424,7 +2132,11 @@
     "icon": "gregory-of-nyssa.jpg",
     "bio": "Bishop of Nyssa and one of the Cappadocian Fathers, celebrated for his mystical theology and defense of Nicene doctrine.",
     "locations": [
-      { "label": "Bishopric — Nyssa, Cappadocia", "lat": 38.5556, "lng": 34.7139 }
+      {
+        "label": "Bishopric — Nyssa, Cappadocia",
+        "lat": 38.5556,
+        "lng": 34.7139
+      }
     ]
   },
   {
@@ -1435,7 +2147,11 @@
     "icon": "epiphanius-of-cyprus.jpg",
     "bio": "Bishop of Salamis in Cyprus, a staunch defender of Orthodoxy against heresies of his time.",
     "locations": [
-      { "label": "Bishopric — Salamis, Cyprus", "lat": 35.1856, "lng": 33.9385 }
+      {
+        "label": "Bishopric — Salamis, Cyprus",
+        "lat": 35.1856,
+        "lng": 33.9385
+      }
     ]
   },
   {
@@ -1446,7 +2162,11 @@
     "icon": "nicholas-planas.jpg",
     "bio": "A humble Athenian parish priest of the 19th–20th century renowned for his tireless liturgical devotion and simplicity.",
     "locations": [
-      { "label": "Ministry — Athens", "lat": 37.9838, "lng": 23.7275 }
+      {
+        "label": "Ministry — Athens",
+        "lat": 37.9838,
+        "lng": 23.7275
+      }
     ]
   },
   {
@@ -1457,7 +2177,11 @@
     "icon": "arsenios-of-paros.jpg",
     "bio": "A monk and spiritual father on the island of Paros known for his gift of foresight and healing.",
     "locations": [
-      { "label": "Monastic life — Paros", "lat": 37.0853, "lng": 25.1522 }
+      {
+        "label": "Monastic life — Paros",
+        "lat": 37.0853,
+        "lng": 25.1522
+      }
     ]
   },
   {
@@ -1468,7 +2192,11 @@
     "icon": "savvas-the-new-of-kalymnos.jpg",
     "bio": "A monk of Kalymnos in the 19th century known for his extreme asceticism and care for the sick.",
     "locations": [
-      { "label": "Monastic life — Kalymnos", "lat": 36.9481, "lng": 26.9836 }
+      {
+        "label": "Monastic life — Kalymnos",
+        "lat": 36.9481,
+        "lng": 26.9836
+      }
     ]
   },
   {
@@ -1479,7 +2207,11 @@
     "icon": "raphael-nicholas-and-irene.jpg",
     "bio": "A priest, a layman, and a young girl martyred by Ottoman raiders on Lesvos, whose relics were revealed in the 20th century.",
     "locations": [
-      { "label": "Place of martyrdom — Lesvos", "lat": 39.1097, "lng": 26.5537 }
+      {
+        "label": "Place of martyrdom — Lesvos",
+        "lat": 39.1097,
+        "lng": 26.5537
+      }
     ]
   },
   {
@@ -1490,7 +2222,11 @@
     "icon": "efraim-of-nea-makri.jpg",
     "bio": "A monk martyred by Ottoman forces in the 15th century, whose relics were revealed near Athens in the 20th century.",
     "locations": [
-      { "label": "Monastery — Nea Makri, Attica", "lat": 38.0961, "lng": 24.0136 }
+      {
+        "label": "Monastery — Nea Makri, Attica",
+        "lat": 38.0961,
+        "lng": 24.0136
+      }
     ]
   },
   {
@@ -1501,7 +2237,11 @@
     "icon": "george-of-ioannina.jpg",
     "bio": "A young Christian craftsman martyred in Ottoman-ruled Ioannina after refusing to convert to Islam.",
     "locations": [
-      { "label": "Place of martyrdom — Ioannina", "lat": 39.665, "lng": 20.8537 }
+      {
+        "label": "Place of martyrdom — Ioannina",
+        "lat": 39.665,
+        "lng": 20.8537
+      }
     ]
   },
   {
@@ -1512,7 +2252,11 @@
     "icon": "nikodemos-the-hagiorite.jpg",
     "bio": "A monk of Mount Athos and prolific author who compiled the Philokalia, shaping modern Orthodox spirituality.",
     "locations": [
-      { "label": "Monastic life — Mount Athos", "lat": 40.1568, "lng": 24.3264 }
+      {
+        "label": "Monastic life — Mount Athos",
+        "lat": 40.1568,
+        "lng": 24.3264
+      }
     ]
   },
   {
@@ -1523,7 +2267,11 @@
     "icon": "silouan-the-athonite.jpg",
     "bio": "A Russian monk of Mount Athos known for his profound humility and the teaching 'keep your mind in hell and despair not.'",
     "locations": [
-      { "label": "Monastery — St. Panteleimon, Mount Athos", "lat": 40.2333, "lng": 24.2 }
+      {
+        "label": "Monastery — St. Panteleimon, Mount Athos",
+        "lat": 40.2333,
+        "lng": 24.2
+      }
     ]
   },
   {
@@ -1534,7 +2282,11 @@
     "icon": "joseph-the-hesychast.jpg",
     "bio": "A 20th-century Athonite elder whose disciples revitalized many monasteries of Mount Athos.",
     "locations": [
-      { "label": "Monastic life — Mount Athos", "lat": 40.1568, "lng": 24.3264 }
+      {
+        "label": "Monastic life — Mount Athos",
+        "lat": 40.1568,
+        "lng": 24.3264
+      }
     ]
   },
   {
@@ -1545,7 +2297,11 @@
     "icon": "amphilochios-of-patmos.jpg",
     "bio": "Abbot of the Monastery of St. John on Patmos, known for his love of nature and gift of spiritual counsel.",
     "locations": [
-      { "label": "Monastery — Patmos", "lat": 37.3086, "lng": 26.5459 }
+      {
+        "label": "Monastery — Patmos",
+        "lat": 37.3086,
+        "lng": 26.5459
+      }
     ]
   },
   {
@@ -1556,7 +2312,11 @@
     "icon": "iakovos-tsalikis.jpg",
     "bio": "Abbot of Saint David Monastery in Euboea, revered in modern Greece for his humility and visions of saints.",
     "locations": [
-      { "label": "Monastery — Evia (Euboea)", "lat": 38.9, "lng": 23.6 }
+      {
+        "label": "Monastery — Evia (Euboea)",
+        "lat": 38.9,
+        "lng": 23.6
+      }
     ]
   },
   {
@@ -1567,7 +2327,11 @@
     "icon": "dionysios-of-olympus.jpg",
     "bio": "A hermit and founder of a monastery on Mount Olympus, celebrated for his austere life of prayer.",
     "locations": [
-      { "label": "Monastery — Mount Olympus", "lat": 40.0855, "lng": 22.3586 }
+      {
+        "label": "Monastery — Mount Olympus",
+        "lat": 40.0855,
+        "lng": 22.3586
+      }
     ]
   },
   {
@@ -1578,7 +2342,11 @@
     "icon": "gerasimos-the-new-ascetic.jpg",
     "bio": "A 5th-century abbot near the Jordan River famed for taming a lion that became his devoted companion.",
     "locations": [
-      { "label": "Monastery — near the Jordan River", "lat": 31.8394, "lng": 35.5451 }
+      {
+        "label": "Monastery — near the Jordan River",
+        "lat": 31.8394,
+        "lng": 35.5451
+      }
     ]
   },
   {
@@ -1589,7 +2357,11 @@
     "icon": "onuphrius-the-great.jpg",
     "bio": "A hermit who spent seventy years alone in the Egyptian desert in extreme asceticism and prayer.",
     "locations": [
-      { "label": "Hermitage — Egyptian desert", "lat": 26.5, "lng": 32.0 }
+      {
+        "label": "Hermitage — Egyptian desert",
+        "lat": 26.5,
+        "lng": 32.0
+      }
     ]
   },
   {
@@ -1600,7 +2372,11 @@
     "icon": "mary-of-bethany-martha.jpg",
     "bio": "Sisters of Lazarus who hosted Christ in their home in Bethany, models of hospitality and devotion.",
     "locations": [
-      { "label": "Home — Bethany", "lat": 31.7719, "lng": 35.2556 }
+      {
+        "label": "Home — Bethany",
+        "lat": 31.7719,
+        "lng": 35.2556
+      }
     ]
   },
   {
@@ -1611,7 +2387,11 @@
     "icon": "veronica-bernice.jpg",
     "bio": "Venerated in tradition as the woman healed of a hemorrhage by touching Christ's garment.",
     "locations": [
-      { "label": "Home — Caesarea Philippi", "lat": 33.2481, "lng": 35.6942 }
+      {
+        "label": "Home — Caesarea Philippi",
+        "lat": 33.2481,
+        "lng": 35.6942
+      }
     ]
   },
   {
@@ -1622,7 +2402,11 @@
     "icon": "the-myrrhbearing-women.jpg",
     "bio": "The women disciples who came to anoint Christ's body and were the first to learn of His Resurrection.",
     "locations": [
-      { "label": "The empty tomb — Jerusalem", "lat": 31.7784, "lng": 35.2298 }
+      {
+        "label": "The empty tomb — Jerusalem",
+        "lat": 31.7784,
+        "lng": 35.2298
+      }
     ]
   },
   {
@@ -1633,7 +2417,11 @@
     "icon": "hermione-of-ephesus.jpg",
     "bio": "Daughter of the Apostle Philip who had the gift of healing and was martyred under Emperor Trajan.",
     "locations": [
-      { "label": "Place of martyrdom — Ephesus", "lat": 37.9407, "lng": 27.343 }
+      {
+        "label": "Place of martyrdom — Ephesus",
+        "lat": 37.9407,
+        "lng": 27.343
+      }
     ]
   },
   {
@@ -1644,7 +2432,11 @@
     "icon": "zenobius-and-zenobia.jpg",
     "bio": "A physician bishop and his sister martyred together in Cilicia under Diocletian's persecution.",
     "locations": [
-      { "label": "Place of martyrdom — Aegae, Cilicia", "lat": 36.75, "lng": 35.8 }
+      {
+        "label": "Place of martyrdom — Aegae, Cilicia",
+        "lat": 36.75,
+        "lng": 35.8
+      }
     ]
   },
   {
@@ -1655,7 +2447,11 @@
     "icon": "cyrus-and-john-unmercenaries.jpg",
     "bio": "A physician and a soldier who healed the sick without payment and were martyred together in Egypt.",
     "locations": [
-      { "label": "Place of martyrdom — Canopus, Egypt", "lat": 31.3, "lng": 30.0833 }
+      {
+        "label": "Place of martyrdom — Canopus, Egypt",
+        "lat": 31.3,
+        "lng": 30.0833
+      }
     ]
   },
   {
@@ -1666,7 +2462,11 @@
     "icon": "cosmas-and-damian-unmercenaries.jpg",
     "bio": "Twin brothers and physicians in Asia Minor who healed the sick free of charge before their martyrdom.",
     "locations": [
-      { "label": "Place of ministry — Cilicia", "lat": 36.9161, "lng": 34.8958 }
+      {
+        "label": "Place of ministry — Cilicia",
+        "lat": 36.9161,
+        "lng": 34.8958
+      }
     ]
   },
   {
@@ -1677,7 +2477,11 @@
     "icon": "panteleimon-companions.jpg",
     "bio": "A priest who instructed St. Panteleimon in the faith and was martyred alongside two companions in Nicomedia.",
     "locations": [
-      { "label": "Place of martyrdom — Nicomedia", "lat": 40.7654, "lng": 29.9408 }
+      {
+        "label": "Place of martyrdom — Nicomedia",
+        "lat": 40.7654,
+        "lng": 29.9408
+      }
     ]
   },
   {
@@ -1688,7 +2492,11 @@
     "icon": "tryphon-of-campsada.jpg",
     "bio": "A young goose-herder martyred under Emperor Decius, later venerated as protector of crops and vineyards.",
     "locations": [
-      { "label": "Place of martyrdom — Nicaea", "lat": 40.4272, "lng": 29.7211 }
+      {
+        "label": "Place of martyrdom — Nicaea",
+        "lat": 40.4272,
+        "lng": 29.7211
+      }
     ]
   },
   {
@@ -1699,7 +2507,11 @@
     "icon": "haralambos-companions.jpg",
     "bio": "Roman soldiers converted and martyred alongside St. Charalambos after witnessing his miraculous endurance.",
     "locations": [
-      { "label": "Place of martyrdom — Magnesia", "lat": 38.6858, "lng": 22.42 }
+      {
+        "label": "Place of martyrdom — Magnesia",
+        "lat": 38.6858,
+        "lng": 22.42
+      }
     ]
   },
   {
@@ -1710,7 +2522,11 @@
     "icon": "thecla-of-iconium.jpg",
     "bio": "A young woman of Iconium converted by hearing St. Paul preach, surviving multiple attempted martyrdoms.",
     "locations": [
-      { "label": "Birthplace — Iconium", "lat": 37.8667, "lng": 32.4833 }
+      {
+        "label": "Birthplace — Iconium",
+        "lat": 37.8667,
+        "lng": 32.4833
+      }
     ]
   },
   {
@@ -1721,7 +2537,11 @@
     "icon": "pelagia-of-antioch.jpg",
     "bio": "A repentant actress of Antioch who became a hermit on the Mount of Olives disguised as a monk.",
     "locations": [
-      { "label": "Hermitage — Mount of Olives", "lat": 31.7784, "lng": 35.2437 }
+      {
+        "label": "Hermitage — Mount of Olives",
+        "lat": 31.7784,
+        "lng": 35.2437
+      }
     ]
   },
   {
@@ -1732,7 +2552,11 @@
     "icon": "mary-of-nineveh.jpg",
     "bio": "A pious laywoman of Byzantine Bizye who endured suffering with patience and was glorified after her death.",
     "locations": [
-      { "label": "Home — Bizye, Thrace", "lat": 41.6667, "lng": 27.2333 }
+      {
+        "label": "Home — Bizye, Thrace",
+        "lat": 41.6667,
+        "lng": 27.2333
+      }
     ]
   },
   {
@@ -1743,7 +2567,11 @@
     "icon": "febronia-of-nisibis.jpg",
     "bio": "A young nun of Nisibis tortured extensively and martyred for refusing marriage and renouncing Christ.",
     "locations": [
-      { "label": "Place of martyrdom — Nisibis", "lat": 37.0764, "lng": 41.2186 }
+      {
+        "label": "Place of martyrdom — Nisibis",
+        "lat": 37.0764,
+        "lng": 41.2186
+      }
     ]
   },
   {
@@ -1754,7 +2582,11 @@
     "icon": "drosis-of-antioch.jpg",
     "bio": "Daughter of Emperor Trajan who secretly buried martyrs and was burned alive when her faith was discovered.",
     "locations": [
-      { "label": "Place of martyrdom — Antioch", "lat": 36.2021, "lng": 36.1603 }
+      {
+        "label": "Place of martyrdom — Antioch",
+        "lat": 36.2021,
+        "lng": 36.1603
+      }
     ]
   },
   {
@@ -1765,7 +2597,11 @@
     "icon": "domnica-of-constantinople.jpg",
     "bio": "A founder of a women's monastery in Constantinople renowned for her ascetic virtue and gift of prophecy.",
     "locations": [
-      { "label": "Monastery — Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Monastery — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -1776,7 +2612,11 @@
     "icon": "theodora-of-alexandria.jpg",
     "bio": "A repentant woman who lived disguised as a monk in the desert for years to atone for her sins.",
     "locations": [
-      { "label": "Monastic life — near Alexandria", "lat": 31.2001, "lng": 29.9187 }
+      {
+        "label": "Monastic life — near Alexandria",
+        "lat": 31.2001,
+        "lng": 29.9187
+      }
     ]
   },
   {
@@ -1787,7 +2627,11 @@
     "icon": "synkletike-of-alexandria.jpg",
     "bio": "A desert mother whose sayings on ascetic discipline were preserved among the Apophthegmata Patrum.",
     "locations": [
-      { "label": "Ascetic life — near Alexandria", "lat": 31.2001, "lng": 29.9187 }
+      {
+        "label": "Ascetic life — near Alexandria",
+        "lat": 31.2001,
+        "lng": 29.9187
+      }
     ]
   },
   {
@@ -1798,7 +2642,11 @@
     "icon": "melania-the-younger.jpg",
     "bio": "A wealthy Roman noblewoman who renounced her fortune to found monasteries in Jerusalem and North Africa.",
     "locations": [
-      { "label": "Monastery — Mount of Olives, Jerusalem", "lat": 31.7784, "lng": 35.2437 }
+      {
+        "label": "Monastery — Mount of Olives, Jerusalem",
+        "lat": 31.7784,
+        "lng": 35.2437
+      }
     ]
   },
   {
@@ -1809,7 +2657,11 @@
     "icon": "pulcheria-empress.jpg",
     "bio": "A Byzantine empress who governed with piety and convened the Fourth Ecumenical Council against heresy.",
     "locations": [
-      { "label": "Reign — Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Reign — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -1820,7 +2672,11 @@
     "icon": "theodora-the-empress.jpg",
     "bio": "A Byzantine empress who restored the veneration of icons, ending the second period of iconoclasm.",
     "locations": [
-      { "label": "Reign — Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Reign — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -1831,7 +2687,11 @@
     "icon": "theophano-empress.jpg",
     "bio": "A pious Byzantine empress known for her charity to the poor and devotion to prayer despite palace intrigue.",
     "locations": [
-      { "label": "Reign — Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Reign — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -1842,7 +2702,11 @@
     "icon": "photios-the-great.jpg",
     "bio": "Patriarch of Constantinople and renowned scholar who sent missionaries Cyril and Methodius to the Slavs.",
     "locations": [
-      { "label": "Patriarchate — Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Patriarchate — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -1853,7 +2717,11 @@
     "icon": "tarasios-of-constantinople.jpg",
     "bio": "Patriarch who presided over the Seventh Ecumenical Council, restoring the veneration of holy icons.",
     "locations": [
-      { "label": "Patriarchate — Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Patriarchate — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -1864,7 +2732,11 @@
     "icon": "germanus-of-constantinople.jpg",
     "bio": "Patriarch deposed for opposing iconoclasm, whose hymns are still sung in Orthodox services today.",
     "locations": [
-      { "label": "Patriarchate — Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Patriarchate — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -1875,8 +2747,16 @@
     "icon": "gregory-palamas-companion-mark.jpg",
     "bio": "The sole bishop who refused to sign the Council of Florence's union with Rome, defending Orthodoxy alone.",
     "locations": [
-      { "label": "Bishopric — Ephesus", "lat": 37.9407, "lng": 27.343 },
-      { "label": "Council of Florence — Florence, Italy", "lat": 43.7696, "lng": 11.2558 }
+      {
+        "label": "Bishopric — Ephesus",
+        "lat": 37.9407,
+        "lng": 27.343
+      },
+      {
+        "label": "Council of Florence — Florence, Italy",
+        "lat": 43.7696,
+        "lng": 11.2558
+      }
     ]
   },
   {
@@ -1887,7 +2767,11 @@
     "icon": "gennadius-scholarios.jpg",
     "bio": "The first Ecumenical Patriarch under Ottoman rule after the fall of Constantinople, guiding the Church through crisis.",
     "locations": [
-      { "label": "Patriarchate — Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Patriarchate — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -1898,7 +2782,11 @@
     "icon": "niphon-of-constantinople.jpg",
     "bio": "A Wallachian monk who twice served as Patriarch of Constantinople, known for his humility and reforms.",
     "locations": [
-      { "label": "Patriarchate — Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Patriarchate — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -1909,7 +2797,11 @@
     "icon": "cyprian-of-kiev.jpg",
     "bio": "A Bulgarian-born metropolitan who unified the Russian Church and translated important liturgical texts into Slavonic.",
     "locations": [
-      { "label": "Metropolitanate — Moscow", "lat": 55.7558, "lng": 37.6173 }
+      {
+        "label": "Metropolitanate — Moscow",
+        "lat": 55.7558,
+        "lng": 37.6173
+      }
     ]
   },
   {
@@ -1920,7 +2812,11 @@
     "icon": "alexis-of-moscow.jpg",
     "bio": "Metropolitan of Moscow who served as regent for the young Prince Dmitri Donskoi and healed the Tatar khan's mother.",
     "locations": [
-      { "label": "Metropolitanate — Moscow", "lat": 55.7558, "lng": 37.6173 }
+      {
+        "label": "Metropolitanate — Moscow",
+        "lat": 55.7558,
+        "lng": 37.6173
+      }
     ]
   },
   {
@@ -1931,7 +2827,11 @@
     "icon": "peter-of-moscow.jpg",
     "bio": "The first Metropolitan to move his see to Moscow, helping establish the city as the spiritual center of Russia.",
     "locations": [
-      { "label": "Metropolitanate — Moscow", "lat": 55.7558, "lng": 37.6173 }
+      {
+        "label": "Metropolitanate — Moscow",
+        "lat": 55.7558,
+        "lng": 37.6173
+      }
     ]
   },
   {
@@ -1942,7 +2842,11 @@
     "icon": "jonah-of-moscow.jpg",
     "bio": "The first Metropolitan of Moscow elected independently of Constantinople, establishing the autocephaly of the Russian Church.",
     "locations": [
-      { "label": "Metropolitanate — Moscow", "lat": 55.7558, "lng": 37.6173 }
+      {
+        "label": "Metropolitanate — Moscow",
+        "lat": 55.7558,
+        "lng": 37.6173
+      }
     ]
   },
   {
@@ -1953,7 +2857,11 @@
     "icon": "stephen-of-perm.jpg",
     "bio": "Missionary bishop who created an alphabet for the Zyrian people and translated Scripture into their language.",
     "locations": [
-      { "label": "Mission — Perm region, Russia", "lat": 58.0105, "lng": 56.2502 }
+      {
+        "label": "Mission — Perm region, Russia",
+        "lat": 58.0105,
+        "lng": 56.2502
+      }
     ]
   },
   {
@@ -1964,7 +2872,11 @@
     "icon": "basil-the-blessed.jpg",
     "bio": "A Moscow holy fool who fearlessly rebuked Ivan the Terrible, giving his name to the famous cathedral on Red Square.",
     "locations": [
-      { "label": "Ascetic life — Moscow", "lat": 55.7525, "lng": 37.6231 }
+      {
+        "label": "Ascetic life — Moscow",
+        "lat": 55.7525,
+        "lng": 37.6231
+      }
     ]
   },
   {
@@ -1975,7 +2887,11 @@
     "icon": "andrew-the-fool-for-christ.jpg",
     "bio": "A Constantinopolitan slave who feigned madness for Christ's sake and witnessed the vision of the Theotokos's veil.",
     "locations": [
-      { "label": "Ascetic life — Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Ascetic life — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -1986,7 +2902,11 @@
     "icon": "spyridon-companion-nicholas-cabasilas.jpg",
     "bio": "A Byzantine theologian and layman of Thessaloniki celebrated for his writings on the Divine Liturgy and life in Christ.",
     "locations": [
-      { "label": "Home — Thessaloniki", "lat": 40.6401, "lng": 22.9444 }
+      {
+        "label": "Home — Thessaloniki",
+        "lat": 40.6401,
+        "lng": 22.9444
+      }
     ]
   },
   {
@@ -1997,7 +2917,11 @@
     "icon": "gregory-of-narek.jpg",
     "bio": "An Armenian monk, poet, and theologian, celebrated for his 'Book of Lamentations' and profound spiritual depth.",
     "locations": [
-      { "label": "Monastery — Narek, Armenia", "lat": 38.483, "lng": 42.943 }
+      {
+        "label": "Monastery — Narek, Armenia",
+        "lat": 38.483,
+        "lng": 42.943
+      }
     ]
   },
   {
@@ -2008,7 +2932,11 @@
     "icon": "isaac-the-syrian.jpg",
     "bio": "A bishop who resigned to live as a hermit, whose ascetic homilies remain treasured across Christian traditions.",
     "locations": [
-      { "label": "Hermitage — Mount Matout, Persia", "lat": 32.6, "lng": 51.67 }
+      {
+        "label": "Hermitage — Mount Matout, Persia",
+        "lat": 32.6,
+        "lng": 51.67
+      }
     ]
   },
   {
@@ -2019,7 +2947,11 @@
     "icon": "james-of-nisibis.jpg",
     "bio": "Bishop of Nisibis and participant in the First Ecumenical Council, defender of the city against Persian siege through prayer.",
     "locations": [
-      { "label": "Bishopric — Nisibis", "lat": 37.0764, "lng": 41.2186 }
+      {
+        "label": "Bishopric — Nisibis",
+        "lat": 37.0764,
+        "lng": 41.2186
+      }
     ]
   },
   {
@@ -2030,7 +2962,11 @@
     "icon": "babylas-of-antioch.jpg",
     "bio": "Bishop of Antioch who barred an emperor from entering the church for shedding innocent blood and was martyred.",
     "locations": [
-      { "label": "Bishopric — Antioch", "lat": 36.2021, "lng": 36.1603 }
+      {
+        "label": "Bishopric — Antioch",
+        "lat": 36.2021,
+        "lng": 36.1603
+      }
     ]
   },
   {
@@ -2041,8 +2977,16 @@
     "icon": "meletios-of-antioch.jpg",
     "bio": "Bishop of Antioch who presided at the opening of the Second Ecumenical Council in Constantinople.",
     "locations": [
-      { "label": "Bishopric — Antioch", "lat": 36.2021, "lng": 36.1603 },
-      { "label": "Second Ecumenical Council — Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Bishopric — Antioch",
+        "lat": 36.2021,
+        "lng": 36.1603
+      },
+      {
+        "label": "Second Ecumenical Council — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -2053,7 +2997,11 @@
     "icon": "proclus-of-constantinople.jpg",
     "bio": "Patriarch of Constantinople and disciple of St. John Chrysostom, celebrated preacher on the Theotokos.",
     "locations": [
-      { "label": "Patriarchate — Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Patriarchate — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -2064,8 +3012,16 @@
     "icon": "flavian-of-constantinople.jpg",
     "bio": "Patriarch who was beaten and exiled at the 'Robber Council' of Ephesus for upholding Orthodox Christology.",
     "locations": [
-      { "label": "Patriarchate — Constantinople", "lat": 41.0082, "lng": 28.9784 },
-      { "label": "'Robber Council' — Ephesus", "lat": 37.9407, "lng": 27.343 }
+      {
+        "label": "Patriarchate — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      },
+      {
+        "label": "'Robber Council' — Ephesus",
+        "lat": 37.9407,
+        "lng": 27.343
+      }
     ]
   },
   {
@@ -2076,7 +3032,11 @@
     "icon": "ambrose-of-optina.jpg",
     "bio": "A renowned elder of Optina Hermitage who counseled thousands, including Dostoevsky, with humor and spiritual insight.",
     "locations": [
-      { "label": "Monastery — Optina Hermitage, Russia", "lat": 54.0567, "lng": 35.9967 }
+      {
+        "label": "Monastery — Optina Hermitage, Russia",
+        "lat": 54.0567,
+        "lng": 35.9967
+      }
     ]
   },
   {
@@ -2087,7 +3047,11 @@
     "icon": "nektarios-companion-macarius-of-optina.jpg",
     "bio": "An elder of Optina Hermitage who revived the publication of Patristic texts and guided countless pilgrims.",
     "locations": [
-      { "label": "Monastery — Optina Hermitage, Russia", "lat": 54.0567, "lng": 35.9967 }
+      {
+        "label": "Monastery — Optina Hermitage, Russia",
+        "lat": 54.0567,
+        "lng": 35.9967
+      }
     ]
   },
   {
@@ -2098,7 +3062,11 @@
     "icon": "paisius-velichkovsky.jpg",
     "bio": "A Ukrainian-born monk who revived hesychast spirituality in Moldavia and translated the Philokalia into Slavonic.",
     "locations": [
-      { "label": "Monastery — Neamț, Moldavia", "lat": 47.2833, "lng": 26.3333 }
+      {
+        "label": "Monastery — Neamț, Moldavia",
+        "lat": 47.2833,
+        "lng": 26.3333
+      }
     ]
   },
   {
@@ -2109,7 +3077,11 @@
     "icon": "dimitrie-of-basarabov.jpg",
     "bio": "A Bulgarian shepherd whose relics, discovered incorrupt, became the patron protector of Bucharest.",
     "locations": [
-      { "label": "Relics enshrined — Bucharest", "lat": 44.4268, "lng": 26.1025 }
+      {
+        "label": "Relics enshrined — Bucharest",
+        "lat": 44.4268,
+        "lng": 26.1025
+      }
     ]
   },
   {
@@ -2120,7 +3092,11 @@
     "icon": "joseph-the-new-of-partos.jpg",
     "bio": "A Metropolitan of Timișoara known for his ascetic life and miracles attributed to his incorrupt relics.",
     "locations": [
-      { "label": "Metropolitanate — Timișoara, Romania", "lat": 45.7489, "lng": 21.2087 }
+      {
+        "label": "Metropolitanate — Timișoara, Romania",
+        "lat": 45.7489,
+        "lng": 21.2087
+      }
     ]
   },
   {
@@ -2131,7 +3107,11 @@
     "icon": "john-cassian.jpg",
     "bio": "A monk who studied under the Desert Fathers and brought Egyptian monastic teaching to the Latin West.",
     "locations": [
-      { "label": "Monastery — Marseille", "lat": 43.2965, "lng": 5.3698 }
+      {
+        "label": "Monastery — Marseille",
+        "lat": 43.2965,
+        "lng": 5.3698
+      }
     ]
   },
   {
@@ -2142,7 +3122,11 @@
     "icon": "martin-of-tours.jpg",
     "bio": "A former Roman soldier who became bishop of Tours, famed for cutting his cloak in half to clothe a beggar.",
     "locations": [
-      { "label": "Bishopric — Tours, Gaul", "lat": 47.3941, "lng": 0.6848 }
+      {
+        "label": "Bishopric — Tours, Gaul",
+        "lat": 47.3941,
+        "lng": 0.6848
+      }
     ]
   },
   {
@@ -2153,7 +3137,11 @@
     "icon": "nicetas-the-goth.jpg",
     "bio": "A Gothic Christian burned alive for his faith during a persecution among the Goths north of the Danube.",
     "locations": [
-      { "label": "Place of martyrdom — Wallachia", "lat": 44.4268, "lng": 26.1025 }
+      {
+        "label": "Place of martyrdom — Wallachia",
+        "lat": 44.4268,
+        "lng": 26.1025
+      }
     ]
   },
   {
@@ -2164,7 +3152,11 @@
     "icon": "sava-the-goth.jpg",
     "bio": "A Gothic Christian drowned in the Buzău River for his faith, one of the earliest saints venerated in Romania.",
     "locations": [
-      { "label": "Place of martyrdom — Buzău River, Romania", "lat": 45.15, "lng": 27.0 }
+      {
+        "label": "Place of martyrdom — Buzău River, Romania",
+        "lat": 45.15,
+        "lng": 27.0
+      }
     ]
   },
   {
@@ -2175,7 +3167,11 @@
     "icon": "parascheva-of-the-balkans.jpg",
     "bio": "A hermitess of Thrace whose relics became especially beloved across Romania, Serbia, and Bulgaria.",
     "locations": [
-      { "label": "Ascetic life — Epivatos, Thrace", "lat": 40.9333, "lng": 27.9167 }
+      {
+        "label": "Ascetic life — Epivatos, Thrace",
+        "lat": 40.9333,
+        "lng": 27.9167
+      }
     ]
   },
   {
@@ -2186,7 +3182,11 @@
     "icon": "king-milutin-of-serbia.jpg",
     "bio": "A medieval Serbian king renowned for founding numerous monasteries and churches across the Balkans.",
     "locations": [
-      { "label": "Reign — Serbia", "lat": 43.3209, "lng": 21.8958 }
+      {
+        "label": "Reign — Serbia",
+        "lat": 43.3209,
+        "lng": 21.8958
+      }
     ]
   },
   {
@@ -2197,7 +3197,11 @@
     "icon": "lazar-of-serbia.jpg",
     "bio": "Prince of Serbia who fell at the Battle of Kosovo, revered as a martyr for choosing the heavenly kingdom.",
     "locations": [
-      { "label": "Place of martyrdom — Kosovo Field", "lat": 42.6833, "lng": 21.1667 }
+      {
+        "label": "Place of martyrdom — Kosovo Field",
+        "lat": 42.6833,
+        "lng": 21.1667
+      }
     ]
   },
   {
@@ -2208,7 +3212,11 @@
     "icon": "john-vladimir-of-serbia.jpg",
     "bio": "A pious ruler of Duklja betrayed and beheaded, venerated across the Balkans for his mercy toward his enemies.",
     "locations": [
-      { "label": "Place of martyrdom — Prespa", "lat": 40.9167, "lng": 21.0 }
+      {
+        "label": "Place of martyrdom — Prespa",
+        "lat": 40.9167,
+        "lng": 21.0
+      }
     ]
   },
   {
@@ -2219,7 +3227,11 @@
     "icon": "peter-of-korisha.jpg",
     "bio": "A Serbian hermit who lived in a cave near Korisha, renowned for his solitude and gift of healing.",
     "locations": [
-      { "label": "Hermitage — Korisha, Kosovo", "lat": 42.5667, "lng": 20.2833 }
+      {
+        "label": "Hermitage — Korisha, Kosovo",
+        "lat": 42.5667,
+        "lng": 20.2833
+      }
     ]
   },
   {
@@ -2230,7 +3242,11 @@
     "icon": "arsenije-of-serbia.jpg",
     "bio": "Second Archbishop of the Serbian Church who continued St. Sava's work strengthening Serbian Orthodoxy.",
     "locations": [
-      { "label": "Archbishopric — Žiča Monastery, Serbia", "lat": 43.7167, "lng": 20.6167 }
+      {
+        "label": "Archbishopric — Žiča Monastery, Serbia",
+        "lat": 43.7167,
+        "lng": 20.6167
+      }
     ]
   },
   {
@@ -2241,7 +3257,11 @@
     "icon": "naum-of-ohrid.jpg",
     "bio": "A disciple of Cyril and Methodius who continued their missionary work and founded a monastery at Lake Ohrid.",
     "locations": [
-      { "label": "Monastery — Lake Ohrid", "lat": 40.9167, "lng": 20.7167 }
+      {
+        "label": "Monastery — Lake Ohrid",
+        "lat": 40.9167,
+        "lng": 20.7167
+      }
     ]
   },
   {
@@ -2252,7 +3272,11 @@
     "icon": "clement-of-ohrid.jpg",
     "bio": "A disciple of Cyril and Methodius who became the first Slavic-speaking bishop, founding a great literary school at Ohrid.",
     "locations": [
-      { "label": "Bishopric — Ohrid", "lat": 41.1231, "lng": 20.8016 }
+      {
+        "label": "Bishopric — Ohrid",
+        "lat": 41.1231,
+        "lng": 20.8016
+      }
     ]
   },
   {
@@ -2263,7 +3287,11 @@
     "icon": "gorazd-of-moravia.jpg",
     "bio": "A disciple and successor of St. Methodius who continued the Slavic liturgical mission in Great Moravia.",
     "locations": [
-      { "label": "Mission — Great Moravia", "lat": 49.05, "lng": 17.4 }
+      {
+        "label": "Mission — Great Moravia",
+        "lat": 49.05,
+        "lng": 17.4
+      }
     ]
   },
   {
@@ -2274,7 +3302,11 @@
     "icon": "john-the-russian.jpg",
     "bio": "A Russian soldier enslaved by the Ottomans who kept his faith secretly in Asia Minor, later revered for many miracles.",
     "locations": [
-      { "label": "Captivity — Prokopion, Cappadocia", "lat": 38.6167, "lng": 34.6667 }
+      {
+        "label": "Captivity — Prokopion, Cappadocia",
+        "lat": 38.6167,
+        "lng": 34.6667
+      }
     ]
   },
   {
@@ -2285,7 +3317,11 @@
     "icon": "george-limnaiotes.jpg",
     "bio": "A monk and bishop who suffered imprisonment defending icon veneration during the iconoclast persecutions.",
     "locations": [
-      { "label": "Monastic life — Limnos", "lat": 39.9167, "lng": 25.25 }
+      {
+        "label": "Monastic life — Limnos",
+        "lat": 39.9167,
+        "lng": 25.25
+      }
     ]
   },
   {
@@ -2296,7 +3332,11 @@
     "icon": "stephen-the-new.jpg",
     "bio": "An Athonite-trained monk martyred in Constantinople for his outspoken defense of holy icons.",
     "locations": [
-      { "label": "Place of martyrdom — Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Place of martyrdom — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -2307,7 +3347,11 @@
     "icon": "andrew-of-crete.jpg",
     "bio": "Archbishop of Crete and hymnographer, best known for composing the Great Canon of Repentance.",
     "locations": [
-      { "label": "Archbishopric — Gortyna, Crete", "lat": 35.0628, "lng": 24.9436 }
+      {
+        "label": "Archbishopric — Gortyna, Crete",
+        "lat": 35.0628,
+        "lng": 24.9436
+      }
     ]
   },
   {
@@ -2318,7 +3362,11 @@
     "icon": "titus-of-crete.jpg",
     "bio": "A companion of the Apostle Paul who became the first bishop of Crete, guiding its early Christian community.",
     "locations": [
-      { "label": "Bishopric — Gortyna, Crete", "lat": 35.0628, "lng": 24.9436 }
+      {
+        "label": "Bishopric — Gortyna, Crete",
+        "lat": 35.0628,
+        "lng": 24.9436
+      }
     ]
   },
   {
@@ -2329,7 +3377,11 @@
     "icon": "ten-martyrs-of-crete.jpg",
     "bio": "Ten Christians from various Cretan cities martyred together under Emperor Decius for refusing to sacrifice to idols.",
     "locations": [
-      { "label": "Place of martyrdom — Gortyna, Crete", "lat": 35.0628, "lng": 24.9436 }
+      {
+        "label": "Place of martyrdom — Gortyna, Crete",
+        "lat": 35.0628,
+        "lng": 24.9436
+      }
     ]
   },
   {
@@ -2340,7 +3392,11 @@
     "icon": "nikephoros-the-leper.jpg",
     "bio": "A 20th-century Cretan man who endured leprosy with patience and became renowned for his gentle holiness.",
     "locations": [
-      { "label": "Life — Chania, Crete", "lat": 35.5138, "lng": 24.018 }
+      {
+        "label": "Life — Chania, Crete",
+        "lat": 35.5138,
+        "lng": 24.018
+      }
     ]
   },
   {
@@ -2351,7 +3407,11 @@
     "icon": "anthimus-of-nicomedia.jpg",
     "bio": "Bishop of Nicomedia martyred during Diocletian's persecution after refusing to abandon his flock.",
     "locations": [
-      { "label": "Bishopric — Nicomedia", "lat": 40.7654, "lng": 29.9408 }
+      {
+        "label": "Bishopric — Nicomedia",
+        "lat": 40.7654,
+        "lng": 29.9408
+      }
     ]
   },
   {
@@ -2362,7 +3422,11 @@
     "icon": "basiliscus-of-comana.jpg",
     "bio": "A soldier martyred at Comana, buried near the same place where St. John Chrysostom later reposed.",
     "locations": [
-      { "label": "Place of martyrdom — Comana Pontica", "lat": 40.4667, "lng": 36.55 }
+      {
+        "label": "Place of martyrdom — Comana Pontica",
+        "lat": 40.4667,
+        "lng": 36.55
+      }
     ]
   },
   {
@@ -2373,7 +3437,11 @@
     "icon": "acepsimas-of-persia.jpg",
     "bio": "A Persian bishop martyred at over one hundred years old during a wave of persecution under Shapur II.",
     "locations": [
-      { "label": "Place of martyrdom — Persia", "lat": 33.096, "lng": 44.58 }
+      {
+        "label": "Place of martyrdom — Persia",
+        "lat": 33.096,
+        "lng": 44.58
+      }
     ]
   },
   {
@@ -2384,7 +3452,11 @@
     "icon": "james-the-persian.jpg",
     "bio": "A Persian courtier who denied Christ under pressure, then repented and endured being cut apart limb by limb for his faith.",
     "locations": [
-      { "label": "Place of martyrdom — Beth Lapat, Persia", "lat": 32.6597, "lng": 48.7169 }
+      {
+        "label": "Place of martyrdom — Beth Lapat, Persia",
+        "lat": 32.6597,
+        "lng": 48.7169
+      }
     ]
   },
   {
@@ -2395,7 +3467,11 @@
     "icon": "anastasius-of-persia.jpg",
     "bio": "A former Persian soldier who converted to Christianity, became a monk, and was martyred for destroying idols.",
     "locations": [
-      { "label": "Place of martyrdom — near Caesarea, Palestine", "lat": 32.5, "lng": 34.9 }
+      {
+        "label": "Place of martyrdom — near Caesarea, Palestine",
+        "lat": 32.5,
+        "lng": 34.9
+      }
     ]
   },
   {
@@ -2406,7 +3482,11 @@
     "icon": "barbarus-the-former-robber.jpg",
     "bio": "A repentant former bandit who lived the rest of his life in prayer and penance, his relics later streaming myrrh.",
     "locations": [
-      { "label": "Ascetic life — near Thessaloniki", "lat": 40.6401, "lng": 22.9444 }
+      {
+        "label": "Ascetic life — near Thessaloniki",
+        "lat": 40.6401,
+        "lng": 22.9444
+      }
     ]
   },
   {
@@ -2417,7 +3497,11 @@
     "icon": "david-of-euboea.jpg",
     "bio": "A hermit of Euboea known for his prophetic gifts, foretelling the recapture of Constantinople.",
     "locations": [
-      { "label": "Hermitage — Euboea", "lat": 38.9, "lng": 23.6 }
+      {
+        "label": "Hermitage — Euboea",
+        "lat": 38.9,
+        "lng": 23.6
+      }
     ]
   },
   {
@@ -2428,7 +3512,11 @@
     "icon": "loukas-the-younger-of-steiris.jpg",
     "bio": "A Byzantine hermit whose monastery in Phocis became one of the great architectural treasures of Greece.",
     "locations": [
-      { "label": "Monastery — Hosios Loukas, Phocis", "lat": 38.4867, "lng": 22.635 }
+      {
+        "label": "Monastery — Hosios Loukas, Phocis",
+        "lat": 38.4867,
+        "lng": 22.635
+      }
     ]
   },
   {
@@ -2439,7 +3527,11 @@
     "icon": "christodoulos-of-patmos.jpg",
     "bio": "Founder of the Monastery of St. John the Theologian on Patmos, obtaining imperial protection for the island's monks.",
     "locations": [
-      { "label": "Monastery — Patmos", "lat": 37.3086, "lng": 26.5459 }
+      {
+        "label": "Monastery — Patmos",
+        "lat": 37.3086,
+        "lng": 26.5459
+      }
     ]
   },
   {
@@ -2450,7 +3542,11 @@
     "icon": "meletios-the-confessor.jpg",
     "bio": "A Byzantine monk and founder of a monastery on Mount Myoupolis renowned for miracles at his tomb.",
     "locations": [
-      { "label": "Monastery — Mount Myoupolis, Attica", "lat": 38.1, "lng": 23.6 }
+      {
+        "label": "Monastery — Mount Myoupolis, Attica",
+        "lat": 38.1,
+        "lng": 23.6
+      }
     ]
   },
   {
@@ -2461,7 +3557,11 @@
     "icon": "theoktisti-of-lesvos.jpg",
     "bio": "A woman who fled to a deserted island near Paros to escape Arab raiders and lived unseen in prayer for decades.",
     "locations": [
-      { "label": "Hermitage — Paros", "lat": 37.0853, "lng": 25.1522 }
+      {
+        "label": "Hermitage — Paros",
+        "lat": 37.0853,
+        "lng": 25.1522
+      }
     ]
   },
   {
@@ -2472,7 +3572,11 @@
     "icon": "anna-of-cappadocia.jpg",
     "bio": "A young Cappadocian woman martyred by Ottoman authorities for refusing to abandon her Christian faith.",
     "locations": [
-      { "label": "Place of martyrdom — Cappadocia", "lat": 38.6431, "lng": 34.8306 }
+      {
+        "label": "Place of martyrdom — Cappadocia",
+        "lat": 38.6431,
+        "lng": 34.8306
+      }
     ]
   },
   {
@@ -2483,7 +3587,11 @@
     "icon": "argyri-of-constantinople.jpg",
     "bio": "A young married woman imprisoned unjustly and martyred in Constantinople for refusing to convert to Islam.",
     "locations": [
-      { "label": "Place of martyrdom — Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Place of martyrdom — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -2494,7 +3602,11 @@
     "icon": "george-of-sofia.jpg",
     "bio": "A young craftsman burned alive in Sofia after refusing to renounce Christianity under Ottoman rule.",
     "locations": [
-      { "label": "Place of martyrdom — Sofia", "lat": 42.6977, "lng": 23.3219 }
+      {
+        "label": "Place of martyrdom — Sofia",
+        "lat": 42.6977,
+        "lng": 23.3219
+      }
     ]
   },
   {
@@ -2505,7 +3617,11 @@
     "icon": "nicholas-of-vounaina.jpg",
     "bio": "A young Christian from Epirus stoned to death for defending his faith before Ottoman judges.",
     "locations": [
-      { "label": "Place of martyrdom — Vounaina, Epirus", "lat": 39.5, "lng": 20.8 }
+      {
+        "label": "Place of martyrdom — Vounaina, Epirus",
+        "lat": 39.5,
+        "lng": 20.8
+      }
     ]
   },
   {
@@ -2516,7 +3632,11 @@
     "icon": "theodore-of-mytilene.jpg",
     "bio": "A young Christian of Lesvos martyred for his faith after being falsely accused before Ottoman authorities.",
     "locations": [
-      { "label": "Place of martyrdom — Mytilene, Lesvos", "lat": 39.1097, "lng": 26.5537 }
+      {
+        "label": "Place of martyrdom — Mytilene, Lesvos",
+        "lat": 39.1097,
+        "lng": 26.5537
+      }
     ]
   },
   {
@@ -2527,7 +3647,11 @@
     "icon": "moses-the-black.jpg",
     "bio": "A former robber chieftain in Egypt who repented and became a monk in the Skete desert, renowned for his humility and later ordained a priest before being martyred by raiders.",
     "locations": [
-      { "label": "Ascetic life — Skete, Egypt", "lat": 30.3333, "lng": 29.7667 }
+      {
+        "label": "Ascetic life — Skete, Egypt",
+        "lat": 30.3333,
+        "lng": 29.7667
+      }
     ]
   },
   {
@@ -2538,8 +3662,16 @@
     "icon": "photini-the-samaritan.jpg",
     "bio": "The Samaritan woman who met Christ at Jacob's Well, was converted, and became a fervent evangelist, later martyred in Rome under Nero.",
     "locations": [
-      { "label": "Meeting with Christ — Sychar, Samaria", "lat": 32.2136, "lng": 35.2761 },
-      { "label": "Place of martyrdom — Rome", "lat": 41.9028, "lng": 12.4964 }
+      {
+        "label": "Meeting with Christ — Sychar, Samaria",
+        "lat": 32.2136,
+        "lng": 35.2761
+      },
+      {
+        "label": "Place of martyrdom — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      }
     ]
   },
   {
@@ -2550,8 +3682,16 @@
     "icon": "romanos-the-melodist.jpg",
     "bio": "A deacon of Syrian birth who became the greatest hymnographer of the Byzantine Church, composing the Kontakion of the Nativity and hundreds of other hymns.",
     "locations": [
-      { "label": "Birthplace — Emesa, Syria", "lat": 34.7300, "lng": 36.7166 },
-      { "label": "Ministry — Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Birthplace — Emesa, Syria",
+        "lat": 34.73,
+        "lng": 36.7166
+      },
+      {
+        "label": "Ministry — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -2562,7 +3702,11 @@
     "icon": "kassiani.jpg",
     "bio": "A learned Byzantine abbess and poet, famed for composing the Hymn of Kassiani sung during Holy Week, one of the few works by a woman in the Orthodox liturgical tradition.",
     "locations": [
-      { "label": "Convent founded — Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Convent founded — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -2573,7 +3717,11 @@
     "icon": "theodora-of-arta.jpg",
     "bio": "Empress of Epirus who, after enduring slander and exile, was reconciled with her husband and later became a nun, known for her charity and patience in suffering.",
     "locations": [
-      { "label": "Life and repose — Arta, Epirus", "lat": 39.1600, "lng": 20.9836 }
+      {
+        "label": "Life and repose — Arta, Epirus",
+        "lat": 39.16,
+        "lng": 20.9836
+      }
     ]
   },
   {
@@ -2584,7 +3732,11 @@
     "icon": "gregory-of-tours.jpg",
     "bio": "Bishop and historian of Gaul whose writings, including the History of the Franks, preserved the memory of early Western saints venerated before the Great Schism.",
     "locations": [
-      { "label": "Episcopal see — Tours, France", "lat": 47.3941, "lng": 0.6848 }
+      {
+        "label": "Episcopal see — Tours, France",
+        "lat": 47.3941,
+        "lng": 0.6848
+      }
     ]
   },
   {
@@ -2595,8 +3747,16 @@
     "icon": "nino.jpg",
     "bio": "A woman of Cappadocian origin who preached the Gospel in Georgia and, through miracles and her cross of grapevines, brought the Georgian royal court to Christianity.",
     "locations": [
-      { "label": "Birthplace — Cappadocia", "lat": 38.6431, "lng": 34.8306 },
-      { "label": "Missionary work — Mtskheta, Georgia", "lat": 41.8433, "lng": 44.7192 }
+      {
+        "label": "Birthplace — Cappadocia",
+        "lat": 38.6431,
+        "lng": 34.8306
+      },
+      {
+        "label": "Missionary work — Mtskheta, Georgia",
+        "lat": 41.8433,
+        "lng": 44.7192
+      }
     ]
   },
   {
@@ -2607,7 +3767,11 @@
     "icon": "barlaam-and-josaphat.jpg",
     "bio": "A monk and the Indian prince he converted to Christianity, whose legendary story of renunciation and asceticism became one of the most popular tales of the medieval Christian world.",
     "locations": [
-      { "label": "Setting of the legend — India", "lat": 20.5937, "lng": 78.9629 }
+      {
+        "label": "Setting of the legend — India",
+        "lat": 20.5937,
+        "lng": 78.9629
+      }
     ]
   },
   {
@@ -2618,7 +3782,11 @@
     "icon": "juliana-of-nicomedia.jpg",
     "bio": "A young Christian woman tortured and beheaded at Nicomedia after refusing to marry a pagan official and to renounce her faith.",
     "locations": [
-      { "label": "Place of martyrdom — Nicomedia", "lat": 40.7654, "lng": 29.9408 }
+      {
+        "label": "Place of martyrdom — Nicomedia",
+        "lat": 40.7654,
+        "lng": 29.9408
+      }
     ]
   },
   {
@@ -2629,7 +3797,11 @@
     "icon": "theodosia-of-constantinople.jpg",
     "bio": "A nun martyred in Constantinople for defending the holy icon of Christ over the Chalke Gate during the Iconoclast persecution.",
     "locations": [
-      { "label": "Place of martyrdom — Constantinople", "lat": 41.0082, "lng": 28.9784 }
+      {
+        "label": "Place of martyrdom — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
     ]
   },
   {
@@ -2640,7 +3812,11 @@
     "icon": "symeon-stylites.jpg",
     "bio": "A Syrian ascetic who spent decades living atop a pillar in prayer and fasting, becoming a renowned spiritual guide visited by pilgrims from across the ancient world.",
     "locations": [
-      { "label": "Ascetic life — Qalaat Semaan, Syria", "lat": 36.3339, "lng": 36.8461 }
+      {
+        "label": "Ascetic life — Qalaat Semaan, Syria",
+        "lat": 36.3339,
+        "lng": 36.8461
+      }
     ]
   },
   {
@@ -2651,7 +3827,11 @@
     "icon": "daniel-of-moscow.jpg",
     "bio": "The first Prince of Moscow, celebrated for his peaceful rule, humility, and the monastery he founded, later becoming the patron saint of the city.",
     "locations": [
-      { "label": "Principality — Moscow", "lat": 55.7558, "lng": 37.6173 }
+      {
+        "label": "Principality — Moscow",
+        "lat": 55.7558,
+        "lng": 37.6173
+      }
     ]
   },
   {
@@ -2662,7 +3842,11 @@
     "icon": "philaret-the-merciful.jpg",
     "bio": "A wealthy landowner of Asia Minor who gave away his fortune to the poor, trusting in Providence, and whose granddaughter became empress of Byzantium.",
     "locations": [
-      { "label": "Life and charity — Amnia, Paphlagonia", "lat": 41.0500, "lng": 34.9667 }
+      {
+        "label": "Life and charity — Amnia, Paphlagonia",
+        "lat": 41.05,
+        "lng": 34.9667
+      }
     ]
   },
   {
@@ -2673,7 +3857,11 @@
     "icon": "joachim-and-anna.jpg",
     "bio": "The righteous parents of the Theotokos, who, after years of childlessness, received the Virgin Mary as a gift from God in their old age.",
     "locations": [
-      { "label": "Tradition — Jerusalem", "lat": 31.7683, "lng": 35.2137 }
+      {
+        "label": "Tradition — Jerusalem",
+        "lat": 31.7683,
+        "lng": 35.2137
+      }
     ]
   },
   {
@@ -2684,7 +3872,11 @@
     "icon": "zosimas-of-solovki.jpg",
     "bio": "Co-founder of the Solovetsky Monastery in the White Sea, whose ascetic labors established one of Russia's great centers of monasticism.",
     "locations": [
-      { "label": "Monastery founded — Solovetsky Islands", "lat": 65.0294, "lng": 35.7181 }
+      {
+        "label": "Monastery founded — Solovetsky Islands",
+        "lat": 65.0294,
+        "lng": 35.7181
+      }
     ]
   },
   {
@@ -2695,7 +3887,11 @@
     "icon": "savvatii-of-solovki.jpg",
     "bio": "A monk who, seeking solitude, settled on the remote Solovetsky Islands and co-founded the monastery that became a beacon of Russian monasticism.",
     "locations": [
-      { "label": "Monastery founded — Solovetsky Islands", "lat": 65.0294, "lng": 35.7181 }
+      {
+        "label": "Monastery founded — Solovetsky Islands",
+        "lat": 65.0294,
+        "lng": 35.7181
+      }
     ]
   },
   {
@@ -2706,8 +3902,16 @@
     "icon": "nil-sorsky.jpg",
     "bio": "A Russian monastic reformer who, after studying hesychasm on Mount Athos, promoted a life of poverty and inner prayer among Russian monks.",
     "locations": [
-      { "label": "Monastic formation — Mount Athos", "lat": 40.1572, "lng": 24.3264 },
-      { "label": "Hermitage — Sora River, Russia", "lat": 59.6167, "lng": 38.4167 }
+      {
+        "label": "Monastic formation — Mount Athos",
+        "lat": 40.1572,
+        "lng": 24.3264
+      },
+      {
+        "label": "Hermitage — Sora River, Russia",
+        "lat": 59.6167,
+        "lng": 38.4167
+      }
     ]
   },
   {
@@ -2718,7 +3922,11 @@
     "icon": "tikhon-of-zadonsk.jpg",
     "bio": "A Russian bishop who retired to Zadonsk Monastery, where he wrote spiritual works and became known for his humility and care for the poor.",
     "locations": [
-      { "label": "Monastic life — Zadonsk, Russia", "lat": 51.9333, "lng": 38.9167 }
+      {
+        "label": "Monastic life — Zadonsk, Russia",
+        "lat": 51.9333,
+        "lng": 38.9167
+      }
     ]
   },
   {
@@ -2729,7 +3937,11 @@
     "icon": "john-the-almsgiver.jpg",
     "bio": "Patriarch of Alexandria renowned for his extraordinary generosity to the poor, distributing the wealth of his see to the needy and refugees of his time.",
     "locations": [
-      { "label": "Patriarchal see — Alexandria", "lat": 31.2001, "lng": 29.9187 }
+      {
+        "label": "Patriarchal see — Alexandria",
+        "lat": 31.2001,
+        "lng": 29.9187
+      }
     ]
   },
   {
@@ -2740,7 +3952,11 @@
     "icon": "gregory-the-illuminator.jpg",
     "bio": "Apostle to Armenia who converted King Tiridates III and the Armenian nation to Christianity, becoming the first Catholicos of the Armenian Church.",
     "locations": [
-      { "label": "Missionary work — Vagharshapat, Armenia", "lat": 40.1608, "lng": 44.2900 }
+      {
+        "label": "Missionary work — Vagharshapat, Armenia",
+        "lat": 40.1608,
+        "lng": 44.29
+      }
     ]
   },
   {
@@ -2751,8 +3967,16 @@
     "icon": "apostle-john-the-theologian.jpg",
     "bio": "Beloved disciple of Christ, author of the Fourth Gospel, three Epistles and the Book of Revelation, who reposed peacefully in old age at Ephesus.",
     "locations": [
-      { "label": "Exile — Patmos", "lat": 37.3, "lng": 26.55 },
-      { "label": "Place of death — Ephesus", "lat": 37.9407, "lng": 27.3427 }
+      {
+        "label": "Exile — Patmos",
+        "lat": 37.3,
+        "lng": 26.55
+      },
+      {
+        "label": "Place of death — Ephesus",
+        "lat": 37.9407,
+        "lng": 27.3427
+      }
     ]
   },
   {
@@ -2763,7 +3987,11 @@
     "icon": "apostle-james-son-of-alphaeus.jpg",
     "bio": "One of the Twelve Apostles who preached the Gospel in Judea and Egypt, where he was crucified for his faith.",
     "locations": [
-      { "label": "Martyrdom — Ostrakine, Egypt", "lat": 31.13, "lng": 33.08 }
+      {
+        "label": "Martyrdom — Ostrakine, Egypt",
+        "lat": 31.13,
+        "lng": 33.08
+      }
     ]
   },
   {
@@ -2774,7 +4002,11 @@
     "icon": "apostle-simon-the-zealot.jpg",
     "bio": "One of the Twelve Apostles, formerly a Zealot, who preached in Egypt, Africa and the Caucasus before being martyred in Abkhazia.",
     "locations": [
-      { "label": "Martyrdom — Nikopsis, Abkhazia", "lat": 43.05, "lng": 40.1 }
+      {
+        "label": "Martyrdom — Nikopsis, Abkhazia",
+        "lat": 43.05,
+        "lng": 40.1
+      }
     ]
   },
   {
@@ -2785,7 +4017,11 @@
     "icon": "apostle-matthias.jpg",
     "bio": "Chosen by lot to replace Judas Iscariot among the Twelve, he preached in Judea and Cappadocia before his martyrdom in Jerusalem.",
     "locations": [
-      { "label": "Martyrdom — Jerusalem", "lat": 31.7683, "lng": 35.2137 }
+      {
+        "label": "Martyrdom — Jerusalem",
+        "lat": 31.7683,
+        "lng": 35.2137
+      }
     ]
   },
   {
@@ -2796,8 +4032,16 @@
     "icon": "apostle-barnabas.jpg",
     "bio": "A Cypriot Levite and close companion of the Apostle Paul on his early missionary journeys, and the first bishop of Cyprus, martyred at Salamis.",
     "locations": [
-      { "label": "Birthplace — Cyprus", "lat": 35.1264, "lng": 33.4299 },
-      { "label": "Martyrdom — Salamis, Cyprus", "lat": 35.1856, "lng": 33.9 }
+      {
+        "label": "Birthplace — Cyprus",
+        "lat": 35.1264,
+        "lng": 33.4299
+      },
+      {
+        "label": "Martyrdom — Salamis, Cyprus",
+        "lat": 35.1856,
+        "lng": 33.9
+      }
     ]
   },
   {
@@ -2808,8 +4052,16 @@
     "icon": "nicholas-of-japan.jpg",
     "bio": "Russian missionary bishop who founded the Orthodox Church in Japan, translating the Scriptures and services into Japanese over half a century of ministry.",
     "locations": [
-      { "label": "Birthplace — Smolensk region, Russia", "lat": 55.0, "lng": 32.0 },
-      { "label": "Place of death — Tokyo, Japan", "lat": 35.6895, "lng": 139.6917 }
+      {
+        "label": "Birthplace — Smolensk region, Russia",
+        "lat": 55.0,
+        "lng": 32.0
+      },
+      {
+        "label": "Place of death — Tokyo, Japan",
+        "lat": 35.6895,
+        "lng": 139.6917
+      }
     ]
   },
   {
@@ -2820,9 +4072,21 @@
     "icon": "john-maximovitch.jpg",
     "bio": "Ascetic bishop of the Russian diaspora renowned for his humility and miracles, who cared for orphans in Shanghai and led the Church in Western Europe and San Francisco.",
     "locations": [
-      { "label": "Birthplace — Adamivka, Ukraine", "lat": 49.9, "lng": 36.2 },
-      { "label": "Care for orphans — Shanghai, China", "lat": 31.2304, "lng": 121.4737 },
-      { "label": "Place of death — Seattle, USA", "lat": 47.6062, "lng": -122.3321 }
+      {
+        "label": "Birthplace — Adamivka, Ukraine",
+        "lat": 49.9,
+        "lng": 36.2
+      },
+      {
+        "label": "Care for orphans — Shanghai, China",
+        "lat": 31.2304,
+        "lng": 121.4737
+      },
+      {
+        "label": "Place of death — Seattle, USA",
+        "lat": 47.6062,
+        "lng": -122.3321
+      }
     ]
   },
   {
@@ -2833,8 +4097,16 @@
     "icon": "sophrony-of-essex.jpg",
     "bio": "Disciple of St. Silouan the Athonite who brought hesychast monastic tradition to Western Europe, founding the Monastery of St. John the Baptist in Essex, England.",
     "locations": [
-      { "label": "Birthplace — Moscow, Russia", "lat": 55.7558, "lng": 37.6173 },
-      { "label": "Monastery — Essex, England", "lat": 51.8, "lng": 0.6 }
+      {
+        "label": "Birthplace — Moscow, Russia",
+        "lat": 55.7558,
+        "lng": 37.6173
+      },
+      {
+        "label": "Monastery — Essex, England",
+        "lat": 51.8,
+        "lng": 0.6
+      }
     ]
   },
   {
@@ -2845,9 +4117,21 @@
     "icon": "maria-of-paris.jpg",
     "bio": "Russian émigré nun who sheltered Jews and resistance members in Nazi-occupied Paris, dying in the Ravensbrück concentration camp.",
     "locations": [
-      { "label": "Birthplace — Riga, Latvia", "lat": 56.9496, "lng": 24.1052 },
-      { "label": "Sheltered refugees — Paris, France", "lat": 48.8566, "lng": 2.3522 },
-      { "label": "Place of death — Ravensbrück, Germany", "lat": 53.19, "lng": 13.17 }
+      {
+        "label": "Birthplace — Riga, Latvia",
+        "lat": 56.9496,
+        "lng": 24.1052
+      },
+      {
+        "label": "Sheltered refugees — Paris, France",
+        "lat": 48.8566,
+        "lng": 2.3522
+      },
+      {
+        "label": "Place of death — Ravensbrück, Germany",
+        "lat": 53.19,
+        "lng": 13.17
+      }
     ]
   },
   {
@@ -2858,8 +4142,16 @@
     "icon": "justin-popovic.jpg",
     "bio": "Serbian theologian and monk celebrated for his writings on Orthodox dogmatics, who spent his final decades confined to Ćelije Monastery.",
     "locations": [
-      { "label": "Birthplace — Vranje, Serbia", "lat": 42.5556, "lng": 21.8997 },
-      { "label": "Monastery — Ćelije, Valjevo", "lat": 44.27, "lng": 19.89 }
+      {
+        "label": "Birthplace — Vranje, Serbia",
+        "lat": 42.5556,
+        "lng": 21.8997
+      },
+      {
+        "label": "Monastery — Ćelije, Valjevo",
+        "lat": 44.27,
+        "lng": 19.89
+      }
     ]
   },
   {
@@ -2870,8 +4162,16 @@
     "icon": "gabriel-of-georgia.jpg",
     "bio": "Beloved Georgian elder and fool-for-Christ, famed for his boldness of faith under Soviet rule and his ministry at Samtavro Convent.",
     "locations": [
-      { "label": "Birthplace — Tbilisi, Georgia", "lat": 41.7151, "lng": 44.8271 },
-      { "label": "Monastery — Samtavro Convent, Mtskheta", "lat": 41.8467, "lng": 44.7183 }
+      {
+        "label": "Birthplace — Tbilisi, Georgia",
+        "lat": 41.7151,
+        "lng": 44.8271
+      },
+      {
+        "label": "Monastery — Samtavro Convent, Mtskheta",
+        "lat": 41.8467,
+        "lng": 44.7183
+      }
     ]
   },
   {
@@ -2882,8 +4182,16 @@
     "icon": "genevieve-of-paris.jpg",
     "bio": "Fifth-century ascetic credited with saving Paris from Attila the Hun through prayer, venerated ever since as the city's patroness.",
     "locations": [
-      { "label": "Birthplace — Nanterre, France", "lat": 48.8924, "lng": 2.2065 },
-      { "label": "Ministry — Paris, France", "lat": 48.8566, "lng": 2.3522 }
+      {
+        "label": "Birthplace — Nanterre, France",
+        "lat": 48.8924,
+        "lng": 2.2065
+      },
+      {
+        "label": "Ministry — Paris, France",
+        "lat": 48.8566,
+        "lng": 2.3522
+      }
     ]
   },
   {
@@ -2894,7 +4202,11 @@
     "icon": "alban-of-britain.jpg",
     "bio": "The first recorded Christian martyr of Britain, executed for sheltering a persecuted priest and taking his place at the executioner's block.",
     "locations": [
-      { "label": "Martyrdom — Verulamium (St Albans), England", "lat": 51.75, "lng": -0.336 }
+      {
+        "label": "Martyrdom — Verulamium (St Albans), England",
+        "lat": 51.75,
+        "lng": -0.336
+      }
     ]
   },
   {
@@ -2905,8 +4217,16 @@
     "icon": "augustine-of-canterbury.jpg",
     "bio": "Roman monk sent by Pope Gregory the Dialogist to evangelize the Anglo-Saxons, becoming the first Archbishop of Canterbury.",
     "locations": [
-      { "label": "Mission sent from — Rome", "lat": 41.9028, "lng": 12.4964 },
-      { "label": "See — Canterbury, England", "lat": 51.2802, "lng": 1.0789 }
+      {
+        "label": "Mission sent from — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      },
+      {
+        "label": "See — Canterbury, England",
+        "lat": 51.2802,
+        "lng": 1.0789
+      }
     ]
   },
   {
@@ -2917,7 +4237,11 @@
     "icon": "gregory-the-dialogist.jpg",
     "bio": "Pope of Rome and prolific author of the 'Dialogues,' who reformed the liturgy and sent missionaries to evangelize England.",
     "locations": [
-      { "label": "See — Rome", "lat": 41.9028, "lng": 12.4964 }
+      {
+        "label": "See — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      }
     ]
   },
   {
@@ -2928,7 +4252,11 @@
     "icon": "brigid-of-kildare.jpg",
     "bio": "One of Ireland's most beloved saints, founder of the monastery at Kildare and renowned for her charity toward the poor.",
     "locations": [
-      { "label": "Monastery — Kildare, Ireland", "lat": 53.1589, "lng": -6.9109 }
+      {
+        "label": "Monastery — Kildare, Ireland",
+        "lat": 53.1589,
+        "lng": -6.9109
+      }
     ]
   },
   {
@@ -2939,8 +4267,16 @@
     "icon": "columba-of-iona.jpg",
     "bio": "Irish monk who founded the monastery of Iona, from which he evangelized the Picts of Scotland.",
     "locations": [
-      { "label": "Birthplace — Gartan, Ireland", "lat": 54.95, "lng": -7.9 },
-      { "label": "Monastery — Iona, Scotland", "lat": 56.3286, "lng": -6.3925 }
+      {
+        "label": "Birthplace — Gartan, Ireland",
+        "lat": 54.95,
+        "lng": -7.9
+      },
+      {
+        "label": "Monastery — Iona, Scotland",
+        "lat": 56.3286,
+        "lng": -6.3925
+      }
     ]
   },
   {
@@ -2951,7 +4287,11 @@
     "icon": "cuthbert-of-lindisfarne.jpg",
     "bio": "Beloved bishop and hermit of Northumbria, celebrated for his miracles and his love of solitude on the Farne Islands.",
     "locations": [
-      { "label": "See — Lindisfarne, England", "lat": 55.6689, "lng": -1.8025 }
+      {
+        "label": "See — Lindisfarne, England",
+        "lat": 55.6689,
+        "lng": -1.8025
+      }
     ]
   },
   {
@@ -2962,7 +4302,11 @@
     "icon": "david-of-wales.jpg",
     "bio": "Ascetic monk-bishop and founder of monasteries across Wales, revered ever since as the nation's patron saint.",
     "locations": [
-      { "label": "See — St Davids, Wales", "lat": 51.8825, "lng": -5.2678 }
+      {
+        "label": "See — St Davids, Wales",
+        "lat": 51.8825,
+        "lng": -5.2678
+      }
     ]
   },
   {
@@ -2973,7 +4317,11 @@
     "icon": "kevin-of-glendalough.jpg",
     "bio": "Irish hermit whose life of prayer amid the wilderness of Glendalough attracted disciples and gave rise to a great monastic settlement.",
     "locations": [
-      { "label": "Monastery — Glendalough, Ireland", "lat": 53.0089, "lng": -6.3272 }
+      {
+        "label": "Monastery — Glendalough, Ireland",
+        "lat": 53.0089,
+        "lng": -6.3272
+      }
     ]
   },
   {
@@ -2984,8 +4332,16 @@
     "icon": "arsenios-of-cappadocia.jpg",
     "bio": "Beloved priest of Farasa, Cappadocia, known for his ascetic life and miracles; he baptized and blessed St. Paisios of Mount Athos as an infant.",
     "locations": [
-      { "label": "Ministry — Farasa, Cappadocia", "lat": 38.1613, "lng": 35.4547 },
-      { "label": "Place of repose — Corfu, Greece", "lat": 39.6243, "lng": 19.9217 }
+      {
+        "label": "Ministry — Farasa, Cappadocia",
+        "lat": 38.1613,
+        "lng": 35.4547
+      },
+      {
+        "label": "Place of repose — Corfu, Greece",
+        "lat": 39.6243,
+        "lng": 19.9217
+      }
     ]
   },
   {
@@ -2996,7 +4352,11 @@
     "icon": "cyril-of-jerusalem.jpg",
     "bio": "Fourth-century Archbishop of Jerusalem whose catechetical lectures remain foundational teachings on Christian doctrine and the sacraments.",
     "locations": [
-      { "label": "See of Jerusalem", "lat": 31.7683, "lng": 35.2137 }
+      {
+        "label": "See of Jerusalem",
+        "lat": 31.7683,
+        "lng": 35.2137
+      }
     ]
   },
   {
@@ -3007,7 +4367,11 @@
     "icon": "sisoes-the-great.jpg",
     "bio": "Egyptian desert father who succeeded St. Anthony the Great's disciple at the mountain of Anthony, renowned for his humility and profound sayings preserved in the Apophthegmata.",
     "locations": [
-      { "label": "Ascetic labors — Skete, Egypt", "lat": 30.3743, "lng": 30.3287 }
+      {
+        "label": "Ascetic labors — Skete, Egypt",
+        "lat": 30.3743,
+        "lng": 30.3287
+      }
     ]
   },
   {
@@ -3018,8 +4382,16 @@
     "icon": "boris-and-gleb.jpg",
     "bio": "Sons of St. Vladimir of Kiev, princes who accepted death without resistance rather than take up arms against their brother, becoming Russia's first canonized saints.",
     "locations": [
-      { "label": "Birthplace — Kiev, Rus'", "lat": 50.4501, "lng": 30.5234 },
-      { "label": "Martyrdom of St. Gleb — near Smolensk", "lat": 54.7818, "lng": 32.0401 }
+      {
+        "label": "Birthplace — Kiev, Rus'",
+        "lat": 50.4501,
+        "lng": 30.5234
+      },
+      {
+        "label": "Martyrdom of St. Gleb — near Smolensk",
+        "lat": 54.7818,
+        "lng": 32.0401
+      }
     ]
   },
   {
@@ -3030,8 +4402,16 @@
     "icon": "alexander-nevsky.jpg",
     "bio": "Prince of Novgorod and Grand Prince of Vladimir who defended Rus' from Swedish and Teutonic invasion while preserving peace with the Golden Horde, later taking monastic vows.",
     "locations": [
-      { "label": "Birthplace — Pereslavl-Zalessky", "lat": 56.7333, "lng": 38.85 },
-      { "label": "Place of repose — Gorodets", "lat": 56.6497, "lng": 43.4737 }
+      {
+        "label": "Birthplace — Pereslavl-Zalessky",
+        "lat": 56.7333,
+        "lng": 38.85
+      },
+      {
+        "label": "Place of repose — Gorodets",
+        "lat": 56.6497,
+        "lng": 43.4737
+      }
     ]
   },
   {
@@ -3042,7 +4422,11 @@
     "icon": "job-of-pochaev.jpg",
     "bio": "Abbot of the Pochaev Lavra who defended Orthodoxy in Ukraine against the pressures of the Union of Brest and is venerated as a great ascetic and wonderworker.",
     "locations": [
-      { "label": "Monastery — Pochaev, Ukraine", "lat": 49.9903, "lng": 25.5271 }
+      {
+        "label": "Monastery — Pochaev, Ukraine",
+        "lat": 49.9903,
+        "lng": 25.5271
+      }
     ]
   },
   {
@@ -3053,8 +4437,16 @@
     "icon": "aidan-of-lindisfarne.jpg",
     "bio": "Irish monk from Iona sent to found the monastery of Lindisfarne, from which he evangelized the kingdom of Northumbria with gentleness and simplicity of life.",
     "locations": [
-      { "label": "Tonsured — Iona, Scotland", "lat": 56.3286, "lng": -6.4109 },
-      { "label": "Monastery — Lindisfarne, England", "lat": 55.6683, "lng": -1.8025 }
+      {
+        "label": "Tonsured — Iona, Scotland",
+        "lat": 56.3286,
+        "lng": -6.4109
+      },
+      {
+        "label": "Monastery — Lindisfarne, England",
+        "lat": 55.6683,
+        "lng": -1.8025
+      }
     ]
   },
   {
@@ -3065,7 +4457,11 @@
     "icon": "chad-of-mercia.jpg",
     "bio": "English bishop known for his humility and pastoral zeal, traveling on foot throughout his diocese to preach and founding the see of Lichfield.",
     "locations": [
-      { "label": "See — Lichfield, England", "lat": 52.6816, "lng": -1.8298 }
+      {
+        "label": "See — Lichfield, England",
+        "lat": 52.6816,
+        "lng": -1.8298
+      }
     ]
   },
   {
@@ -3076,7 +4472,11 @@
     "icon": "edmund-the-martyr.jpg",
     "bio": "King of East Anglia martyred by invading Danes for refusing to renounce Christ or rule as a vassal of a pagan overlord, venerated as a patron of England.",
     "locations": [
-      { "label": "Shrine — Bury St Edmunds, England", "lat": 52.2464, "lng": 0.7118 }
+      {
+        "label": "Shrine — Bury St Edmunds, England",
+        "lat": 52.2464,
+        "lng": 0.7118
+      }
     ]
   },
   {
@@ -3087,8 +4487,16 @@
     "icon": "elizabeth-the-new-martyr.jpg",
     "bio": "Grand Duchess of Russia who founded a convent of mercy after her husband's assassination and was cast alive into a mineshaft by Bolsheviks for her faith.",
     "locations": [
-      { "label": "Birthplace — Darmstadt, Germany", "lat": 49.8728, "lng": 8.6512 },
-      { "label": "Martyrdom — Alapaevsk, Russia", "lat": 57.848, "lng": 61.673 }
+      {
+        "label": "Birthplace — Darmstadt, Germany",
+        "lat": 49.8728,
+        "lng": 8.6512
+      },
+      {
+        "label": "Martyrdom — Alapaevsk, Russia",
+        "lat": 57.848,
+        "lng": 61.673
+      }
     ]
   },
   {
@@ -3099,7 +4507,11 @@
     "icon": "barsanuphius-of-optina.jpg",
     "bio": "One of the renowned Optina Elders, a former military officer who became a monk and spiritual father noted for his gift of discernment and pastoral wisdom.",
     "locations": [
-      { "label": "Monastery — Optina Pustyn, Russia", "lat": 54.0503, "lng": 35.9906 }
+      {
+        "label": "Monastery — Optina Pustyn, Russia",
+        "lat": 54.0503,
+        "lng": 35.9906
+      }
     ]
   },
   {
@@ -3110,7 +4522,11 @@
     "icon": "anatoly-of-optina.jpg",
     "bio": "Optina Elder celebrated for his humility, comforting counsel, and care for the many pilgrims and monastics who sought his guidance.",
     "locations": [
-      { "label": "Monastery — Optina Pustyn, Russia", "lat": 54.0503, "lng": 35.9906 }
+      {
+        "label": "Monastery — Optina Pustyn, Russia",
+        "lat": 54.0503,
+        "lng": 35.9906
+      }
     ]
   },
   {
@@ -3121,7 +4537,11 @@
     "icon": "philothei-of-athens.jpg",
     "bio": "Athenian noblewoman who founded a convent to shelter and ransom women enslaved under Ottoman rule, martyred for her charitable works.",
     "locations": [
-      { "label": "Convent — Athens, Greece", "lat": 37.9838, "lng": 23.7275 }
+      {
+        "label": "Convent — Athens, Greece",
+        "lat": 37.9838,
+        "lng": 23.7275
+      }
     ]
   },
   {
@@ -3132,7 +4552,11 @@
     "icon": "zacharias-and-elizabeth.jpg",
     "bio": "Priest and his wife, the aged and childless couple granted a son, John the Baptist, in fulfillment of the angel Gabriel's promise.",
     "locations": [
-      { "label": "Home — Ein Karem, near Jerusalem", "lat": 31.7644, "lng": 35.1512 }
+      {
+        "label": "Home — Ein Karem, near Jerusalem",
+        "lat": 31.7644,
+        "lng": 35.1512
+      }
     ]
   },
   {
@@ -3143,7 +4567,11 @@
     "icon": "simeon-the-god-receiver.jpg",
     "bio": "Righteous elder who, promised he would not see death before beholding the Messiah, received the infant Christ in the Temple and proclaimed the Nunc Dimittis.",
     "locations": [
-      { "label": "Temple — Jerusalem", "lat": 31.7683, "lng": 35.2137 }
+      {
+        "label": "Temple — Jerusalem",
+        "lat": 31.7683,
+        "lng": 35.2137
+      }
     ]
   },
   {
@@ -3154,7 +4582,11 @@
     "icon": "anna-the-prophetess.jpg",
     "bio": "Elderly widow who served God with fasting and prayer in the Temple and, present at the Presentation of Christ, recognized and proclaimed Him as the Messiah.",
     "locations": [
-      { "label": "Temple — Jerusalem", "lat": 31.7767, "lng": 35.2345 }
+      {
+        "label": "Temple — Jerusalem",
+        "lat": 31.7767,
+        "lng": 35.2345
+      }
     ]
   },
   {
@@ -3165,7 +4597,11 @@
     "icon": "tabitha-of-joppa.jpg",
     "bio": "Disciple in Joppa known for her charitable works, raised from the dead by the Apostle Peter as recounted in the Acts of the Apostles.",
     "locations": [
-      { "label": "Joppa (Jaffa)", "lat": 32.0533, "lng": 34.7514 }
+      {
+        "label": "Joppa (Jaffa)",
+        "lat": 32.0533,
+        "lng": 34.7514
+      }
     ]
   },
   {
@@ -3176,7 +4612,11 @@
     "icon": "dorotheos-of-gaza.jpg",
     "bio": "Sixth-century monk and abbot whose collected spiritual instructions on humility and obedience became a classic guide to monastic and Christian life.",
     "locations": [
-      { "label": "Monastery — near Gaza", "lat": 31.5017, "lng": 34.4668 }
+      {
+        "label": "Monastery — near Gaza",
+        "lat": 31.5017,
+        "lng": 34.4668
+      }
     ]
   },
   {
@@ -3187,7 +4627,11 @@
     "icon": "poemen-the-great.jpg",
     "bio": "Widely quoted desert father of Egypt's Scetis whose sayings on humility, discretion, and compassion form a large part of the Apophthegmata Patrum.",
     "locations": [
-      { "label": "Ascetic labors — Skete, Egypt", "lat": 30.3743, "lng": 30.3287 }
+      {
+        "label": "Ascetic labors — Skete, Egypt",
+        "lat": 30.3743,
+        "lng": 30.3287
+      }
     ]
   },
   {
@@ -3198,7 +4642,241 @@
     "icon": "theodore-of-sykeon.jpg",
     "bio": "Byzantine bishop of Anastasioupolis renowned for extreme asceticism and healing miracles, whose life is preserved in one of the richest hagiographies of the era.",
     "locations": [
-      { "label": "Birthplace — Sykeon, Galatia", "lat": 40.1667, "lng": 31.55 }
+      {
+        "label": "Birthplace — Sykeon, Galatia",
+        "lat": 40.1667,
+        "lng": 31.55
+      }
+    ]
+  },
+  {
+    "id": "theotokos",
+    "name": "The Theotokos, Mary the Mother of God",
+    "feastDay": "August 15",
+    "title": "Mother of God",
+    "icon": "theotokos.jpg",
+    "bio": "The Virgin Mary, Mother of God, whose Dormition (falling asleep) is commemorated as one of the Church's greatest feasts.",
+    "locations": [
+      {
+        "label": "Birthplace — Jerusalem",
+        "lat": 31.7683,
+        "lng": 35.2137
+      },
+      {
+        "label": "Annunciation — Nazareth",
+        "lat": 32.7021,
+        "lng": 35.2978
+      },
+      {
+        "label": "Dormition — Jerusalem",
+        "lat": 31.7683,
+        "lng": 35.2137
+      }
+    ]
+  },
+  {
+    "id": "joseph-the-betrothed",
+    "name": "St. Joseph the Betrothed",
+    "feastDay": "December 26",
+    "title": "Guardian of the Theotokos",
+    "icon": "joseph-the-betrothed.jpg",
+    "bio": "The righteous carpenter of Nazareth entrusted with the care of the Virgin Mary and the Christ Child.",
+    "locations": [
+      {
+        "label": "Home — Nazareth",
+        "lat": 32.7021,
+        "lng": 35.2978
+      }
+    ]
+  },
+  {
+    "id": "benedict-of-nursia",
+    "name": "St. Benedict of Nursia",
+    "feastDay": "March 14",
+    "title": "Abbot, Father of Western Monasticism",
+    "icon": "benedict-of-nursia.jpg",
+    "bio": "Italian abbot whose monastic Rule shaped Western monasticism, founding the community at Monte Cassino.",
+    "locations": [
+      {
+        "label": "Birthplace — Nursia (Norcia), Italy",
+        "lat": 42.791,
+        "lng": 13.0917
+      },
+      {
+        "label": "Monte Cassino Abbey",
+        "lat": 41.4894,
+        "lng": 13.8129
+      }
+    ]
+  },
+  {
+    "id": "jerome-of-stridon",
+    "name": "St. Jerome of Stridon",
+    "feastDay": "June 15",
+    "title": "Priest, Translator of Scripture",
+    "icon": "jerome-of-stridon.jpg",
+    "bio": "Biblical scholar and ascetic renowned for translating the Scriptures into Latin while living near the grotto of the Nativity.",
+    "locations": [
+      {
+        "label": "Birthplace — Stridon (Dalmatia)",
+        "lat": 45.6,
+        "lng": 16.4
+      },
+      {
+        "label": "Place of death — Bethlehem",
+        "lat": 31.7054,
+        "lng": 35.2024
+      }
+    ]
+  },
+  {
+    "id": "leo-the-great",
+    "name": "St. Leo the Great",
+    "feastDay": "February 18",
+    "title": "Pope of Rome",
+    "icon": "leo-the-great.jpg",
+    "bio": "Bishop of Rome whose Tome helped define Orthodox Christology at the Council of Chalcedon.",
+    "locations": [
+      {
+        "label": "See of Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      }
+    ]
+  },
+  {
+    "id": "nikephoros-of-constantinople",
+    "name": "St. Nikephoros of Constantinople",
+    "feastDay": "June 2",
+    "title": "Patriarch, Confessor",
+    "icon": "nikephoros-of-constantinople.jpg",
+    "bio": "Patriarch of Constantinople exiled for defending the veneration of icons during the iconoclast persecution.",
+    "locations": [
+      {
+        "label": "Patriarchal See — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      },
+      {
+        "label": "Place of exile — Bosphorus",
+        "lat": 41.15,
+        "lng": 29.07
+      }
+    ]
+  },
+  {
+    "id": "theodosius-the-cenobiarch",
+    "name": "St. Theodosius the Cenobiarch",
+    "feastDay": "January 11",
+    "title": "Abbot, Founder of Communal Monasticism",
+    "icon": "theodosius-the-cenobiarch.jpg",
+    "bio": "Cappadocian monk known as the father of communal (cenobitic) monasticism in Palestine, founding a great lavra near Bethlehem.",
+    "locations": [
+      {
+        "label": "Birthplace — Cappadocia",
+        "lat": 38.6431,
+        "lng": 34.8286
+      },
+      {
+        "label": "Monastery near Bethlehem",
+        "lat": 31.7054,
+        "lng": 35.2024
+      }
+    ]
+  },
+  {
+    "id": "gregory-of-agrigento",
+    "name": "St. Gregory of Agrigento",
+    "feastDay": "November 23",
+    "title": "Bishop of Agrigento",
+    "icon": "gregory-of-agrigento.jpg",
+    "bio": "Sicilian bishop renowned for his commentary on Ecclesiastes and his steadfastness amid false accusations.",
+    "locations": [
+      {
+        "label": "See — Agrigento, Sicily",
+        "lat": 37.3111,
+        "lng": 13.5766
+      }
+    ]
+  },
+  {
+    "id": "nicetas-of-remesiana",
+    "name": "St. Nicetas of Remesiana",
+    "feastDay": "January 24",
+    "title": "Bishop, Missionary",
+    "icon": "nicetas-of-remesiana.jpg",
+    "bio": "Balkan bishop and missionary credited with evangelizing the Dacians and possibly composing the Te Deum hymn.",
+    "locations": [
+      {
+        "label": "See — Remesiana (Bela Palanka)",
+        "lat": 43.2167,
+        "lng": 22.3167
+      }
+    ]
+  },
+  {
+    "id": "swithun-of-winchester",
+    "name": "St. Swithun of Winchester",
+    "feastDay": "July 15",
+    "title": "Bishop of Winchester",
+    "icon": "swithun-of-winchester.jpg",
+    "bio": "Anglo-Saxon bishop of Winchester renowned for humility and charitable works, whose relics became a major pilgrimage site.",
+    "locations": [
+      {
+        "label": "See — Winchester, England",
+        "lat": 51.0632,
+        "lng": -1.308
+      }
+    ]
+  },
+  {
+    "id": "maximos-the-greek",
+    "name": "St. Maximos the Greek",
+    "feastDay": "January 21",
+    "title": "Monk, Scholar, Translator",
+    "icon": "maximos-the-greek.jpg",
+    "bio": "Athonite monk sent to Moscow to translate sacred texts, later imprisoned for years yet remembered as an enlightener of Russia.",
+    "locations": [
+      {
+        "label": "Vatopedi Monastery, Mount Athos",
+        "lat": 40.2597,
+        "lng": 24.2331
+      },
+      {
+        "label": "Place of death — Sergiyev Posad",
+        "lat": 56.3132,
+        "lng": 38.1334
+      }
+    ]
+  },
+  {
+    "id": "cyril-of-turov",
+    "name": "St. Cyril of Turov",
+    "feastDay": "April 28",
+    "title": "Bishop, Preacher",
+    "icon": "cyril-of-turov.jpg",
+    "bio": "Medieval bishop and hymnographer of Kievan Rus', celebrated as one of its most gifted preachers and writers.",
+    "locations": [
+      {
+        "label": "See — Turov, Belarus",
+        "lat": 52.0672,
+        "lng": 27.7317
+      }
+    ]
+  },
+  {
+    "id": "euphrosyne-of-polotsk",
+    "name": "St. Euphrosyne of Polotsk",
+    "feastDay": "May 23",
+    "title": "Abbess, Enlightener of Belarus",
+    "icon": "euphrosyne-of-polotsk.jpg",
+    "bio": "Princess turned abbess who founded monasteries and copied manuscripts, revered as the patroness of Belarus.",
+    "locations": [
+      {
+        "label": "Polotsk, Belarus",
+        "lat": 55.4842,
+        "lng": 28.7717
+      }
     ]
   }
 ]
