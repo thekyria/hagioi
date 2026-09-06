@@ -29,30 +29,28 @@ body {
 .site-header {
     background-color: var(--color-navy);
     color: var(--color-cream);
-    padding: 20px 0;
+    padding: 8px 16px;
     text-align: center;
 }
 
 .site-header h1 {
     font-family: 'GFS Didot', serif;
-    font-size: 36px;
+    font-size: 24px;
     margin: 0;
     color: var(--color-gold-light);
 }
 
 .logo img {
-    width: 60px;
-    /* adjust size as needed */
+    width: 32px;
     height: auto;
     vertical-align: middle;
-    margin-bottom: 10px;
 }
 
 .site-header .container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .site-nav {
@@ -229,21 +227,22 @@ main {
 
 /* non-matching markers, styled via a PinElement content node */
 .marker-dimmed {
-    filter: grayscale(1) opacity(0.5);
-    transform: scale(0.7);
+    opacity: 0.5;
+    transform: scale(0.85);
     transform-origin: bottom center;
 }
 
-/* marker whose info window / location picker is currently open */
+/* marker shown while its info window / location picker is open (see
+   `activePinElement` in script.js, swapped in via `marker.content`) */
 .marker-active {
-    transform: scale(1.2);
-    transform-origin: bottom center;
     filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.6));
 }
 
-/* preserve dimmed styling if an out-of-range marker is activated */
+/* preserve dimmed styling if an out-of-range marker is activated while restoring native scale */
 .marker-dimmed.marker-active {
-    filter: grayscale(1) opacity(0.5) drop-shadow(0 0 4px rgba(0, 0, 0, 0.6));
+    opacity: 0.5;
+    transform: none;
+    filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.6));
 }
 
 @media (max-width: 768px) {
@@ -255,19 +254,19 @@ main {
 
 @media (max-width: 480px) {
     .site-header {
-        padding: 12px 0;
+        padding: 6px 12px;
     }
 
     .site-header h1 {
-        font-size: 26px;
+        font-size: 20px;
     }
 
     .logo img {
-        width: 44px;
+        width: 26px;
     }
 
     .site-header .container {
-        gap: 10px;
+        gap: 8px;
     }
 
     #saints-panel {
@@ -279,18 +278,36 @@ main {
         width: 34px;
         font-size: 13px;
     }
+
+    .site-footer {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    .footer-container {
+        gap: 4px 8px;
+    }
 }
 
 .site-footer {
     background-color: var(--color-navy);
     color: var(--color-cream);
     text-align: center;
-    padding: 20px 0;
-    font-size: 14px;
+    padding: 8px 16px;
+    font-size: 13px;
 }
 
-.site-footer p {
-    margin: 5px 0;
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 6px 12px;
+}
+
+.footer-separator {
+    color: var(--color-gold);
+    opacity: 0.6;
 }
 
 .site-footer a {
@@ -309,7 +326,8 @@ main {
 }
 
 .support-links {
-    margin-top: 8px;
+    position: relative;
+    display: inline-block;
 }
 
 .support-links summary {
@@ -317,12 +335,23 @@ main {
     cursor: pointer;
 }
 
-.support-links div {
+.support-dropdown {
+    position: absolute;
+    bottom: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-bottom: 8px;
+    background: var(--color-navy);
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid var(--color-blue-dark);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.35);
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 4px 14px;
-    margin-top: 8px;
+    gap: 6px 12px;
+    white-space: nowrap;
+    z-index: 100;
 }
 
 .saint-info {
