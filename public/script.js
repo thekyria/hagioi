@@ -107,21 +107,41 @@ async function initMap() {
     const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary("marker");
     const infoWindow = new InfoWindow();
 
-    let activePinElements = [];
+    // Maps each AdvancedMarkerElement to its marker group, so the pin shown
+    // on the map can be swapped between its default (grey) and active (navy,
+    // enlarged) appearance without recreating markers.
+    const groupByMarker = new Map();
+
+    let activeMarkers = [];
     let activeInfoWindows = [];
 
     function clearSelection() {
-        activePinElements.forEach((pinElement) => pinElement.classList.remove('marker-active'));
-        activePinElements = [];
+        activeMarkers.forEach((marker) => {
+            const group = groupByMarker.get(marker);
+            if (group) {
+                marker.content = group.defaultPinElement;
+            }
+        });
+        activeMarkers = [];
         activeInfoWindows.forEach((infoWin) => infoWin.close());
         activeInfoWindows = [];
         infoWindow.close();
     }
 
-    function setActiveMarkers(pinElements) {
-        activePinElements.forEach((pinElement) => pinElement.classList.remove('marker-active'));
-        activePinElements = pinElements;
-        activePinElements.forEach((pinElement) => pinElement.classList.add('marker-active'));
+    function setActiveMarkers(markers) {
+        activeMarkers.forEach((marker) => {
+            const group = groupByMarker.get(marker);
+            if (group) {
+                marker.content = group.defaultPinElement;
+            }
+        });
+        activeMarkers = markers;
+        activeMarkers.forEach((marker) => {
+            const group = groupByMarker.get(marker);
+            if (group) {
+                marker.content = group.activePinElement;
+            }
+        });
     }
 
     infoWindow.addListener('closeclick', () => clearSelection());
@@ -189,7 +209,7 @@ async function initMap() {
     // list" link when the clicked marker is shared with other saints.
     function selectSaint(saint, markers, sourceMarker = null, sourcePlacements = null) {
         clearSelection();
-        setActiveMarkers(markers.map(({ pinElement }) => pinElement));
+        setActiveMarkers(markers.map(({ marker }) => marker));
 
         const targetEntry = markers.find(({ marker }) => marker === sourceMarker) || markers[0];
         const infoWin = new InfoWindow();
@@ -202,7 +222,9 @@ async function initMap() {
         if (markers.length > 1) {
             const bounds = new google.maps.LatLngBounds();
             markers.forEach(({ location }) => bounds.extend({ lat: location.lat, lng: location.lng }));
-            map.fitBounds(bounds, 60);
+            // Generous padding so the fitted markers aren't crammed against
+            // the edges of the map (or hidden behind the saints panel).
+            map.fitBounds(bounds, 120);
         } else {
             map.panTo({ lat: markers[0].location.lat, lng: markers[0].location.lng });
         }
@@ -279,20 +301,40 @@ async function initMap() {
         });
 
     markerGroups.forEach((group) => {
-        const pin = group.placements.length > 1
-            ? new PinElement({ glyph: String(group.placements.length), background: '#c9a227', borderColor: '#0a2342', glyphColor: '#0a2342' })
-            : new PinElement();
+        const glyph = group.placements.length > 1 ? String(group.placements.length) : undefined;
+
+        // Unselected markers use a muted, faint grey so they recede into the
+        // map; the saint's icon/name (shown in the info window) still carries
+        // the color. Selected markers use the site's navy accent and a
+        // larger scale, applied by swapping `marker.content` on selection.
+        const defaultPin = new PinElement({
+            glyph,
+            background: '#aab2bd',
+            borderColor: '#8a929c',
+            glyphColor: '#5b6470',
+        });
+        const activePin = new PinElement({
+            glyph,
+            background: '#0a2342',
+            borderColor: '#10375c',
+            glyphColor: '#e6c669',
+            scale: 1.3,
+        });
+        activePin.element.classList.add('marker-active');
+
         const marker = new AdvancedMarkerElement({
             map: map,
             title: group.placements.length === 1
                 ? `${group.placements[0].saint.name} \u2014 ${group.placements[0].location.label}`
                 : group.placements.map((placement) => placement.saint.name).join(', '),
             position: group.position,
-            content: pin.element,
+            content: defaultPin.element,
         });
 
         group.marker = marker;
-        group.pinElement = pin.element;
+        group.defaultPinElement = defaultPin.element;
+        group.activePinElement = activePin.element;
+        groupByMarker.set(marker, group);
     });
 
     // one entry per saint, with all of its markers and its parsed feast day
@@ -302,7 +344,6 @@ async function initMap() {
             return {
                 location,
                 marker: group.marker,
-                pinElement: group.pinElement,
                 placements: group.placements,
             };
         });
@@ -337,7 +378,7 @@ async function initMap() {
         const toCode = dayCode(Number(toMonthSelect.value), Number(toDaySelect.value));
 
         saintsList.innerHTML = '';
-        const visiblePins = new Set();
+        const visibleMarkers = new Set();
 
         entries.forEach(({ saint, feast, markers }) => {
             const matches = isInRange(fromCode, toCode, dayCode(feast.month, feast.day));
@@ -346,7 +387,7 @@ async function initMap() {
                 return;
             }
 
-            markers.forEach(({ pinElement }) => visiblePins.add(pinElement));
+            markers.forEach(({ marker }) => visibleMarkers.add(marker));
 
             const item = document.createElement('li');
 
@@ -374,8 +415,10 @@ async function initMap() {
             saintsList.appendChild(item);
         });
 
-        markerGroups.forEach(({ pinElement }) => {
-            pinElement.classList.toggle('marker-dimmed', !visiblePins.has(pinElement));
+        markerGroups.forEach(({ marker, defaultPinElement, activePinElement }) => {
+            const dimmed = !visibleMarkers.has(marker);
+            defaultPinElement.classList.toggle('marker-dimmed', dimmed);
+            activePinElement.classList.toggle('marker-dimmed', dimmed);
         });
     }
 
