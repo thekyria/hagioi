@@ -4878,5 +4878,830 @@
         "lng": 28.7717
       }
     ]
+  },
+  {
+    "id": "macrina-the-younger",
+    "name": "St. Macrina the Younger",
+    "feastDay": "July 19",
+    "title": "Venerable",
+    "icon": "macrina-the-younger.jpg",
+    "bio": "Elder sister and teacher of Sts. Basil the Great and Gregory of Nyssa, who turned the family estate into a monastic community for women.",
+    "locations": [
+      {
+        "label": "Birthplace — Caesarea of Cappadocia",
+        "lat": 38.7312,
+        "lng": 35.4787
+      },
+      {
+        "label": "Monastery and place of repose — Annisa, near Neocaesarea",
+        "lat": 40.5906,
+        "lng": 36.9539
+      }
+    ]
+  },
+  {
+    "id": "augustine-of-hippo",
+    "name": "St. Augustine of Hippo",
+    "feastDay": "June 15",
+    "title": "Bishop of Hippo",
+    "icon": "augustine-of-hippo.jpg",
+    "bio": "North African bishop and prolific theologian, author of the Confessions, whose writings shaped Western Christian thought.",
+    "locations": [
+      {
+        "label": "Birthplace — Thagaste (Souk Ahras, Algeria)",
+        "lat": 36.2864,
+        "lng": 7.9511
+      },
+      {
+        "label": "See and place of death — Hippo Regius (Annaba, Algeria)",
+        "lat": 36.9,
+        "lng": 7.75
+      }
+    ]
+  },
+  {
+    "id": "perpetua-and-felicity",
+    "name": "Sts. Perpetua and Felicity",
+    "feastDay": "February 1",
+    "title": "Martyrs",
+    "icon": "perpetua-and-felicity.jpg",
+    "bio": "A young noblewoman and her servant, martyred together in the arena at Carthage; Perpetua's prison diary is among the earliest writings by a Christian woman.",
+    "locations": [
+      {
+        "label": "Place of martyrdom — Carthage",
+        "lat": 36.8528,
+        "lng": 10.3233
+      }
+    ]
+  },
+  {
+    "id": "sophronius-of-jerusalem",
+    "name": "St. Sophronius of Jerusalem",
+    "feastDay": "March 11",
+    "title": "Patriarch of Jerusalem",
+    "icon": "sophronius-of-jerusalem.jpg",
+    "bio": "Monk, hymnographer and patriarch who defended Orthodoxy against Monothelitism and surrendered Jerusalem peacefully when the city fell.",
+    "locations": [
+      {
+        "label": "Birthplace — Damascus",
+        "lat": 33.5138,
+        "lng": 36.2765
+      },
+      {
+        "label": "See — Jerusalem",
+        "lat": 31.7784,
+        "lng": 35.2296
+      }
+    ]
+  },
+  {
+    "id": "chariton-the-confessor",
+    "name": "St. Chariton the Confessor",
+    "feastDay": "September 28",
+    "title": "Venerable Confessor",
+    "icon": "chariton-the-confessor.jpg",
+    "bio": "Confessor under the persecutions who founded the first lavras of the Judean desert, shaping Palestinian monasticism.",
+    "locations": [
+      {
+        "label": "Birthplace — Iconium (Konya)",
+        "lat": 37.8746,
+        "lng": 32.4932
+      },
+      {
+        "label": "Pharan Lavra, Judean desert",
+        "lat": 31.8446,
+        "lng": 35.36
+      }
+    ]
+  },
+  {
+    "id": "isidore-of-pelusium",
+    "name": "St. Isidore of Pelusium",
+    "feastDay": "February 4",
+    "title": "Venerable",
+    "icon": "isidore-of-pelusium.jpg",
+    "bio": "Egyptian ascetic and admirer of St. John Chrysostom, remembered for thousands of short letters of spiritual counsel.",
+    "locations": [
+      {
+        "label": "Pelusium, Egypt",
+        "lat": 31.04,
+        "lng": 32.54
+      }
+    ]
+  },
+  {
+    "id": "symeon-stylite-the-younger",
+    "name": "St. Symeon Stylite the Younger",
+    "feastDay": "May 24",
+    "title": "Venerable",
+    "icon": "symeon-stylite-the-younger.jpg",
+    "bio": "Ascetic who spent decades atop a pillar on the Wondrous Mountain near Antioch, drawing pilgrims seeking healing and counsel.",
+    "locations": [
+      {
+        "label": "Birthplace — Antioch",
+        "lat": 36.2021,
+        "lng": 36.1603
+      },
+      {
+        "label": "Wondrous Mountain, near Antioch",
+        "lat": 36.1667,
+        "lng": 36.05
+      }
+    ]
+  },
+  {
+    "id": "alypius-the-stylite",
+    "name": "St. Alypius the Stylite",
+    "feastDay": "November 26",
+    "title": "Venerable",
+    "icon": "alypius-the-stylite.jpg",
+    "bio": "Paphlagonian ascetic who lived on a pillar for over half a century, with monastic communities of both men and women gathered at its foot.",
+    "locations": [
+      {
+        "label": "Adrianopolis in Paphlagonia",
+        "lat": 40.9667,
+        "lng": 32.4167
+      }
+    ]
+  },
+  {
+    "id": "joseph-the-hymnographer",
+    "name": "St. Joseph the Hymnographer",
+    "feastDay": "April 3",
+    "title": "Venerable",
+    "icon": "joseph-the-hymnographer.jpg",
+    "bio": "Sicilian-born monk of Constantinople who composed a vast number of canons still sung in the Orthodox services.",
+    "locations": [
+      {
+        "label": "Birthplace — Sicily",
+        "lat": 37.0755,
+        "lng": 15.2866
+      },
+      {
+        "label": "Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
+    ]
+  },
+  {
+    "id": "cosmas-the-hymnographer",
+    "name": "St. Cosmas the Hymnographer",
+    "feastDay": "October 14",
+    "title": "Bishop of Maiuma",
+    "icon": "cosmas-the-hymnographer.jpg",
+    "bio": "Adoptive brother of St. John of Damascus and bishop of Maiuma, author of canons for the great feasts of the Church.",
+    "locations": [
+      {
+        "label": "Monastery of St. Sabbas, near Jerusalem",
+        "lat": 31.705,
+        "lng": 35.33
+      },
+      {
+        "label": "See — Maiuma, near Gaza",
+        "lat": 31.53,
+        "lng": 34.44
+      }
+    ]
+  },
+  {
+    "id": "ioannikios-the-great",
+    "name": "St. Ioannikios the Great",
+    "feastDay": "November 4",
+    "title": "Venerable",
+    "icon": "ioannikios-the-great.jpg",
+    "bio": "Soldier turned hermit of Bithynian Olympus, a defender of the holy icons whose prayer 'My hope is the Father' entered the daily services.",
+    "locations": [
+      {
+        "label": "Mount Olympus of Bithynia (Uludağ)",
+        "lat": 40.07,
+        "lng": 29.23
+      }
+    ]
+  },
+  {
+    "id": "methodius-of-constantinople",
+    "name": "St. Methodius of Constantinople",
+    "feastDay": "June 14",
+    "title": "Patriarch of Constantinople",
+    "icon": "methodius-of-constantinople.jpg",
+    "bio": "Confessor imprisoned for venerating icons who, as patriarch, presided over the restoration of the icons celebrated on the Sunday of Orthodoxy.",
+    "locations": [
+      {
+        "label": "Birthplace — Syracuse, Sicily",
+        "lat": 37.0755,
+        "lng": 15.2866
+      },
+      {
+        "label": "See — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
+    ]
+  },
+  {
+    "id": "anysia-of-thessaloniki",
+    "name": "St. Anysia of Thessaloniki",
+    "feastDay": "December 30",
+    "title": "Martyr",
+    "icon": "anysia-of-thessaloniki.jpg",
+    "bio": "Young Thessalonian woman who gave away her inheritance to the poor and was killed by a soldier for refusing to sacrifice to idols.",
+    "locations": [
+      {
+        "label": "Thessaloniki",
+        "lat": 40.6401,
+        "lng": 22.9444
+      }
+    ]
+  },
+  {
+    "id": "neophytos-the-recluse",
+    "name": "St. Neophytos the Recluse",
+    "feastDay": "January 24",
+    "title": "Venerable",
+    "icon": "neophytos-the-recluse.jpg",
+    "bio": "Cypriot hermit who carved the Encleistra out of the rock near Paphos and left writings that are a key witness to medieval Cyprus.",
+    "locations": [
+      {
+        "label": "Birthplace — Lefkara, Cyprus",
+        "lat": 34.8667,
+        "lng": 33.3033
+      },
+      {
+        "label": "The Encleistra, near Paphos",
+        "lat": 34.83,
+        "lng": 32.49
+      }
+    ]
+  },
+  {
+    "id": "makarios-of-corinth",
+    "name": "St. Makarios Notaras of Corinth",
+    "feastDay": "April 17",
+    "title": "Bishop of Corinth",
+    "icon": "makarios-of-corinth.jpg",
+    "bio": "Bishop who gathered the texts of the Philokalia with St. Nikodemos, a leading figure of the Kollyvades movement for liturgical and patristic renewal.",
+    "locations": [
+      {
+        "label": "Birthplace — Corinth",
+        "lat": 37.9407,
+        "lng": 22.951
+      },
+      {
+        "label": "Place of repose — Chios",
+        "lat": 38.368,
+        "lng": 26.136
+      }
+    ]
+  },
+  {
+    "id": "athanasios-parios",
+    "name": "St. Athanasios Parios",
+    "feastDay": "June 24",
+    "title": "Venerable",
+    "icon": "athanasios-parios.jpg",
+    "bio": "Teacher and theologian of the Kollyvades movement who taught for many years at the school of Chios during the Ottoman period.",
+    "locations": [
+      {
+        "label": "Birthplace — Paros",
+        "lat": 37.085,
+        "lng": 25.15
+      },
+      {
+        "label": "Place of repose — Chios",
+        "lat": 38.368,
+        "lng": 26.136
+      }
+    ]
+  },
+  {
+    "id": "eugenios-of-trebizond",
+    "name": "St. Eugenios of Trebizond",
+    "feastDay": "January 21",
+    "title": "Martyr",
+    "icon": "eugenios-of-trebizond.jpg",
+    "bio": "Martyr under Diocletian who became the patron saint of Trebizond, where a great monastery church was raised in his honour.",
+    "locations": [
+      {
+        "label": "Trebizond (Trabzon)",
+        "lat": 41.0027,
+        "lng": 39.7168
+      }
+    ]
+  },
+  {
+    "id": "ketevan-of-georgia",
+    "name": "St. Ketevan the Queen",
+    "feastDay": "September 13",
+    "title": "Great Martyr, Queen of Kakheti",
+    "icon": "ketevan-of-georgia.jpg",
+    "bio": "Queen of Kakheti who was held captive in Persia and tortured to death for refusing to renounce Christ.",
+    "locations": [
+      {
+        "label": "Kingdom of Kakheti — Gremi, Georgia",
+        "lat": 41.98,
+        "lng": 45.61
+      },
+      {
+        "label": "Place of martyrdom — Shiraz, Persia",
+        "lat": 29.5918,
+        "lng": 52.5837
+      }
+    ]
+  },
+  {
+    "id": "shushanik-of-georgia",
+    "name": "St. Shushanik",
+    "feastDay": "August 28",
+    "title": "Martyr, Queen of Kartli",
+    "icon": "shushanik-of-georgia.jpg",
+    "bio": "Armenian-born queen of Kartli who suffered imprisonment and death rather than follow her husband into apostasy; the account of her passion is the oldest surviving work of Georgian literature.",
+    "locations": [
+      {
+        "label": "Place of martyrdom — Tsurtavi, Kartli",
+        "lat": 41.44,
+        "lng": 44.93
+      },
+      {
+        "label": "Relics — Metekhi church, Tbilisi",
+        "lat": 41.69,
+        "lng": 44.81
+      }
+    ]
+  },
+  {
+    "id": "stephen-the-great",
+    "name": "St. Stephen the Great",
+    "feastDay": "July 2",
+    "title": "Right-believing Voivode of Moldavia",
+    "icon": "stephen-the-great.jpg",
+    "bio": "Prince of Moldavia who defended his land against repeated invasions and founded dozens of churches and monasteries.",
+    "locations": [
+      {
+        "label": "Capital — Suceava, Romania",
+        "lat": 47.6514,
+        "lng": 26.2556
+      },
+      {
+        "label": "Burial place — Putna Monastery",
+        "lat": 47.87,
+        "lng": 25.6
+      }
+    ]
+  },
+  {
+    "id": "calinic-of-cernica",
+    "name": "St. Calinic of Cernica",
+    "feastDay": "April 11",
+    "title": "Bishop of Râmnic",
+    "icon": "calinic-of-cernica.jpg",
+    "bio": "Romanian abbot and bishop known for his asceticism and almsgiving, who rebuilt churches and cared for the poor of his diocese.",
+    "locations": [
+      {
+        "label": "Cernica Monastery, near Bucharest",
+        "lat": 44.42,
+        "lng": 26.27
+      },
+      {
+        "label": "See — Râmnicu Vâlcea",
+        "lat": 45.1,
+        "lng": 24.369
+      }
+    ]
+  },
+  {
+    "id": "antim-ivireanul",
+    "name": "St. Antim Ivireanul",
+    "feastDay": "September 27",
+    "title": "Metropolitan of Wallachia, Hieromartyr",
+    "icon": "antim-ivireanul.jpg",
+    "bio": "Georgian-born printer, preacher and metropolitan who gave Wallachia liturgical books in Romanian and was killed on the way to exile.",
+    "locations": [
+      {
+        "label": "Birthplace — Iveria (Georgia)",
+        "lat": 41.7151,
+        "lng": 44.8271
+      },
+      {
+        "label": "See — Bucharest",
+        "lat": 44.4268,
+        "lng": 26.1025
+      }
+    ]
+  },
+  {
+    "id": "paisius-of-hilendar",
+    "name": "St. Paisius of Hilendar",
+    "feastDay": "June 19",
+    "title": "Venerable",
+    "icon": "paisius-of-hilendar.jpg",
+    "bio": "Athonite monk whose Slavonic-Bulgarian History awakened the national and spiritual revival of the Bulgarian people.",
+    "locations": [
+      {
+        "label": "Birthplace — Bansko, Bulgaria",
+        "lat": 41.8383,
+        "lng": 23.4886
+      },
+      {
+        "label": "Hilandar Monastery, Mount Athos",
+        "lat": 40.3392,
+        "lng": 24.1103
+      }
+    ]
+  },
+  {
+    "id": "alexander-of-svir",
+    "name": "St. Alexander of Svir",
+    "feastDay": "August 30",
+    "title": "Venerable",
+    "icon": "alexander-of-svir.jpg",
+    "bio": "Northern Russian hermit and abbot, remembered for a vision of the Holy Trinity and for the monastery he founded near the river Svir.",
+    "locations": [
+      {
+        "label": "Holy Trinity Monastery, Staraya Sloboda",
+        "lat": 60.79,
+        "lng": 33.3
+      }
+    ]
+  },
+  {
+    "id": "cyril-of-belozersk",
+    "name": "St. Cyril of Belozersk",
+    "feastDay": "June 9",
+    "title": "Venerable",
+    "icon": "cyril-of-belozersk.jpg",
+    "bio": "Monk formed in the tradition of St. Sergius who founded a great monastery on the White Lake, a centre of book-copying and northern monasticism.",
+    "locations": [
+      {
+        "label": "Birthplace — Moscow",
+        "lat": 55.7558,
+        "lng": 37.6173
+      },
+      {
+        "label": "Kirillo-Belozersky Monastery, Kirillov",
+        "lat": 59.86,
+        "lng": 38.37
+      }
+    ]
+  },
+  {
+    "id": "dimitry-of-rostov",
+    "name": "St. Dimitry of Rostov",
+    "feastDay": "October 28",
+    "title": "Metropolitan of Rostov",
+    "icon": "dimitry-of-rostov.jpg",
+    "bio": "Preacher and metropolitan who compiled the great collection of Lives of the Saints used throughout the Russian Church.",
+    "locations": [
+      {
+        "label": "Birthplace — Makariv, Ukraine",
+        "lat": 50.4667,
+        "lng": 29.81
+      },
+      {
+        "label": "See — Rostov Veliky",
+        "lat": 57.1856,
+        "lng": 39.4144
+      }
+    ]
+  },
+  {
+    "id": "theophan-the-recluse",
+    "name": "St. Theophan the Recluse",
+    "feastDay": "January 10",
+    "title": "Bishop, Recluse of Vysha",
+    "icon": "theophan-the-recluse.jpg",
+    "bio": "Bishop who withdrew into seclusion to write and translate, giving Russia its own Philokalia and countless letters of spiritual direction.",
+    "locations": [
+      {
+        "label": "Vysha Hermitage, Ryazan region",
+        "lat": 54.05,
+        "lng": 41.93
+      }
+    ]
+  },
+  {
+    "id": "ignatius-brianchaninov",
+    "name": "St. Ignatius Brianchaninov",
+    "feastDay": "April 30",
+    "title": "Bishop of the Caucasus and Black Sea",
+    "icon": "ignatius-brianchaninov.jpg",
+    "bio": "Officer turned monk and bishop whose ascetical writings interpret the Fathers for Christians living in the modern world.",
+    "locations": [
+      {
+        "label": "See — Stavropol",
+        "lat": 45.0428,
+        "lng": 41.9734
+      },
+      {
+        "label": "Place of repose — Nikolo-Babaevsky Monastery",
+        "lat": 57.67,
+        "lng": 40.38
+      }
+    ]
+  },
+  {
+    "id": "philip-of-moscow",
+    "name": "St. Philip of Moscow",
+    "feastDay": "January 9",
+    "title": "Metropolitan of Moscow, Hieromartyr",
+    "icon": "philip-of-moscow.jpg",
+    "bio": "Abbot of Solovki and metropolitan who publicly rebuked Ivan the Terrible for his cruelty and was deposed and killed in exile.",
+    "locations": [
+      {
+        "label": "Solovki Monastery",
+        "lat": 65.0245,
+        "lng": 35.71
+      },
+      {
+        "label": "See — Moscow",
+        "lat": 55.7558,
+        "lng": 37.6173
+      },
+      {
+        "label": "Place of death — Otroch Monastery, Tver",
+        "lat": 56.8587,
+        "lng": 35.9176
+      }
+    ]
+  },
+  {
+    "id": "peter-and-fevronia-of-murom",
+    "name": "Sts. Peter and Fevronia of Murom",
+    "feastDay": "June 25",
+    "title": "Right-believing Prince and Princess",
+    "icon": "peter-and-fevronia-of-murom.jpg",
+    "bio": "Prince and his peasant-born wife, honoured in Russia as patrons of marriage and family life.",
+    "locations": [
+      {
+        "label": "Murom, Russia",
+        "lat": 55.573,
+        "lng": 42.052
+      }
+    ]
+  },
+  {
+    "id": "hilda-of-whitby",
+    "name": "St. Hilda of Whitby",
+    "feastDay": "November 17",
+    "title": "Abbess",
+    "icon": "hilda-of-whitby.jpg",
+    "bio": "Northumbrian abbess whose double monastery at Whitby trained bishops and sheltered the poet Caedmon.",
+    "locations": [
+      {
+        "label": "Whitby Abbey, England",
+        "lat": 54.4863,
+        "lng": -0.6133
+      }
+    ]
+  },
+  {
+    "id": "bede-the-venerable",
+    "name": "St. Bede the Venerable",
+    "feastDay": "May 27",
+    "title": "Venerable",
+    "icon": "bede-the-venerable.jpg",
+    "bio": "Monk of Jarrow and historian of the English Church, whose learning earned him the title of the last of the Latin Fathers.",
+    "locations": [
+      {
+        "label": "Monastery of Jarrow, England",
+        "lat": 54.98,
+        "lng": -1.47
+      },
+      {
+        "label": "Relics — Durham Cathedral",
+        "lat": 54.7733,
+        "lng": -1.5764
+      }
+    ]
+  },
+  {
+    "id": "ninian-of-whithorn",
+    "name": "St. Ninian of Whithorn",
+    "feastDay": "September 16",
+    "title": "Bishop, Enlightener of the Picts",
+    "icon": "ninian-of-whithorn.jpg",
+    "bio": "Early bishop in Britain who preached to the southern Picts from his church at Whithorn, remembered as the Candida Casa.",
+    "locations": [
+      {
+        "label": "Whithorn, Scotland",
+        "lat": 54.734,
+        "lng": -4.417
+      }
+    ]
+  },
+  {
+    "id": "hilary-of-poitiers",
+    "name": "St. Hilary of Poitiers",
+    "feastDay": "January 14",
+    "title": "Bishop of Poitiers",
+    "icon": "hilary-of-poitiers.jpg",
+    "bio": "Bishop of Gaul exiled for opposing Arianism, whose treatise On the Trinity defended the divinity of Christ in the Latin West.",
+    "locations": [
+      {
+        "label": "Poitiers, France",
+        "lat": 46.5802,
+        "lng": 0.3404
+      }
+    ]
+  },
+  {
+    "id": "denis-of-paris",
+    "name": "St. Denis of Paris",
+    "feastDay": "October 3",
+    "title": "Hieromartyr",
+    "icon": "denis-of-paris.jpg",
+    "bio": "First bishop of Paris, beheaded on the hill of Montmartre; the abbey raised over his grave gave its name to Saint-Denis.",
+    "locations": [
+      {
+        "label": "Place of martyrdom — Montmartre, Paris",
+        "lat": 48.8867,
+        "lng": 2.3431
+      },
+      {
+        "label": "Burial place — Saint-Denis",
+        "lat": 48.9362,
+        "lng": 2.3574
+      }
+    ]
+  },
+  {
+    "id": "basil-of-ostrog",
+    "name": "St. Basil of Ostrog",
+    "feastDay": "April 29",
+    "title": "Bishop, Wonderworker",
+    "icon": "basil-of-ostrog.jpg",
+    "bio": "Bishop of Herzegovina who withdrew to the cliffs of Ostrog; his relics there remain one of the most visited pilgrimage sites in the Balkans.",
+    "locations": [
+      {
+        "label": "Tvrdoš Monastery, Herzegovina",
+        "lat": 42.7167,
+        "lng": 18.3167
+      },
+      {
+        "label": "Ostrog Monastery, Montenegro",
+        "lat": 42.6747,
+        "lng": 19.0208
+      }
+    ]
+  },
+  {
+    "id": "peter-of-cetinje",
+    "name": "St. Peter of Cetinje",
+    "feastDay": "October 18",
+    "title": "Metropolitan of Montenegro",
+    "icon": "peter-of-cetinje.jpg",
+    "bio": "Metropolitan and ruler of Montenegro who reconciled its warring clans, gave it its first laws, and was glorified soon after his repose.",
+    "locations": [
+      {
+        "label": "Cetinje Monastery, Montenegro",
+        "lat": 42.3931,
+        "lng": 18.9116
+      }
+    ]
+  },
+  {
+    "id": "juvenaly-of-alaska",
+    "name": "St. Juvenaly of Alaska",
+    "feastDay": "September 24",
+    "title": "Protomartyr of America",
+    "icon": "juvenaly-of-alaska.jpg",
+    "bio": "Missionary hieromonk of the first Alaskan mission, killed while preaching the Gospel in the interior — the first martyr of the Orthodox Church in America.",
+    "locations": [
+      {
+        "label": "Kodiak, Alaska",
+        "lat": 57.79,
+        "lng": -152.4072
+      },
+      {
+        "label": "Place of martyrdom — Lake Iliamna region",
+        "lat": 59.75,
+        "lng": -154.85
+      }
+    ]
+  },
+  {
+    "id": "peter-the-aleut",
+    "name": "St. Peter the Aleut",
+    "feastDay": "September 24",
+    "title": "Martyr",
+    "icon": "peter-the-aleut.jpg",
+    "bio": "Young Aleut hunter from Kodiak who, according to his companion's account, was tortured to death in California for refusing to abandon the Orthodox faith.",
+    "locations": [
+      {
+        "label": "Home — Kodiak, Alaska",
+        "lat": 57.79,
+        "lng": -152.4072
+      },
+      {
+        "label": "Place of martyrdom — California",
+        "lat": 37.7749,
+        "lng": -122.4194
+      }
+    ]
+  },
+  {
+    "id": "jacob-netsvetov",
+    "name": "St. Jacob Netsvetov",
+    "feastDay": "July 26",
+    "title": "Enlightener of the Peoples of Alaska",
+    "icon": "jacob-netsvetov.jpg",
+    "bio": "First Alaska Native ordained to the priesthood, who translated the services into native languages and served the missions for decades.",
+    "locations": [
+      {
+        "label": "Birthplace — Atka Island, Alaska",
+        "lat": 52.2,
+        "lng": -174.2
+      },
+      {
+        "label": "Place of repose — Sitka, Alaska",
+        "lat": 57.0531,
+        "lng": -135.33
+      }
+    ]
+  },
+  {
+    "id": "john-the-dwarf",
+    "name": "St. John the Dwarf",
+    "feastDay": "November 9",
+    "title": "Venerable",
+    "icon": "john-the-dwarf.jpg",
+    "bio": "Desert father of Scetis famous for his obedience — watering a dry stick daily at his elder's word — and for many sayings preserved in the Gerontikon.",
+    "locations": [
+      {
+        "label": "Scetis — Wadi El Natrun, Egypt",
+        "lat": 30.4,
+        "lng": 30.35
+      }
+    ]
+  },
+  {
+    "id": "anthimos-of-chios",
+    "name": "St. Anthimos of Chios",
+    "feastDay": "February 15",
+    "title": "Venerable",
+    "icon": "anthimos-of-chios.jpg",
+    "bio": "Simple Chian monk and confessor of souls who founded a convent on the island and was widely sought for healing prayer.",
+    "locations": [
+      {
+        "label": "Chios, Greece",
+        "lat": 38.368,
+        "lng": 26.136
+      }
+    ]
+  },
+  {
+    "id": "symeon-of-thessalonica",
+    "name": "St. Symeon of Thessalonica",
+    "feastDay": "September 15",
+    "title": "Archbishop of Thessalonica",
+    "icon": "symeon-of-thessalonica.jpg",
+    "bio": "Archbishop and liturgical theologian whose explanations of the services are a principal source for late Byzantine worship.",
+    "locations": [
+      {
+        "label": "See — Thessaloniki",
+        "lat": 40.6401,
+        "lng": 22.9444
+      }
+    ]
+  },
+  {
+    "id": "hippolytus-of-rome",
+    "name": "St. Hippolytus of Rome",
+    "feastDay": "January 30",
+    "title": "Hieromartyr",
+    "icon": "hippolytus-of-rome.jpg",
+    "bio": "Roman presbyter and writer against the heresies of his day, exiled to the mines of Sardinia where he died reconciled to the Church.",
+    "locations": [
+      {
+        "label": "Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      },
+      {
+        "label": "Place of exile — Sardinia",
+        "lat": 40.1209,
+        "lng": 9.0129
+      }
+    ]
+  },
+  {
+    "id": "germanus-of-auxerre",
+    "name": "St. Germanus of Auxerre",
+    "feastDay": "July 31",
+    "title": "Bishop of Auxerre",
+    "icon": "germanus-of-auxerre.jpg",
+    "bio": "Bishop of Gaul who twice crossed to Britain to strengthen the Church there against the Pelagian teaching.",
+    "locations": [
+      {
+        "label": "See — Auxerre, France",
+        "lat": 47.7982,
+        "lng": 3.5731
+      },
+      {
+        "label": "Place of death — Ravenna, Italy",
+        "lat": 44.4184,
+        "lng": 12.2035
+      }
+    ]
   }
 ]
