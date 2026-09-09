@@ -5703,5 +5703,355 @@
         "lng": 12.2035
       }
     ]
+  },
+  {
+    "id": "prophet-elijah",
+    "name": "Holy Prophet Elijah",
+    "feastDay": "July 20",
+    "title": "Prophet",
+    "icon": "prophet-elijah.jpg",
+    "bio": "The zealous prophet of Israel who confronted the priests of Baal on Mount Carmel and was taken up in a fiery chariot, honoured in the Orthodox Church as a forerunner of monastic zeal.",
+    "locations": [
+      {
+        "label": "Birthplace — Tishbe in Gilead",
+        "lat": 32.3333,
+        "lng": 35.75
+      },
+      {
+        "label": "Contest with the priests of Baal — Mount Carmel",
+        "lat": 32.7333,
+        "lng": 35.05
+      }
+    ]
+  },
+  {
+    "id": "prophet-elisha",
+    "name": "Holy Prophet Elisha",
+    "feastDay": "June 14",
+    "title": "Prophet",
+    "icon": "prophet-elisha.jpg",
+    "bio": "Disciple and successor of the Prophet Elijah, who received a double portion of his master's spirit and worked many wonders of healing and provision in Israel.",
+    "locations": [
+      {
+        "label": "Birthplace — Abel-meholah",
+        "lat": 32.35,
+        "lng": 35.52
+      },
+      {
+        "label": "Ministry — Jericho",
+        "lat": 31.8563,
+        "lng": 35.46
+      },
+      {
+        "label": "Place of repose — Samaria",
+        "lat": 32.2806,
+        "lng": 35.1897
+      }
+    ]
+  },
+  {
+    "id": "prophet-moses-the-god-seer",
+    "name": "Holy Prophet Moses the God-seer",
+    "feastDay": "September 4",
+    "title": "Prophet, God-seer",
+    "icon": "prophet-moses-the-god-seer.jpg",
+    "bio": "Leader of Israel out of Egypt who beheld God in the burning bush and received the Law on Sinai, honoured in the Orthodox Church as the God-seer.",
+    "locations": [
+      {
+        "label": "Receiving of the Law — Mount Sinai",
+        "lat": 28.5392,
+        "lng": 33.975
+      },
+      {
+        "label": "Place of repose — Mount Nebo",
+        "lat": 31.7683,
+        "lng": 35.7256
+      }
+    ]
+  },
+  {
+    "id": "prophet-daniel",
+    "name": "Holy Prophet Daniel",
+    "feastDay": "December 17",
+    "title": "Prophet",
+    "icon": "prophet-daniel.jpg",
+    "bio": "Prophet of the Babylonian captivity, preserved unharmed in the lions' den, whose visions of the Ancient of Days and the Son of Man are read at the Nativity feast.",
+    "locations": [
+      {
+        "label": "Captivity — Babylon",
+        "lat": 32.5355,
+        "lng": 44.4275
+      },
+      {
+        "label": "Traditional tomb — Susa",
+        "lat": 32.1897,
+        "lng": 48.2578
+      }
+    ]
+  },
+  {
+    "id": "prophet-isaiah",
+    "name": "Holy Prophet Isaiah",
+    "feastDay": "May 9",
+    "title": "Prophet",
+    "icon": "prophet-isaiah.jpg",
+    "bio": "Prophet of Jerusalem whose foretelling of the Virgin who would bear Emmanuel and of the suffering Servant earned him the name of the evangelist among the prophets.",
+    "locations": [
+      {
+        "label": "Ministry and martyrdom — Jerusalem",
+        "lat": 31.7683,
+        "lng": 35.2137
+      }
+    ]
+  },
+  {
+    "id": "gregory-the-wonderworker",
+    "name": "St. Gregory the Wonderworker",
+    "feastDay": "November 17",
+    "title": "Bishop of Neocaesarea, Wonderworker",
+    "icon": "gregory-the-wonderworker.jpg",
+    "bio": "A student of Origen who became bishop of Neocaesarea and, through his miracles and preaching, found seventeen Christians in the city and left only seventeen pagans at his death.",
+    "locations": [
+      {
+        "label": "Studies — Caesarea in Palestine",
+        "lat": 32.5,
+        "lng": 34.8917
+      },
+      {
+        "label": "See — Neocaesarea (Niksar)",
+        "lat": 40.5919,
+        "lng": 36.95
+      }
+    ]
+  },
+  {
+    "id": "procopius-of-caesarea",
+    "name": "St. Procopius the Great Martyr",
+    "feastDay": "July 8",
+    "title": "Great Martyr",
+    "icon": "procopius-of-caesarea.jpg",
+    "bio": "An officer sent to persecute Christians who was converted by a vision of the Cross and himself martyred at Caesarea in Palestine under Diocletian.",
+    "locations": [
+      {
+        "label": "Birthplace — Jerusalem",
+        "lat": 31.7683,
+        "lng": 35.2137
+      },
+      {
+        "label": "Place of martyrdom — Caesarea in Palestine",
+        "lat": 32.5,
+        "lng": 34.8917
+      }
+    ]
+  },
+  {
+    "id": "christopher-the-martyr",
+    "name": "St. Christopher the Martyr",
+    "feastDay": "May 9",
+    "title": "Martyr",
+    "icon": "christopher-the-martyr.jpg",
+    "bio": "A martyr of the persecution of Decius, remembered in the East as a fearsome barbarian soldier who was baptised and gave his life for Christ in Lycia.",
+    "locations": [
+      {
+        "label": "Place of martyrdom — Lycia, Asia Minor",
+        "lat": 36.25,
+        "lng": 29.9833
+      }
+    ]
+  },
+  {
+    "id": "longinus-the-centurion",
+    "name": "St. Longinus the Centurion",
+    "feastDay": "October 16",
+    "title": "Martyr",
+    "icon": "longinus-the-centurion.jpg",
+    "bio": "The centurion who stood at the Cross and confessed 'Truly this was the Son of God', later preaching Christ in his native Cappadocia, where he was beheaded.",
+    "locations": [
+      {
+        "label": "Confession at the Cross — Golgotha, Jerusalem",
+        "lat": 31.7784,
+        "lng": 35.2296
+      },
+      {
+        "label": "Place of martyrdom — Cappadocia",
+        "lat": 38.6431,
+        "lng": 34.8286
+      }
+    ]
+  },
+  {
+    "id": "symeon-the-fool-for-christ",
+    "name": "St. Symeon the Fool-for-Christ",
+    "feastDay": "July 21",
+    "title": "Venerable, Fool-for-Christ",
+    "icon": "symeon-the-fool-for-christ.jpg",
+    "bio": "After long years in the desert he returned to the city and feigned madness, hiding his prayer and his charity beneath scandalous behaviour for the sake of his neighbours' salvation.",
+    "locations": [
+      {
+        "label": "Birthplace — Edessa",
+        "lat": 37.1591,
+        "lng": 38.7969
+      },
+      {
+        "label": "Folly for Christ — Emesa (Homs)",
+        "lat": 34.7324,
+        "lng": 36.7137
+      }
+    ]
+  },
+  {
+    "id": "monica-of-hippo",
+    "name": "St. Monica",
+    "feastDay": "May 4",
+    "title": "Righteous",
+    "icon": "monica-of-hippo.jpg",
+    "bio": "Mother of Augustine of Hippo, whose tears and unceasing prayer over many years won her son's conversion, dying at Ostia shortly after.",
+    "locations": [
+      {
+        "label": "Birthplace — Tagaste, North Africa",
+        "lat": 36.2864,
+        "lng": 7.9511
+      },
+      {
+        "label": "Place of repose — Ostia, Italy",
+        "lat": 41.755,
+        "lng": 12.2919
+      }
+    ]
+  },
+  {
+    "id": "hermogenes-of-moscow",
+    "name": "St. Hermogenes of Moscow",
+    "feastDay": "February 17",
+    "title": "Patriarch of Moscow, Hieromartyr",
+    "icon": "hermogenes-of-moscow.jpg",
+    "bio": "Patriarch during the Time of Troubles who refused to bless the Polish claim to the throne and, imprisoned in the Kremlin, called Russia to resistance until he died of starvation.",
+    "locations": [
+      {
+        "label": "Earlier see — Kazan",
+        "lat": 55.7963,
+        "lng": 49.1088
+      },
+      {
+        "label": "Imprisonment and death — Moscow Kremlin",
+        "lat": 55.752,
+        "lng": 37.6175
+      }
+    ]
+  },
+  {
+    "id": "job-of-moscow",
+    "name": "St. Job of Moscow",
+    "feastDay": "April 5",
+    "title": "First Patriarch of Moscow",
+    "icon": "job-of-moscow.jpg",
+    "bio": "The first Patriarch of Moscow, deposed and exiled by the False Dmitry for refusing to recognise the pretender, ending his days in the monastery of his youth at Staritsa.",
+    "locations": [
+      {
+        "label": "Patriarchal see — Moscow",
+        "lat": 55.752,
+        "lng": 37.6175
+      },
+      {
+        "label": "Exile and repose — Staritsa",
+        "lat": 56.5119,
+        "lng": 34.9339
+      }
+    ]
+  },
+  {
+    "id": "leonid-of-optina",
+    "name": "St. Leonid of Optina",
+    "feastDay": "October 11",
+    "title": "Venerable, Elder of Optina",
+    "icon": "leonid-of-optina.jpg",
+    "bio": "The first of the great elders of Optina, who despite opposition opened the monastery's doors to crowds of pilgrims seeking counsel and confession.",
+    "locations": [
+      {
+        "label": "Optina Monastery — Kozelsk",
+        "lat": 54.0525,
+        "lng": 35.8353
+      }
+    ]
+  },
+  {
+    "id": "nikon-of-radonezh",
+    "name": "St. Nikon of Radonezh",
+    "feastDay": "November 17",
+    "title": "Venerable",
+    "icon": "nikon-of-radonezh.jpg",
+    "bio": "Disciple and successor of St. Sergius, who rebuilt the Trinity monastery after its destruction by the Tatars and adorned its church with the work of Andrei Rublev.",
+    "locations": [
+      {
+        "label": "Birthplace — Yuryev-Polsky",
+        "lat": 56.4986,
+        "lng": 39.6817
+      },
+      {
+        "label": "Trinity Monastery — Sergiev Posad",
+        "lat": 56.31,
+        "lng": 38.13
+      }
+    ]
+  },
+  {
+    "id": "ephraim-of-katounakia",
+    "name": "St. Ephraim of Katounakia",
+    "feastDay": "February 27",
+    "title": "Venerable, Elder of Mount Athos",
+    "icon": "ephraim-of-katounakia.jpg",
+    "bio": "An Athonite elder of the desert of Katounakia, a disciple of St. Joseph the Hesychast known for his obedience and for the gift of discernment shown to those who visited him.",
+    "locations": [
+      {
+        "label": "Birthplace — Thebes, Boeotia",
+        "lat": 38.3217,
+        "lng": 23.3186
+      },
+      {
+        "label": "Cell — Katounakia, Mount Athos",
+        "lat": 40.155,
+        "lng": 24.32
+      }
+    ]
+  },
+  {
+    "id": "sebastian-dabovich",
+    "name": "St. Sebastian of Jackson",
+    "feastDay": "November 30",
+    "title": "Archimandrite, Apostle to the Americas",
+    "icon": "sebastian-dabovich.jpg",
+    "bio": "The first Orthodox priest born in the United States, who founded parishes across America before returning to Serbia, where he reposed at the monastery of Zica.",
+    "locations": [
+      {
+        "label": "Birthplace — San Francisco, California",
+        "lat": 37.7749,
+        "lng": -122.4194
+      },
+      {
+        "label": "Place of repose — Zica Monastery, Serbia",
+        "lat": 43.7186,
+        "lng": 20.6519
+      }
+    ]
+  },
+  {
+    "id": "mardarije-of-libertyville",
+    "name": "St. Mardarije of Libertyville",
+    "feastDay": "December 12",
+    "title": "Bishop of America and Canada",
+    "icon": "mardarije-of-libertyville.jpg",
+    "bio": "First Serbian bishop for America and Canada, who organised the scattered immigrant parishes and founded the monastery of St. Sava at Libertyville, where he is buried.",
+    "locations": [
+      {
+        "label": "Birthplace — Ljubotinj, Montenegro",
+        "lat": 42.3667,
+        "lng": 18.95
+      },
+      {
+        "label": "Monastery and burial — Libertyville, Illinois",
+        "lat": 42.2831,
+        "lng": -87.9531
+      }
+    ]
   }
 ]
