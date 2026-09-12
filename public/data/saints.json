@@ -6053,5 +6053,315 @@
         "lng": -87.9531
       }
     ]
+  },
+  {
+    "id": "apostle-timothy",
+    "name": "Apostle Timothy",
+    "feastDay": "January 22",
+    "title": "Apostle of the Seventy, Bishop of Ephesus",
+    "icon": "apostle-timothy.jpg",
+    "bio": "Beloved disciple and co-worker of the Apostle Paul, and first Bishop of Ephesus, martyred for opposing pagan idolatry.",
+    "locations": [
+      {
+        "label": "Birthplace — Lystra",
+        "lat": 37.5744,
+        "lng": 32.4581
+      },
+      {
+        "label": "Bishopric and martyrdom — Ephesus",
+        "lat": 37.9495,
+        "lng": 27.3639
+      }
+    ]
+  },
+  {
+    "id": "apostle-silas",
+    "name": "Apostle Silas",
+    "feastDay": "July 30",
+    "title": "Apostle of the Seventy, Bishop of Corinth",
+    "icon": "apostle-silas.jpg",
+    "bio": "A leader of the early Jerusalem church and missionary companion of St. Paul, who endured persecution together with him before serving as Bishop of Corinth.",
+    "locations": [
+      {
+        "label": "Ministry — Jerusalem",
+        "lat": 31.7683,
+        "lng": 35.2137
+      },
+      {
+        "label": "Bishopric — Corinth",
+        "lat": 37.9061,
+        "lng": 22.9088
+      }
+    ]
+  },
+  {
+    "id": "apostle-onesimus",
+    "name": "Apostle Onesimus",
+    "feastDay": "February 15",
+    "title": "Apostle of the Seventy, Bishop of Ephesus",
+    "icon": "apostle-onesimus.jpg",
+    "bio": "Once a runaway slave of Philemon, converted and baptized by St. Paul in Rome, he later became Bishop of Ephesus and was martyred under Emperor Trajan.",
+    "locations": [
+      {
+        "label": "Origin — Colossae",
+        "lat": 37.7574,
+        "lng": 29.3903
+      },
+      {
+        "label": "Bishopric and martyrdom — Ephesus",
+        "lat": 37.9495,
+        "lng": 27.3639
+      }
+    ]
+  },
+  {
+    "id": "xenophon-and-family",
+    "name": "Sts. Xenophon, Maria, John and Arcadius",
+    "feastDay": "January 26",
+    "title": "Righteous Family of Constantinople",
+    "icon": "xenophon-and-family.jpg",
+    "bio": "A wealthy Constantinopolitan family separated by shipwreck and reunited by divine providence in Jerusalem, after which they gave away their riches and embraced monastic life.",
+    "locations": [
+      {
+        "label": "Home — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      },
+      {
+        "label": "Reunion and monastic life — Jerusalem",
+        "lat": 31.7683,
+        "lng": 35.2137
+      }
+    ]
+  },
+  {
+    "id": "isidore-of-seville",
+    "name": "St. Isidore of Seville",
+    "feastDay": "April 4",
+    "title": "Archbishop of Seville, Theologian",
+    "icon": "isidore-of-seville.jpg",
+    "bio": "Encyclopedist and Archbishop of Seville whose writings preserved classical learning for medieval Europe and helped unite the Visigothic kingdom in the Christian faith.",
+    "locations": [
+      {
+        "label": "Birthplace — Cartagena",
+        "lat": 37.6058,
+        "lng": -0.9866
+      },
+      {
+        "label": "Archbishopric and death — Seville",
+        "lat": 37.3891,
+        "lng": -5.9845
+      }
+    ]
+  },
+  {
+    "id": "leander-of-seville",
+    "name": "St. Leander of Seville",
+    "feastDay": "February 27",
+    "title": "Archbishop of Seville",
+    "icon": "leander-of-seville.jpg",
+    "bio": "Elder brother of St. Isidore, he converted the Visigothic royal family from Arianism to Christianity and strengthened the Church in Spain as Archbishop of Seville.",
+    "locations": [
+      {
+        "label": "Birthplace — Cartagena",
+        "lat": 37.6058,
+        "lng": -0.9866
+      },
+      {
+        "label": "Archbishopric and death — Seville",
+        "lat": 37.3891,
+        "lng": -5.9845
+      }
+    ]
+  },
+  {
+    "id": "caesarius-of-arles",
+    "name": "St. Caesarius of Arles",
+    "feastDay": "August 27",
+    "title": "Bishop of Arles",
+    "icon": "caesarius-of-arles.jpg",
+    "bio": "A reforming bishop of Gaul who gave away church treasures to ransom captives and the poor, and worked to strengthen ecclesiastical discipline against Semi-Pelagianism.",
+    "locations": [
+      {
+        "label": "Birthplace — Chalon-sur-Saône",
+        "lat": 46.78,
+        "lng": 4.8524
+      },
+      {
+        "label": "Bishopric and death — Arles",
+        "lat": 43.6761,
+        "lng": 4.6306
+      }
+    ]
+  },
+  {
+    "id": "columbanus-of-luxeuil",
+    "name": "St. Columbanus of Luxeuil",
+    "feastDay": "November 23",
+    "title": "Abbot and Missionary",
+    "icon": "columbanus-of-luxeuil.jpg",
+    "bio": "Irish monk who spread monasticism across continental Europe, founding the abbeys of Luxeuil in Gaul and Bobbio in Italy, where he died.",
+    "locations": [
+      {
+        "label": "Birthplace — Leinster, Ireland",
+        "lat": 53.2158,
+        "lng": -6.6669
+      },
+      {
+        "label": "Monastery — Luxeuil-les-Bains",
+        "lat": 47.8175,
+        "lng": 6.3856
+      },
+      {
+        "label": "Death — Bobbio",
+        "lat": 44.7684,
+        "lng": 9.3833
+      }
+    ]
+  },
+  {
+    "id": "willibrord-of-frisia",
+    "name": "St. Willibrord of Frisia",
+    "feastDay": "November 7",
+    "title": "Archbishop of Utrecht, Apostle of the Frisians",
+    "icon": "willibrord-of-frisia.jpg",
+    "bio": "Northumbrian monk known as the Apostle of the Frisians, who became the first Bishop of Utrecht and founded the abbey of Echternach, where he is buried.",
+    "locations": [
+      {
+        "label": "Birthplace — Northumbria",
+        "lat": 55.2,
+        "lng": -1.8
+      },
+      {
+        "label": "Bishopric — Utrecht",
+        "lat": 52.0907,
+        "lng": 5.1214
+      },
+      {
+        "label": "Monastery and burial — Echternach",
+        "lat": 49.8117,
+        "lng": 6.4181
+      }
+    ]
+  },
+  {
+    "id": "boniface-of-mainz",
+    "name": "St. Boniface of Mainz",
+    "feastDay": "June 5",
+    "title": "Archbishop of Mainz, Apostle of Germany",
+    "icon": "boniface-of-mainz.jpg",
+    "bio": "English missionary known as the Apostle of Germany, who organized the Church among the Germanic peoples and was martyred while evangelizing in Frisia.",
+    "locations": [
+      {
+        "label": "Birthplace — Wessex",
+        "lat": 51.05,
+        "lng": -2.5
+      },
+      {
+        "label": "Martyrdom — Dokkum, Frisia",
+        "lat": 53.3253,
+        "lng": 6.0022
+      },
+      {
+        "label": "Burial — Fulda",
+        "lat": 50.5558,
+        "lng": 9.6808
+      }
+    ]
+  },
+  {
+    "id": "cyriacus-the-anchorite",
+    "name": "St. Cyriacus the Anchorite",
+    "feastDay": "September 29",
+    "title": "Hermit of the Judean Desert",
+    "icon": "cyriacus-the-anchorite.jpg",
+    "bio": "A disciple of St. Euthymios the Great who lived a long ascetic life as a hermit in the Judean desert, renowned for his humility and gift of healing.",
+    "locations": [
+      {
+        "label": "Birthplace — Corinth",
+        "lat": 37.9061,
+        "lng": 22.9088
+      },
+      {
+        "label": "Hermitage — Judean Desert",
+        "lat": 31.73,
+        "lng": 35.39
+      }
+    ]
+  },
+  {
+    "id": "euphrosynos-the-cook",
+    "name": "St. Euphrosynos the Cook",
+    "feastDay": "September 11",
+    "title": "Venerable Monastic Cook",
+    "icon": "euphrosynos-the-cook.jpg",
+    "bio": "A humble and illiterate monastery cook granted a vision of paradise, whose story teaches that true sanctity lies in quiet obedience rather than outward status.",
+    "locations": [
+      {
+        "label": "Monastic life — Egypt",
+        "lat": 30.0444,
+        "lng": 31.2357
+      }
+    ]
+  },
+  {
+    "id": "dorotheus-of-tyre",
+    "name": "St. Dorotheus of Tyre",
+    "feastDay": "June 5",
+    "title": "Bishop of Tyre, Hieromartyr",
+    "icon": "dorotheus-of-tyre.jpg",
+    "bio": "Bishop of Tyre who wrote on the lives of the apostles, endured exile under Licinius, and was martyred in old age under Julian the Apostate.",
+    "locations": [
+      {
+        "label": "Bishopric — Tyre",
+        "lat": 33.2704,
+        "lng": 35.2038
+      },
+      {
+        "label": "Martyrdom — Odessos (Varna)",
+        "lat": 43.2141,
+        "lng": 27.9147
+      }
+    ]
+  },
+  {
+    "id": "venantius-fortunatus",
+    "name": "St. Venantius Fortunatus",
+    "feastDay": "December 14",
+    "title": "Bishop of Poitiers, Hymnographer",
+    "icon": "venantius-fortunatus.jpg",
+    "bio": "Italian-born poet and bishop of Poitiers whose Latin hymns on the Cross remain part of Western liturgical tradition.",
+    "locations": [
+      {
+        "label": "Birthplace — Duplavilis, near Treviso",
+        "lat": 45.75,
+        "lng": 12.2333
+      },
+      {
+        "label": "Bishopric — Poitiers",
+        "lat": 46.5802,
+        "lng": 0.3404
+      }
+    ]
+  },
+  {
+    "id": "martin-of-braga",
+    "name": "St. Martin of Braga",
+    "feastDay": "March 20",
+    "title": "Archbishop of Braga",
+    "icon": "martin-of-braga.jpg",
+    "bio": "Pannonian-born monk and Archbishop of Braga who led the conversion of the Suebi kingdom from Arianism and wrote widely read moral treatises.",
+    "locations": [
+      {
+        "label": "Birthplace — Pannonia",
+        "lat": 46.25,
+        "lng": 17.0
+      },
+      {
+        "label": "Archbishopric — Braga",
+        "lat": 41.5454,
+        "lng": -8.4265
+      }
+    ]
   }
 ]
