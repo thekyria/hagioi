@@ -6363,5 +6363,185 @@
         "lng": -8.4265
       }
     ]
+  },
+  {
+    "id": "amphilochius-of-iconium",
+    "name": "St. Amphilochius of Iconium",
+    "feastDay": "November 23",
+    "title": "Bishop of Iconium",
+    "icon": "amphilochius-of-iconium.jpg",
+    "bio": "Close friend of St. Basil the Great and St. Gregory the Theologian, he served as Bishop of Iconium and was a staunch defender of Trinitarian orthodoxy at the Second Ecumenical Council.",
+    "locations": [
+      {
+        "label": "Birthplace — Cappadocia",
+        "lat": 38.7225,
+        "lng": 35.4875
+      },
+      {
+        "label": "Bishopric — Iconium",
+        "lat": 37.8746,
+        "lng": 32.4932
+      }
+    ]
+  },
+  {
+    "id": "theodora-of-thessaloniki",
+    "name": "St. Theodora of Thessaloniki",
+    "feastDay": "April 5",
+    "title": "Nun of Thessaloniki",
+    "icon": "theodora-of-thessaloniki.jpg",
+    "bio": "A widow from Aegina who became a nun in Thessaloniki, renowned for her ascetic life; her myrrh-streaming relics are still venerated in the city.",
+    "locations": [
+      {
+        "label": "Birthplace — Aegina",
+        "lat": 37.7462,
+        "lng": 23.4283
+      },
+      {
+        "label": "Monastic life — Thessaloniki",
+        "lat": 40.6401,
+        "lng": 22.9444
+      }
+    ]
+  },
+  {
+    "id": "auxentios-of-bithynia",
+    "name": "St. Auxentios of Bithynia",
+    "feastDay": "February 14",
+    "title": "Hermit of Bithynia",
+    "icon": "auxentios-of-bithynia.jpg",
+    "bio": "A Syrian-born officer of the imperial guard who withdrew to a mountain in Bithynia to live as a hermit, later called Mount Auxentios in his honor.",
+    "locations": [
+      {
+        "label": "Birthplace — Syria",
+        "lat": 35.0,
+        "lng": 38.0
+      },
+      {
+        "label": "Hermitage — Mount Auxentios, Bithynia",
+        "lat": 40.85,
+        "lng": 29.4
+      }
+    ]
+  },
+  {
+    "id": "athanasia-of-aegina",
+    "name": "St. Athanasia of Aegina",
+    "feastDay": "August 14",
+    "title": "Abbess of Aegina",
+    "icon": "athanasia-of-aegina.jpg",
+    "bio": "A ninth-century abbess of Aegina who founded a monastery and became known for her charity to the poor and her gift of prophecy.",
+    "locations": [
+      {
+        "label": "Abbacy — Aegina",
+        "lat": 37.7462,
+        "lng": 23.4283
+      }
+    ]
+  },
+  {
+    "id": "macarius-of-alexandria",
+    "name": "St. Macarius of Alexandria",
+    "feastDay": "January 19",
+    "title": "Ascetic of the Egyptian Desert",
+    "icon": "macarius-of-alexandria.jpg",
+    "bio": "A contemporary and namesake of St. Makarios of Egypt, this Alexandrian priest embraced extreme asceticism in the desert of Nitria and Scetis.",
+    "locations": [
+      {
+        "label": "Birthplace — Alexandria",
+        "lat": 31.2001,
+        "lng": 29.9187
+      },
+      {
+        "label": "Ascetic life — Scetis Desert",
+        "lat": 30.85,
+        "lng": 30.33
+      }
+    ]
+  },
+  {
+    "id": "anastasia-the-patrician",
+    "name": "St. Anastasia the Patrician",
+    "feastDay": "March 10",
+    "title": "Ascetic of Scetis",
+    "icon": "anastasia-the-patrician.jpg",
+    "bio": "A noblewoman of the imperial court of Constantinople who fled worldly honors, settled near Alexandria, and later lived disguised as a monk in the desert of Scetis.",
+    "locations": [
+      {
+        "label": "Birthplace — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      },
+      {
+        "label": "Ascetic life — Scetis Desert",
+        "lat": 30.85,
+        "lng": 30.33
+      }
+    ]
+  },
+  {
+    "id": "zosimas-of-palestine",
+    "name": "St. Zosimas of Palestine",
+    "feastDay": "April 4",
+    "title": "Monk of the Jordan",
+    "icon": "zosimas-of-palestine.jpg",
+    "bio": "A monk of a monastery near the Jordan River who encountered St. Mary of Egypt in the wilderness, heard her life's story, and gave her Holy Communion.",
+    "locations": [
+      {
+        "label": "Monastery — Jordan River wilderness",
+        "lat": 31.8,
+        "lng": 35.55
+      }
+    ]
+  },
+  {
+    "id": "symeon-metaphrastes",
+    "name": "St. Symeon Metaphrastes",
+    "feastDay": "November 9",
+    "title": "Hagiographer of Constantinople",
+    "icon": "symeon-metaphrastes.jpg",
+    "bio": "A tenth-century Byzantine official and hagiographer who compiled and rewrote the lives of many saints into a widely used collection of the Menologion.",
+    "locations": [
+      {
+        "label": "Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
+    ]
+  },
+  {
+    "id": "thalassios-and-limnaios",
+    "name": "Sts. Thalassios and Limnaios",
+    "feastDay": "February 22",
+    "title": "Stylites of Syria",
+    "icon": "thalassios-and-limnaios.jpg",
+    "bio": "Two fifth-century ascetics of Syria who lived as pillar-dwelling stylites near Cyrrhus, renowned for their endurance and spiritual counsel.",
+    "locations": [
+      {
+        "label": "Asceticism — near Cyrrhus, Syria",
+        "lat": 36.75,
+        "lng": 36.95
+      }
+    ]
+  },
+  {
+    "id": "john-the-hesychast-of-palestine",
+    "name": "St. John the Hesychast",
+    "feastDay": "December 3",
+    "title": "Bishop and Monk of Palestine",
+    "icon": "john-the-hesychast-of-palestine.jpg",
+    "bio": "A bishop of Colonia in Armenia who relinquished his see to become a silent monk at the Great Lavra of St. Sabbas near Jerusalem.",
+    "locations": [
+      {
+        "label": "Birthplace — Nicopolis, Armenia",
+        "lat": 39.9,
+        "lng": 41.1
+      },
+      {
+        "label": "Monastic life — Great Lavra of St. Sabbas",
+        "lat": 31.7075,
+        "lng": 35.3556
+      }
+    ]
   }
 ]
