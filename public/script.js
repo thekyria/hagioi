@@ -45,11 +45,11 @@ function populateDaySelect(select, month) {
     select.value = Math.min(previousValue, daysInMonth);
 }
 
-function initSaintsPanelToggle() {
-    const toggleButton = document.getElementById('menu-toggle');
-    const panel = document.getElementById('saints-panel');
+function initSlidePanelToggle(toggleButtonId, panelId, { openLabel, closeLabel }) {
+    const toggleButton = document.getElementById(toggleButtonId);
+    const panel = document.getElementById(panelId);
     if (!toggleButton || !panel) {
-        return;
+        return null;
     }
 
     const setPanelState = (isOpen) => {
@@ -61,7 +61,7 @@ function initSaintsPanelToggle() {
             panel.setAttribute('inert', '');
         }
         toggleButton.setAttribute('aria-expanded', String(isOpen));
-        toggleButton.setAttribute('aria-label', isOpen ? 'Close Feast Days panel' : 'Open Feast Days panel');
+        toggleButton.setAttribute('aria-label', isOpen ? closeLabel : openLabel);
     };
 
     setPanelState(panel.classList.contains('is-open'));
@@ -70,6 +70,26 @@ function initSaintsPanelToggle() {
         const isOpen = !panel.classList.contains('is-open');
         setPanelState(isOpen);
     });
+
+    return setPanelState;
+}
+
+function initPanelToggles() {
+    const closeSaintsPanel = initSlidePanelToggle('menu-toggle', 'saints-panel', {
+        openLabel: 'Open Feast Days panel',
+        closeLabel: 'Close Feast Days panel',
+    });
+    const closeAboutPanel = initSlidePanelToggle('about-toggle', 'about-panel', {
+        openLabel: 'Open About panel',
+        closeLabel: 'Close About panel',
+    });
+
+    // On narrow viewports the panels each take the full width, so only one
+    // should be open at a time.
+    if (closeSaintsPanel && closeAboutPanel) {
+        document.getElementById('menu-toggle').addEventListener('click', () => closeAboutPanel(false));
+        document.getElementById('about-toggle').addEventListener('click', () => closeSaintsPanel(false));
+    }
 }
 
 async function initMap() {
@@ -480,6 +500,6 @@ async function loadGoogleMapsAPI() {
 
 // Start loading after DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
-    initSaintsPanelToggle();
+    initPanelToggles();
     loadGoogleMapsAPI();
 });

@@ -45,19 +45,24 @@
 <body>
   <header class="site-header">
     <div class="container">
-      <a href="#home" class="logo">
-        <img src="assets/logo.svg" alt="hagioi logo">
-      </a>
-      <h1>Hagioi</h1>
+      <button type="button" id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="saints-panel" aria-label="Open Feast Days panel">
+        <span class="menu-toggle-icon" aria-hidden="true">&#9776;</span>
+      </button>
+      <div class="header-title">
+        <a href="#home" class="logo">
+          <img src="assets/logo.svg" alt="hagioi logo">
+        </a>
+        <h1>Hagioi</h1>
+      </div>
+      <button type="button" id="about-toggle" class="about-toggle" aria-expanded="false" aria-controls="about-panel" aria-label="Open About panel">
+        About
+      </button>
     </div>
   </header>
   
   <main>
     <div id="app-layout">
       <div id="map"></div>
-      <button type="button" id="menu-toggle" class="menu-toggle" aria-expanded="false" aria-controls="saints-panel" aria-label="Open Feast Days panel">
-        <span class="menu-toggle-icon" aria-hidden="true">&#9776;</span>
-      </button>
       <aside id="saints-panel" aria-label="Feast Days" aria-hidden="true" inert>
         <div class="saints-panel-header">
           <span>Feast Days</span>
@@ -76,6 +81,16 @@
             </div>
           </div>
           <ul id="saints-list"></ul>
+        </div>
+      </aside>
+      <aside id="about-panel" aria-label="About Hagioi" aria-hidden="true" inert>
+        <div class="about-panel-header">
+          <span>About Hagioi</span>
+        </div>
+        <div id="about-panel-content">
+          <p>Hagioi is an interactive map of Orthodox Christian saints, showing where each saint was born, lived, or was martyred.</p>
+          <p>Use the Feast Days panel to filter saints by date, or click a marker on the map to learn more about a saint.</p>
+          <p>Built with ❤️ by <a href="http://thekyria.com" target="_blank" rel="noopener noreferrer">Theodoros Kyriakidis</a>.</p>
         </div>
       </aside>
     </div>
