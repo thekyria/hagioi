@@ -331,12 +331,16 @@ saints.forEach((saint, index) => {
   }
 });
 
-const iconFiles = readdirSync(ICONS_DIR)
-  .filter((name) => !name.startsWith('.'));
+if (!existsSync(ICONS_DIR)) {
+  addWarning(warnings, 'Icon directory is missing: public/assets/icons');
+} else {
+  const iconFiles = readdirSync(ICONS_DIR)
+    .filter((name) => !name.startsWith('.'));
 
-for (const iconFile of iconFiles) {
-  if (!referencedIcons.has(iconFile)) {
-    addWarning(warnings, `Unreferenced icon file: public/assets/icons/${iconFile}`);
+  for (const iconFile of iconFiles) {
+    if (!referencedIcons.has(iconFile)) {
+      addWarning(warnings, `Unreferenced icon file: public/assets/icons/${iconFile}`);
+    }
   }
 }
 
