@@ -392,21 +392,27 @@ async function initMap() {
     const fromDaySelect = document.getElementById('from-day');
     const toMonthSelect = document.getElementById('to-month');
     const toDaySelect = document.getElementById('to-day');
+    const saintSearchInput = document.getElementById('saint-search');
 
     function applyFilter() {
         const fromCode = dayCode(Number(fromMonthSelect.value), Number(fromDaySelect.value));
         const toCode = dayCode(Number(toMonthSelect.value), Number(toDaySelect.value));
+        const searchTerm = saintSearchInput.value.trim().toLowerCase();
 
         saintsList.innerHTML = '';
         const visibleMarkers = new Set();
 
-        entries.forEach(({ saint, feast, markers }) => {
-            const matches = isInRange(fromCode, toCode, dayCode(feast.month, feast.day));
+        // Results are shown alphabetically by name so it's easy to scan for a
+        // saint, regardless of the order saints appear in saints.json.
+        const matchingEntries = entries
+            .filter(({ saint, feast }) => {
+                const matchesDate = isInRange(fromCode, toCode, dayCode(feast.month, feast.day));
+                const matchesSearch = !searchTerm || saint.name.toLowerCase().includes(searchTerm);
+                return matchesDate && matchesSearch;
+            })
+            .sort((a, b) => a.saint.name.localeCompare(b.saint.name));
 
-            if (!matches) {
-                return;
-            }
-
+        matchingEntries.forEach(({ saint, markers }) => {
             markers.forEach(({ marker }) => visibleMarkers.add(marker));
 
             const item = document.createElement('li');
@@ -468,6 +474,8 @@ async function initMap() {
         fromDaySelect.addEventListener('change', applyFilter);
         toDaySelect.addEventListener('change', applyFilter);
     }
+
+    saintSearchInput.addEventListener('input', applyFilter);
 
     initDateFilterControls();
     applyFilter();

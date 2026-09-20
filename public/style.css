@@ -203,6 +203,27 @@ main {
     flex: 1;
 }
 
+.saint-search-group {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    margin-bottom: 10px;
+}
+
+.saint-search-group label {
+    width: 40px;
+    font-size: 14px;
+}
+
+.saint-search-group input {
+    flex: 1;
+    min-width: 0;
+    font-family: inherit;
+    font-size: 13px;
+    padding: 4px 6px;
+    box-sizing: border-box;
+}
+
 .date-filter-group {
     display: flex;
     align-items: center;
@@ -348,7 +369,8 @@ main {
         padding: 12px;
     }
 
-    .date-filter-group label {
+    .date-filter-group label,
+    .saint-search-group label {
         width: 34px;
         font-size: 13px;
     }
