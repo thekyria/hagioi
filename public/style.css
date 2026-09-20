@@ -243,6 +243,14 @@ main {
     font-size: 13px;
 }
 
+#date-filter.is-disabled {
+    opacity: 0.5;
+}
+
+#date-filter.is-disabled select {
+    cursor: not-allowed;
+}
+
 #saints-list {
     list-style: none;
     margin: 10px 0 0;

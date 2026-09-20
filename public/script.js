@@ -394,23 +394,43 @@ async function initMap() {
     const toDaySelect = document.getElementById('to-day');
     const saintSearchInput = document.getElementById('saint-search');
 
+    const dateFilterInputs = [fromMonthSelect, fromDaySelect, toMonthSelect, toDaySelect];
+
+    // The alphabetic search and the date-range filter are independent,
+    // mutually exclusive ways to narrow the saints list: typing a search
+    // term switches to name search (and disables the date controls);
+    // clearing it switches back to filtering by feast day date range.
+    function isSearchActive() {
+        return saintSearchInput.value.trim().length > 0;
+    }
+
+    function updateFilterModeUI() {
+        const searchActive = isSearchActive();
+        dateFilterInputs.forEach((input) => {
+            input.disabled = searchActive;
+        });
+        document.getElementById('date-filter').classList.toggle('is-disabled', searchActive);
+    }
+
     function applyFilter() {
-        const fromCode = dayCode(Number(fromMonthSelect.value), Number(fromDaySelect.value));
-        const toCode = dayCode(Number(toMonthSelect.value), Number(toDaySelect.value));
         const searchTerm = saintSearchInput.value.trim().toLowerCase();
+        const searchActive = searchTerm.length > 0;
 
         saintsList.innerHTML = '';
         const visibleMarkers = new Set();
 
-        // Results are shown alphabetically by name so it's easy to scan for a
-        // saint, regardless of the order saints appear in saints.json.
-        const matchingEntries = entries
-            .filter(({ saint, feast }) => {
-                const matchesDate = isInRange(fromCode, toCode, dayCode(feast.month, feast.day));
-                const matchesSearch = !searchTerm || saint.name.toLowerCase().includes(searchTerm);
-                return matchesDate && matchesSearch;
-            })
-            .sort((a, b) => a.saint.name.localeCompare(b.saint.name));
+        let matchingEntries;
+        if (searchActive) {
+            // Results are shown alphabetically by name so it's easy to scan
+            // for a saint, regardless of the order saints appear in saints.json.
+            matchingEntries = entries
+                .filter(({ saint }) => saint.name.toLowerCase().includes(searchTerm))
+                .sort((a, b) => a.saint.name.localeCompare(b.saint.name));
+        } else {
+            const fromCode = dayCode(Number(fromMonthSelect.value), Number(fromDaySelect.value));
+            const toCode = dayCode(Number(toMonthSelect.value), Number(toDaySelect.value));
+            matchingEntries = entries.filter(({ feast }) => isInRange(fromCode, toCode, dayCode(feast.month, feast.day)));
+        }
 
         matchingEntries.forEach(({ saint, markers }) => {
             markers.forEach(({ marker }) => visibleMarkers.add(marker));
@@ -475,9 +495,13 @@ async function initMap() {
         toDaySelect.addEventListener('change', applyFilter);
     }
 
-    saintSearchInput.addEventListener('input', applyFilter);
+    saintSearchInput.addEventListener('input', () => {
+        updateFilterModeUI();
+        applyFilter();
+    });
 
     initDateFilterControls();
+    updateFilterModeUI();
     applyFilter();
 }
 
