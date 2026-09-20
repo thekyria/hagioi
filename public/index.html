@@ -66,8 +66,9 @@
         </div>
         <div id="saints-panel-content">
           <div id="saint-search-group" class="saint-search-group">
-            <label for="saint-search">Search</label>
-            <input type="search" id="saint-search" placeholder="Search a saint by name…" autocomplete="off" aria-label="Search a saint by name">
+            <button type="button" id="saint-search-open" class="saint-search-link" aria-haspopup="dialog" aria-controls="saint-search-modal" aria-expanded="false">
+              Search saints by name&hellip;
+            </button>
           </div>
           <div id="date-filter">
             <div class="date-filter-group">
@@ -94,6 +95,18 @@
       </aside>
     </div>
   </main>
+
+  <div id="saint-search-modal" class="saint-search-modal" hidden>
+    <div class="saint-search-backdrop" data-saint-search-close></div>
+    <div class="saint-search-dialog" role="dialog" aria-modal="true" aria-labelledby="saint-search-title">
+      <div class="saint-search-dialog-header">
+        <h2 id="saint-search-title">Search saints by name</h2>
+        <button type="button" class="saint-search-close" data-saint-search-close aria-label="Close search">&times;</button>
+      </div>
+      <input type="search" id="saint-search-input" class="saint-search-text" placeholder="Type a name…" autocomplete="off" aria-label="Search a saint by name">
+      <ul id="saint-search-results" class="saint-search-results"></ul>
+    </div>
+  </div>
 
   <footer class="site-footer">
     <div class="container footer-container">

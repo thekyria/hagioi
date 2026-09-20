@@ -181,24 +181,31 @@ main {
 }
 
 .saint-search-group {
-    display: flex;
-    align-items: center;
-    gap: 6px;
     margin-bottom: 10px;
 }
 
-.saint-search-group label {
-    width: 40px;
+.saint-search-link {
+    display: block;
+    width: 100%;
+    background: none;
+    border: 1px solid var(--color-blue-light);
+    border-radius: 4px;
+    color: var(--color-blue);
+    font-family: inherit;
     font-size: 14px;
+    text-align: left;
+    padding: 8px 10px;
+    cursor: pointer;
 }
 
-.saint-search-group input {
-    flex: 1;
-    min-width: 0;
-    font-family: inherit;
-    font-size: 13px;
-    padding: 4px 6px;
-    box-sizing: border-box;
+.saint-search-link:hover,
+.saint-search-link:focus-visible {
+    background: var(--color-blue-pale);
+}
+
+.saint-search-link:focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 2px;
 }
 
 .date-filter-group {
@@ -218,14 +225,6 @@ main {
     min-width: 0;
     font-family: inherit;
     font-size: 13px;
-}
-
-#date-filter.is-disabled {
-    opacity: 0.5;
-}
-
-#date-filter.is-disabled select {
-    cursor: not-allowed;
 }
 
 #saints-list {
@@ -305,6 +304,109 @@ main {
     filter: drop-shadow(0 0 4px rgba(0, 0, 0, 0.6));
 }
 
+.saint-search-modal {
+    position: fixed;
+    inset: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.saint-search-modal[hidden] {
+    display: none;
+}
+
+.saint-search-backdrop {
+    position: absolute;
+    inset: 0;
+    background: rgba(10, 35, 66, 0.5);
+}
+
+.saint-search-dialog {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 420px;
+    max-width: 90vw;
+    max-height: 80vh;
+    background: var(--color-cream);
+    border-radius: 6px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.35);
+    padding: 15px;
+}
+
+.saint-search-dialog-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.saint-search-dialog-header h2 {
+    font-size: 18px;
+    margin: 0;
+    color: var(--color-blue-dark);
+}
+
+.saint-search-close {
+    background: none;
+    border: none;
+    font-size: 22px;
+    line-height: 1;
+    color: var(--color-blue-dark);
+    cursor: pointer;
+    padding: 2px 6px;
+}
+
+.saint-search-close:hover,
+.saint-search-close:focus-visible {
+    color: var(--color-blue-light);
+}
+
+.saint-search-text {
+    font-family: inherit;
+    font-size: 14px;
+    padding: 6px 8px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.saint-search-results {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    flex: 1;
+    min-height: 0;
+}
+
+.saint-search-results li.saint-search-result {
+    padding: 8px 6px;
+    border-bottom: 1px solid #eee;
+    cursor: pointer;
+}
+
+.saint-search-results li.saint-search-result:hover {
+    background: var(--color-blue-pale);
+}
+
+.saint-search-letter {
+    position: sticky;
+    top: 0;
+    background: var(--color-blue-pale);
+    color: var(--color-blue-dark);
+    font-weight: bold;
+    font-size: 12px;
+    padding: 3px 6px;
+}
+
+.saint-search-empty {
+    padding: 8px 6px;
+    color: #555;
+    font-size: 14px;
+}
+
 @media (max-width: 768px) {
     #saints-panel {
         width: 100%;
@@ -337,8 +439,7 @@ main {
         padding: 12px;
     }
 
-    .date-filter-group label,
-    .saint-search-group label {
+    .date-filter-group label {
         width: 34px;
         font-size: 13px;
     }
