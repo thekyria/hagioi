@@ -49,8 +49,17 @@ body {
 .site-header .container {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.header-title {
+    display: flex;
+    align-items: center;
     justify-content: center;
     gap: 10px;
+    flex: 1;
+    min-width: 0;
 }
 
 .site-nav {
@@ -110,31 +119,50 @@ main {
 }
 
 .menu-toggle {
-    position: absolute;
-    top: 16px;
-    left: 16px;
-    z-index: 10;
-    width: 52px;
-    height: 52px;
+    flex-shrink: 0;
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
     border: none;
-    background: var(--color-navy);
+    background: var(--color-blue);
     color: var(--color-gold-light);
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 22px;
+    font-size: 20px;
     cursor: pointer;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.35);
     transition: background-color 0.2s ease;
 }
 
 .menu-toggle:hover,
 .menu-toggle:focus-visible {
-    background: var(--color-blue);
+    background: var(--color-blue-light);
 }
 
 .menu-toggle:focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 2px;
+}
+
+.about-toggle {
+    flex-shrink: 0;
+    border: 1px solid var(--color-gold);
+    border-radius: 20px;
+    background: transparent;
+    color: var(--color-gold-light);
+    padding: 6px 16px;
+    font-family: inherit;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.about-toggle:hover,
+.about-toggle:focus-visible {
+    background: var(--color-blue);
+}
+
+.about-toggle:focus-visible {
     outline: 2px solid var(--color-gold);
     outline-offset: 2px;
 }
@@ -152,7 +180,6 @@ main {
     background: var(--color-cream);
     box-shadow: 2px 0 10px rgba(0, 0, 0, 0.25);
     padding: 15px;
-    padding-top: 80px;
     text-align: left;
     transform: translateX(-100%);
     transition: transform 0.25s ease;
@@ -213,6 +240,46 @@ main {
     background: var(--color-blue-pale);
 }
 
+#about-panel {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 9;
+    width: 300px;
+    max-width: 85vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    background: var(--color-cream);
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.25);
+    padding: 15px;
+    text-align: left;
+    overflow-y: auto;
+    transform: translateX(100%);
+    transition: transform 0.25s ease;
+}
+
+#about-panel.is-open {
+    transform: translateX(0);
+}
+
+.about-panel-header {
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--color-blue-dark);
+    margin: 0 0 10px;
+}
+
+#about-panel-content p {
+    font-size: 15px;
+    line-height: 1.5;
+    margin: 0 0 10px;
+}
+
+#about-panel-content a {
+    color: var(--color-blue);
+}
+
 .saint-list-name {
     display: block;
     font-weight: bold;
@@ -247,7 +314,8 @@ main {
 }
 
 @media (max-width: 768px) {
-    #saints-panel {
+    #saints-panel,
+    #about-panel {
         width: 100%;
         max-width: 100%;
     }
@@ -270,9 +338,14 @@ main {
         gap: 8px;
     }
 
-    #saints-panel {
+    .about-toggle {
+        padding: 6px 10px;
+        font-size: 12px;
+    }
+
+    #saints-panel,
+    #about-panel {
         padding: 12px;
-        padding-top: 76px;
     }
 
     .date-filter-group label {
