@@ -75,21 +75,10 @@ function initSlidePanelToggle(toggleButtonId, panelId, { openLabel, closeLabel }
 }
 
 function initPanelToggles() {
-    const closeSaintsPanel = initSlidePanelToggle('menu-toggle', 'saints-panel', {
+    initSlidePanelToggle('menu-toggle', 'saints-panel', {
         openLabel: 'Open Feast Days panel',
         closeLabel: 'Close Feast Days panel',
     });
-    const closeAboutPanel = initSlidePanelToggle('about-toggle', 'about-panel', {
-        openLabel: 'Open About panel',
-        closeLabel: 'Close About panel',
-    });
-
-    // On narrow viewports the panels each take the full width, so only one
-    // should be open at a time.
-    if (closeSaintsPanel && closeAboutPanel) {
-        document.getElementById('menu-toggle').addEventListener('click', () => closeAboutPanel(false));
-        document.getElementById('about-toggle').addEventListener('click', () => closeSaintsPanel(false));
-    }
 }
 
 async function initMap() {
