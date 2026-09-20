@@ -4,6 +4,7 @@
   "description": "An All Saints map website",
   "type": "module",
   "scripts": {
+    "validate": "node scripts/validate-saints.mjs",
     "build": "echo 'Nothing to build'"
   }
 }

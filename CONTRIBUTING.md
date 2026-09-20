@@ -10,6 +10,7 @@ See [README.md](README.md#local-development).
 
 - Follow the conventions in [AGENTS.md](AGENTS.md) (ESM only, method guards + env var validation in API handlers, etc.).
 - There's no test suite or linter configured — don't add one as part of an unrelated change.
+- If you edited `public/data/saints.json`, run `npm run validate` before opening your PR.
 - Keep commits focused; explain any non-obvious trade-offs in the PR description.
 
 ## Adding a saint

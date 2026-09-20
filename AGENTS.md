@@ -25,7 +25,7 @@ Required (set locally in `.env.local`, never committed):
 
 ## Working in this repo
 
-- No test suite or linter is currently configured — don't invent one unless asked.
+- No general-purpose test suite or linter is currently configured — don't invent one unless asked. A dedicated data validator exists at `scripts/validate-saints.mjs`; keep `npm run validate` passing when editing `public/data/saints.json`.
 - Keep changes minimal; this is a small static site, avoid introducing build tooling/frameworks unless explicitly requested.
 - This project has an educational purpose for its author — don't take prior design decisions for granted, call out trade-offs when relevant.
 - When adding a new API route, mirror the existing handlers' style: method guard, env var validation.
