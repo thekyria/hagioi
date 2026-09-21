@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
   <!-- Meta charset and viewport for responsiveness -->
@@ -7,9 +7,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Site title, description & keywords (SEO)-->
-  <title>Hagioi</title>
-  <meta name="description" content="An All Saints map website.">
-  <meta name="keywords" content="holiness, website, map, design, beauty, spiritual, orthodox, church, all saints, hagioi">
+  <title>Hagioi — Interactive Map of Orthodox Christian Saints</title>
+  <meta name="description" content="Explore an interactive map of Orthodox Christian saints. Browse saints by feast day, search them by name, and discover where each saint was born, lived, or was martyred.">
+  <meta name="keywords" content="orthodox saints, saints map, feast days, orthodox church, hagiography, interactive map, all saints, hagioi">
+  <link rel="canonical" href="https://hagioi.app/">
+  <meta name="robots" content="index, follow">
+  <meta name="theme-color" content="#f8f5ef">
 
   <!-- Author of the website -->
   <meta name="author" content="Theodoros Kyriakidis">
@@ -19,20 +22,40 @@
   <link rel="icon" type="image/svg+xml" href="assets/logo.svg">
 
   <!-- Social media sharing metadata (Open Graph / Facebook / Twitter) -->
-  <meta property="og:title" content="Hagioi">
-  <meta property="og:description" content="An All Saints map website.">
-  <meta property="og:image" content="assets/social-image.jpg">
-  <meta property="og:url" content="https://thekyria.github.io/hagioi/">
+  <meta property="og:title" content="Hagioi — Interactive Map of Orthodox Christian Saints">
+  <meta property="og:description" content="Explore an interactive map of Orthodox Christian saints. Browse saints by feast day, search them by name, and discover where each saint was born, lived, or was martyred.">
+  <meta property="og:image" content="https://hagioi.app/assets/social-image.png">
+  <meta property="og:image:alt" content="Hagioi — a map of Orthodox Christian saints">
+  <meta property="og:url" content="https://hagioi.app/">
   <meta property="og:type" content="website">
   <meta property="og:site_name" content="Hagioi">
+  <meta property="og:locale" content="en_US">
 
   <!-- Twitter Card -->
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Hagioi">
-  <meta name="twitter:description" content="An All Saints map website.">
-  <meta name="twitter:image" content="assets/social-image.jpg">
+  <meta name="twitter:title" content="Hagioi — Interactive Map of Orthodox Christian Saints">
+  <meta name="twitter:description" content="Explore an interactive map of Orthodox Christian saints. Browse saints by feast day, search them by name, and discover where each saint was born, lived, or was martyred.">
+  <meta name="twitter:image" content="https://hagioi.app/assets/social-image.png">
+  <meta name="twitter:image:alt" content="Hagioi — a map of Orthodox Christian saints">
   <meta name="twitter:creator" content="@thekyria_gr">
-  
+
+  <!-- Structured data for search engines -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "Hagioi",
+    "url": "https://hagioi.app/",
+    "description": "An interactive map of Orthodox Christian saints, showing where each saint was born, lived, or was martyred.",
+    "inLanguage": "en",
+    "author": {
+      "@type": "Person",
+      "name": "Theodoros Kyriakidis",
+      "url": "http://thekyria.com"
+    }
+  }
+  </script>
+
   <!-- Google Fonts link -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -58,6 +81,11 @@
   </header>
   
   <main>
+    <noscript>
+      <p>Hagioi is an interactive map of Orthodox Christian saints, showing where each saint was born, lived,
+        or was martyred, along with their feast day, icon, and a short biography. JavaScript is required to
+        view the map.</p>
+    </noscript>
     <div id="app-layout">
       <div id="map"></div>
       <aside id="saints-panel" aria-label="Feast Days" aria-hidden="true" inert>
@@ -91,7 +119,7 @@
             <p>Use the Feast Days panel to filter saints by date, or click a marker on the map to learn more about a saint.</p>
             <p>Built with ❤️ by <a href="http://thekyria.com" target="_blank" rel="noopener noreferrer">Theodoros Kyriakidis</a>.</p>
           </div>
-        </div>
+        </section>
       </aside>
     </div>
   </main>
