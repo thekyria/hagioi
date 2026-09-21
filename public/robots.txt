@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://thekyria.github.io/hagioi/sitemap.xml
+Sitemap: https://hagioi.app/sitemap.xml
