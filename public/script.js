@@ -381,45 +381,14 @@ async function initMap() {
     const fromDaySelect = document.getElementById('from-day');
     const toMonthSelect = document.getElementById('to-month');
     const toDaySelect = document.getElementById('to-day');
-    const saintSearchInput = document.getElementById('saint-search');
-
-    const dateFilterInputs = [fromMonthSelect, fromDaySelect, toMonthSelect, toDaySelect];
-
-    // The alphabetic search and the date-range filter are independent,
-    // mutually exclusive ways to narrow the saints list: typing a search
-    // term switches to name search (and disables the date controls);
-    // clearing it switches back to filtering by feast day date range.
-    function isSearchActive() {
-        return saintSearchInput.value.trim().length > 0;
-    }
-
-    function updateFilterModeUI() {
-        const searchActive = isSearchActive();
-        dateFilterInputs.forEach((input) => {
-            input.disabled = searchActive;
-        });
-        document.getElementById('date-filter').classList.toggle('is-disabled', searchActive);
-    }
 
     function applyFilter() {
-        const searchTerm = saintSearchInput.value.trim().toLowerCase();
-        const searchActive = searchTerm.length > 0;
-
         saintsList.innerHTML = '';
         const visibleMarkers = new Set();
 
-        let matchingEntries;
-        if (searchActive) {
-            // Results are shown alphabetically by name so it's easy to scan
-            // for a saint, regardless of the order saints appear in saints.json.
-            matchingEntries = entries
-                .filter(({ saint }) => saint.name.toLowerCase().includes(searchTerm))
-                .sort((a, b) => a.saint.name.localeCompare(b.saint.name));
-        } else {
-            const fromCode = dayCode(Number(fromMonthSelect.value), Number(fromDaySelect.value));
-            const toCode = dayCode(Number(toMonthSelect.value), Number(toDaySelect.value));
-            matchingEntries = entries.filter(({ feast }) => isInRange(fromCode, toCode, dayCode(feast.month, feast.day)));
-        }
+        const fromCode = dayCode(Number(fromMonthSelect.value), Number(fromDaySelect.value));
+        const toCode = dayCode(Number(toMonthSelect.value), Number(toDaySelect.value));
+        const matchingEntries = entries.filter(({ feast }) => isInRange(fromCode, toCode, dayCode(feast.month, feast.day)));
 
         matchingEntries.forEach(({ saint, markers }) => {
             markers.forEach(({ marker }) => visibleMarkers.add(marker));
@@ -484,14 +453,119 @@ async function initMap() {
         toDaySelect.addEventListener('change', applyFilter);
     }
 
-    saintSearchInput.addEventListener('input', () => {
-        updateFilterModeUI();
-        applyFilter();
-    });
+    // Alphabetical "search by name" popup: a separate, always-complete
+    // A-Z list of every saint (independent of the feast-day range filter
+    // above), which can be scrolled or narrowed by typing.
+    function initSaintSearchModal() {
+        const openButton = document.getElementById('saint-search-open');
+        const modal = document.getElementById('saint-search-modal');
+        const searchInput = document.getElementById('saint-search-input');
+        const resultsList = document.getElementById('saint-search-results');
+        if (!openButton || !modal || !searchInput || !resultsList) {
+            return;
+        }
+
+        // Sorted once up-front so the popup always lists saints alphabetically.
+        const alphabeticalEntries = [...entries].sort((a, b) => a.saint.name.localeCompare(b.saint.name));
+
+        let lastFocusedElement = null;
+
+        function renderResults() {
+            const term = searchInput.value.trim().toLowerCase();
+            const filtered = term.length > 0
+                ? alphabeticalEntries.filter(({ saint }) => saint.name.toLowerCase().includes(term))
+                : alphabeticalEntries;
+
+            resultsList.innerHTML = '';
+
+            if (filtered.length === 0) {
+                const empty = document.createElement('li');
+                empty.className = 'saint-search-empty';
+                empty.textContent = 'No saints found.';
+                resultsList.appendChild(empty);
+                return;
+            }
+
+            let currentLetter = null;
+            filtered.forEach(({ saint, markers }) => {
+                const letter = saint.name.charAt(0).toUpperCase();
+                if (letter !== currentLetter) {
+                    currentLetter = letter;
+                    const heading = document.createElement('li');
+                    heading.className = 'saint-search-letter';
+                    heading.setAttribute('aria-hidden', 'true');
+                    heading.textContent = letter;
+                    resultsList.appendChild(heading);
+                }
+
+                const item = document.createElement('li');
+                item.className = 'saint-search-result';
+                item.tabIndex = 0;
+                item.setAttribute('role', 'button');
+
+                const nameSpan = document.createElement('span');
+                nameSpan.className = 'saint-list-name';
+                nameSpan.textContent = saint.name;
+
+                const metaSpan = document.createElement('span');
+                metaSpan.className = 'saint-list-meta';
+                metaSpan.textContent = `${saint.title} — ${saint.feastDay}`;
+
+                item.append(nameSpan, metaSpan);
+
+                const activate = () => {
+                    selectSaint(saint, markers);
+                    closeModal();
+                };
+
+                item.addEventListener('click', activate);
+                item.addEventListener('keydown', (e) => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        activate();
+                    }
+                });
+
+                resultsList.appendChild(item);
+            });
+        }
+
+        function openModal() {
+            lastFocusedElement = document.activeElement;
+            searchInput.value = '';
+            renderResults();
+            modal.hidden = false;
+            openButton.setAttribute('aria-expanded', 'true');
+            searchInput.focus();
+            document.addEventListener('keydown', handleKeydown);
+        }
+
+        function closeModal() {
+            modal.hidden = true;
+            openButton.setAttribute('aria-expanded', 'false');
+            document.removeEventListener('keydown', handleKeydown);
+            if (lastFocusedElement instanceof HTMLElement) {
+                lastFocusedElement.focus();
+            }
+        }
+
+        function handleKeydown(e) {
+            if (e.key === 'Escape') {
+                e.preventDefault();
+                closeModal();
+            }
+        }
+
+        openButton.addEventListener('click', openModal);
+        modal.querySelectorAll('[data-saint-search-close]').forEach((el) => {
+            el.addEventListener('click', closeModal);
+        });
+        searchInput.addEventListener('input', renderResults);
+    }
 
     initDateFilterControls();
-    updateFilterModeUI();
     applyFilter();
+    initSaintSearchModal();
 }
 
 async function loadGoogleMapsAPI() {
