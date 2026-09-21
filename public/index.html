@@ -98,6 +98,19 @@
               Search saints by name&hellip;
             </button>
           </div>
+          <section id="nearby-discovery" class="nearby-discovery" aria-labelledby="nearby-discovery-heading">
+            <h2 id="nearby-discovery-heading" class="nearby-discovery-heading">Near me</h2>
+            <button type="button" id="nearby-find-button" class="nearby-find-button" aria-describedby="nearby-note nearby-status">
+              Find saint-associated locations near me (within 100 km)
+            </button>
+            <p id="nearby-status" class="nearby-status" role="status" aria-live="polite">
+              Choose “Find saint-associated locations near me” to run an on-device lookup.
+            </p>
+            <p id="nearby-note" class="nearby-note">
+              Privacy &amp; accuracy: your location is used only in your browser for this lookup. Results show historical saint-associated places, not verified present-day pilgrimage destinations.
+            </p>
+            <ul id="nearby-results" class="nearby-results" aria-label="Saint-associated locations near you"></ul>
+          </section>
           <div id="date-filter">
             <div class="date-filter-group">
               <label for="from-month">From</label>
@@ -116,7 +129,8 @@
           <h2 id="about-heading" class="about-section-header">About Hagioi</h2>
           <div class="about-section-content">
             <p>Hagioi is an interactive map of Orthodox Christian saints, showing where each saint was born, lived, or was martyred.</p>
-            <p>Use the Feast Days panel to filter saints by date, or click a marker on the map to learn more about a saint.</p>
+            <p>Use the Feast Days panel to filter saints by date, search by name, or optionally find historical saint-associated locations near you.</p>
+            <p>The near-me lookup is opt-in and runs only in your browser; it does not verify present-day shrines, churches, or pilgrimage facilities.</p>
             <p>Built with ❤️ by <a href="http://thekyria.com" target="_blank" rel="noopener noreferrer">Theodoros Kyriakidis</a>.</p>
           </div>
         </section>
