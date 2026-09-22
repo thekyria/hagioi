@@ -3,8 +3,8 @@ const MONTH_NAMES = [
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
 ];
-// non-leap-year day counts; the fixed month/day calendar intentionally treats
-// recurring feasts as annual dates without rendering a February 29 cell
+// Fixed feast parsing/date filters intentionally use non-leap month lengths,
+// since the data model stores recurring month/day feasts without a leap-day variant.
 const DAYS_IN_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 const WEEKDAY_NAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const NEARBY_RADIUS_KM = 100;
@@ -837,7 +837,7 @@ async function initMap() {
         calendarMonthLabel.textContent = MONTH_NAMES[currentCalendarMonth];
 
         const firstWeekday = new Date(currentCalendarYear, currentCalendarMonth, 1).getDay();
-        const daysInMonth = DAYS_IN_MONTH[currentCalendarMonth];
+        const daysInMonth = new Date(currentCalendarYear, currentCalendarMonth + 1, 0).getDate();
         const totalCells = Math.ceil((firstWeekday + daysInMonth) / 7) * 7;
         let feastDayCount = 0;
         let feastSaintCount = 0;
