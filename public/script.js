@@ -813,7 +813,7 @@ async function initMap() {
 
     function selectCalendarDay(day) {
         selectedCalendarDay = day;
-        renderCalendar();
+        renderCalendar(false);
         renderCalendarResults();
     }
 
@@ -832,7 +832,7 @@ async function initMap() {
         renderCalendarResults();
     }
 
-    function renderCalendar() {
+    function renderCalendar(updateStatus = true) {
         if (!calendarGrid || !calendarMonthLabel || !calendarStatus) {
             return;
         }
@@ -909,9 +909,11 @@ async function initMap() {
             calendarGrid.appendChild(row);
         }
 
-        calendarStatus.textContent = feastDayCount === 0
-            ? `No fixed-date feast entries are listed in ${MONTH_NAMES[currentCalendarMonth]}.`
-            : `${MONTH_NAMES[currentCalendarMonth]} has ${feastDayCount} feast day${feastDayCount === 1 ? '' : 's'} covering ${feastSaintCount} saint${feastSaintCount === 1 ? '' : 's'}.`;
+        if (updateStatus) {
+            calendarStatus.textContent = feastDayCount === 0
+                ? `No fixed-date feast entries are listed in ${MONTH_NAMES[currentCalendarMonth]}.`
+                : `${MONTH_NAMES[currentCalendarMonth]} has ${feastDayCount} feast day${feastDayCount === 1 ? '' : 's'} covering ${feastSaintCount} saint${feastSaintCount === 1 ? '' : 's'}.`;
+        }
     }
 
     function initFeastCalendar() {
