@@ -51,6 +51,10 @@ function dayCode(month, day) {
     return month * 100 + day;
 }
 
+function isLeapYear(year) {
+    return new Date(year, 1, 29).getMonth() === 1;
+}
+
 function isInRange(fromCode, toCode, testCode) {
     if (fromCode <= toCode) {
         return testCode >= fromCode && testCode <= toCode;
@@ -734,8 +738,10 @@ async function initMap() {
     }, new Map());
 
     const today = new Date();
+    // The monthly feast calendar shows recurring annual dates without a visible
+    // year selector, so weekday offsets stay anchored to a non-leap reference year.
+    const calendarReferenceYear = isLeapYear(today.getFullYear()) ? today.getFullYear() + 1 : today.getFullYear();
     let currentCalendarMonth = today.getMonth();
-    let currentCalendarYear = today.getFullYear();
     let selectedCalendarDay = null;
 
     function formatMonthDay(month, day) {
@@ -814,14 +820,7 @@ async function initMap() {
     }
 
     function changeCalendarMonth(delta) {
-        currentCalendarMonth += delta;
-        if (currentCalendarMonth < 0) {
-            currentCalendarMonth = MONTH_NAMES.length - 1;
-            currentCalendarYear -= 1;
-        } else if (currentCalendarMonth >= MONTH_NAMES.length) {
-            currentCalendarMonth = 0;
-            currentCalendarYear += 1;
-        }
+        currentCalendarMonth = (currentCalendarMonth + delta + MONTH_NAMES.length) % MONTH_NAMES.length;
 
         selectedCalendarDay = null;
         renderCalendar();
@@ -836,8 +835,8 @@ async function initMap() {
         calendarGrid.innerHTML = '';
         calendarMonthLabel.textContent = MONTH_NAMES[currentCalendarMonth];
 
-        const firstWeekday = new Date(currentCalendarYear, currentCalendarMonth, 1).getDay();
-        const daysInMonth = new Date(currentCalendarYear, currentCalendarMonth + 1, 0).getDate();
+        const firstWeekday = new Date(calendarReferenceYear, currentCalendarMonth, 1).getDay();
+        const daysInMonth = DAYS_IN_MONTH[currentCalendarMonth];
         const totalCells = Math.ceil((firstWeekday + daysInMonth) / 7) * 7;
         let feastDayCount = 0;
         let feastSaintCount = 0;
