@@ -5,6 +5,33 @@ const MONTH_NAMES = [
 ];
 // non-leap-year day counts, since feast days recur every year with no fixed year
 const DAYS_IN_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+const NEARBY_RADIUS_KM = 100;
+const EARTH_RADIUS_KM = 6371;
+
+function toRadians(degrees) {
+    return degrees * (Math.PI / 180);
+}
+
+function haversineDistanceKm(from, to) {
+    const latDelta = toRadians(to.lat - from.lat);
+    const lngDelta = toRadians(to.lng - from.lng);
+    const fromLat = toRadians(from.lat);
+    const toLat = toRadians(to.lat);
+    const a = Math.sin(latDelta / 2) ** 2
+        + Math.cos(fromLat) * Math.cos(toLat) * Math.sin(lngDelta / 2) ** 2;
+    const c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+    return EARTH_RADIUS_KM * c;
+}
+
+function formatApproxDistance(distanceKm) {
+    if (distanceKm < 1) {
+        return 'under 1 km';
+    }
+    if (distanceKm < 10) {
+        return `${Math.round(distanceKm)} km`;
+    }
+    return `${Math.round(distanceKm / 5) * 5} km`;
+}
 
 function parseFeastDay(feastDay) {
     const [monthName, dayStr] = feastDay.split(' ');
@@ -381,6 +408,13 @@ async function initMap() {
     const fromDaySelect = document.getElementById('from-day');
     const toMonthSelect = document.getElementById('to-month');
     const toDaySelect = document.getElementById('to-day');
+    const nearbyDiscoverySection = document.getElementById('nearby-discovery');
+    const nearbyFindButton = document.getElementById('nearby-find-button');
+    const nearbyStatus = document.getElementById('nearby-status');
+    const nearbyResults = document.getElementById('nearby-results');
+
+    let isLocatingNearby = false;
+    let userLocationMarker = null;
 
     function applyFilter() {
         saintsList.innerHTML = '';
@@ -423,6 +457,214 @@ async function initMap() {
             const dimmed = !visibleMarkers.has(marker);
             defaultPinElement.classList.toggle('marker-dimmed', dimmed);
             activePinElement.classList.toggle('marker-dimmed', dimmed);
+        });
+    }
+
+    const nearbyLocationCandidates = Array.from(
+        saints
+            .flatMap((saint) => saint.locations.map((location) => ({ saint, location })))
+            .reduce((uniqueCandidates, candidate) => {
+                const key = `${candidate.saint.id}|${candidate.location.label}|${candidate.location.lat}|${candidate.location.lng}`;
+                if (!uniqueCandidates.has(key)) {
+                    uniqueCandidates.set(key, candidate);
+                }
+                return uniqueCandidates;
+            }, new Map())
+            .values()
+    );
+
+    function setNearbyBusy(isBusy) {
+        isLocatingNearby = isBusy;
+        if (nearbyFindButton) {
+            nearbyFindButton.disabled = isBusy;
+            nearbyFindButton.textContent = isBusy
+                ? 'Finding saint-associated locations near you...'
+                : `Find saint-associated locations near me (within ${NEARBY_RADIUS_KM} km)`;
+        }
+        if (nearbyDiscoverySection) {
+            nearbyDiscoverySection.setAttribute('aria-busy', String(isBusy));
+        }
+    }
+
+    function setNearbyStatus(message) {
+        if (nearbyStatus) {
+            nearbyStatus.textContent = message;
+        }
+    }
+
+    function findMarkerEntryForLocation(saintId, location) {
+        const markers = saintMarkersById.get(saintId) || [];
+        return markers.find(({ location: markerLocation }) => {
+            return markerLocation === location
+                || (
+                    markerLocation.label === location.label
+                    && markerLocation.lat === location.lat
+                    && markerLocation.lng === location.lng
+                );
+        });
+    }
+
+    function renderNearbyResults(results) {
+        if (!nearbyResults) {
+            return;
+        }
+        nearbyResults.innerHTML = '';
+
+        results.forEach(({ saint, location, distanceKm }) => {
+            const item = document.createElement('li');
+            item.className = 'nearby-result';
+            item.tabIndex = 0;
+            item.setAttribute('role', 'button');
+
+            const nameSpan = document.createElement('span');
+            nameSpan.className = 'saint-list-name';
+            nameSpan.textContent = saint.name;
+
+            const labelSpan = document.createElement('span');
+            labelSpan.className = 'saint-list-meta';
+            labelSpan.textContent = location.label;
+
+            const distanceSpan = document.createElement('span');
+            distanceSpan.className = 'nearby-result-distance';
+            distanceSpan.textContent = `Approx. ${formatApproxDistance(distanceKm)} away`;
+
+            item.append(nameSpan, labelSpan, distanceSpan);
+
+            const activate = () => {
+                const markers = saintMarkersById.get(saint.id) || [];
+                const markerEntry = findMarkerEntryForLocation(saint.id, location);
+                if (markerEntry) {
+                    const sharedPlacements = markerEntry.placements.length > 1 ? markerEntry.placements : null;
+                    selectSaint(saint, markers, markerEntry.marker, sharedPlacements);
+                } else if (markers.length > 0) {
+                    selectSaint(saint, markers);
+                }
+            };
+
+            item.addEventListener('click', activate);
+            item.addEventListener('keydown', (event) => {
+                if (event.key === 'Enter' || event.key === ' ') {
+                    event.preventDefault();
+                    activate();
+                }
+            });
+
+            nearbyResults.appendChild(item);
+        });
+    }
+
+    function updateUserLocationMarker(userPosition) {
+        if (!userLocationMarker) {
+            const markerElement = document.createElement('div');
+            markerElement.className = 'user-location-marker';
+            userLocationMarker = new AdvancedMarkerElement({
+                map,
+                position: userPosition,
+                title: 'Your location',
+                content: markerElement,
+            });
+            return;
+        }
+
+        userLocationMarker.position = userPosition;
+        userLocationMarker.map = map;
+    }
+
+    function fitMapToNearbyResults(userPosition, results) {
+        if (results.length === 0) {
+            map.panTo(userPosition);
+            map.setZoom(9);
+            return;
+        }
+
+        const bounds = new google.maps.LatLngBounds();
+        bounds.extend(userPosition);
+        results.forEach(({ location }) => bounds.extend({ lat: location.lat, lng: location.lng }));
+        map.fitBounds(bounds, { top: 100, right: 100, bottom: 220, left: 100 });
+    }
+
+    function getNearbyResults(userPosition) {
+        return nearbyLocationCandidates
+            .map((candidate) => ({
+                ...candidate,
+                distanceKm: haversineDistanceKm(userPosition, {
+                    lat: candidate.location.lat,
+                    lng: candidate.location.lng,
+                }),
+            }))
+            .filter(({ distanceKm }) => distanceKm <= NEARBY_RADIUS_KM)
+            .sort((a, b) => a.distanceKm - b.distanceKm);
+    }
+
+    function getGeolocationErrorMessage(error) {
+        if (!error) {
+            return 'We could not read your location. Please try again.';
+        }
+
+        if (error.code === error.PERMISSION_DENIED) {
+            return 'Location access was denied. Allow location in your browser and try again.';
+        }
+        if (error.code === error.POSITION_UNAVAILABLE) {
+            return 'Your location is currently unavailable. Check device location settings and try again.';
+        }
+        if (error.code === error.TIMEOUT) {
+            return 'Location lookup timed out. Please try again in a clearer-signal area.';
+        }
+        return 'We could not read your location. Please try again.';
+    }
+
+    function initNearbyDiscovery() {
+        if (!nearbyFindButton) {
+            return;
+        }
+
+        nearbyFindButton.textContent = `Find saint-associated locations near me (within ${NEARBY_RADIUS_KM} km)`;
+
+        nearbyFindButton.addEventListener('click', () => {
+            if (isLocatingNearby) {
+                return;
+            }
+
+            if (!navigator.geolocation) {
+                setNearbyStatus('Your browser does not support location lookup. You can still browse saints by map, date, or name.');
+                return;
+            }
+
+            setNearbyBusy(true);
+            setNearbyStatus('Requesting your location for an in-browser nearby lookup...');
+
+            navigator.geolocation.getCurrentPosition(
+                (position) => {
+                    const userPosition = {
+                        lat: position.coords.latitude,
+                        lng: position.coords.longitude,
+                    };
+
+                    const nearbyMatches = getNearbyResults(userPosition);
+                    updateUserLocationMarker(userPosition);
+                    fitMapToNearbyResults(userPosition, nearbyMatches);
+                    renderNearbyResults(nearbyMatches);
+
+                    if (nearbyMatches.length === 0) {
+                        setNearbyStatus(`No saint-associated locations were found within ${NEARBY_RADIUS_KM} km of your location.`);
+                    } else {
+                        setNearbyStatus(
+                            `Found ${nearbyMatches.length} saint-associated location${nearbyMatches.length === 1 ? '' : 's'} within ${NEARBY_RADIUS_KM} km of your location.`
+                        );
+                    }
+
+                    setNearbyBusy(false);
+                },
+                (error) => {
+                    setNearbyStatus(getGeolocationErrorMessage(error));
+                    setNearbyBusy(false);
+                },
+                {
+                    enableHighAccuracy: false,
+                    timeout: 10000,
+                    maximumAge: 300000,
+                }
+            );
         });
     }
 
@@ -566,6 +808,7 @@ async function initMap() {
     initDateFilterControls();
     applyFilter();
     initSaintSearchModal();
+    initNearbyDiscovery();
 }
 
 async function loadGoogleMapsAPI() {
