@@ -1011,8 +1011,11 @@ async function initMap() {
             feastCalendarModal.hidden = true;
             feastCalendarOpenButton.setAttribute('aria-expanded', 'false');
             feastCalendarModal.removeEventListener('keydown', handleKeydown);
-            if (restoreFocus && lastFocusedElement instanceof HTMLElement) {
-                lastFocusedElement.focus();
+            if (restoreFocus) {
+                const focusTarget = lastFocusedElement instanceof HTMLElement && lastFocusedElement.isConnected
+                    ? lastFocusedElement
+                    : feastCalendarOpenButton;
+                focusTarget.focus();
             }
         }
 
