@@ -416,6 +416,7 @@ async function initMap() {
         });
     });
 
+    const mapElement = document.getElementById('map');
     const saintsList = document.getElementById('saints-list');
     const fromMonthSelect = document.getElementById('from-month');
     const fromDaySelect = document.getElementById('from-day');
@@ -438,6 +439,10 @@ async function initMap() {
     let isLocatingNearby = false;
     let userLocationMarker = null;
     let closeFeastCalendarModal = () => { };
+
+    if (mapElement) {
+        mapElement.tabIndex = -1;
+    }
 
     function applyFilter() {
         saintsList.innerHTML = '';
@@ -809,7 +814,7 @@ async function initMap() {
             button.append(nameSpan, metaSpan, locationSpan);
             button.addEventListener('click', () => {
                 selectSaint(saint, markers);
-                closeFeastCalendarModal({ restoreFocus: false });
+                closeFeastCalendarModal({ restoreFocus: false, focusTarget: mapElement });
             });
 
             item.appendChild(button);
@@ -1007,7 +1012,7 @@ async function initMap() {
             }
         }
 
-        function closeModal({ restoreFocus = true } = {}) {
+        function closeModal({ restoreFocus = true, focusTarget = null } = {}) {
             feastCalendarModal.hidden = true;
             feastCalendarOpenButton.setAttribute('aria-expanded', 'false');
             feastCalendarModal.removeEventListener('keydown', handleKeydown);
@@ -1015,6 +1020,8 @@ async function initMap() {
                 const focusTarget = lastFocusedElement instanceof HTMLElement && lastFocusedElement.isConnected
                     ? lastFocusedElement
                     : feastCalendarOpenButton;
+                focusTarget.focus();
+            } else if (focusTarget instanceof HTMLElement) {
                 focusTarget.focus();
             }
         }
