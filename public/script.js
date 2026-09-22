@@ -809,7 +809,7 @@ async function initMap() {
             button.append(nameSpan, metaSpan, locationSpan);
             button.addEventListener('click', () => {
                 selectSaint(saint, markers);
-                closeFeastCalendarModal();
+                closeFeastCalendarModal({ restoreFocus: false });
             });
 
             item.appendChild(button);
@@ -1007,11 +1007,11 @@ async function initMap() {
             }
         }
 
-        function closeModal() {
+        function closeModal({ restoreFocus = true } = {}) {
             feastCalendarModal.hidden = true;
             feastCalendarOpenButton.setAttribute('aria-expanded', 'false');
             feastCalendarModal.removeEventListener('keydown', handleKeydown);
-            if (lastFocusedElement instanceof HTMLElement) {
+            if (restoreFocus && lastFocusedElement instanceof HTMLElement) {
                 lastFocusedElement.focus();
             }
         }
