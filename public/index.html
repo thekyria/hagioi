@@ -123,13 +123,48 @@
               <select id="to-day" aria-label="To day"></select>
             </div>
           </div>
+          <section id="feast-calendar" class="feast-calendar" aria-labelledby="feast-calendar-heading">
+            <div class="feast-calendar-header">
+              <h2 id="feast-calendar-heading" class="feast-calendar-heading">Monthly calendar</h2>
+              <div class="feast-calendar-nav" role="group" aria-label="Calendar month navigation">
+                <button type="button" id="calendar-prev-month" class="feast-calendar-nav-button" aria-label="Show previous month">&larr;</button>
+                <p id="calendar-month-label" class="feast-calendar-month" aria-live="polite" aria-atomic="true"></p>
+                <button type="button" id="calendar-next-month" class="feast-calendar-nav-button" aria-label="Show next month">&rarr;</button>
+              </div>
+            </div>
+            <p class="feast-calendar-note">
+              Select a highlighted day to see saints for that feast and open their associated map location(s).
+            </p>
+            <p id="calendar-status" class="feast-calendar-status" role="status" aria-live="polite"></p>
+            <table class="feast-calendar-table" aria-describedby="calendar-status">
+              <thead>
+                <tr>
+                  <th scope="col">Sun</th>
+                  <th scope="col">Mon</th>
+                  <th scope="col">Tue</th>
+                  <th scope="col">Wed</th>
+                  <th scope="col">Thu</th>
+                  <th scope="col">Fri</th>
+                  <th scope="col">Sat</th>
+                </tr>
+              </thead>
+              <tbody id="calendar-grid"></tbody>
+            </table>
+            <div id="calendar-results" class="calendar-results" aria-labelledby="calendar-results-heading">
+              <h3 id="calendar-results-heading" class="calendar-results-heading">Selected day</h3>
+              <p id="calendar-results-summary" class="calendar-results-summary" role="status" aria-live="polite">
+                Choose a highlighted day to list saints and their associated map location(s).
+              </p>
+              <ul id="calendar-results-list" class="calendar-results-list"></ul>
+            </div>
+          </section>
           <ul id="saints-list"></ul>
         </div>
         <section class="about-section" aria-labelledby="about-heading">
           <h2 id="about-heading" class="about-section-header">About Hagioi</h2>
           <div class="about-section-content">
             <p>Hagioi is an interactive map of Orthodox Christian saints, showing where each saint was born, lived, or was martyred.</p>
-            <p>Use the Feast Days panel to filter saints by date, search by name, or optionally find historical saint-associated locations near you.</p>
+            <p>Use the Feast Days panel to browse the monthly feast calendar, filter saints by date, search by name, or optionally find historical saint-associated locations near you.</p>
             <p>The near-me lookup is opt-in and runs only in your browser; it does not verify present-day shrines, churches, or pilgrimage facilities.</p>
             <p>Built with ❤️ by <a href="http://thekyria.com" target="_blank" rel="noopener noreferrer">Theodoros Kyriakidis</a>.</p>
           </div>

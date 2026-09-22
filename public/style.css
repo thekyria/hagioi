@@ -315,6 +315,185 @@ main {
     font-size: 13px;
 }
 
+.feast-calendar {
+    margin-top: 10px;
+    padding: 10px;
+    border: 1px solid #d8dde3;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.feast-calendar-header {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.feast-calendar-heading,
+.calendar-results-heading {
+    margin: 0;
+    font-size: 14px;
+    color: var(--color-blue-dark);
+}
+
+.feast-calendar-nav {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.feast-calendar-nav-button {
+    border: 1px solid var(--color-blue-light);
+    border-radius: 4px;
+    background: var(--color-blue-pale);
+    color: var(--color-blue-dark);
+    font-family: inherit;
+    font-size: 14px;
+    line-height: 1;
+    padding: 6px 9px;
+    cursor: pointer;
+}
+
+.feast-calendar-nav-button:hover,
+.feast-calendar-nav-button:focus-visible,
+.feast-calendar-day:hover,
+.feast-calendar-day:focus-visible,
+.calendar-result-button:hover,
+.calendar-result-button:focus-visible {
+    background: #dbeaf8;
+}
+
+.feast-calendar-nav-button:focus-visible,
+.feast-calendar-day:focus-visible,
+.calendar-result-button:focus-visible {
+    outline: 2px solid var(--color-gold);
+    outline-offset: 2px;
+}
+
+.feast-calendar-month {
+    margin: 0;
+    min-width: 88px;
+    text-align: center;
+    font-size: 14px;
+    color: var(--color-blue-dark);
+}
+
+.feast-calendar-note,
+.feast-calendar-status,
+.calendar-results-summary,
+.calendar-result-location {
+    margin: 8px 0 0;
+    font-size: 12px;
+    line-height: 1.4;
+}
+
+.feast-calendar-status,
+.calendar-results-summary {
+    color: var(--color-blue-dark);
+}
+
+.feast-calendar-note,
+.calendar-result-location {
+    color: #555;
+}
+
+.feast-calendar-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 4px;
+    margin-top: 8px;
+    table-layout: fixed;
+}
+
+.feast-calendar-table th {
+    font-size: 11px;
+    font-weight: bold;
+    color: var(--color-blue-dark);
+    text-align: center;
+    padding-bottom: 2px;
+}
+
+.feast-calendar-table td {
+    width: 14.285%;
+    height: 56px;
+    vertical-align: top;
+}
+
+.feast-calendar-empty {
+    background: transparent;
+}
+
+.feast-calendar-day,
+.feast-calendar-day-label {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    min-height: 56px;
+    border-radius: 6px;
+    padding: 6px 4px;
+    text-align: left;
+}
+
+.feast-calendar-day {
+    border: 1px solid var(--color-blue-light);
+    background: var(--color-blue-pale);
+    color: var(--color-blue-dark);
+    font-family: inherit;
+    cursor: pointer;
+}
+
+.feast-calendar-day[aria-pressed="true"] {
+    border-width: 2px;
+    border-color: var(--color-gold);
+    box-shadow: inset 0 0 0 1px var(--color-blue-dark);
+}
+
+.feast-calendar-day-label {
+    border: 1px solid #e6e6e6;
+    background: #f9f9f9;
+    color: #666;
+}
+
+.feast-calendar-day-number {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.feast-calendar-day-count {
+    margin-top: auto;
+    font-size: 10px;
+    line-height: 1.2;
+}
+
+.calendar-results {
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #eee;
+}
+
+.calendar-results-list {
+    list-style: none;
+    margin: 8px 0 0;
+    padding: 0;
+}
+
+.calendar-result + .calendar-result {
+    margin-top: 6px;
+}
+
+.calendar-result-button {
+    width: 100%;
+    border: 1px solid #d8dde3;
+    border-radius: 6px;
+    background: #fff;
+    padding: 8px;
+    text-align: left;
+    font-family: inherit;
+    cursor: pointer;
+}
+
 #saints-list {
     list-style: none;
     margin: 10px 0 0;
@@ -530,6 +709,33 @@ main {
     .date-filter-group label {
         width: 34px;
         font-size: 13px;
+    }
+
+    .feast-calendar-header {
+        align-items: stretch;
+    }
+
+    .feast-calendar-nav {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .feast-calendar-table {
+        border-spacing: 3px;
+    }
+
+    .feast-calendar-table td {
+        height: 52px;
+    }
+
+    .feast-calendar-day,
+    .feast-calendar-day-label {
+        min-height: 52px;
+        padding: 5px 3px;
+    }
+
+    .feast-calendar-day-count {
+        font-size: 9px;
     }
 
     .site-footer {

@@ -3,8 +3,10 @@ const MONTH_NAMES = [
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
 ];
-// non-leap-year day counts, since feast days recur every year with no fixed year
+// non-leap-year day counts; the fixed month/day calendar intentionally treats
+// recurring feasts as annual dates without rendering a February 29 cell
 const DAYS_IN_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
+const WEEKDAY_NAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const NEARBY_RADIUS_KM = 100;
 const EARTH_RADIUS_KM = 6371;
 
@@ -35,7 +37,14 @@ function formatApproxDistance(distanceKm) {
 
 function parseFeastDay(feastDay) {
     const [monthName, dayStr] = feastDay.split(' ');
-    return { month: MONTH_NAMES.indexOf(monthName), day: parseInt(dayStr, 10) };
+    const month = MONTH_NAMES.indexOf(monthName);
+    const day = parseInt(dayStr, 10);
+
+    if (month < 0 || !Number.isInteger(day) || day < 1 || day > DAYS_IN_MONTH[month]) {
+        return null;
+    }
+
+    return { month, day };
 }
 
 function dayCode(month, day) {
@@ -408,6 +417,13 @@ async function initMap() {
     const fromDaySelect = document.getElementById('from-day');
     const toMonthSelect = document.getElementById('to-month');
     const toDaySelect = document.getElementById('to-day');
+    const calendarPrevMonthButton = document.getElementById('calendar-prev-month');
+    const calendarNextMonthButton = document.getElementById('calendar-next-month');
+    const calendarMonthLabel = document.getElementById('calendar-month-label');
+    const calendarStatus = document.getElementById('calendar-status');
+    const calendarGrid = document.getElementById('calendar-grid');
+    const calendarResultsSummary = document.getElementById('calendar-results-summary');
+    const calendarResultsList = document.getElementById('calendar-results-list');
     const nearbyDiscoverySection = document.getElementById('nearby-discovery');
     const nearbyFindButton = document.getElementById('nearby-find-button');
     const nearbyStatus = document.getElementById('nearby-status');
@@ -422,7 +438,7 @@ async function initMap() {
 
         const fromCode = dayCode(Number(fromMonthSelect.value), Number(fromDaySelect.value));
         const toCode = dayCode(Number(toMonthSelect.value), Number(toDaySelect.value));
-        const matchingEntries = entries.filter(({ feast }) => isInRange(fromCode, toCode, dayCode(feast.month, feast.day)));
+        const matchingEntries = entries.filter(({ feast }) => feast && isInRange(fromCode, toCode, dayCode(feast.month, feast.day)));
 
         matchingEntries.forEach(({ saint, markers }) => {
             markers.forEach(({ marker }) => visibleMarkers.add(marker));
@@ -695,6 +711,208 @@ async function initMap() {
         toDaySelect.addEventListener('change', applyFilter);
     }
 
+    // Movable feasts such as "Third Sunday of Pascha" cannot be placed in this
+    // fixed month/day calendar, so only entries with concrete annual dates are shown.
+    const fixedFeastEntries = entries
+        .filter(({ feast }) => feast)
+        .sort((a, b) => {
+            if (a.feast.month !== b.feast.month) {
+                return a.feast.month - b.feast.month;
+            }
+            if (a.feast.day !== b.feast.day) {
+                return a.feast.day - b.feast.day;
+            }
+            return a.saint.name.localeCompare(b.saint.name);
+        });
+
+    const feastEntriesByDay = fixedFeastEntries.reduce((daysMap, entry) => {
+        const key = dayCode(entry.feast.month, entry.feast.day);
+        const dayEntries = daysMap.get(key) || [];
+        dayEntries.push(entry);
+        daysMap.set(key, dayEntries);
+        return daysMap;
+    }, new Map());
+
+    const today = new Date();
+    let currentCalendarMonth = today.getMonth();
+    let currentCalendarYear = today.getFullYear();
+    let selectedCalendarDay = null;
+
+    function formatMonthDay(month, day) {
+        return `${MONTH_NAMES[month]} ${day}`;
+    }
+
+    function getCalendarDayEntries(month, day) {
+        return feastEntriesByDay.get(dayCode(month, day)) || [];
+    }
+
+    function getUniqueLocationLabels(markers) {
+        return Array.from(new Set(markers.map(({ location }) => location.label)));
+    }
+
+    function renderCalendarResults() {
+        if (!calendarResultsSummary || !calendarResultsList) {
+            return;
+        }
+
+        calendarResultsList.innerHTML = '';
+
+        if (selectedCalendarDay === null) {
+            calendarResultsSummary.textContent = 'Choose a highlighted day to list saints and their associated map location(s).';
+            return;
+        }
+
+        const selectedEntries = getCalendarDayEntries(currentCalendarMonth, selectedCalendarDay);
+        const selectedLabel = formatMonthDay(currentCalendarMonth, selectedCalendarDay);
+
+        if (selectedEntries.length === 0) {
+            calendarResultsSummary.textContent = `No fixed-date feast entries are listed for ${selectedLabel}.`;
+            return;
+        }
+
+        calendarResultsSummary.textContent = `${selectedEntries.length} saint${selectedEntries.length === 1 ? '' : 's'} on ${selectedLabel}. Select a saint to open associated map location details.`;
+
+        selectedEntries.forEach(({ saint, markers }) => {
+            const item = document.createElement('li');
+            item.className = 'calendar-result';
+
+            const button = document.createElement('button');
+            button.type = 'button';
+            button.className = 'calendar-result-button';
+
+            const nameSpan = document.createElement('span');
+            nameSpan.className = 'saint-list-name';
+            nameSpan.textContent = saint.name;
+
+            const metaSpan = document.createElement('span');
+            metaSpan.className = 'saint-list-meta';
+            metaSpan.textContent = `${saint.title} — ${saint.feastDay}`;
+
+            const locationSpan = document.createElement('span');
+            locationSpan.className = 'calendar-result-location';
+            const locationLabels = getUniqueLocationLabels(markers);
+            locationSpan.textContent = locationLabels.length === 1
+                ? `Associated map location: ${locationLabels[0]}`
+                : `Associated map locations: ${locationLabels.join(' • ')}`;
+
+            button.setAttribute(
+                'aria-label',
+                `${saint.name}, ${saint.title}, feast day ${saint.feastDay}. Show ${locationLabels.length} associated map location${locationLabels.length === 1 ? '' : 's'}.`
+            );
+            button.append(nameSpan, metaSpan, locationSpan);
+            button.addEventListener('click', () => selectSaint(saint, markers));
+
+            item.appendChild(button);
+            calendarResultsList.appendChild(item);
+        });
+    }
+
+    function selectCalendarDay(day) {
+        selectedCalendarDay = day;
+        renderCalendar();
+        renderCalendarResults();
+    }
+
+    function changeCalendarMonth(delta) {
+        currentCalendarMonth += delta;
+        if (currentCalendarMonth < 0) {
+            currentCalendarMonth = MONTH_NAMES.length - 1;
+            currentCalendarYear -= 1;
+        } else if (currentCalendarMonth >= MONTH_NAMES.length) {
+            currentCalendarMonth = 0;
+            currentCalendarYear += 1;
+        }
+
+        selectedCalendarDay = null;
+        renderCalendar();
+        renderCalendarResults();
+    }
+
+    function renderCalendar() {
+        if (!calendarGrid || !calendarMonthLabel || !calendarStatus) {
+            return;
+        }
+
+        calendarGrid.innerHTML = '';
+        calendarMonthLabel.textContent = MONTH_NAMES[currentCalendarMonth];
+
+        const firstWeekday = new Date(currentCalendarYear, currentCalendarMonth, 1).getDay();
+        const daysInMonth = DAYS_IN_MONTH[currentCalendarMonth];
+        const totalCells = Math.ceil((firstWeekday + daysInMonth) / 7) * 7;
+        let feastDayCount = 0;
+        let feastSaintCount = 0;
+
+        for (let startIndex = 0; startIndex < totalCells; startIndex += 7) {
+            const row = document.createElement('tr');
+
+            for (let weekdayIndex = 0; weekdayIndex < 7; weekdayIndex += 1) {
+                const cell = document.createElement('td');
+                const day = startIndex + weekdayIndex - firstWeekday + 1;
+
+                if (day < 1 || day > daysInMonth) {
+                    cell.className = 'feast-calendar-empty';
+                    cell.setAttribute('aria-hidden', 'true');
+                    row.appendChild(cell);
+                    continue;
+                }
+
+                const dayEntries = getCalendarDayEntries(currentCalendarMonth, day);
+                if (dayEntries.length > 0) {
+                    feastDayCount += 1;
+                    feastSaintCount += dayEntries.length;
+
+                    const button = document.createElement('button');
+                    button.type = 'button';
+                    button.className = 'feast-calendar-day';
+                    button.setAttribute('aria-pressed', String(selectedCalendarDay === day));
+                    button.setAttribute(
+                        'aria-label',
+                        `${formatMonthDay(currentCalendarMonth, day)}, ${WEEKDAY_NAMES[(startIndex + weekdayIndex) % 7]}, ${dayEntries.length} saint${dayEntries.length === 1 ? '' : 's'}`
+                    );
+                    if (selectedCalendarDay === day) {
+                        button.classList.add('is-selected');
+                    }
+
+                    const numberSpan = document.createElement('span');
+                    numberSpan.className = 'feast-calendar-day-number';
+                    numberSpan.textContent = day;
+
+                    const countSpan = document.createElement('span');
+                    countSpan.className = 'feast-calendar-day-count';
+                    countSpan.textContent = `${dayEntries.length} saint${dayEntries.length === 1 ? '' : 's'}`;
+
+                    button.append(numberSpan, countSpan);
+                    button.addEventListener('click', () => selectCalendarDay(day));
+                    cell.appendChild(button);
+                } else {
+                    const dayLabel = document.createElement('span');
+                    dayLabel.className = 'feast-calendar-day-label';
+                    dayLabel.textContent = day;
+                    cell.appendChild(dayLabel);
+                }
+
+                row.appendChild(cell);
+            }
+
+            calendarGrid.appendChild(row);
+        }
+
+        calendarStatus.textContent = feastDayCount === 0
+            ? `No fixed-date feast entries are listed in ${MONTH_NAMES[currentCalendarMonth]}.`
+            : `${MONTH_NAMES[currentCalendarMonth]} has ${feastDayCount} feast day${feastDayCount === 1 ? '' : 's'} covering ${feastSaintCount} saint${feastSaintCount === 1 ? '' : 's'}.`;
+    }
+
+    function initFeastCalendar() {
+        if (!calendarPrevMonthButton || !calendarNextMonthButton || !calendarGrid) {
+            return;
+        }
+
+        calendarPrevMonthButton.addEventListener('click', () => changeCalendarMonth(-1));
+        calendarNextMonthButton.addEventListener('click', () => changeCalendarMonth(1));
+        renderCalendar();
+        renderCalendarResults();
+    }
+
     // Alphabetical "search by name" popup: a separate, always-complete
     // A-Z list of every saint (independent of the feast-day range filter
     // above), which can be scrolled or narrowed by typing.
@@ -807,6 +1025,7 @@ async function initMap() {
 
     initDateFilterControls();
     applyFilter();
+    initFeastCalendar();
     initSaintSearchModal();
     initNearbyDiscovery();
 }
