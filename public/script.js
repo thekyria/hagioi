@@ -956,12 +956,41 @@ async function initMap() {
         }
 
         let lastFocusedElement = null;
+        const dialog = feastCalendarModal.querySelector('.feast-calendar-dialog');
+
+        function trapFocus(e) {
+            if (e.key !== 'Tab' || !dialog) {
+                return;
+            }
+
+            const focusableElements = Array.from(
+                dialog.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')
+            ).filter((element) => !element.hasAttribute('disabled'));
+
+            if (focusableElements.length === 0) {
+                return;
+            }
+
+            const firstElement = focusableElements[0];
+            const lastElement = focusableElements[focusableElements.length - 1];
+
+            if (e.shiftKey && document.activeElement === firstElement) {
+                e.preventDefault();
+                lastElement.focus();
+            } else if (!e.shiftKey && document.activeElement === lastElement) {
+                e.preventDefault();
+                firstElement.focus();
+            }
+        }
 
         function handleKeydown(e) {
             if (e.key === 'Escape') {
                 e.preventDefault();
                 closeModal();
+                return;
             }
+
+            trapFocus(e);
         }
 
         function openModal() {
@@ -970,7 +999,7 @@ async function initMap() {
             renderCalendarResults();
             feastCalendarModal.hidden = false;
             feastCalendarOpenButton.setAttribute('aria-expanded', 'true');
-            document.addEventListener('keydown', handleKeydown);
+            feastCalendarModal.addEventListener('keydown', handleKeydown);
             if (selectedCalendarDay !== null) {
                 focusSelectedCalendarDay();
             } else {
@@ -981,7 +1010,7 @@ async function initMap() {
         function closeModal() {
             feastCalendarModal.hidden = true;
             feastCalendarOpenButton.setAttribute('aria-expanded', 'false');
-            document.removeEventListener('keydown', handleKeydown);
+            feastCalendarModal.removeEventListener('keydown', handleKeydown);
             if (lastFocusedElement instanceof HTMLElement) {
                 lastFocusedElement.focus();
             }
