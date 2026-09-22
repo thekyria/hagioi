@@ -40,7 +40,7 @@ function parseFeastDay(feastDay) {
     const month = MONTH_NAMES.indexOf(monthName);
     const day = parseInt(dayStr, 10);
 
-    if (month < 0 || !Number.isInteger(day) || day < 1 || day > DAYS_IN_MONTH[month]) {
+    if (month < 0 || !Number.isInteger(day) || day < 1 || day > DAYS_IN_MONTH[month] + (month === 1 ? 1 : 0)) {
         return null;
     }
 
@@ -838,7 +838,7 @@ async function initMap() {
         }
 
         calendarGrid.innerHTML = '';
-        calendarMonthLabel.textContent = MONTH_NAMES[currentCalendarMonth];
+        calendarMonthLabel.textContent = `${MONTH_NAMES[currentCalendarMonth]} ${currentCalendarYear}`;
 
         const firstWeekday = new Date(currentCalendarYear, currentCalendarMonth, 1).getDay();
         const daysInMonth = currentCalendarMonth === 1 && isLeapYear(currentCalendarYear)
