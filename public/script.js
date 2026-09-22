@@ -3,8 +3,6 @@ const MONTH_NAMES = [
     "January", "February", "March", "April", "May", "June",
     "July", "August", "September", "October", "November", "December"
 ];
-// Stable non-leap reference year for the recurring feast-day calendar layout.
-const CALENDAR_REFERENCE_YEAR = 2025;
 // Fixed feast parsing/date filters intentionally use non-leap month lengths,
 // since the data model stores recurring month/day feasts without a leap-day variant.
 const DAYS_IN_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
@@ -51,6 +49,10 @@ function parseFeastDay(feastDay) {
 
 function dayCode(month, day) {
     return month * 100 + day;
+}
+
+function isLeapYear(year) {
+    return new Date(year, 1, 29).getMonth() === 1;
 }
 
 function isInRange(fromCode, toCode, testCode) {
@@ -737,6 +739,7 @@ async function initMap() {
 
     const today = new Date();
     let currentCalendarMonth = today.getMonth();
+    let currentCalendarYear = today.getFullYear();
     let selectedCalendarDay = null;
 
     function formatMonthDay(month, day) {
@@ -815,7 +818,14 @@ async function initMap() {
     }
 
     function changeCalendarMonth(delta) {
-        currentCalendarMonth = (currentCalendarMonth + delta + MONTH_NAMES.length) % MONTH_NAMES.length;
+        currentCalendarMonth += delta;
+        if (currentCalendarMonth < 0) {
+            currentCalendarMonth = MONTH_NAMES.length - 1;
+            currentCalendarYear -= 1;
+        } else if (currentCalendarMonth >= MONTH_NAMES.length) {
+            currentCalendarMonth = 0;
+            currentCalendarYear += 1;
+        }
 
         selectedCalendarDay = null;
         renderCalendar();
@@ -830,8 +840,10 @@ async function initMap() {
         calendarGrid.innerHTML = '';
         calendarMonthLabel.textContent = MONTH_NAMES[currentCalendarMonth];
 
-        const firstWeekday = new Date(CALENDAR_REFERENCE_YEAR, currentCalendarMonth, 1).getDay();
-        const daysInMonth = DAYS_IN_MONTH[currentCalendarMonth];
+        const firstWeekday = new Date(currentCalendarYear, currentCalendarMonth, 1).getDay();
+        const daysInMonth = currentCalendarMonth === 1 && isLeapYear(currentCalendarYear)
+            ? 29
+            : DAYS_IN_MONTH[currentCalendarMonth];
         const totalCells = Math.ceil((firstWeekday + daysInMonth) / 7) * 7;
         let feastDayCount = 0;
         let feastSaintCount = 0;
@@ -850,7 +862,10 @@ async function initMap() {
                     continue;
                 }
 
-                const dayEntries = getCalendarDayEntries(currentCalendarMonth, day);
+                // February 29 is shown only to preserve leap-year weekday layout;
+                // the fixed annual feast dataset does not assign entries to it.
+                const isLeapDay = currentCalendarMonth === 1 && day === 29;
+                const dayEntries = isLeapDay ? [] : getCalendarDayEntries(currentCalendarMonth, day);
                 if (dayEntries.length > 0) {
                     feastDayCount += 1;
                     feastSaintCount += dayEntries.length;
@@ -882,6 +897,9 @@ async function initMap() {
                     const dayLabel = document.createElement('span');
                     dayLabel.className = 'feast-calendar-day-label';
                     dayLabel.textContent = day;
+                    if (isLeapDay) {
+                        dayLabel.classList.add('feast-calendar-day-label-muted');
+                    }
                     cell.appendChild(dayLabel);
                 }
 

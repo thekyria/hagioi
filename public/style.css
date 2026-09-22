@@ -456,6 +456,10 @@ main {
     color: #666;
 }
 
+.feast-calendar-day-label-muted {
+    opacity: 0.7;
+}
+
 .feast-calendar-day-number {
     font-size: 14px;
     font-weight: bold;
