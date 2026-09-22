@@ -246,6 +246,8 @@ main {
     list-style: none;
     margin: 8px 0 0;
     padding: 0;
+    max-height: 220px;
+    overflow-y: auto;
 }
 
 .nearby-result {
