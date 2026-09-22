@@ -534,7 +534,8 @@ async function initMap() {
                 const markers = saintMarkersById.get(saint.id) || [];
                 const markerEntry = findMarkerEntryForLocation(saint.id, location);
                 if (markerEntry) {
-                    selectSaint(saint, markers, markerEntry.marker, markerEntry.placements);
+                    const sharedPlacements = markerEntry.placements.length > 1 ? markerEntry.placements : null;
+                    selectSaint(saint, markers, markerEntry.marker, sharedPlacements);
                 } else if (markers.length > 0) {
                     selectSaint(saint, markers);
                 }
