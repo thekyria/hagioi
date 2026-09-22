@@ -607,6 +607,16 @@ main {
     padding: 15px;
 }
 
+.feast-calendar-dialog {
+    width: 680px;
+    max-width: 95vw;
+    overflow-y: auto;
+}
+
+.feast-calendar-modal .feast-calendar {
+    margin-top: 0;
+}
+
 .saint-search-dialog-header {
     display: flex;
     align-items: center;

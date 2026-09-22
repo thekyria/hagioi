@@ -421,6 +421,8 @@ async function initMap() {
     const fromDaySelect = document.getElementById('from-day');
     const toMonthSelect = document.getElementById('to-month');
     const toDaySelect = document.getElementById('to-day');
+    const feastCalendarOpenButton = document.getElementById('feast-calendar-open');
+    const feastCalendarModal = document.getElementById('feast-calendar-modal');
     const calendarPrevMonthButton = document.getElementById('calendar-prev-month');
     const calendarNextMonthButton = document.getElementById('calendar-next-month');
     const calendarMonthLabel = document.getElementById('calendar-month-label');
@@ -435,6 +437,7 @@ async function initMap() {
 
     let isLocatingNearby = false;
     let userLocationMarker = null;
+    let closeFeastCalendarModal = () => { };
 
     function applyFilter() {
         saintsList.innerHTML = '';
@@ -804,17 +807,37 @@ async function initMap() {
                 `${saint.name}, ${saint.title}, feast day ${saint.feastDay}. Show ${locationLabels.length} associated map location${locationLabels.length === 1 ? '' : 's'}.`
             );
             button.append(nameSpan, metaSpan, locationSpan);
-            button.addEventListener('click', () => selectSaint(saint, markers));
+            button.addEventListener('click', () => {
+                selectSaint(saint, markers);
+                closeFeastCalendarModal();
+            });
 
             item.appendChild(button);
             calendarResultsList.appendChild(item);
         });
     }
 
+    function focusSelectedCalendarDay() {
+        if (!calendarGrid || selectedCalendarDay === null) {
+            return;
+        }
+
+        const selectedButton = calendarGrid.querySelector('.feast-calendar-day[aria-pressed="true"]');
+        if (selectedButton instanceof HTMLButtonElement) {
+            selectedButton.focus();
+        }
+    }
+
     function selectCalendarDay(day) {
+        const shouldRestoreFocus = document.activeElement instanceof HTMLElement
+            && calendarGrid instanceof HTMLElement
+            && calendarGrid.contains(document.activeElement);
         selectedCalendarDay = day;
         renderCalendar(false);
         renderCalendarResults();
+        if (shouldRestoreFocus) {
+            focusSelectedCalendarDay();
+        }
     }
 
     function changeCalendarMonth(delta) {
@@ -925,6 +948,50 @@ async function initMap() {
         calendarNextMonthButton.addEventListener('click', () => changeCalendarMonth(1));
         renderCalendar();
         renderCalendarResults();
+    }
+
+    function initFeastCalendarModal() {
+        if (!feastCalendarOpenButton || !feastCalendarModal) {
+            return;
+        }
+
+        let lastFocusedElement = null;
+
+        function handleKeydown(e) {
+            if (e.key === 'Escape') {
+                e.preventDefault();
+                closeModal();
+            }
+        }
+
+        function openModal() {
+            lastFocusedElement = document.activeElement;
+            renderCalendar(false);
+            renderCalendarResults();
+            feastCalendarModal.hidden = false;
+            feastCalendarOpenButton.setAttribute('aria-expanded', 'true');
+            document.addEventListener('keydown', handleKeydown);
+            if (selectedCalendarDay !== null) {
+                focusSelectedCalendarDay();
+            } else {
+                calendarPrevMonthButton.focus();
+            }
+        }
+
+        function closeModal() {
+            feastCalendarModal.hidden = true;
+            feastCalendarOpenButton.setAttribute('aria-expanded', 'false');
+            document.removeEventListener('keydown', handleKeydown);
+            if (lastFocusedElement instanceof HTMLElement) {
+                lastFocusedElement.focus();
+            }
+        }
+
+        closeFeastCalendarModal = closeModal;
+        feastCalendarOpenButton.addEventListener('click', openModal);
+        feastCalendarModal.querySelectorAll('[data-feast-calendar-close]').forEach((el) => {
+            el.addEventListener('click', closeModal);
+        });
     }
 
     // Alphabetical "search by name" popup: a separate, always-complete
@@ -1040,6 +1107,7 @@ async function initMap() {
     initDateFilterControls();
     applyFilter();
     initFeastCalendar();
+    initFeastCalendarModal();
     initSaintSearchModal();
     initNearbyDiscovery();
 }
