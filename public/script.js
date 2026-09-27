@@ -8,6 +8,30 @@ const DAYS_IN_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
 const NEARBY_RADIUS_KM = 100;
 const EARTH_RADIUS_KM = 6371;
 
+// Leading honorifics/titles that appear in `saint.name` (e.g. "Apostle Barnabas",
+// "Holy Prophet Elijah"), longest/most-specific first so they're matched before
+// their more generic substrings (e.g. "Apostle and Evangelist" before "Apostle").
+// Used to sort saints by their given name rather than by this prefix.
+const NAME_TITLE_PREFIXES = [
+    "Apostle and Evangelist ",
+    "Holy Prophet ",
+    "Holy Royal Martyrs of ",
+    "The Forty Martyrs of ",
+    "The Ten Martyrs of ",
+    "The Theotokos, ",
+    "Apostle ",
+    "Holy ",
+    "Sts. ",
+    "St. ",
+    "The ",
+    "Matushka ",
+];
+
+function getNameSortKey(name) {
+    const prefix = NAME_TITLE_PREFIXES.find((candidate) => name.startsWith(candidate));
+    return prefix ? name.slice(prefix.length) : name;
+}
+
 function toRadians(degrees) {
     return degrees * (Math.PI / 180);
 }
@@ -707,8 +731,11 @@ async function initMap() {
             return;
         }
 
-        // Sorted once up-front so the popup always lists saints alphabetically.
-        const alphabeticalEntries = [...entries].sort((a, b) => a.saint.name.localeCompare(b.saint.name));
+        // Sorted once up-front so the popup always lists saints alphabetically,
+        // by given name rather than by any leading title/prefix (e.g. "St.", "Apostle").
+        const alphabeticalEntries = [...entries].sort((a, b) =>
+            getNameSortKey(a.saint.name).localeCompare(getNameSortKey(b.saint.name))
+        );
 
         let lastFocusedElement = null;
 
