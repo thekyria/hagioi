@@ -757,7 +757,7 @@ async function initMap() {
 
             let currentLetter = null;
             filtered.forEach(({ saint, markers }) => {
-                const letter = saint.name.charAt(0).toUpperCase();
+                const letter = getNameSortKey(saint.name).charAt(0).toUpperCase();
                 if (letter !== currentLetter) {
                     currentLetter = letter;
                     const heading = document.createElement('li');
