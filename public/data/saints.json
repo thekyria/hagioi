@@ -585,6 +585,21 @@
     ]
   },
   {
+    "id": "andrew-rublev",
+    "name": "St. Andrew Rublev",
+    "feastDay": "July 4",
+    "title": "Venerable, Iconographer",
+    "icon": "andrew-rublev.jpg",
+    "bio": "Russian monk and the greatest medieval icon painter of Russia, best known for his icon of the Holy Trinity, painted in honor of St. Sergius of Radonezh.",
+    "locations": [
+      {
+        "label": "Andronikov Monastery — Moscow, Russia",
+        "lat": 55.7483,
+        "lng": 37.6711
+      }
+    ]
+  },
+  {
     "id": "apostle-andrew",
     "name": "Apostle Andrew the First-Called",
     "feastDay": "November 30",
@@ -941,6 +956,21 @@
         "label": "Place of martyrdom — Constantinople",
         "lat": 41.0082,
         "lng": 28.9784
+      }
+    ]
+  },
+  {
+    "id": "aristarchus-of-apamea",
+    "name": "St. Aristarchus of Apamea",
+    "feastDay": "April 14",
+    "title": "Apostle of the Seventy",
+    "icon": "aristarchus-of-apamea.jpg",
+    "bio": "One of the Seventy Apostles and a companion of St. Paul, he was ordained bishop of Apamea in Syria and labored there until his repose.",
+    "locations": [
+      {
+        "label": "Bishop — Apamea, Syria",
+        "lat": 35.4224,
+        "lng": 36.3956
       }
     ]
   },
@@ -1715,6 +1745,26 @@
     ]
   },
   {
+    "id": "brendan-the-navigator",
+    "name": "St. Brendan the Navigator",
+    "feastDay": "May 16",
+    "title": "Abbot",
+    "icon": "brendan-the-navigator.jpg",
+    "bio": "Irish abbot of Clonfert, famed for founding monasteries and for the legendary seven-year sea voyage in search of the Isle of the Blessed.",
+    "locations": [
+      {
+        "label": "Birthplace — Tralee, Ireland",
+        "lat": 52.2704,
+        "lng": -9.7026
+      },
+      {
+        "label": "Monastery — Clonfert, Ireland",
+        "lat": 53.1647,
+        "lng": -8.0
+      }
+    ]
+  },
+  {
     "id": "brigid-of-kildare",
     "name": "St. Brigid of Kildare",
     "feastDay": "February 1",
@@ -2065,6 +2115,21 @@
     ]
   },
   {
+    "id": "comgall-of-bangor",
+    "name": "St. Comgall of Bangor",
+    "feastDay": "May 10",
+    "title": "Abbot",
+    "icon": "comgall-of-bangor.jpg",
+    "bio": "Irish abbot who founded the great monastery of Bangor, which sent out missionaries including St. Columbanus.",
+    "locations": [
+      {
+        "label": "Monastery — Bangor, Northern Ireland",
+        "lat": 54.6538,
+        "lng": -5.6686
+      }
+    ]
+  },
+  {
     "id": "conon-of-iconium",
     "name": "St. Conon of Iconium",
     "feastDay": "March 5",
@@ -2206,6 +2271,126 @@
         "label": "See — Maiuma, near Gaza",
         "lat": 31.53,
         "lng": 34.44
+      }
+    ]
+  },
+  {
+    "id": "finnian-of-clonard",
+    "name": "St. Finnian of Clonard",
+    "feastDay": "December 12",
+    "title": "Bishop, Abbot",
+    "icon": "finnian-of-clonard.jpg",
+    "bio": "Irish bishop whose monastic school at Clonard trained many saints, who were later called the Twelve Apostles of Ireland.",
+    "locations": [
+      {
+        "label": "Monastery — Clonard, Ireland",
+        "lat": 53.4283,
+        "lng": -6.9372
+      }
+    ]
+  },
+  {
+    "id": "gall-of-st-gallen",
+    "name": "St. Gall of St. Gallen",
+    "feastDay": "October 16",
+    "title": "Venerable, Enlightener of Switzerland",
+    "icon": "gall-of-st-gallen.jpg",
+    "bio": "Irish disciple of St. Columbanus who remained in the Alps as a hermit and preacher; the Swiss town and monastery of St. Gallen grew up around his cell.",
+    "locations": [
+      {
+        "label": "Hermitage — St. Gallen, Switzerland",
+        "lat": 47.4245,
+        "lng": 9.3767
+      }
+    ]
+  },
+  {
+    "id": "kentigern-of-glasgow",
+    "name": "St. Kentigern (Mungo) of Glasgow",
+    "feastDay": "January 13",
+    "title": "Bishop",
+    "icon": "kentigern-of-glasgow.jpg",
+    "bio": "Apostle of Strathclyde and first bishop of Glasgow, who evangelized the Britons of southwestern Scotland and Cumbria.",
+    "locations": [
+      {
+        "label": "Bishop — Glasgow, Scotland",
+        "lat": 55.8642,
+        "lng": -4.2518
+      }
+    ]
+  },
+  {
+    "id": "ludmila-of-bohemia",
+    "name": "St. Ludmila of Bohemia",
+    "feastDay": "September 16",
+    "title": "Right-Believing Princess, Martyr",
+    "icon": "ludmila-of-bohemia.jpg",
+    "bio": "Bohemian princess who taught the Christian faith to her grandson St. Wenceslaus and was strangled at the instigation of her daughter-in-law.",
+    "locations": [
+      {
+        "label": "Martyrdom — Tetín, Czech Republic",
+        "lat": 49.9418,
+        "lng": 14.0883
+      }
+    ]
+  },
+  {
+    "id": "paul-the-simple",
+    "name": "St. Paul the Simple",
+    "feastDay": "March 7",
+    "title": "Venerable",
+    "icon": "paul-the-simple.jpg",
+    "bio": "Disciple of St. Anthony the Great, a guileless farmer who left his wife and took up the ascetic life in the Egyptian desert, receiving the gift of discerning spirits.",
+    "locations": [
+      {
+        "label": "Ascetic life — Egyptian desert",
+        "lat": 30.45,
+        "lng": 30.35
+      }
+    ]
+  },
+  {
+    "id": "petroc-of-cornwall",
+    "name": "St. Petroc of Cornwall",
+    "feastDay": "June 4",
+    "title": "Abbot",
+    "icon": "petroc-of-cornwall.jpg",
+    "bio": "Welsh prince who became a monk and abbot, founding the monastery of Padstow and numerous churches throughout Cornwall and Devon.",
+    "locations": [
+      {
+        "label": "Monastery — Padstow, Cornwall",
+        "lat": 50.5426,
+        "lng": -4.9366
+      }
+    ]
+  },
+  {
+    "id": "piran-of-cornwall",
+    "name": "St. Piran of Cornwall",
+    "feastDay": "March 5",
+    "title": "Abbot",
+    "icon": "piran-of-cornwall.jpg",
+    "bio": "Irish-born abbot who settled on the Cornish coast, where he founded a monastery and evangelized the local people; he is the patron saint of Cornwall.",
+    "locations": [
+      {
+        "label": "Hermitage — Perranzabuloe, Cornwall",
+        "lat": 50.334,
+        "lng": -5.15
+      }
+    ]
+  },
+  {
+    "id": "samson-of-dol",
+    "name": "St. Samson of Dol",
+    "feastDay": "July 28",
+    "title": "Bishop",
+    "icon": "samson-of-dol.jpg",
+    "bio": "Welsh-born monk and bishop who evangelized Cornwall and Brittany and founded the monastery of Dol.",
+    "locations": [
+      {
+        "label": "Bishop — Dol-de-Bretagne, France",
+        "lat": 48.55,
+        "lng": -1.75
       }
     ]
   },
@@ -10176,6 +10361,21 @@
         "label": "Early reign — Novgorod",
         "lat": 58.5213,
         "lng": 31.2755
+      }
+    ]
+  },
+  {
+    "id": "wenceslaus-of-bohemia",
+    "name": "St. Wenceslaus of Bohemia",
+    "feastDay": "September 28",
+    "title": "Right-Believing Prince, Martyr",
+    "icon": "wenceslaus-of-bohemia.jpg",
+    "bio": "Duke of Bohemia, raised in the faith by his grandmother St. Ludmila, who was known for his charity and was murdered by his brother Boleslav.",
+    "locations": [
+      {
+        "label": "Martyrdom — Stará Boleslav, Czech Republic",
+        "lat": 50.1887,
+        "lng": 14.687
       }
     ]
   },
