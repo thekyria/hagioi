@@ -4620,7 +4620,7 @@
     "feastDay": "July 28",
     "title": "Venerable Abbess",
     "icon": "irene-chrysovalantou.jpg",
-    "bio": "Byzantine abbess of the Chrysovalantou Monastery in Constantinople, noted for her humility, visions and wonder-working. She is venerated for her miracles and the fragrant apple tree said to have grown at her prayer.",
+    "bio": "Byzantine abbess of the Chrysovalantou Monastery in Constantinople, noted for her humility, visions and wonder-working. She is venerated for the three fragrant apples of Paradise sent to her by St. John the Theologian through a sailor, and for the cypress trees said to have bowed during her prayer.",
     "locations": [
       {
         "label": "Chrysovalantou Monastery — Constantinople",
@@ -5807,10 +5807,10 @@
   {
     "id": "kyranna-of-thessaloniki",
     "name": "St. Kyranna of Thessaloniki",
-    "feastDay": "June 28",
+    "feastDay": "February 28",
     "title": "Martyr",
     "icon": "kyranna-of-thessaloniki.jpg",
-    "bio": "Young Christian woman of Thessaloniki martyred in 1751 at the age of 18 after being pressured to renounce Christ.",
+    "bio": "Young Christian woman from Ossa near Thessaloniki, martyred in Thessaloniki in 1751 at the age of 20 after being pressured to renounce Christ.",
     "locations": [
       {
         "label": "Martyrdom — Thessaloniki",
@@ -6610,21 +6610,6 @@
     ]
   },
   {
-    "id": "maximos-of-kapsokalyvia",
-    "name": "St. Maximos of Kapsokalyvia",
-    "feastDay": "January 13",
-    "title": "Venerable",
-    "icon": "maximos-of-kapsokalyvia.jpg",
-    "bio": "14th-century Athonite ascetic who wandered from cell to cell, burning his hut to avoid attachments, and was revered by Gregory of Sinai and Gregory Palamas.",
-    "locations": [
-      {
-        "label": "Ascetic life — Mount Athos",
-        "lat": 40.1572,
-        "lng": 24.3267
-      }
-    ]
-  },
-  {
     "id": "apostle-matthew",
     "name": "Apostle and Evangelist Matthew",
     "feastDay": "November 16",
@@ -7382,15 +7367,15 @@
   {
     "id": "nikanor-of-zavorda",
     "name": "St. Nikanor of Zavorda",
-    "feastDay": "January 24",
+    "feastDay": "August 7",
     "title": "Venerable",
     "icon": "nikanor-of-zavorda.jpg",
-    "bio": "Ascetic of northern Greece who founded the Monastery of Zavorda near Kozani. He is honored for his labors in Epirus and Macedonia.",
+    "bio": "Ascetic of northern Greece who founded the Monastery of Zavorda in Grevena. He is honored for his labors in Epirus and Macedonia.",
     "locations": [
       {
-        "label": "Zavorda Monastery — Kozani, Greece",
-        "lat": 40.3,
-        "lng": 21.79
+        "label": "Zavorda Monastery — Grevena, Greece",
+        "lat": 39.9917,
+        "lng": 21.7954
       }
     ]
   },
@@ -9018,7 +9003,7 @@
     "bio": "Roman officers and close companions in the imperial army who were exposed as Christians for refusing to sacrifice to idols. Bacchus died under the lash and Sergius was beheaded at Resafa in Syria.",
     "locations": [
       {
-        "label": "Martyrdom — Resafa (Sergiopolis), Syria",
+        "label": "Martyrdom of Sergius — Resafa (Sergiopolis), Syria",
         "lat": 35.6333,
         "lng": 38.7556
       }
