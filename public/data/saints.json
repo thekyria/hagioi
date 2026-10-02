@@ -1194,13 +1194,13 @@
     "locations": [
       {
         "label": "Birthplace — Syria",
-        "lat": 35,
-        "lng": 38
+        "lat": 35.0,
+        "lng": 38.0
       },
       {
-        "label": "Hermitage — Mount Auxentios, Bithynia",
-        "lat": 40.85,
-        "lng": 29.4
+        "label": "Hermitage — Mount Auxentios (Kayışdağı), Bithynia",
+        "lat": 40.9823,
+        "lng": 29.17
       }
     ]
   },
@@ -1216,21 +1216,6 @@
         "label": "Place of martyrdom — Sebaste, Armenia",
         "lat": 40.0167,
         "lng": 37.75
-      }
-    ]
-  },
-  {
-    "id": "auxentius-of-bithynia-hermit",
-    "name": "St. Auxentius the Hermit of Bithynia",
-    "feastDay": "February 14",
-    "title": "Hermit",
-    "icon": "auxentius-of-bithynia-hermit.jpg",
-    "bio": "A court official who withdrew to a mountain near Chalcedon, giving his name to the later 'Mount St. Auxentius.'",
-    "locations": [
-      {
-        "label": "Hermitage — Mount Auxentius, Bithynia",
-        "lat": 40.7,
-        "lng": 29.4
       }
     ]
   },
@@ -3430,21 +3415,6 @@
     ]
   },
   {
-    "id": "george-of-cyprus-neomartyr",
-    "name": "St. George of Ioannina, New Martyr",
-    "feastDay": "January 17",
-    "title": "Martyr",
-    "icon": "george-of-cyprus-neomartyr.jpg",
-    "bio": "A young Epirote Christian executed by Ottoman authorities in Ioannina after refusing to convert to Islam.",
-    "locations": [
-      {
-        "label": "Place of martyrdom — Ioannina",
-        "lat": 39.665,
-        "lng": 20.8537
-      }
-    ]
-  },
-  {
     "id": "nicetas-of-serbia-neomartyr",
     "name": "St. George of Serbia, New Martyr",
     "feastDay": "February 11",
@@ -4065,21 +4035,6 @@
     ]
   },
   {
-    "id": "pantaleon-companion-hermolaus",
-    "name": "St. Hermolaus of Nicomedia and Companions",
-    "feastDay": "July 26",
-    "title": "Priest-Martyrs",
-    "icon": "pantaleon-companion-hermolaus.jpg",
-    "bio": "Priests of Nicomedia who baptized and mentored St. Panteleimon before their shared martyrdom.",
-    "locations": [
-      {
-        "label": "Place of martyrdom — Nicomedia",
-        "lat": 40.7656,
-        "lng": 29.9408
-      }
-    ]
-  },
-  {
     "id": "elias-of-optina",
     "name": "St. Hilarion of Optina",
     "feastDay": "September 18",
@@ -4498,24 +4453,14 @@
         "lng": -174.2
       },
       {
+        "label": "Ministry — Ikogmiut (Russian Mission), Yukon River",
+        "lat": 61.79,
+        "lng": -161.32
+      },
+      {
         "label": "Place of repose — Sitka, Alaska",
         "lat": 57.0531,
         "lng": -135.33
-      }
-    ]
-  },
-  {
-    "id": "jacob-of-alaska",
-    "name": "St. Jacob Netsvetov of Alaska",
-    "feastDay": "July 26",
-    "title": "Priest and Missionary",
-    "icon": "jacob-of-alaska.jpg",
-    "bio": "The first Alaska Native Orthodox priest, who translated Scripture and served Yup'ik communities along the Yukon River.",
-    "locations": [
-      {
-        "label": "Ministry — Yukon River, Alaska",
-        "lat": 62,
-        "lng": -159
       }
     ]
   },
@@ -6173,9 +6118,9 @@
     "bio": "The Virgin Mary, Mother of God, whose Dormition (falling asleep) is commemorated as one of the Church's greatest feasts.",
     "locations": [
       {
-        "label": "Birthplace — Jerusalem",
-        "lat": 31.7683,
-        "lng": 35.2137
+        "label": "Nativity of the Theotokos — Jerusalem (Church of St. Anne)",
+        "lat": 31.7816,
+        "lng": 35.2362
       },
       {
         "label": "Annunciation — Nazareth",
@@ -6183,24 +6128,9 @@
         "lng": 35.2978
       },
       {
-        "label": "Dormition — Jerusalem",
-        "lat": 31.7683,
-        "lng": 35.2137
-      }
-    ]
-  },
-  {
-    "id": "mary-of-nineveh",
-    "name": "St. Mary the Younger",
-    "feastDay": "February 16",
-    "title": "Righteous",
-    "icon": "mary-of-nineveh.jpg",
-    "bio": "A pious laywoman of Byzantine Bizye who endured suffering with patience and was glorified after her death.",
-    "locations": [
-      {
-        "label": "Home — Bizye, Thrace",
-        "lat": 41.6667,
-        "lng": 27.2333
+        "label": "Dormition and tomb — Jerusalem (Gethsemane)",
+        "lat": 31.7795,
+        "lng": 35.2397
       }
     ]
   },
@@ -6213,14 +6143,14 @@
     "bio": "A pious noblewoman of Thrace who endured domestic abuse with patience and was glorified for miracles after her death.",
     "locations": [
       {
-        "label": "Birthplace — Adrianople",
+        "label": "Birthplace — Adrianople (Edirne)",
         "lat": 41.6771,
         "lng": 26.5557
       },
       {
-        "label": "Life — Bizye, Thrace",
-        "lat": 41.4,
-        "lng": 27.9833
+        "label": "Life and repose — Bizye (Vize), Thrace",
+        "lat": 41.5667,
+        "lng": 27.7667
       }
     ]
   },
@@ -6890,21 +6820,6 @@
     ]
   },
   {
-    "id": "nicholas-kasatkin",
-    "name": "St. Nicholas of Japan, Equal-to-the-Apostles",
-    "feastDay": "February 16",
-    "title": "Missionary Bishop",
-    "icon": "nicholas-kasatkin.jpg",
-    "bio": "Founder of the Orthodox Church in Japan, translator of Scripture and liturgical texts into Japanese over five decades of ministry.",
-    "locations": [
-      {
-        "label": "Missionary field — Tokyo",
-        "lat": 35.6762,
-        "lng": 139.6503
-      }
-    ]
-  },
-  {
     "id": "nicholas-of-myra",
     "name": "St. Nicholas of Myra",
     "feastDay": "December 6",
@@ -7555,21 +7470,6 @@
     ]
   },
   {
-    "id": "parascheva-of-the-balkans",
-    "name": "St. Paraskevi of the Balkans (Epivatos)",
-    "feastDay": "October 14",
-    "title": "Venerable",
-    "icon": "parascheva-of-the-balkans.jpg",
-    "bio": "A hermitess of Thrace whose relics became especially beloved across Romania, Serbia, and Bulgaria.",
-    "locations": [
-      {
-        "label": "Ascetic life — Epivatos, Thrace",
-        "lat": 40.9333,
-        "lng": 27.9167
-      }
-    ]
-  },
-  {
     "id": "patrick-of-ireland",
     "name": "St. Patrick of Ireland",
     "feastDay": "March 17",
@@ -7836,21 +7736,6 @@
         "label": "Hermitage — Mount Athos",
         "lat": 40.157,
         "lng": 24.3266
-      }
-    ]
-  },
-  {
-    "id": "peter-of-murom",
-    "name": "St. Peter, Prince of Murom",
-    "feastDay": "June 25",
-    "title": "Prince",
-    "icon": "peter-of-murom.jpg",
-    "bio": "Prince of Murom who, with his wife Fevronia, is honored as a model of Christian marriage and monastic repose.",
-    "locations": [
-      {
-        "label": "Principality — Murom",
-        "lat": 55.573,
-        "lng": 42.0504
       }
     ]
   },
@@ -8690,21 +8575,6 @@
     ]
   },
   {
-    "id": "simeon-the-myrrh-gusher",
-    "name": "St. Simeon the Myrrh-streaming",
-    "feastDay": "February 13",
-    "title": "Venerable",
-    "icon": "simeon-the-myrrh-gusher.jpg",
-    "bio": "Founder of the Serbian medieval state who became a monk in old age, his relics later streamed myrrh.",
-    "locations": [
-      {
-        "label": "Monastery — Hilandar, Mount Athos",
-        "lat": 40.2667,
-        "lng": 24.2167
-      }
-    ]
-  },
-  {
     "id": "simon-of-ustyug",
     "name": "St. Simon of Ustyug",
     "feastDay": "July 12",
@@ -8959,21 +8829,6 @@
     "locations": [
       {
         "label": "Place of martyrdom — Constantinople",
-        "lat": 41.0082,
-        "lng": 28.9784
-      }
-    ]
-  },
-  {
-    "id": "stephen-of-nicomedia",
-    "name": "St. Stephen the New of Constantinople",
-    "feastDay": "November 28",
-    "title": "Martyr",
-    "icon": "stephen-of-nicomedia.jpg",
-    "bio": "A monastic abbot and outspoken defender of icon veneration who was killed by an imperial mob under Constantine V.",
-    "locations": [
-      {
-        "label": "Ministry — Constantinople",
         "lat": 41.0082,
         "lng": 28.9784
       }
@@ -9345,21 +9200,6 @@
     ]
   },
   {
-    "id": "theodora-of-alexandria-actress",
-    "name": "St. Theodora the Penitent of Alexandria",
-    "feastDay": "September 11",
-    "title": "Ascetic",
-    "icon": "theodora-of-alexandria-actress.jpg",
-    "bio": "A married woman of Alexandria who, after a fall into sin, disguised herself as a monk and lived decades in a monastery to atone.",
-    "locations": [
-      {
-        "label": "Monastic life — Egyptian desert",
-        "lat": 29.9,
-        "lng": 31.2
-      }
-    ]
-  },
-  {
     "id": "theodore-the-branded",
     "name": "St. Theodore Graptos, the Branded",
     "feastDay": "December 27",
@@ -9416,21 +9256,6 @@
         "label": "Place of martyrdom — Mytilene, Lesvos",
         "lat": 39.1097,
         "lng": 26.5537
-      }
-    ]
-  },
-  {
-    "id": "theodore-of-mytilene-neomartyr",
-    "name": "St. Theodore of Mytilene, New Martyr",
-    "feastDay": "February 17",
-    "title": "Martyr",
-    "icon": "theodore-of-mytilene-neomartyr.jpg",
-    "bio": "A young man of Mytilene martyred by Ottoman authorities for reclaiming his Christian faith after a forced conversion.",
-    "locations": [
-      {
-        "label": "Place of martyrdom — Mytilene, Lesbos",
-        "lat": 39.1092,
-        "lng": 26.5544
       }
     ]
   },
@@ -9685,21 +9510,6 @@
     ]
   },
   {
-    "id": "theoktisti-of-lesvos",
-    "name": "St. Theoktiste of Lesvos",
-    "feastDay": "November 9",
-    "title": "Venerable",
-    "icon": "theoktisti-of-lesvos.jpg",
-    "bio": "A woman who fled to a deserted island near Paros to escape Arab raiders and lived unseen in prayer for decades.",
-    "locations": [
-      {
-        "label": "Hermitage — Paros",
-        "lat": 37.0853,
-        "lng": 25.1522
-      }
-    ]
-  },
-  {
     "id": "theophan-the-recluse",
     "name": "St. Theophan the Recluse",
     "feastDay": "January 10",
@@ -9825,21 +9635,6 @@
     ]
   },
   {
-    "id": "tikhon-of-voronezh",
-    "name": "St. Tikhon of Voronezh",
-    "feastDay": "August 13",
-    "title": "Bishop",
-    "icon": "tikhon-of-voronezh.jpg",
-    "bio": "Bishop of Voronezh who retired to a monastery to write spiritual works, deeply influencing later Russian theology.",
-    "locations": [
-      {
-        "label": "Ministry — Voronezh",
-        "lat": 51.672,
-        "lng": 39.1843
-      }
-    ]
-  },
-  {
     "id": "tikhon-of-zadonsk",
     "name": "St. Tikhon of Zadonsk",
     "feastDay": "August 13",
@@ -9851,6 +9646,11 @@
         "label": "Monastic life — Zadonsk, Russia",
         "lat": 51.9333,
         "lng": 38.9167
+      },
+      {
+        "label": "Ministry — Voronezh",
+        "lat": 51.672,
+        "lng": 39.1843
       }
     ]
   },
