@@ -601,6 +601,11 @@
         "label": "Place of martyrdom — Patras",
         "lat": 38.2466,
         "lng": 21.7346
+      },
+      {
+        "label": "Relics — Amalfi, Italy",
+        "lat": 40.634,
+        "lng": 14.6027
       }
     ]
   },
@@ -1141,6 +1146,16 @@
         "label": "Birthplace, episcopal see, and relics — Alexandria",
         "lat": 31.2001,
         "lng": 29.9187
+      },
+      {
+        "label": "First exile — Trier",
+        "lat": 49.7496,
+        "lng": 6.6374
+      },
+      {
+        "label": "Exile and support of the Western Church — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
       }
     ]
   },
@@ -1496,6 +1511,11 @@
         "label": "Birthplace, episcopal see, and death — Caesarea, Cappadocia",
         "lat": 38.7312,
         "lng": 35.4787
+      },
+      {
+        "label": "Studies — Athens",
+        "lat": 37.9838,
+        "lng": 23.7275
       }
     ]
   },
@@ -1951,6 +1971,16 @@
         "label": "Bishopric — Ohrid",
         "lat": 41.1231,
         "lng": 20.8016
+      },
+      {
+        "label": "Mission with Sts. Cyril and Methodius — Great Moravia",
+        "lat": 49.05,
+        "lng": 17.4
+      },
+      {
+        "label": "Sent out from the Bulgarian court — Pliska",
+        "lat": 43.3833,
+        "lng": 27.1333
       }
     ]
   },
@@ -2076,6 +2106,21 @@
         "label": "Founded — Constantinople",
         "lat": 41.0082,
         "lng": 28.9784
+      },
+      {
+        "label": "Proclaimed emperor — Eboracum (York)",
+        "lat": 53.96,
+        "lng": -1.0873
+      },
+      {
+        "label": "First Ecumenical Council — Nicaea",
+        "lat": 40.4333,
+        "lng": 29.7167
+      },
+      {
+        "label": "Baptism and death — Nicomedia",
+        "lat": 40.7654,
+        "lng": 29.9408
       }
     ]
   },
@@ -2351,6 +2396,11 @@
         "label": "See of Jerusalem",
         "lat": 31.7683,
         "lng": 35.2137
+      },
+      {
+        "label": "Exile — Tarsus, Cilicia",
+        "lat": 36.9177,
+        "lng": 34.8953
       }
     ]
   },
@@ -2981,6 +3031,11 @@
         "label": "Bishopric — Salamis, Cyprus",
         "lat": 35.1856,
         "lng": 33.9385
+      },
+      {
+        "label": "Birthplace and first monastery — near Eleutheropolis, Palestine",
+        "lat": 31.6097,
+        "lng": 34.8958
       }
     ]
   },
@@ -3681,6 +3736,16 @@
         "label": "Bishopric — Nyssa, Cappadocia",
         "lat": 38.5556,
         "lng": 34.7139
+      },
+      {
+        "label": "Birthplace — Caesarea, Cappadocia",
+        "lat": 38.7312,
+        "lng": 35.4787
+      },
+      {
+        "label": "Second Ecumenical Council — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
       }
     ]
   },
@@ -3696,6 +3761,16 @@
         "label": "Monastery — Mount Sinai",
         "lat": 28.5392,
         "lng": 33.9734
+      },
+      {
+        "label": "Hesychast teaching — Mount Athos",
+        "lat": 40.157,
+        "lng": 24.3266
+      },
+      {
+        "label": "Monastery — Paroria, Strandzha Mountains",
+        "lat": 42.1,
+        "lng": 27.3
       }
     ]
   },
@@ -3726,6 +3801,11 @@
         "label": "Episcopal see — Tours, France",
         "lat": 47.3941,
         "lng": 0.6848
+      },
+      {
+        "label": "Birthplace — Clermont (Arvernis)",
+        "lat": 45.7772,
+        "lng": 3.087
       }
     ]
   },
@@ -3766,6 +3846,11 @@
         "label": "See — Rome",
         "lat": 41.9028,
         "lng": 12.4964
+      },
+      {
+        "label": "Papal legate (apocrisiarius) — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
       }
     ]
   },
@@ -3809,13 +3894,18 @@
     "locations": [
       {
         "label": "Birthplace and death — Nazianzus, Cappadocia",
-        "lat": 38.15,
-        "lng": 29.72
+        "lat": 38.3167,
+        "lng": 34.6167
       },
       {
         "label": "Archbishopric — Constantinople",
         "lat": 41.0082,
         "lng": 28.9784
+      },
+      {
+        "label": "Studies — Athens",
+        "lat": 37.9838,
+        "lng": 23.7275
       }
     ]
   },
@@ -3881,6 +3971,21 @@
         "label": "Discovery of the Cross — Jerusalem",
         "lat": 31.7683,
         "lng": 35.2137
+      },
+      {
+        "label": "Birthplace — Drepanum (Helenopolis), Bithynia",
+        "lat": 40.7167,
+        "lng": 29.5167
+      },
+      {
+        "label": "Church of the Nativity founded — Bethlehem",
+        "lat": 31.7054,
+        "lng": 35.2024
+      },
+      {
+        "label": "Imperial residence — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
       }
     ]
   },
@@ -3911,6 +4016,11 @@
         "label": "Hermitage — Spruce Island, Alaska",
         "lat": 57.8167,
         "lng": -152.3833
+      },
+      {
+        "label": "Monastic tonsure — Valaam Monastery",
+        "lat": 61.3833,
+        "lng": 30.9333
       }
     ]
   },
@@ -4221,6 +4331,16 @@
         "label": "Mission — Unalaska, Alaska",
         "lat": 53.8734,
         "lng": -166.5347
+      },
+      {
+        "label": "Episcopal see — Sitka, Alaska",
+        "lat": 57.0531,
+        "lng": -135.33
+      },
+      {
+        "label": "Metropolitan see — Moscow",
+        "lat": 55.7558,
+        "lng": 37.6173
       }
     ]
   },
@@ -4496,6 +4616,11 @@
         "label": "Place of martyrdom — Jerusalem",
         "lat": 31.7683,
         "lng": 35.2137
+      },
+      {
+        "label": "Relics — Santiago de Compostela",
+        "lat": 42.8806,
+        "lng": -8.5446
       }
     ]
   },
@@ -4641,6 +4766,21 @@
         "label": "Monastery — Marseille",
         "lat": 43.2965,
         "lng": 5.3698
+      },
+      {
+        "label": "Birthplace — Scythia Minor (Dobrudja)",
+        "lat": 44.1733,
+        "lng": 28.65
+      },
+      {
+        "label": "Monastic formation — Scetis, Egypt",
+        "lat": 30.4,
+        "lng": 30.35
+      },
+      {
+        "label": "Ordained deacon by St. John Chrysostom — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
       }
     ]
   },
@@ -4661,6 +4801,11 @@
         "label": "Place of death — Comana Pontica",
         "lat": 40.4667,
         "lng": 36.55
+      },
+      {
+        "label": "Archbishopric — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
       }
     ]
   },
@@ -4761,6 +4906,11 @@
         "label": "Ministry — Kronstadt, Russia",
         "lat": 59.9911,
         "lng": 29.7728
+      },
+      {
+        "label": "Burial — St. John Convent, St. Petersburg",
+        "lat": 59.9686,
+        "lng": 30.3085
       }
     ]
   },
@@ -4776,6 +4926,16 @@
         "label": "Hermitage — Rila Mountains, Bulgaria",
         "lat": 42.1333,
         "lng": 23.3417
+      },
+      {
+        "label": "Relics venerated — Sredets (Sofia)",
+        "lat": 42.6977,
+        "lng": 23.3219
+      },
+      {
+        "label": "Relics translated — Tarnovo",
+        "lat": 43.0757,
+        "lng": 25.6172
       }
     ]
   },
@@ -5466,6 +5626,16 @@
         "label": "Place of martyrdom — Kosovo Field",
         "lat": 42.6833,
         "lng": 21.1667
+      },
+      {
+        "label": "Capital — Kruševac",
+        "lat": 43.5833,
+        "lng": 21.3333
+      },
+      {
+        "label": "Relics — Ravanica Monastery",
+        "lat": 43.9589,
+        "lng": 21.5236
       }
     ]
   },
@@ -5521,6 +5691,11 @@
         "label": "See of Rome",
         "lat": 41.9028,
         "lng": 12.4964
+      },
+      {
+        "label": "Meeting with Attila — near Mantua",
+        "lat": 45.1564,
+        "lng": 10.7914
       }
     ]
   },
@@ -5616,6 +5791,16 @@
         "label": "Birthplace — Antioch",
         "lat": 36.2021,
         "lng": 36.1603
+      },
+      {
+        "label": "Repose — Thebes, Boeotia",
+        "lat": 38.3217,
+        "lng": 23.3167
+      },
+      {
+        "label": "Relics — Padua, Italy",
+        "lat": 45.4064,
+        "lng": 11.8768
       }
     ]
   },
@@ -5631,6 +5816,21 @@
         "label": "Bishopric — Simferopol, Crimea",
         "lat": 44.9521,
         "lng": 34.1024
+      },
+      {
+        "label": "Birthplace — Kerch",
+        "lat": 45.3531,
+        "lng": 36.4745
+      },
+      {
+        "label": "Medical and pastoral work — Tashkent",
+        "lat": 41.2995,
+        "lng": 69.2401
+      },
+      {
+        "label": "Exile — Krasnoyarsk",
+        "lat": 56.0153,
+        "lng": 92.8932
       }
     ]
   },
@@ -5921,6 +6121,11 @@
         "label": "Place of martyrdom — Alexandria",
         "lat": 31.2001,
         "lng": 29.9187
+      },
+      {
+        "label": "Relics — Venice, Italy",
+        "lat": 45.4343,
+        "lng": 12.339
       }
     ]
   },
@@ -6006,6 +6211,16 @@
         "label": "Bishopric — Tours, Gaul",
         "lat": 47.3941,
         "lng": 0.6848
+      },
+      {
+        "label": "Birthplace — Savaria (Szombathely), Pannonia",
+        "lat": 47.2307,
+        "lng": 16.6218
+      },
+      {
+        "label": "Monastery founded — Ligugé",
+        "lat": 46.5167,
+        "lng": 0.3167
       }
     ]
   },
@@ -6056,6 +6271,16 @@
         "label": "Desert of repentance — beyond the Jordan",
         "lat": 31.8394,
         "lng": 35.5451
+      },
+      {
+        "label": "Birthplace and early life — Alexandria",
+        "lat": 31.2001,
+        "lng": 29.9187
+      },
+      {
+        "label": "Conversion before the Holy Cross — Jerusalem",
+        "lat": 31.7784,
+        "lng": 35.2298
       }
     ]
   },
@@ -6146,6 +6371,11 @@
         "label": "Place of ministry — Capernaum",
         "lat": 32.8797,
         "lng": 35.5753
+      },
+      {
+        "label": "Relics — Salerno, Italy",
+        "lat": 40.6806,
+        "lng": 14.7594
       }
     ]
   },
@@ -6216,6 +6446,11 @@
         "label": "Place of exile — Lazica",
         "lat": 42.25,
         "lng": 41.6667
+      },
+      {
+        "label": "Lateran Council of 649 — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
       }
     ]
   },
@@ -6281,6 +6516,11 @@
         "label": "Shrine — near Alexandria",
         "lat": 30.8514,
         "lng": 29.6572
+      },
+      {
+        "label": "Place of martyrdom — Cotyaeum (Kütahya), Phrygia",
+        "lat": 39.4242,
+        "lng": 29.9833
       }
     ]
   },
@@ -6556,6 +6796,11 @@
         "label": "Monastery — Lake Ohrid",
         "lat": 40.9167,
         "lng": 20.7167
+      },
+      {
+        "label": "Literary school — Preslav",
+        "lat": 43.15,
+        "lng": 26.8167
       }
     ]
   },
@@ -6966,6 +7211,11 @@
         "label": "Monastic life — Mount Athos",
         "lat": 40.1568,
         "lng": 24.3264
+      },
+      {
+        "label": "Birthplace — Naxos",
+        "lat": 37.1036,
+        "lng": 25.3766
       }
     ]
   },
@@ -6981,6 +7231,21 @@
         "label": "Bishopric — Ohrid, Serbia",
         "lat": 41.1231,
         "lng": 20.8016
+      },
+      {
+        "label": "Birthplace — Lelić, Serbia",
+        "lat": 44.2667,
+        "lng": 19.8167
+      },
+      {
+        "label": "Imprisonment — Dachau concentration camp",
+        "lat": 48.2697,
+        "lng": 11.4675
+      },
+      {
+        "label": "Repose — South Canaan, Pennsylvania",
+        "lat": 41.5736,
+        "lng": -75.4
       }
     ]
   },
@@ -7166,6 +7431,16 @@
         "label": "Reign — Kiev",
         "lat": 50.4501,
         "lng": 30.5234
+      },
+      {
+        "label": "Birthplace — Pskov region",
+        "lat": 57.8194,
+        "lng": 28.3319
+      },
+      {
+        "label": "Baptism — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
       }
     ]
   },
@@ -7261,6 +7536,16 @@
         "label": "Monastery — Tabennisi, Egypt",
         "lat": 25.95,
         "lng": 32.7
+      },
+      {
+        "label": "Birthplace — Esna (Latopolis)",
+        "lat": 25.2934,
+        "lng": 32.5541
+      },
+      {
+        "label": "Chief monastery — Pbow (Faw Qibli)",
+        "lat": 26.0167,
+        "lng": 32.5833
       }
     ]
   },
@@ -7321,6 +7606,21 @@
         "label": "Monastery — Neamț, Moldavia",
         "lat": 47.2833,
         "lng": 26.3333
+      },
+      {
+        "label": "Birthplace — Poltava",
+        "lat": 49.5883,
+        "lng": 34.5514
+      },
+      {
+        "label": "Monastic years — Skete of St. Elias, Mount Athos",
+        "lat": 40.2833,
+        "lng": 24.2333
+      },
+      {
+        "label": "Monastery — Dragomirna",
+        "lat": 47.7167,
+        "lng": 26.2333
       }
     ]
   },
@@ -7431,6 +7731,11 @@
         "label": "Mission — Ireland",
         "lat": 53.4129,
         "lng": -8.2439
+      },
+      {
+        "label": "Primatial see — Armagh",
+        "lat": 54.3503,
+        "lng": -6.6528
       }
     ]
   },
@@ -7451,6 +7756,31 @@
         "label": "Place of martyrdom — Rome",
         "lat": 41.9028,
         "lng": 12.4964
+      },
+      {
+        "label": "Conversion — Damascus",
+        "lat": 33.5138,
+        "lng": 36.2765
+      },
+      {
+        "label": "Missionary base — Antioch",
+        "lat": 36.2021,
+        "lng": 36.1603
+      },
+      {
+        "label": "Sermon at the Areopagus — Athens",
+        "lat": 37.9723,
+        "lng": 23.7261
+      },
+      {
+        "label": "Three years of preaching — Ephesus",
+        "lat": 37.9407,
+        "lng": 27.343
+      },
+      {
+        "label": "Eighteen months of preaching — Corinth",
+        "lat": 37.906,
+        "lng": 22.879
       }
     ]
   },
@@ -7546,6 +7876,21 @@
         "label": "Place of martyrdom — Rome",
         "lat": 41.9028,
         "lng": 12.4964
+      },
+      {
+        "label": "Home and ministry — Capernaum",
+        "lat": 32.8797,
+        "lng": 35.5753
+      },
+      {
+        "label": "Apostolic council — Jerusalem",
+        "lat": 31.7683,
+        "lng": 35.2137
+      },
+      {
+        "label": "Episcopate — Antioch",
+        "lat": 36.2021,
+        "lng": 36.1603
       }
     ]
   },
@@ -7871,6 +8216,11 @@
         "label": "Place of martyrdom — Smyrna",
         "lat": 38.4237,
         "lng": 27.1428
+      },
+      {
+        "label": "Visit to Pope Anicetus — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
       }
     ]
   },
@@ -8166,6 +8516,21 @@
         "label": "Monastery — Hilandar, Mount Athos",
         "lat": 40.2667,
         "lng": 24.2167
+      },
+      {
+        "label": "Archbishopric — Žiča Monastery",
+        "lat": 43.6897,
+        "lng": 20.6472
+      },
+      {
+        "label": "Repose — Tarnovo, Bulgaria",
+        "lat": 43.0757,
+        "lng": 25.6172
+      },
+      {
+        "label": "Burial — Mileševa Monastery",
+        "lat": 43.3858,
+        "lng": 19.6628
       }
     ]
   },
@@ -8376,6 +8741,11 @@
         "label": "Monastery — Sergiyev Posad",
         "lat": 56.3106,
         "lng": 38.133
+      },
+      {
+        "label": "Birthplace — Varnitsy, near Rostov",
+        "lat": 57.2167,
+        "lng": 39.3833
       }
     ]
   },
@@ -8671,6 +9041,11 @@
         "label": "Relics — Corfu",
         "lat": 39.6243,
         "lng": 19.9217
+      },
+      {
+        "label": "First Ecumenical Council — Nicaea",
+        "lat": 40.4333,
+        "lng": 29.7167
       }
     ]
   },
@@ -8716,6 +9091,21 @@
         "label": "Mission — Perm region, Russia",
         "lat": 58.0105,
         "lng": 56.2502
+      },
+      {
+        "label": "Birthplace — Veliky Ustyug",
+        "lat": 60.7597,
+        "lng": 46.305
+      },
+      {
+        "label": "Episcopal see — Ust-Vym",
+        "lat": 62.2244,
+        "lng": 50.3972
+      },
+      {
+        "label": "Repose — Moscow",
+        "lat": 55.7558,
+        "lng": 37.6173
       }
     ]
   },
@@ -8911,6 +9301,11 @@
         "label": "Ascetic life — Qalaat Semaan, Syria",
         "lat": 36.3339,
         "lng": 36.8461
+      },
+      {
+        "label": "Relics translated — Antioch",
+        "lat": 36.2021,
+        "lng": 36.1603
       }
     ]
   },
@@ -9456,6 +9851,21 @@
         "label": "Vysha Hermitage, Ryazan region",
         "lat": 54.05,
         "lng": 41.93
+      },
+      {
+        "label": "Russian Ecclesiastical Mission — Jerusalem",
+        "lat": 31.7683,
+        "lng": 35.2137
+      },
+      {
+        "label": "Bishopric — Tambov",
+        "lat": 52.7212,
+        "lng": 41.4523
+      },
+      {
+        "label": "Bishopric — Vladimir",
+        "lat": 56.129,
+        "lng": 40.407
       }
     ]
   },
@@ -9566,6 +9976,16 @@
         "label": "Patriarchate — Moscow",
         "lat": 55.7558,
         "lng": 37.6173
+      },
+      {
+        "label": "Birthplace — Toropets",
+        "lat": 56.5,
+        "lng": 31.6333
+      },
+      {
+        "label": "Archbishop of North America — New York",
+        "lat": 40.7128,
+        "lng": -74.006
       }
     ]
   },
@@ -9746,6 +10166,16 @@
         "label": "Baptism of Rus' — Kiev",
         "lat": 50.4501,
         "lng": 30.5234
+      },
+      {
+        "label": "Baptism — Chersonesus (Korsun), Crimea",
+        "lat": 44.6117,
+        "lng": 33.4931
+      },
+      {
+        "label": "Early reign — Novgorod",
+        "lat": 58.5213,
+        "lng": 31.2755
       }
     ]
   },
@@ -9786,6 +10216,11 @@
         "label": "Ascetic life — St. Petersburg",
         "lat": 59.9311,
         "lng": 30.3609
+      },
+      {
+        "label": "Grave and chapel — Smolensk Cemetery, St. Petersburg",
+        "lat": 59.9444,
+        "lng": 30.2558
       }
     ]
   },
