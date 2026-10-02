@@ -1440,21 +1440,6 @@
     ]
   },
   {
-    "id": "basil-of-tvrdos",
-    "name": "St. Basil of Ostrog's Companion, Jovan Vladimir",
-    "feastDay": "May 22",
-    "title": "Ruler and Martyr",
-    "icon": "basil-of-tvrdos.jpg",
-    "bio": "An early eleventh-century ruler of Duklja martyred by his brother-in-law, venerated as the first Balkan royal martyr.",
-    "locations": [
-      {
-        "label": "Rule — Duklja, coastal Montenegro",
-        "lat": 42.2,
-        "lng": 19.1
-      }
-    ]
-  },
-  {
     "id": "basil-of-poiana-marului",
     "name": "St. Basil of Poiana Mărului",
     "feastDay": "April 25",
@@ -2257,28 +2242,18 @@
   {
     "id": "cyprian-of-kiev",
     "name": "St. Cyprian of Kiev and Moscow",
-    "feastDay": "September 27",
+    "feastDay": "September 16",
     "title": "Metropolitan",
     "icon": "cyprian-of-kiev.jpg",
     "bio": "A Bulgarian-born metropolitan who unified the Russian Church and translated important liturgical texts into Slavonic.",
     "locations": [
       {
-        "label": "Metropolitanate — Moscow",
-        "lat": 55.7558,
-        "lng": 37.6173
-      }
-    ]
-  },
-  {
-    "id": "cyprian-of-tarnovo",
-    "name": "St. Cyprian of Tarnovo and Kiev",
-    "feastDay": "September 16",
-    "title": "Metropolitan",
-    "icon": "cyprian-of-tarnovo.jpg",
-    "bio": "A Bulgarian-born monk who became Metropolitan of Kiev and Moscow, reforming Russian liturgical practice along Byzantine lines.",
-    "locations": [
+        "label": "Birthplace — Tarnovo, Bulgaria",
+        "lat": 43.0757,
+        "lng": 25.6172
+      },
       {
-        "label": "Ministry — Moscow",
+        "label": "Metropolitanate — Moscow",
         "lat": 55.7558,
         "lng": 37.6173
       }
@@ -5058,6 +5033,11 @@
     "bio": "A pious ruler of Duklja betrayed and beheaded, venerated across the Balkans for his mercy toward his enemies.",
     "locations": [
       {
+        "label": "Rule — Duklja, coastal Montenegro",
+        "lat": 42.2,
+        "lng": 19.1
+      },
+      {
         "label": "Place of martyrdom — Prespa",
         "lat": 40.9167,
         "lng": 21
@@ -5655,21 +5635,6 @@
     ]
   },
   {
-    "id": "luka-voino-yasenetsky-companion",
-    "name": "St. Luke of Crimea's Colleague Nikolai Velimirovich",
-    "feastDay": "May 3",
-    "title": "Bishop",
-    "icon": "luka-voino-yasenetsky-companion.jpg",
-    "bio": "Commemorated alongside St. Luke of Crimea for combining medical and pastoral care under Communist-era hardship.",
-    "locations": [
-      {
-        "label": "Ministry — Simferopol, Crimea",
-        "lat": 44.9521,
-        "lng": 34.1024
-      }
-    ]
-  },
-  {
     "id": "luke-of-mytilene",
     "name": "St. Luke of Mytilene, New Martyr",
     "feastDay": "March 23",
@@ -5746,21 +5711,6 @@
         "label": "Monastery — Optina Hermitage, Russia",
         "lat": 54.0567,
         "lng": 35.9967
-      }
-    ]
-  },
-  {
-    "id": "hilarion-of-optina-companion-macarius",
-    "name": "St. Macarius of Optina's Disciple Leonid",
-    "feastDay": "October 11",
-    "title": "Elder",
-    "icon": "hilarion-of-optina-companion-macarius.jpg",
-    "bio": "An Optina elder in the direct lineage of eldership founded by St. Paisius Velichkovsky, guiding thousands of pilgrims.",
-    "locations": [
-      {
-        "label": "Hermitage — Optina Pustyn",
-        "lat": 54.05,
-        "lng": 35.9833
       }
     ]
   },
@@ -8526,21 +8476,6 @@
         "label": "Ministry — Emesa (Homs)",
         "lat": 34.73,
         "lng": 36.7166
-      }
-    ]
-  },
-  {
-    "id": "hilandar-founder-nemanja",
-    "name": "St. Simeon of Hilandar, Prince Nemanja",
-    "feastDay": "February 13",
-    "title": "Monastic Founder",
-    "icon": "hilandar-founder-nemanja.jpg",
-    "bio": "Founder of the medieval Serbian state who ended his days as a monk on Mount Athos, co-founding Hilandar Monastery.",
-    "locations": [
-      {
-        "label": "Monastery — Hilandar, Mount Athos",
-        "lat": 40.2667,
-        "lng": 24.2167
       }
     ]
   },
