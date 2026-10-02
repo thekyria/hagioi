@@ -655,6 +655,76 @@
     ]
   },
   {
+    "id": "hierotheos-of-athens",
+    "name": "St. Hierotheos of Athens",
+    "feastDay": "October 4",
+    "title": "Bishop of Athens, Hieromartyr",
+    "icon": "hierotheos-of-athens.jpg",
+    "bio": "First Bishop of Athens, converted by the Apostle Paul through the Areopagus preaching and the teacher of St. Dionysius the Areopagite. He is also remembered as a hymnographer who wrote of the Dormition of the Theotokos.",
+    "locations": [
+      {
+        "label": "Episcopal see — Athens, Greece",
+        "lat": 37.9715,
+        "lng": 23.7257
+      }
+    ]
+  },
+  {
+    "id": "mark-of-ephesus",
+    "name": "St. Mark of Ephesus",
+    "feastDay": "January 19",
+    "title": "Metropolitan and Confessor",
+    "icon": "mark-of-ephesus.jpg",
+    "bio": "Metropolitan of Ephesus and the sole bishop who refused to sign the union with Rome at the Council of Ferrara-Florence (1439), becoming the champion of Orthodoxy there.",
+    "locations": [
+      {
+        "label": "Metropolitan see — Ephesus, Asia Minor",
+        "lat": 37.9396,
+        "lng": 27.3417
+      },
+      {
+        "label": "Birthplace and repose — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
+    ]
+  },
+  {
+    "id": "nilus-of-sinai",
+    "name": "St. Nilus of Sinai",
+    "feastDay": "November 12",
+    "title": "Venerable",
+    "icon": "nilus-of-sinai.jpg",
+    "bio": "Former prefect of Constantinople and disciple of St. John Chrysostom who became a monk on Mount Sinai. His writings on prayer and the ascetic life are included in the Philokalia.",
+    "locations": [
+      {
+        "label": "Monastic life and repose — Mount Sinai, Egypt",
+        "lat": 28.5392,
+        "lng": 33.975
+      },
+      {
+        "label": "Former prefecture — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
+    ]
+  },
+  {
+    "id": "phocas-the-gardener",
+    "name": "St. Phocas the Gardener",
+    "feastDay": "September 22",
+    "title": "Hieromartyr",
+    "icon": "phocas-the-gardener.jpg",
+    "bio": "A gardener near Sinope on the Black Sea who gave hospitality to the soldiers sent to arrest him, then willingly gave himself up and was beheaded under Emperor Trajan; his garden produce fed the poor.",
+    "locations": [
+      {
+        "label": "Home and martyrdom — Sinope, Pontus",
+        "lat": 42.0231,
+        "lng": 35.1531
+      }
+    ]
+  },
+  {
     "id": "andronikos-and-athanasia",
     "name": "Sts. Andronikos and Athanasia",
     "feastDay": "October 9",
@@ -10191,6 +10261,21 @@
         "label": "Reign — Constantinople",
         "lat": 41.0082,
         "lng": 28.9784
+      }
+    ]
+  },
+  {
+    "id": "theophylact-of-ohrid",
+    "name": "St. Theophylact of Ohrid",
+    "feastDay": "December 31",
+    "title": "Archbishop and Biblical Commentator",
+    "icon": "theophylact-of-ohrid.jpg",
+    "bio": "Byzantine Archbishop of Ohrid in the late 11th and early 12th centuries, best known for his commentaries on the Gospels and Epistles. He also wrote the Life of St. Clement of Ohrid and defended his flock against abuses.",
+    "locations": [
+      {
+        "label": "Archiepiscopal see — Ohrid, North Macedonia",
+        "lat": 41.1231,
+        "lng": 20.8016
       }
     ]
   },
