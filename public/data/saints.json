@@ -3880,6 +3880,26 @@
     ]
   },
   {
+    "id": "gregory-of-decapolis",
+    "name": "St. Gregory of Decapolis",
+    "feastDay": "November 20",
+    "title": "Venerable",
+    "icon": "gregory-of-decapolis.jpg",
+    "bio": "8th-century monk from Irenopolis in Isauria who traveled widely across Greece and Italy, defended the holy icons, and reposed in Constantinople.",
+    "locations": [
+      {
+        "label": "Birthplace — Irenopolis, Isauria",
+        "lat": 36.5,
+        "lng": 32.9
+      },
+      {
+        "label": "Repose — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
+      }
+    ]
+  },
+  {
     "id": "grigol-khandzteli",
     "name": "St. Gregory of Khandzta",
     "feastDay": "October 5",
@@ -4290,6 +4310,21 @@
     ]
   },
   {
+    "id": "hesychius-of-jerusalem",
+    "name": "St. Hesychios of Jerusalem",
+    "feastDay": "March 28",
+    "title": "Presbyter and Theologian",
+    "icon": "hesychius-of-jerusalem.jpg",
+    "bio": "5th-century priest and biblical commentator in Jerusalem, a disciple of Gregory the Theologian. His writings include sermons and scriptural commentaries.",
+    "locations": [
+      {
+        "label": "Ministry — Jerusalem",
+        "lat": 31.7683,
+        "lng": 35.2137
+      }
+    ]
+  },
+  {
     "id": "panteleimon-companions",
     "name": "St. Hermolaus of Nicomedia",
     "feastDay": "July 26",
@@ -4576,6 +4611,21 @@
         "label": "Formation under Polycarp — Smyrna",
         "lat": 38.4237,
         "lng": 27.1428
+      }
+    ]
+  },
+  {
+    "id": "irene-chrysovalantou",
+    "name": "St. Irene Chrysovalantou",
+    "feastDay": "July 28",
+    "title": "Venerable Abbess",
+    "icon": "irene-chrysovalantou.jpg",
+    "bio": "Byzantine abbess of the Chrysovalantou Monastery in Constantinople, noted for her humility, visions and wonder-working. She is venerated for the three fragrant apples of Paradise sent to her by St. John the Theologian through a sailor, and for the cypress trees said to have bowed during her prayer.",
+    "locations": [
+      {
+        "label": "Chrysovalantou Monastery — Constantinople",
+        "lat": 41.0082,
+        "lng": 28.9784
       }
     ]
   },
@@ -5751,6 +5801,21 @@
         "label": "Monastery — Pskov-Caves",
         "lat": 57.81,
         "lng": 27.61
+      }
+    ]
+  },
+  {
+    "id": "kyranna-of-thessaloniki",
+    "name": "St. Kyranna of Thessaloniki",
+    "feastDay": "February 28",
+    "title": "Martyr",
+    "icon": "kyranna-of-thessaloniki.jpg",
+    "bio": "Young Christian woman from Ossa near Thessaloniki, martyred in Thessaloniki in 1751 at the age of 20 after being pressured to renounce Christ.",
+    "locations": [
+      {
+        "label": "Martyrdom — Thessaloniki",
+        "lat": 40.6401,
+        "lng": 22.9444
       }
     ]
   },
@@ -7296,6 +7361,21 @@
         "label": "Hermitage — Pskov region",
         "lat": 57.8194,
         "lng": 28.3319
+      }
+    ]
+  },
+  {
+    "id": "nikanor-of-zavorda",
+    "name": "St. Nikanor of Zavorda",
+    "feastDay": "August 7",
+    "title": "Venerable",
+    "icon": "nikanor-of-zavorda.jpg",
+    "bio": "Ascetic of northern Greece who founded the Monastery of Zavorda in Grevena. He is honored for his labors in Epirus and Macedonia.",
+    "locations": [
+      {
+        "label": "Zavorda Monastery — Grevena, Greece",
+        "lat": 39.9917,
+        "lng": 21.7954
       }
     ]
   },
@@ -8915,6 +8995,21 @@
     ]
   },
   {
+    "id": "sergius-and-bacchus",
+    "name": "Sts. Sergius and Bacchus",
+    "feastDay": "October 7",
+    "title": "Great Martyrs",
+    "icon": "sergius-and-bacchus.jpg",
+    "bio": "Roman officers and close companions in the imperial army who were exposed as Christians for refusing to sacrifice to idols. Bacchus died under the lash and Sergius was beheaded at Resafa in Syria.",
+    "locations": [
+      {
+        "label": "Martyrdom of Sergius — Resafa (Sergiopolis), Syria",
+        "lat": 35.6333,
+        "lng": 38.7556
+      }
+    ]
+  },
+  {
     "id": "sergius-of-radonezh",
     "name": "St. Sergius of Radonezh",
     "feastDay": "September 25",
@@ -9356,6 +9451,21 @@
         "label": "Place of martyrdom — Jerusalem",
         "lat": 31.7683,
         "lng": 35.2137
+      }
+    ]
+  },
+  {
+    "id": "stylianos-of-paphlagonia",
+    "name": "St. Stylianos of Paphlagonia",
+    "feastDay": "November 26",
+    "title": "Venerable",
+    "icon": "stylianos-of-paphlagonia.jpg",
+    "bio": "Hermit in Paphlagonia who lived in extreme asceticism and received from God the gift of healing, especially for children. He is invoked as protector of children and expectant mothers.",
+    "locations": [
+      {
+        "label": "Ascetic life — Paphlagonia, Asia Minor",
+        "lat": 41.5,
+        "lng": 33.0
       }
     ]
   },
