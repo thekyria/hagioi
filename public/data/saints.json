@@ -5145,10 +5145,10 @@
     "feastDay": "October 4",
     "title": "Venerable, Wonderworker",
     "icon": "john-lampadistis.jpg",
-    "bio": "An 11th-century ascetic born in Kalopanagiotis in the Marathasa valley of Cyprus. Refusing the marriage arranged by his parents, he devoted himself to prayer and asceticism, lost his sight, and died young. His relics are venerated at the Monastery of St. John Lampadistis in his home village, whose painted churches are a UNESCO World Heritage Site, and he is widely invoked for healing.",
+    "bio": "An 11th-century ascetic born in the lost village of Lampadou near present-day Galata in the Marathasa valley of Cyprus. Refusing the marriage arranged by his parents, he devoted himself to prayer and asceticism, lost his sight, and died young. His relics are venerated at the Monastery of St. John Lampadistis in Kalopanagiotis, whose painted churches are a UNESCO World Heritage Site, and he is widely invoked for healing.",
     "locations": [
       {
-        "label": "Birthplace, repose and monastery — Kalopanagiotis, Cyprus",
+        "label": "Monastery and relics — Kalopanagiotis, Cyprus",
         "lat": 34.9917,
         "lng": 32.8292
       }
@@ -5794,8 +5794,8 @@
     "locations": [
       {
         "label": "Monastery — Panagia Kantariotissa, near Kantara, Cyprus",
-        "lat": 35.4033,
-        "lng": 33.92
+        "lat": 35.3849,
+        "lng": 33.8991
       },
       {
         "label": "Place of martyrdom — Nicosia",
@@ -8452,7 +8452,7 @@
   {
     "id": "philo-of-karpasia",
     "name": "St. Philo of Karpasia",
-    "feastDay": "December 24",
+    "feastDay": "January 24",
     "title": "Bishop",
     "icon": "philo-of-karpasia.jpg",
     "bio": "A learned contemporary of St. Epiphanius of Salamis, who ordained him Bishop of Karpasia on the Karpas peninsula of Cyprus around the end of the 4th century. He is known for his commentary on the Song of Songs and as a wonderworker; the ruined basilica of Agios Philon marks the site of ancient Karpasia.",
