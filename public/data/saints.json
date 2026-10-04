@@ -2780,6 +2780,21 @@
     ]
   },
   {
+    "id": "demetrian-of-chytri",
+    "name": "St. Demetrian of Chytri",
+    "feastDay": "November 6",
+    "title": "Bishop",
+    "icon": "demetrian-of-chytri.jpg",
+    "bio": "A native of Cyprus who, after the death of his young wife, became a monk and later abbot, and was then made Bishop of Chytri (modern Kythrea) in the late 9th or early 10th century. When Arab raiders carried many Cypriots into captivity, the aged bishop travelled to Baghdad and successfully pleaded with the caliph for their release.",
+    "locations": [
+      {
+        "label": "Episcopal see — Chytri (Kythrea), Cyprus",
+        "lat": 35.2464,
+        "lng": 33.4813
+      }
+    ]
+  },
+  {
     "id": "dimitrie-of-basarabov",
     "name": "St. Demetrios the New of Basarabi",
     "feastDay": "October 27",
@@ -5125,6 +5140,21 @@
     ]
   },
   {
+    "id": "john-lampadistis",
+    "name": "St. John Lampadistis",
+    "feastDay": "October 4",
+    "title": "Venerable, Wonderworker",
+    "icon": "john-lampadistis.jpg",
+    "bio": "An 11th-century ascetic born in the lost village of Lampadou near present-day Galata in the Marathasa valley of Cyprus. Refusing the marriage arranged by his parents, he devoted himself to prayer and asceticism, lost his sight, and died young. His relics are venerated at the Monastery of St. John Lampadistis in Kalopanagiotis, whose painted churches are a UNESCO World Heritage Site, and he is widely invoked for healing.",
+    "locations": [
+      {
+        "label": "Monastery and relics — Kalopanagiotis, Cyprus",
+        "lat": 34.9917,
+        "lng": 32.8292
+      }
+    ]
+  },
+  {
     "id": "john-of-damascus",
     "name": "St. John of Damascus",
     "feastDay": "December 4",
@@ -5751,6 +5781,26 @@
         "label": "Ministry — Edessa, Greece",
         "lat": 40.7833,
         "lng": 22.05
+      }
+    ]
+  },
+  {
+    "id": "thirteen-martyrs-of-kantara",
+    "name": "The Thirteen Martyrs of Kantara",
+    "feastDay": "May 19",
+    "title": "Venerable Martyrs",
+    "icon": "thirteen-martyrs-of-kantara.jpg",
+    "bio": "Orthodox monks of the Monastery of the Panagia Kantariotissa in the Pentadaktylos mountains of Cyprus. During the Latin rule of the island they refused to accept the Latin use of unleavened bread in the Eucharist, were imprisoned for three years, and in 1231 were executed in Nicosia by being dragged behind horses and burned.",
+    "locations": [
+      {
+        "label": "Monastery — Panagia Kantariotissa, near Kantara, Cyprus",
+        "lat": 35.3849,
+        "lng": 33.8991
+      },
+      {
+        "label": "Place of martyrdom — Nicosia",
+        "lat": 35.1725,
+        "lng": 33.365
       }
     ]
   },
@@ -8400,6 +8450,21 @@
     ]
   },
   {
+    "id": "philo-of-karpasia",
+    "name": "St. Philo of Karpasia",
+    "feastDay": "January 24",
+    "title": "Bishop",
+    "icon": "philo-of-karpasia.jpg",
+    "bio": "A learned contemporary of St. Epiphanius of Salamis, who ordained him Bishop of Karpasia on the Karpas peninsula of Cyprus around the end of the 4th century. He is known for his commentary on the Song of Songs and as a wonderworker; the ruined basilica of Agios Philon marks the site of ancient Karpasia.",
+    "locations": [
+      {
+        "label": "Episcopal see — Karpasia (Agios Philon), Cyprus",
+        "lat": 35.6202,
+        "lng": 34.3786
+      }
+    ]
+  },
+  {
     "id": "philothei-of-athens",
     "name": "St. Philothei of Athens",
     "feastDay": "February 19",
@@ -10406,6 +10471,21 @@
         "label": "Bishopric — Gortyna, Crete",
         "lat": 35.0628,
         "lng": 24.9436
+      }
+    ]
+  },
+  {
+    "id": "triphyllius-of-leucosia",
+    "name": "St. Triphyllius of Leucosia",
+    "feastDay": "June 13",
+    "title": "Bishop",
+    "icon": "triphyllius-of-leucosia.jpg",
+    "bio": "A disciple of St. Spyridon of Trimythous who, after studying law in Beirut, became Bishop of Leucosia (Ledra, modern Nicosia) in the 4th century. Renowned for his eloquence and learning, praised by St. Jerome, he took part in the Council of Sardica in 343 in defence of Nicene Orthodoxy.",
+    "locations": [
+      {
+        "label": "Episcopal see — Leucosia (Nicosia), Cyprus",
+        "lat": 35.1725,
+        "lng": 33.365
       }
     ]
   },
