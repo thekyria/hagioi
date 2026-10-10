@@ -1218,6 +1218,28 @@ async function initMap() {
             if (e.key === 'Escape') {
                 e.preventDefault();
                 closeModal();
+                return;
+            }
+
+            if (e.key !== 'Tab') {
+                return;
+            }
+
+            const focusableElements = Array.from(
+                modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')
+            ).filter((element) => !element.hasAttribute('disabled'));
+            if (focusableElements.length === 0) {
+                return;
+            }
+
+            const firstElement = focusableElements[0];
+            const lastElement = focusableElements[focusableElements.length - 1];
+            if (e.shiftKey && document.activeElement === firstElement) {
+                e.preventDefault();
+                lastElement.focus();
+            } else if (!e.shiftKey && document.activeElement === lastElement) {
+                e.preventDefault();
+                firstElement.focus();
             }
         }
 
