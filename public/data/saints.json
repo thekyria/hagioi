@@ -50,6 +50,21 @@
     ]
   },
   {
+    "id": "abraham-of-smolensk",
+    "name": "St. Abraham of Smolensk",
+    "feastDay": "August 21",
+    "title": "Venerable",
+    "icon": "abraham-of-smolensk.jpg",
+    "bio": "A 12th–13th-century monk and priest of Smolensk, famed for his preaching, his study of the Scriptures and the Fathers, and his icon painting. Slandered and forbidden to serve by envious clergy, he was vindicated when his prayers ended a drought, and spent his last years leading a monastery in the city.",
+    "locations": [
+      {
+        "label": "Monastic life and repose — Smolensk",
+        "lat": 54.7826,
+        "lng": 32.0453
+      }
+    ]
+  },
+  {
     "id": "akakios-of-mount-athos-neomartyr",
     "name": "St. Acacius of Mount Athos, New Martyr",
     "feastDay": "May 1",
@@ -310,6 +325,26 @@
     ]
   },
   {
+    "id": "alexander-schmorell",
+    "name": "St. Alexander Schmorell of Munich",
+    "feastDay": "July 13",
+    "title": "Martyr",
+    "icon": "alexander-schmorell.jpg",
+    "bio": "Born in Orenburg to a Russian Orthodox mother and German father, he grew up in Munich and co-founded the White Rose student resistance against the Nazi regime. Arrested in 1943 and beheaded at Stadelheim prison, he was glorified by the Russian Orthodox Church Outside Russia in 2012.",
+    "locations": [
+      {
+        "label": "Birthplace — Orenburg",
+        "lat": 51.7682,
+        "lng": 55.0969
+      },
+      {
+        "label": "Resistance, martyrdom and burial — Munich",
+        "lat": 48.1374,
+        "lng": 11.5755
+      }
+    ]
+  },
+  {
     "id": "alexios-man-of-god",
     "name": "St. Alexios, Man of God",
     "feastDay": "March 17",
@@ -356,6 +391,26 @@
         "label": "Ministry — Minneapolis, USA",
         "lat": 44.9778,
         "lng": -93.265
+      }
+    ]
+  },
+  {
+    "id": "alphege-of-canterbury",
+    "name": "St. Alphege of Canterbury",
+    "feastDay": "April 19",
+    "title": "Hieromartyr, Archbishop",
+    "icon": "alphege-of-canterbury.jpg",
+    "bio": "Monk of Deerhurst and Bath, later Bishop of Winchester and Archbishop of Canterbury. Captured by Danish raiders in 1011, he refused to let his impoverished people pay a ransom for him and was killed by his captors at Greenwich in 1012.",
+    "locations": [
+      {
+        "label": "Archiepiscopal see — Canterbury",
+        "lat": 51.2798,
+        "lng": 1.0828
+      },
+      {
+        "label": "Martyrdom — Greenwich",
+        "lat": 51.4826,
+        "lng": -0.0077
       }
     ]
   },
@@ -521,6 +576,21 @@
         "label": "Ministry — Naupaktos",
         "lat": 38.3925,
         "lng": 21.8306
+      }
+    ]
+  },
+  {
+    "id": "anastasius-of-sinai",
+    "name": "St. Anastasius of Sinai",
+    "feastDay": "April 20",
+    "title": "Venerable",
+    "icon": "anastasius-of-sinai.jpg",
+    "bio": "A 7th-century monk and abbot of the monastery on Mount Sinai who defended Orthodox Christology against the Monophysites. His works include the Hodegos (\"Guide\"), a handbook against heresy, and collections of edifying tales of the desert fathers.",
+    "locations": [
+      {
+        "label": "Monastery of St. Catherine — Mount Sinai",
+        "lat": 28.5559,
+        "lng": 33.976
       }
     ]
   },
@@ -1145,6 +1215,31 @@
     ]
   },
   {
+    "id": "athanasios-of-meteora",
+    "name": "St. Athanasios of Meteora",
+    "feastDay": "April 20",
+    "title": "Venerable",
+    "icon": "athanasios-of-meteora.jpg",
+    "bio": "Born in Hypati in 1305, he became a monk on Mount Athos before settling on the rock pillars of Meteora in Thessaly, where he founded the Great Meteoron Monastery of the Transfiguration and gave the monastic community its rule. He reposed around 1380.",
+    "locations": [
+      {
+        "label": "Birthplace — Hypati, Phthiotis",
+        "lat": 38.8667,
+        "lng": 22.2333
+      },
+      {
+        "label": "Monastic formation — Mount Athos",
+        "lat": 40.2558,
+        "lng": 24.2464
+      },
+      {
+        "label": "Founded Great Meteoron — Meteora",
+        "lat": 39.7217,
+        "lng": 21.6262
+      }
+    ]
+  },
+  {
     "id": "athanasios-parios",
     "name": "St. Athanasios Parios",
     "feastDay": "June 24",
@@ -1186,6 +1281,21 @@
         "label": "Exile and support of the Western Church — Rome",
         "lat": 41.9028,
         "lng": 12.4964
+      }
+    ]
+  },
+  {
+    "id": "athanasius-of-brest",
+    "name": "St. Athanasius of Brest",
+    "feastDay": "September 5",
+    "title": "Hieromartyr",
+    "icon": "athanasius-of-brest.jpg",
+    "bio": "Hegumen of the Monastery of St. Simeon in Brest who tirelessly defended Orthodoxy against the Union of Brest in the Polish–Lithuanian Commonwealth. Repeatedly imprisoned for his stand, he was tortured and executed by Polish authorities in 1648.",
+    "locations": [
+      {
+        "label": "Ministry and martyrdom — Brest",
+        "lat": 52.0976,
+        "lng": 23.7341
       }
     ]
   },
@@ -1446,6 +1556,21 @@
         "label": "Place of martyrdom — Albac, Armenia",
         "lat": 38.75,
         "lng": 44.5
+      }
+    ]
+  },
+  {
+    "id": "basil-of-ancyra",
+    "name": "St. Basil of Ancyra",
+    "feastDay": "March 22",
+    "title": "Hieromartyr, Presbyter",
+    "icon": "basil-of-ancyra.jpg",
+    "bio": "A presbyter of Ancyra who opposed both the Arians and the paganism revived by Emperor Julian the Apostate. Arrested and repeatedly tortured for confessing Christ, he was martyred in 362.",
+    "locations": [
+      {
+        "label": "Ministry and martyrdom — Ancyra (Ankara)",
+        "lat": 39.9334,
+        "lng": 32.8597
       }
     ]
   },
@@ -2275,6 +2400,66 @@
     ]
   },
   {
+    "id": "edward-the-martyr",
+    "name": "St. Edward the Martyr",
+    "feastDay": "March 18",
+    "title": "King and Passion-bearer",
+    "icon": "edward-the-martyr.jpg",
+    "bio": "King of England from 975, he was murdered as a youth at Corfe in 978, reportedly at the instigation of his stepmother, and soon venerated as a martyr. His relics were rediscovered at Shaftesbury in 1931 and are now kept in the Orthodox church of St. Edward at Brookwood.",
+    "locations": [
+      {
+        "label": "Martyrdom — Corfe Castle, Dorset",
+        "lat": 50.6402,
+        "lng": -2.0574
+      },
+      {
+        "label": "Shrine — Shaftesbury Abbey",
+        "lat": 51.0059,
+        "lng": -2.1977
+      },
+      {
+        "label": "Present relics — Brookwood, Surrey",
+        "lat": 51.2995,
+        "lng": -0.6331
+      }
+    ]
+  },
+  {
+    "id": "eleftherios-of-illyricum",
+    "name": "St. Eleftherios of Illyricum",
+    "feastDay": "December 15",
+    "title": "Hieromartyr, Bishop",
+    "icon": "eleftherios-of-illyricum.jpg",
+    "bio": "Born in Rome to a Christian mother, St. Anthia, he was consecrated Bishop of Illyricum at a young age. Under Emperor Hadrian he was brought back to Rome and, after enduring many torments, was beheaded together with his mother in the 2nd century.",
+    "locations": [
+      {
+        "label": "Birthplace and martyrdom — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      }
+    ]
+  },
+  {
+    "id": "etheldreda-of-ely",
+    "name": "St. Etheldreda of Ely",
+    "feastDay": "June 23",
+    "title": "Venerable, Abbess",
+    "icon": "etheldreda-of-ely.jpg",
+    "bio": "An East Anglian princess, also known as Audrey, who remained a virgin through two marriages and became a nun. In 673 she founded a double monastery at Ely, which she ruled as abbess until her repose in 679; her body was later found incorrupt.",
+    "locations": [
+      {
+        "label": "Birthplace — Exning, Suffolk",
+        "lat": 52.2696,
+        "lng": 0.3727
+      },
+      {
+        "label": "Founded monastery and repose — Ely",
+        "lat": 52.3986,
+        "lng": 0.2638
+      }
+    ]
+  },
+  {
     "id": "finnian-of-clonard",
     "name": "St. Finnian of Clonard",
     "feastDay": "December 12",
@@ -2320,6 +2505,26 @@
     ]
   },
   {
+    "id": "lucy-of-syracuse",
+    "name": "St. Lucy of Syracuse",
+    "feastDay": "December 13",
+    "title": "Virgin Martyr",
+    "icon": "lucy-of-syracuse.jpg",
+    "bio": "A young Christian of Syracuse who distributed her dowry to the poor and was denounced by her rejected suitor. She was martyred during the persecution of Diocletian around 304; her relics were later taken to Constantinople and then to Venice.",
+    "locations": [
+      {
+        "label": "Birthplace and martyrdom — Syracuse, Sicily",
+        "lat": 37.0755,
+        "lng": 15.2866
+      },
+      {
+        "label": "Relics — Venice",
+        "lat": 45.4434,
+        "lng": 12.3218
+      }
+    ]
+  },
+  {
     "id": "ludmila-of-bohemia",
     "name": "St. Ludmila of Bohemia",
     "feastDay": "September 16",
@@ -2331,6 +2536,91 @@
         "label": "Martyrdom — Tetín, Czech Republic",
         "lat": 49.9418,
         "lng": 14.0883
+      }
+    ]
+  },
+  {
+    "id": "lydia-of-thyatira",
+    "name": "St. Lydia of Thyatira",
+    "feastDay": "May 20",
+    "title": "Equal-to-the-Apostles",
+    "icon": "lydia-of-thyatira.jpg",
+    "bio": "A seller of purple cloth from Thyatira who heard the Apostle Paul preach by the river at Philippi and became the first recorded convert in Europe (Acts 16). She was baptized with her household and opened her home to the apostles.",
+    "locations": [
+      {
+        "label": "Birthplace — Thyatira (Akhisar)",
+        "lat": 38.9186,
+        "lng": 27.84
+      },
+      {
+        "label": "Baptism — Philippi",
+        "lat": 41.013,
+        "lng": 24.286
+      }
+    ]
+  },
+  {
+    "id": "macarius-of-kalyazin",
+    "name": "St. Macarius of Kalyazin",
+    "feastDay": "March 17",
+    "title": "Venerable",
+    "icon": "macarius-of-kalyazin.jpg",
+    "bio": "A 15th-century nobleman from near Kashin who became a monk after the death of his wife and founded the Holy Trinity Monastery at Kalyazin on the Volga. Known as a wonderworker, he reposed in 1483; his monastery was later flooded by the Uglich Reservoir.",
+    "locations": [
+      {
+        "label": "Founded Trinity Monastery — Kalyazin",
+        "lat": 57.24,
+        "lng": 37.85
+      }
+    ]
+  },
+  {
+    "id": "methodius-of-olympus",
+    "name": "St. Methodius of Olympus",
+    "feastDay": "June 20",
+    "title": "Hieromartyr, Bishop",
+    "icon": "methodius-of-olympus.jpg",
+    "bio": "Bishop of Olympus in Lycia and an early Christian writer, best known for his dialogue the Symposium in praise of virginity and for his writings against Origen's teachings. He suffered martyrdom around 311 during the last great persecution.",
+    "locations": [
+      {
+        "label": "Episcopal see — Olympus, Lycia",
+        "lat": 36.3983,
+        "lng": 30.4733
+      }
+    ]
+  },
+  {
+    "id": "olaf-of-norway",
+    "name": "St. Olaf of Norway",
+    "feastDay": "July 29",
+    "title": "King and Martyr",
+    "icon": "olaf-of-norway.jpg",
+    "bio": "King of Norway who worked to establish Christianity throughout his realm. Driven into exile, he returned to reclaim his kingdom and fell at the Battle of Stiklestad in 1030; he was soon venerated as a martyr and his shrine at Nidaros became a major place of pilgrimage.",
+    "locations": [
+      {
+        "label": "Death in battle — Stiklestad",
+        "lat": 63.7965,
+        "lng": 11.56
+      },
+      {
+        "label": "Shrine — Nidaros (Trondheim)",
+        "lat": 63.4269,
+        "lng": 10.3969
+      }
+    ]
+  },
+  {
+    "id": "paraskeva-of-iconium",
+    "name": "St. Paraskeva of Iconium",
+    "feastDay": "October 28",
+    "title": "Great Martyr",
+    "icon": "paraskeva-of-iconium.jpg",
+    "bio": "A virgin of Iconium who dedicated her life to Christ and to preaching the faith, martyred under Emperor Diocletian. Known in Slavic lands as Paraskeva Pyatnitsa (\"Friday\"), she is venerated as a protector of family life and trade.",
+    "locations": [
+      {
+        "label": "Birthplace and martyrdom — Iconium (Konya)",
+        "lat": 37.8714,
+        "lng": 32.4846
       }
     ]
   },
@@ -2391,6 +2681,26 @@
         "label": "Bishop — Dol-de-Bretagne, France",
         "lat": 48.55,
         "lng": -1.75
+      }
+    ]
+  },
+  {
+    "id": "seraphim-sobolev",
+    "name": "St. Seraphim (Sobolev) of Sofia",
+    "feastDay": "February 26",
+    "title": "Archbishop, Wonderworker",
+    "icon": "seraphim-sobolev.jpg",
+    "bio": "Born in Ryazan in 1881, he served as a bishop in Russia before emigrating and becoming Archbishop of Bogucharsk in Sofia, where he shepherded the Russian community and taught Orthodox theology. He reposed in 1950 and was glorified in 2016; his relics rest in the Russian Church of St. Nicholas in Sofia.",
+    "locations": [
+      {
+        "label": "Birthplace — Ryazan",
+        "lat": 54.6269,
+        "lng": 39.6916
+      },
+      {
+        "label": "Ministry, repose and relics — Sofia",
+        "lat": 42.6955,
+        "lng": 23.3279
       }
     ]
   },
