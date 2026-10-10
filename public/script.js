@@ -6,7 +6,6 @@ const MONTH_NAMES = [
 // Fixed feast parsing/date filters intentionally use non-leap month lengths,
 // since the data model stores recurring month/day feasts without a leap-day variant.
 const DAYS_IN_MONTH = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31];
-const WEEKDAY_NAMES = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
 const NEARBY_RADIUS_KM = 100;
 const EARTH_RADIUS_KM = 6371;
 
@@ -29,8 +28,27 @@ const NAME_TITLE_PREFIXES = [
     "Matushka ",
 ];
 
-function getNameSortKey(name) {
-    const prefix = NAME_TITLE_PREFIXES.find((candidate) => name.startsWith(candidate));
+// Greek counterparts of NAME_TITLE_PREFIXES, used for the names in
+// `saints.el.json` (same longest-first ordering rule).
+const GREEK_NAME_TITLE_PREFIXES = [
+    "Απόστολος και Ευαγγελιστής ",
+    "Απόστολος ",
+    "Προφήτης ",
+    "Υπεραγία ",
+    "Πρεσβυτέρα ",
+    "Άγιοι ",
+    "Αγίες ",
+    "Άγιος ",
+    "Αγία ",
+];
+
+const NAME_TITLE_PREFIXES_BY_LANGUAGE = {
+    en: NAME_TITLE_PREFIXES,
+    el: GREEK_NAME_TITLE_PREFIXES,
+};
+
+function getNameSortKey(name, prefixes = NAME_TITLE_PREFIXES) {
+    const prefix = prefixes.find((candidate) => name.startsWith(candidate));
     return prefix ? name.slice(prefix.length) : name;
 }
 
@@ -51,12 +69,12 @@ function haversineDistanceKm(from, to) {
 
 function formatApproxDistance(distanceKm) {
     if (distanceKm < 1) {
-        return 'under 1 km';
+        return t('distance.underOne');
     }
     if (distanceKm < 10) {
-        return `${Math.round(distanceKm)} km`;
+        return t('distance.km', { km: Math.round(distanceKm) });
     }
-    return `${Math.round(distanceKm / 5) * 5} km`;
+    return t('distance.km', { km: Math.round(distanceKm / 5) * 5 });
 }
 
 function parseFeastDay(feastDay) {
@@ -88,7 +106,7 @@ function isInRange(fromCode, toCode, testCode) {
 }
 
 function populateMonthSelect(select) {
-    MONTH_NAMES.forEach((name, index) => {
+    CURRENT_LOCALE.monthNames.forEach((name, index) => {
         const option = document.createElement('option');
         option.value = index;
         option.textContent = name;
@@ -140,8 +158,8 @@ function initSlidePanelToggle(toggleButtonId, panelId, { openLabel, closeLabel }
 
 function initPanelToggles() {
     initSlidePanelToggle('menu-toggle', 'saints-panel', {
-        openLabel: 'Open Feast Days panel',
-        closeLabel: 'Close Feast Days panel',
+        openLabel: t('menu.open'),
+        closeLabel: t('menu.close'),
     });
 }
 
@@ -236,7 +254,7 @@ async function loadVersionInfo() {
         return;
     }
 
-    versionElement.textContent = 'Version ';
+    versionElement.textContent = t('footer.version');
     let commitNode;
     if (typeof info.commitUrl === 'string' && info.commitUrl.startsWith('https://')) {
         commitNode = document.createElement('a');
@@ -249,7 +267,7 @@ async function loadVersionInfo() {
     commitNode.className = 'footer-version-commit';
     commitNode.textContent = info.shortCommit;
     if (typeof info.commit === 'string') {
-        commitNode.title = `Commit ${info.commit}`;
+        commitNode.title = t('footer.commit', { commit: info.commit });
     }
     versionElement.appendChild(commitNode);
 
@@ -261,6 +279,51 @@ async function loadVersionInfo() {
     if (separator) {
         separator.hidden = false;
     }
+}
+
+// Loads saints.json and, for non-English languages, overlays the matching
+// translations from `/data/saints.<lang>.json` (keyed by saint id; location
+// labels are matched by index). Untranslated fields fall back to English.
+// `sourceName`/`sourceFeastDay` keep the original English values for search
+// and feast-date parsing.
+async function loadSaints() {
+    const response = await fetch('/data/saints.json');
+    const saints = await response.json();
+
+    let translations = {};
+    if (CURRENT_LANGUAGE !== DEFAULT_LANGUAGE) {
+        try {
+            const translationResponse = await fetch(`/data/saints.${CURRENT_LANGUAGE}.json`);
+            if (translationResponse.ok) {
+                translations = await translationResponse.json();
+            } else {
+                console.error(`Failed to load saint translations for "${CURRENT_LANGUAGE}".`);
+            }
+        } catch (error) {
+            console.error(`Failed to load saint translations for "${CURRENT_LANGUAGE}".`, error);
+        }
+    }
+
+    return saints.map((saint) => {
+        const translation = translations[saint.id] || {};
+        const feast = parseFeastDay(saint.feastDay);
+        const feastDay = feast
+            ? formatLocalizedMonthDay(feast.month, feast.day)
+            : (translation.feastDay || saint.feastDay);
+        return {
+            ...saint,
+            name: translation.name || saint.name,
+            title: translation.title || saint.title,
+            bio: translation.bio || saint.bio,
+            feastDay,
+            sourceName: saint.name,
+            sourceFeastDay: saint.feastDay,
+            locations: saint.locations.map((location, index) => ({
+                ...location,
+                label: translation.locations?.[index] || location.label,
+            })),
+        };
+    });
 }
 
 async function initMap() {
@@ -293,8 +356,7 @@ async function initMap() {
         }, 150);
     });
 
-    const response = await fetch('/data/saints.json');
-    const saints = await response.json();
+    const saints = await loadSaints();
     const { AdvancedMarkerElement, PinElement } = await google.maps.importLibrary("marker");
     const infoWindow = new InfoWindow();
 
@@ -341,7 +403,7 @@ async function initMap() {
     function createIconImage(saint) {
         const image = document.createElement('img');
         image.src = `assets/icons/${saint.icon}`;
-        image.alt = `Icon of ${saint.name}`;
+        image.alt = t('saint.iconAlt', { name: saint.name });
         image.addEventListener('error', () => {
             image.src = 'assets/avatar-placeholder.svg';
         }, { once: true });
@@ -356,7 +418,7 @@ async function initMap() {
             const backLink = document.createElement('a');
             backLink.href = '#';
             backLink.className = 'location-picker-back';
-            backLink.textContent = '\u2190 Back to list';
+            backLink.textContent = t('saint.backToList');
             content.appendChild(backLink);
 
             google.maps.event.addListenerOnce(targetWindow, 'domready', () => {
@@ -373,7 +435,7 @@ async function initMap() {
 
         const meta = document.createElement('p');
         meta.className = 'saint-meta';
-        meta.textContent = `${saint.title} — Feast day: ${saint.feastDay}`;
+        meta.textContent = t('saint.meta', { title: saint.title, feastDay: saint.feastDay });
 
         const locationLabel = document.createElement('p');
         locationLabel.className = 'saint-location';
@@ -538,7 +600,7 @@ async function initMap() {
                 placements: group.placements,
             };
         });
-        return { saint, feast: parseFeastDay(saint.feastDay), markers };
+        return { saint, feast: parseFeastDay(saint.sourceFeastDay), markers };
     });
 
     const saintMarkersById = new Map(entries.map(({ saint, markers }) => [saint.id, markers]));
@@ -598,7 +660,7 @@ async function initMap() {
         if (matchingEntries.length === 0) {
             const empty = document.createElement('li');
             empty.className = 'saint-search-empty';
-            empty.textContent = 'No saints found in this date range.';
+            empty.textContent = t('filter.empty');
             saintsList.appendChild(empty);
         }
 
@@ -660,8 +722,8 @@ async function initMap() {
         if (nearbyFindButton) {
             nearbyFindButton.disabled = isBusy;
             nearbyFindButton.textContent = isBusy
-                ? 'Finding saint-associated locations near you...'
-                : `Find saint-associated locations near me (within ${NEARBY_RADIUS_KM} km)`;
+                ? t('nearby.finding')
+                : t('nearby.find', { km: NEARBY_RADIUS_KM });
         }
         if (nearbyDiscoverySection) {
             nearbyDiscoverySection.setAttribute('aria-busy', String(isBusy));
@@ -708,7 +770,7 @@ async function initMap() {
 
             const distanceSpan = document.createElement('span');
             distanceSpan.className = 'nearby-result-distance';
-            distanceSpan.textContent = `Approx. ${formatApproxDistance(distanceKm)} away`;
+            distanceSpan.textContent = t('nearby.away', { distance: formatApproxDistance(distanceKm) });
 
             item.append(nameSpan, labelSpan, distanceSpan);
 
@@ -742,7 +804,7 @@ async function initMap() {
             userLocationMarker = new AdvancedMarkerElement({
                 map,
                 position: userPosition,
-                title: 'Your location',
+                title: t('nearby.yourLocation'),
                 content: markerElement,
             });
             return;
@@ -780,19 +842,19 @@ async function initMap() {
 
     function getGeolocationErrorMessage(error) {
         if (!error) {
-            return 'We could not read your location. Please try again.';
+            return t('nearby.errorGeneric');
         }
 
         if (error.code === error.PERMISSION_DENIED) {
-            return 'Location access was denied. Allow location in your browser and try again.';
+            return t('nearby.errorDenied');
         }
         if (error.code === error.POSITION_UNAVAILABLE) {
-            return 'Your location is currently unavailable. Check device location settings and try again.';
+            return t('nearby.errorUnavailable');
         }
         if (error.code === error.TIMEOUT) {
-            return 'Location lookup timed out. Please try again in a clearer-signal area.';
+            return t('nearby.errorTimeout');
         }
-        return 'We could not read your location. Please try again.';
+        return t('nearby.errorGeneric');
     }
 
     function initNearbyDiscovery() {
@@ -800,7 +862,7 @@ async function initMap() {
             return;
         }
 
-        nearbyFindButton.textContent = `Find saint-associated locations near me (within ${NEARBY_RADIUS_KM} km)`;
+        nearbyFindButton.textContent = t('nearby.find', { km: NEARBY_RADIUS_KM });
 
         nearbyFindButton.addEventListener('click', () => {
             if (isLocatingNearby) {
@@ -808,12 +870,12 @@ async function initMap() {
             }
 
             if (!navigator.geolocation) {
-                setNearbyStatus('Your browser does not support location lookup. You can still browse saints by map, date, or name.');
+                setNearbyStatus(t('nearby.unsupported'));
                 return;
             }
 
             setNearbyBusy(true);
-            setNearbyStatus('Requesting your location for an in-browser nearby lookup...');
+            setNearbyStatus(t('nearby.requesting'));
 
             navigator.geolocation.getCurrentPosition(
                 (position) => {
@@ -828,11 +890,9 @@ async function initMap() {
                     renderNearbyResults(nearbyMatches);
 
                     if (nearbyMatches.length === 0) {
-                        setNearbyStatus(`No saint-associated locations were found within ${NEARBY_RADIUS_KM} km of your location.`);
+                        setNearbyStatus(t('nearby.none', { km: NEARBY_RADIUS_KM }));
                     } else {
-                        setNearbyStatus(
-                            `Found ${nearbyMatches.length} saint-associated location${nearbyMatches.length === 1 ? '' : 's'} within ${NEARBY_RADIUS_KM} km of your location.`
-                        );
+                        setNearbyStatus(t('nearby.found', { count: nearbyMatches.length, km: NEARBY_RADIUS_KM }));
                     }
 
                     setNearbyBusy(false);
@@ -888,7 +948,7 @@ async function initMap() {
             if (a.feast.day !== b.feast.day) {
                 return a.feast.day - b.feast.day;
             }
-            return a.saint.name.localeCompare(b.saint.name);
+            return a.saint.name.localeCompare(b.saint.name, CURRENT_LANGUAGE);
         });
 
     const feastEntriesByDay = fixedFeastEntries.reduce((daysMap, entry) => {
@@ -905,7 +965,7 @@ async function initMap() {
     let selectedCalendarDay = null;
 
     function formatMonthDay(month, day) {
-        return `${MONTH_NAMES[month]} ${day}`;
+        return formatLocalizedMonthDay(month, day);
     }
 
     function getCalendarDayEntries(month, day) {
@@ -924,7 +984,7 @@ async function initMap() {
         calendarResultsList.innerHTML = '';
 
         if (selectedCalendarDay === null) {
-            calendarResultsSummary.textContent = 'Choose a highlighted day to list saints and their associated map location(s).';
+            calendarResultsSummary.textContent = t('calendar.chooseDay');
             return;
         }
 
@@ -932,11 +992,11 @@ async function initMap() {
         const selectedLabel = formatMonthDay(currentCalendarMonth, selectedCalendarDay);
 
         if (selectedEntries.length === 0) {
-            calendarResultsSummary.textContent = `No fixed-date feast entries are listed for ${selectedLabel}.`;
+            calendarResultsSummary.textContent = t('calendar.noEntriesOn', { date: selectedLabel });
             return;
         }
 
-        calendarResultsSummary.textContent = `${selectedEntries.length} saint${selectedEntries.length === 1 ? '' : 's'} on ${selectedLabel}. Select a saint to open associated map location details.`;
+        calendarResultsSummary.textContent = t('calendar.saintsOn', { count: selectedEntries.length, date: selectedLabel });
 
         selectedEntries.forEach(({ saint, markers }) => {
             const item = document.createElement('li');
@@ -957,13 +1017,19 @@ async function initMap() {
             const locationSpan = document.createElement('span');
             locationSpan.className = 'calendar-result-location';
             const locationLabels = getUniqueLocationLabels(markers);
-            locationSpan.textContent = locationLabels.length === 1
-                ? `Associated map location: ${locationLabels[0]}`
-                : `Associated map locations: ${locationLabels.join(' • ')}`;
+            locationSpan.textContent = t('calendar.locations', {
+                count: locationLabels.length,
+                labels: locationLabels.join(' • '),
+            });
 
             button.setAttribute(
                 'aria-label',
-                `${saint.name}, ${saint.title}, feast day ${saint.feastDay}. Show ${locationLabels.length} associated map location${locationLabels.length === 1 ? '' : 's'}.`
+                t('calendar.resultLabel', {
+                    name: saint.name,
+                    title: saint.title,
+                    feastDay: saint.feastDay,
+                    count: locationLabels.length,
+                })
             );
             button.append(nameSpan, metaSpan, locationSpan);
             button.addEventListener('click', () => {
@@ -1020,7 +1086,7 @@ async function initMap() {
         }
 
         calendarGrid.innerHTML = '';
-        calendarMonthLabel.textContent = `${MONTH_NAMES[currentCalendarMonth]} ${currentCalendarYear}`;
+        calendarMonthLabel.textContent = `${CURRENT_LOCALE.monthNames[currentCalendarMonth]} ${currentCalendarYear}`;
 
         const firstWeekday = new Date(currentCalendarYear, currentCalendarMonth, 1).getDay();
         const daysInMonth = currentCalendarMonth === 1 && isLeapYear(currentCalendarYear)
@@ -1058,7 +1124,11 @@ async function initMap() {
                     button.setAttribute('aria-pressed', String(selectedCalendarDay === day));
                     button.setAttribute(
                         'aria-label',
-                        `${formatMonthDay(currentCalendarMonth, day)}, ${WEEKDAY_NAMES[(startIndex + weekdayIndex) % 7]}, ${dayEntries.length} saint${dayEntries.length === 1 ? '' : 's'}`
+                        t('calendar.dayLabel', {
+                            date: formatMonthDay(currentCalendarMonth, day),
+                            weekday: CURRENT_LOCALE.weekdayNames[(startIndex + weekdayIndex) % 7],
+                            count: dayEntries.length,
+                        })
                     );
                     if (selectedCalendarDay === day) {
                         button.classList.add('is-selected');
@@ -1070,7 +1140,7 @@ async function initMap() {
 
                     const countSpan = document.createElement('span');
                     countSpan.className = 'feast-calendar-day-count';
-                    countSpan.textContent = `${dayEntries.length} saint${dayEntries.length === 1 ? '' : 's'}`;
+                    countSpan.textContent = t('calendar.dayCount', { count: dayEntries.length });
 
                     button.append(numberSpan, countSpan);
                     button.addEventListener('click', () => selectCalendarDay(day));
@@ -1093,8 +1163,12 @@ async function initMap() {
 
         if (updateStatus) {
             calendarStatus.textContent = feastDayCount === 0
-                ? `No fixed-date feast entries are listed in ${MONTH_NAMES[currentCalendarMonth]}.`
-                : `${MONTH_NAMES[currentCalendarMonth]} has ${feastDayCount} feast day${feastDayCount === 1 ? '' : 's'} covering ${feastSaintCount} saint${feastSaintCount === 1 ? '' : 's'}.`;
+                ? t('calendar.noEntriesInMonth', { month: CURRENT_LOCALE.monthNames[currentCalendarMonth] })
+                : t('calendar.monthSummary', {
+                    month: CURRENT_LOCALE.monthNames[currentCalendarMonth],
+                    days: feastDayCount,
+                    saints: feastSaintCount,
+                });
         }
     }
 
@@ -1201,16 +1275,23 @@ async function initMap() {
 
         // Sorted once up-front so the popup always lists saints alphabetically,
         // by given name rather than by any leading title/prefix (e.g. "St.", "Apostle").
-        const alphabeticalEntries = [...entries].sort((a, b) =>
-            getNameSortKey(a.saint.name).localeCompare(getNameSortKey(b.saint.name))
-        );
+        const namePrefixes = NAME_TITLE_PREFIXES_BY_LANGUAGE[CURRENT_LANGUAGE] || NAME_TITLE_PREFIXES;
+        const alphabeticalEntries = [...entries]
+            .map((entry) => ({
+                ...entry,
+                sortKey: getNameSortKey(entry.saint.name, namePrefixes),
+                // Matches both the displayed and the original English name,
+                // ignoring case and accents.
+                searchText: normalizeForSearch(`${entry.saint.name} ${entry.saint.sourceName}`),
+            }))
+            .sort((a, b) => a.sortKey.localeCompare(b.sortKey, CURRENT_LANGUAGE));
 
         let lastFocusedElement = null;
 
         function renderResults() {
-            const term = searchInput.value.trim().toLowerCase();
+            const term = normalizeForSearch(searchInput.value.trim());
             const filtered = term.length > 0
-                ? alphabeticalEntries.filter(({ saint }) => saint.name.toLowerCase().includes(term))
+                ? alphabeticalEntries.filter(({ searchText }) => searchText.includes(term))
                 : alphabeticalEntries;
 
             resultsList.innerHTML = '';
@@ -1218,14 +1299,15 @@ async function initMap() {
             if (filtered.length === 0) {
                 const empty = document.createElement('li');
                 empty.className = 'saint-search-empty';
-                empty.textContent = 'No saints found.';
+                empty.textContent = t('search.empty');
                 resultsList.appendChild(empty);
                 return;
             }
 
             let currentLetter = null;
-            filtered.forEach(({ saint, markers }) => {
-                const letter = getNameSortKey(saint.name).charAt(0).toUpperCase();
+            filtered.forEach(({ saint, markers, sortKey }) => {
+                // Strip accents so e.g. "Ά" and "Α" share one heading.
+                const letter = sortKey.charAt(0).normalize('NFD').replace(/\p{M}/gu, '').toLocaleUpperCase(CURRENT_LANGUAGE);
                 if (letter !== currentLetter) {
                     currentLetter = letter;
                     const heading = document.createElement('li');
@@ -1392,7 +1474,7 @@ async function loadGoogleMapsAPI() {
 
     const script = document.createElement('script');
     script.type = 'text/javascript';
-    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&loading=async&callback=initMap`;
+    script.src = `https://maps.googleapis.com/maps/api/js?key=${apiKey}&language=${CURRENT_LANGUAGE}&loading=async&callback=initMap`;
     script.async = true;
     script.defer = true;
     document.head.appendChild(script);

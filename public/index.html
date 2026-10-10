@@ -11,6 +11,9 @@
   <meta name="description" content="Explore an interactive map of Orthodox Christian saints. Browse saints by feast day, search them by name, and discover where each saint was born, lived, or was martyred.">
   <meta name="keywords" content="orthodox saints, saints map, feast days, orthodox church, hagiography, interactive map, all saints, hagioi">
   <link rel="canonical" href="https://hagioi.app/">
+  <link rel="alternate" hreflang="en" href="https://hagioi.app/?lang=en">
+  <link rel="alternate" hreflang="el" href="https://hagioi.app/?lang=el">
+  <link rel="alternate" hreflang="x-default" href="https://hagioi.app/">
   <meta name="robots" content="index, follow">
   <meta name="theme-color" content="#f8f5ef">
 
@@ -73,57 +76,68 @@
       </button>
       <div class="header-title">
         <a href="#home" class="logo">
-          <img src="assets/logo.svg" alt="hagioi logo">
+          <img src="assets/logo.svg" alt="hagioi logo" data-i18n-attr="alt:header.logoAlt">
         </a>
         <h1>Hagioi</h1>
       </div>
+      <nav class="language-selector" aria-label="Language" data-i18n-attr="aria-label:language.label">
+        <a class="language-option" href="?lang=en" hreflang="en" lang="en" title="English" aria-label="English">
+          <img src="assets/flags/gb.svg" alt="" width="24" height="12">
+        </a>
+        <a class="language-option" href="?lang=el" hreflang="el" lang="el" title="Ελληνικά" aria-label="Ελληνικά">
+          <img src="assets/flags/gr.svg" alt="" width="18" height="12">
+        </a>
+      </nav>
     </div>
   </header>
   
   <main>
     <noscript>
-      <p>Hagioi is an interactive map of Orthodox Christian saints, showing where each saint was born, lived,
+      <p lang="en">Hagioi is an interactive map of Orthodox Christian saints, showing where each saint was born, lived,
         or was martyred, along with their feast day, icon, and a short biography. JavaScript is required to
         view the map.</p>
+      <p lang="el">Το Hagioi είναι ένας διαδραστικός χάρτης των Ορθοδόξων Αγίων, που δείχνει πού γεννήθηκε, έζησε ή
+        μαρτύρησε κάθε άγιος, μαζί με την ημέρα της εορτής του, την εικόνα του και ένα σύντομο βιογραφικό. Για την
+        προβολή του χάρτη απαιτείται JavaScript.</p>
     </noscript>
     <div id="app-layout">
       <div id="map"></div>
-      <aside id="saints-panel" aria-label="Feast Days" aria-hidden="true" inert>
+      <aside id="saints-panel" aria-label="Feast Days" data-i18n-attr="aria-label:panel.title" aria-hidden="true" inert>
         <div class="saints-panel-header">
-          <span>Feast Days</span>
+          <span data-i18n="panel.title">Feast Days</span>
         </div>
         <div id="saints-panel-content">
           <div id="saint-search-group" class="saint-search-group">
-            <button type="button" id="saint-search-open" class="saint-search-link" aria-haspopup="dialog" aria-controls="saint-search-modal" aria-expanded="false">
+            <button type="button" id="saint-search-open" class="saint-search-link" aria-haspopup="dialog" aria-controls="saint-search-modal" aria-expanded="false" data-i18n="search.open">
               Search saints by name&hellip;
             </button>
           </div>
           <div id="feast-calendar-group" class="saint-search-group">
-            <button type="button" id="feast-calendar-open" class="saint-search-link" aria-haspopup="dialog" aria-controls="feast-calendar-modal" aria-expanded="false">
+            <button type="button" id="feast-calendar-open" class="saint-search-link" aria-haspopup="dialog" aria-controls="feast-calendar-modal" aria-expanded="false" data-i18n="calendar.open">
               Browse monthly calendar&hellip;
             </button>
           </div>
           <div id="date-filter-group" class="saint-search-group">
-            <button type="button" id="date-filter-open" class="saint-search-link" aria-haspopup="dialog" aria-controls="date-filter-modal" aria-expanded="false">
+            <button type="button" id="date-filter-open" class="saint-search-link" aria-haspopup="dialog" aria-controls="date-filter-modal" aria-expanded="false" data-i18n="filter.open">
               Filter by date range&hellip;
             </button>
           </div>
           <section id="nearby-discovery" class="nearby-discovery" aria-labelledby="nearby-discovery-heading">
-            <h2 id="nearby-discovery-heading" class="nearby-discovery-heading">Near me</h2>
+            <h2 id="nearby-discovery-heading" class="nearby-discovery-heading" data-i18n="nearby.heading">Near me</h2>
             <button type="button" id="nearby-find-button" class="nearby-find-button" aria-describedby="nearby-note nearby-status">
               Find saint-associated locations near me (within 100 km)
             </button>
-            <p id="nearby-status" class="nearby-status" role="status" aria-live="polite">
+            <p id="nearby-status" class="nearby-status" role="status" aria-live="polite" data-i18n="nearby.intro">
               Choose “Find saint-associated locations near me” to run an on-device lookup.
             </p>
-            <p id="nearby-note" class="nearby-note">
+            <p id="nearby-note" class="nearby-note" data-i18n="nearby.note">
               Privacy &amp; accuracy: your location is used only in your browser for this lookup. Results show historical saint-associated places, not verified present-day pilgrimage destinations.
             </p>
-            <ul id="nearby-results" class="nearby-results" aria-label="Saint-associated locations near you"></ul>
+            <ul id="nearby-results" class="nearby-results" aria-label="Saint-associated locations near you" data-i18n-attr="aria-label:nearby.resultsLabel"></ul>
           </section>
         </div>
         <div id="about-group" class="saint-search-group about-group">
-          <button type="button" id="about-open" class="saint-search-link" aria-haspopup="dialog" aria-controls="about-modal" aria-expanded="false">
+          <button type="button" id="about-open" class="saint-search-link" aria-haspopup="dialog" aria-controls="about-modal" aria-expanded="false" data-i18n="about.open">
             About Hagioi&hellip;
           </button>
         </div>
@@ -135,10 +149,10 @@
     <div class="saint-search-backdrop" data-saint-search-close></div>
     <div class="saint-search-dialog" role="dialog" aria-modal="true" aria-labelledby="saint-search-title">
       <div class="saint-search-dialog-header">
-        <h2 id="saint-search-title">Search saints by name</h2>
-        <button type="button" class="saint-search-close" data-saint-search-close aria-label="Close search">&times;</button>
+        <h2 id="saint-search-title" data-i18n="search.title">Search saints by name</h2>
+        <button type="button" class="saint-search-close" data-saint-search-close aria-label="Close search" data-i18n-attr="aria-label:search.close">&times;</button>
       </div>
-      <input type="search" id="saint-search-input" class="saint-search-text" placeholder="Type a name…" autocomplete="off" aria-label="Search a saint by name">
+      <input type="search" id="saint-search-input" class="saint-search-text" placeholder="Type a name…" autocomplete="off" aria-label="Search a saint by name" data-i18n-attr="placeholder:search.placeholder;aria-label:search.inputLabel">
       <ul id="saint-search-results" class="saint-search-results"></ul>
     </div>
   </div>
@@ -147,22 +161,22 @@
     <div class="saint-search-backdrop" data-date-filter-close></div>
     <div class="saint-search-dialog" role="dialog" aria-modal="true" aria-labelledby="date-filter-title">
       <div class="saint-search-dialog-header">
-        <h2 id="date-filter-title">Filter by date range</h2>
-        <button type="button" class="saint-search-close" data-date-filter-close aria-label="Close date range filter">&times;</button>
+        <h2 id="date-filter-title" data-i18n="filter.title">Filter by date range</h2>
+        <button type="button" class="saint-search-close" data-date-filter-close aria-label="Close date range filter" data-i18n-attr="aria-label:filter.close">&times;</button>
       </div>
       <div id="date-filter">
         <div class="date-filter-group">
-          <label for="from-month">From</label>
-          <select id="from-month" aria-label="From month"></select>
-          <select id="from-day" aria-label="From day"></select>
+          <label for="from-month" data-i18n="filter.from">From</label>
+          <select id="from-month" aria-label="From month" data-i18n-attr="aria-label:filter.fromMonth"></select>
+          <select id="from-day" aria-label="From day" data-i18n-attr="aria-label:filter.fromDay"></select>
         </div>
         <div class="date-filter-group">
-          <label for="to-month">To</label>
-          <select id="to-month" aria-label="To month"></select>
-          <select id="to-day" aria-label="To day"></select>
+          <label for="to-month" data-i18n="filter.to">To</label>
+          <select id="to-month" aria-label="To month" data-i18n-attr="aria-label:filter.toMonth"></select>
+          <select id="to-day" aria-label="To day" data-i18n-attr="aria-label:filter.toDay"></select>
         </div>
       </div>
-      <ul id="saints-list" class="saint-search-results" aria-label="Saints in the selected date range"></ul>
+      <ul id="saints-list" class="saint-search-results" aria-label="Saints in the selected date range" data-i18n-attr="aria-label:filter.listLabel"></ul>
     </div>
   </div>
 
@@ -170,18 +184,18 @@
     <div class="saint-search-backdrop" data-feast-calendar-close></div>
     <div class="saint-search-dialog feast-calendar-dialog" role="dialog" aria-modal="true" aria-labelledby="feast-calendar-title">
       <div class="saint-search-dialog-header">
-        <h2 id="feast-calendar-title">Monthly calendar</h2>
-        <button type="button" class="saint-search-close" data-feast-calendar-close aria-label="Close monthly calendar">&times;</button>
+        <h2 id="feast-calendar-title" data-i18n="calendar.title">Monthly calendar</h2>
+        <button type="button" class="saint-search-close" data-feast-calendar-close aria-label="Close monthly calendar" data-i18n-attr="aria-label:calendar.close">&times;</button>
       </div>
       <section id="feast-calendar" class="feast-calendar" aria-labelledby="feast-calendar-title">
         <div class="feast-calendar-header">
-          <div class="feast-calendar-nav" role="group" aria-label="Calendar month navigation">
-            <button type="button" id="calendar-prev-month" class="feast-calendar-nav-button" aria-label="Show previous month">&larr;</button>
+          <div class="feast-calendar-nav" role="group" aria-label="Calendar month navigation" data-i18n-attr="aria-label:calendar.nav">
+            <button type="button" id="calendar-prev-month" class="feast-calendar-nav-button" aria-label="Show previous month" data-i18n-attr="aria-label:calendar.prev">&larr;</button>
             <p id="calendar-month-label" class="feast-calendar-month" aria-live="polite" aria-atomic="true"></p>
-            <button type="button" id="calendar-next-month" class="feast-calendar-nav-button" aria-label="Show next month">&rarr;</button>
+            <button type="button" id="calendar-next-month" class="feast-calendar-nav-button" aria-label="Show next month" data-i18n-attr="aria-label:calendar.next">&rarr;</button>
           </div>
         </div>
-        <p class="feast-calendar-note">
+        <p class="feast-calendar-note" data-i18n="calendar.note">
           Select a highlighted day to see saints for that feast and open their associated map location(s).
         </p>
         <p id="calendar-status" class="feast-calendar-status" role="status" aria-live="polite"></p>
@@ -200,8 +214,8 @@
           <tbody id="calendar-grid"></tbody>
         </table>
         <div id="calendar-results" class="calendar-results" aria-labelledby="calendar-results-heading">
-          <h3 id="calendar-results-heading" class="calendar-results-heading">Selected day</h3>
-          <p id="calendar-results-summary" class="calendar-results-summary" role="status" aria-live="polite">
+          <h3 id="calendar-results-heading" class="calendar-results-heading" data-i18n="calendar.selectedDay">Selected day</h3>
+          <p id="calendar-results-summary" class="calendar-results-summary" role="status" aria-live="polite" data-i18n="calendar.chooseDay">
             Choose a highlighted day to list saints and their associated map location(s).
           </p>
           <ul id="calendar-results-list" class="calendar-results-list"></ul>
@@ -214,26 +228,26 @@
     <div class="saint-search-backdrop" data-about-close></div>
     <div class="saint-search-dialog about-dialog" role="dialog" aria-modal="true" aria-labelledby="about-title">
       <div class="saint-search-dialog-header">
-        <h2 id="about-title">About Hagioi</h2>
-        <button type="button" class="saint-search-close" data-about-close aria-label="Close about">&times;</button>
+        <h2 id="about-title" data-i18n="about.title">About Hagioi</h2>
+        <button type="button" class="saint-search-close" data-about-close aria-label="Close about" data-i18n-attr="aria-label:about.close">&times;</button>
       </div>
       <div class="about-section-content">
-        <p>Hagioi is an interactive map of Orthodox Christian saints, showing where each saint was born, lived, or was martyred.</p>
-        <p>Use the Feast Days panel to open the monthly feast calendar, filter saints by date range, search by name, or optionally find historical saint-associated locations near you.</p>
-        <p>The near-me lookup is opt-in and runs only in your browser; it does not verify present-day shrines, churches, or pilgrimage facilities.</p>
-        <p>Built with ❤️ by <a href="http://thekyria.com" target="_blank" rel="noopener noreferrer">Theodoros Kyriakidis</a>.</p>
+        <p data-i18n="about.p1">Hagioi is an interactive map of Orthodox Christian saints, showing where each saint was born, lived, or was martyred.</p>
+        <p data-i18n="about.p2">Use the Feast Days panel to open the monthly feast calendar, filter saints by date range, search by name, or optionally find historical saint-associated locations near you.</p>
+        <p data-i18n="about.p3">The near-me lookup is opt-in and runs only in your browser; it does not verify present-day shrines, churches, or pilgrimage facilities.</p>
+        <p><span data-i18n="about.builtBy">Built with ❤️ by </span><a href="http://thekyria.com" target="_blank" rel="noopener noreferrer">Theodoros Kyriakidis</a>.</p>
       </div>
     </div>
   </div>
 
   <footer class="site-footer">
     <div class="container footer-container">
-      <span>© 2025 hagioi — All rights reserved.</span>
+      <span data-i18n="footer.rights">© 2025 hagioi — All rights reserved.</span>
       <span class="footer-separator" aria-hidden="true">•</span>
-      <span>Built with ❤️ by <a href="http://thekyria.com" target="_blank" rel="noopener noreferrer">Me</a></span>
+      <span><span data-i18n="footer.builtBy">Built with ❤️ by </span><a href="http://thekyria.com" target="_blank" rel="noopener noreferrer" data-i18n="footer.me">Me</a></span>
       <span class="footer-separator" aria-hidden="true">•</span>
       <details class="support-links">
-        <summary>Support this project</summary>
+        <summary data-i18n="footer.support">Support this project</summary>
         <div class="support-dropdown">
           <a href="https://buymeacoffee.com/thekyria" target="_blank" rel="noopener noreferrer">Buy Me a Coffee</a>
           <a href="https://ko-fi.com/thekyria" target="_blank" rel="noopener noreferrer">Ko-fi</a>
@@ -246,6 +260,7 @@
     </div>
   </footer>
   
+  <script src="i18n.js" defer></script>
   <script src="script.js" defer></script>
 </body>
 
