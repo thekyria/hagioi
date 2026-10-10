@@ -463,6 +463,7 @@ async function initMap() {
     let isLocatingNearby = false;
     let userLocationMarker = null;
     let closeFeastCalendarModal = () => { };
+    let closeDateFilterModal = () => { };
 
     if (mapElement) {
         mapElement.tabIndex = -1;
@@ -476,10 +477,18 @@ async function initMap() {
         const toCode = dayCode(Number(toMonthSelect.value), Number(toDaySelect.value));
         const matchingEntries = entries.filter(({ feast }) => feast && isInRange(fromCode, toCode, dayCode(feast.month, feast.day)));
 
+        if (matchingEntries.length === 0) {
+            const empty = document.createElement('li');
+            empty.className = 'saint-search-empty';
+            empty.textContent = 'No saints found in this date range.';
+            saintsList.appendChild(empty);
+        }
+
         matchingEntries.forEach(({ saint, markers }) => {
             markers.forEach(({ marker }) => visibleMarkers.add(marker));
 
             const item = document.createElement('li');
+            item.className = 'saint-search-result';
 
             const nameSpan = document.createElement('span');
             nameSpan.className = 'saint-list-name';
@@ -493,7 +502,10 @@ async function initMap() {
             item.tabIndex = 0;
             item.setAttribute('role', 'button');
 
-            const activate = () => selectSaint(saint, markers);
+            const activate = () => {
+                selectSaint(saint, markers);
+                closeDateFilterModal();
+            };
 
             item.addEventListener('click', activate);
             item.addEventListener('keydown', (e) => {
@@ -1170,8 +1182,77 @@ async function initMap() {
         searchInput.addEventListener('input', renderResults);
     }
 
+    // "Filter by date range" popup: the From/To selects and the list of
+    // matching saints. The selected range also keeps dimming out-of-range
+    // map markers after the popup is closed.
+    function initDateFilterModal() {
+        const openButton = document.getElementById('date-filter-open');
+        const modal = document.getElementById('date-filter-modal');
+        if (!openButton || !modal) {
+            return;
+        }
+
+        let lastFocusedElement = null;
+
+        function openModal() {
+            lastFocusedElement = document.activeElement;
+            modal.hidden = false;
+            openButton.setAttribute('aria-expanded', 'true');
+            fromMonthSelect.focus();
+            document.addEventListener('keydown', handleKeydown);
+        }
+
+        function closeModal() {
+            if (modal.hidden) {
+                return;
+            }
+            modal.hidden = true;
+            openButton.setAttribute('aria-expanded', 'false');
+            document.removeEventListener('keydown', handleKeydown);
+            if (lastFocusedElement instanceof HTMLElement) {
+                lastFocusedElement.focus();
+            }
+        }
+
+        function handleKeydown(e) {
+            if (e.key === 'Escape') {
+                e.preventDefault();
+                closeModal();
+                return;
+            }
+
+            if (e.key !== 'Tab') {
+                return;
+            }
+
+            const focusableElements = Array.from(
+                modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')
+            ).filter((element) => !element.hasAttribute('disabled'));
+            if (focusableElements.length === 0) {
+                return;
+            }
+
+            const firstElement = focusableElements[0];
+            const lastElement = focusableElements[focusableElements.length - 1];
+            if (e.shiftKey && document.activeElement === firstElement) {
+                e.preventDefault();
+                lastElement.focus();
+            } else if (!e.shiftKey && document.activeElement === lastElement) {
+                e.preventDefault();
+                firstElement.focus();
+            }
+        }
+
+        closeDateFilterModal = closeModal;
+        openButton.addEventListener('click', openModal);
+        modal.querySelectorAll('[data-date-filter-close]').forEach((el) => {
+            el.addEventListener('click', closeModal);
+        });
+    }
+
     initDateFilterControls();
     applyFilter();
+    initDateFilterModal();
     initFeastCalendar();
     initFeastCalendarModal();
     initSaintSearchModal();

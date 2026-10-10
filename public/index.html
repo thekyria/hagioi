@@ -103,6 +103,11 @@
               Browse monthly calendar&hellip;
             </button>
           </div>
+          <div id="date-filter-group" class="saint-search-group">
+            <button type="button" id="date-filter-open" class="saint-search-link" aria-haspopup="dialog" aria-controls="date-filter-modal" aria-expanded="false">
+              Filter by date range&hellip;
+            </button>
+          </div>
           <section id="nearby-discovery" class="nearby-discovery" aria-labelledby="nearby-discovery-heading">
             <h2 id="nearby-discovery-heading" class="nearby-discovery-heading">Near me</h2>
             <button type="button" id="nearby-find-button" class="nearby-find-button" aria-describedby="nearby-note nearby-status">
@@ -116,25 +121,12 @@
             </p>
             <ul id="nearby-results" class="nearby-results" aria-label="Saint-associated locations near you"></ul>
           </section>
-          <div id="date-filter">
-            <div class="date-filter-group">
-              <label for="from-month">From</label>
-              <select id="from-month" aria-label="From month"></select>
-              <select id="from-day" aria-label="From day"></select>
-            </div>
-            <div class="date-filter-group">
-              <label for="to-month">To</label>
-              <select id="to-month" aria-label="To month"></select>
-              <select id="to-day" aria-label="To day"></select>
-            </div>
-          </div>
-          <ul id="saints-list"></ul>
         </div>
         <section class="about-section" aria-labelledby="about-heading">
           <h2 id="about-heading" class="about-section-header">About Hagioi</h2>
           <div class="about-section-content">
             <p>Hagioi is an interactive map of Orthodox Christian saints, showing where each saint was born, lived, or was martyred.</p>
-            <p>Use the Feast Days panel to open the monthly feast calendar, filter saints by date, search by name, or optionally find historical saint-associated locations near you.</p>
+            <p>Use the Feast Days panel to open the monthly feast calendar, filter saints by date range, search by name, or optionally find historical saint-associated locations near you.</p>
             <p>The near-me lookup is opt-in and runs only in your browser; it does not verify present-day shrines, churches, or pilgrimage facilities.</p>
             <p>Built with ❤️ by <a href="http://thekyria.com" target="_blank" rel="noopener noreferrer">Theodoros Kyriakidis</a>.</p>
           </div>
@@ -152,6 +144,29 @@
       </div>
       <input type="search" id="saint-search-input" class="saint-search-text" placeholder="Type a name…" autocomplete="off" aria-label="Search a saint by name">
       <ul id="saint-search-results" class="saint-search-results"></ul>
+    </div>
+  </div>
+
+  <div id="date-filter-modal" class="saint-search-modal" hidden>
+    <div class="saint-search-backdrop" data-date-filter-close></div>
+    <div class="saint-search-dialog" role="dialog" aria-modal="true" aria-labelledby="date-filter-title">
+      <div class="saint-search-dialog-header">
+        <h2 id="date-filter-title">Filter by date range</h2>
+        <button type="button" class="saint-search-close" data-date-filter-close aria-label="Close date range filter">&times;</button>
+      </div>
+      <div id="date-filter">
+        <div class="date-filter-group">
+          <label for="from-month">From</label>
+          <select id="from-month" aria-label="From month"></select>
+          <select id="from-day" aria-label="From day"></select>
+        </div>
+        <div class="date-filter-group">
+          <label for="to-month">To</label>
+          <select id="to-month" aria-label="To month"></select>
+          <select id="to-day" aria-label="To day"></select>
+        </div>
+      </div>
+      <ul id="saints-list" class="saint-search-results" aria-label="Saints in the selected date range"></ul>
     </div>
   </div>
 
