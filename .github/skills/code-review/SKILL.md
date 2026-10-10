@@ -1,6 +1,6 @@
 ---
 name: code-review
-description: Reviews pull requests and code changes in the Hagioi repository for design/implementation quality, spelling, factual accuracy of saints.json, and documentation freshness (llms.txt, README.md). Use when reviewing a diff, pull request, or asked to review code changes in this repository.
+description: Reviews pull requests and code changes in the Hagioi repository for design/implementation quality, spelling, factual accuracy of saints.json, and documentation freshness (llms.txt, README.md and its translations). Use when reviewing a diff, pull request, or asked to review code changes in this repository.
 ---
 
 # Code Review
@@ -62,9 +62,19 @@ job is to catch problems before they merge, not to rubber-stamp changes.
      description, confirm `README.md` (and `CONTRIBUTING.md`/`SECURITY.md` where relevant) reflects
      it.
 
+6. **Be sure README translations are kept in sync.**
+   - If `README.md` is changed, confirm every translation (`README.el.md`, `README.it.md`,
+     `README.fr.md`, `README.es.md`, `README.de.md`) is updated with an equivalent, accurate
+     translation of the change. Flag any translation that is missing the update or has drifted from
+     the English content.
+   - If a translation is added or removed, confirm the language switcher at the top of `README.md`
+     and every other translation, and the README entry in `llms.txt`, are updated to match.
+   - Translations are excluded from codespell (`.codespellrc`), so review their spelling and
+     grammar manually.
+
 ## Style
 
 - Be concise and direct in review comments; separate must-fix issues from nit-level suggestions.
 - Cite exact file paths and line numbers when possible.
-- Do not approve changes that fail checks 2–5 above without calling them out explicitly, even if
+- Do not approve changes that fail checks 2–6 above without calling them out explicitly, even if
   the change otherwise looks good.

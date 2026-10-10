@@ -6,7 +6,7 @@ Static frontend (vanilla HTML/CSS/JS), no build step or framework, backed by a c
 
 ## Docs
 
-- [README.md](README.md): project summary and local development setup
+- [README.md](README.md): project summary and local development setup (translations: [Greek](README.el.md), [Italian](README.it.md), [French](README.fr.md), [Spanish](README.es.md), [German](README.de.md))
 - [AGENTS.md](AGENTS.md): data model, runtime conventions, and environment variables for contributors/agents working on this repo
 
 ## Data
