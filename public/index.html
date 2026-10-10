@@ -122,15 +122,11 @@
             <ul id="nearby-results" class="nearby-results" aria-label="Saint-associated locations near you"></ul>
           </section>
         </div>
-        <section class="about-section" aria-labelledby="about-heading">
-          <h2 id="about-heading" class="about-section-header">About Hagioi</h2>
-          <div class="about-section-content">
-            <p>Hagioi is an interactive map of Orthodox Christian saints, showing where each saint was born, lived, or was martyred.</p>
-            <p>Use the Feast Days panel to open the monthly feast calendar, filter saints by date range, search by name, or optionally find historical saint-associated locations near you.</p>
-            <p>The near-me lookup is opt-in and runs only in your browser; it does not verify present-day shrines, churches, or pilgrimage facilities.</p>
-            <p>Built with ❤️ by <a href="http://thekyria.com" target="_blank" rel="noopener noreferrer">Theodoros Kyriakidis</a>.</p>
-          </div>
-        </section>
+        <div id="about-group" class="saint-search-group about-group">
+          <button type="button" id="about-open" class="saint-search-link" aria-haspopup="dialog" aria-controls="about-modal" aria-expanded="false">
+            About Hagioi&hellip;
+          </button>
+        </div>
       </aside>
     </div>
   </main>
@@ -214,6 +210,22 @@
     </div>
   </div>
 
+  <div id="about-modal" class="saint-search-modal" hidden>
+    <div class="saint-search-backdrop" data-about-close></div>
+    <div class="saint-search-dialog about-dialog" role="dialog" aria-modal="true" aria-labelledby="about-title">
+      <div class="saint-search-dialog-header">
+        <h2 id="about-title">About Hagioi</h2>
+        <button type="button" class="saint-search-close" data-about-close aria-label="Close about">&times;</button>
+      </div>
+      <div class="about-section-content">
+        <p>Hagioi is an interactive map of Orthodox Christian saints, showing where each saint was born, lived, or was martyred.</p>
+        <p>Use the Feast Days panel to open the monthly feast calendar, filter saints by date range, search by name, or optionally find historical saint-associated locations near you.</p>
+        <p>The near-me lookup is opt-in and runs only in your browser; it does not verify present-day shrines, churches, or pilgrimage facilities.</p>
+        <p>Built with ❤️ by <a href="http://thekyria.com" target="_blank" rel="noopener noreferrer">Theodoros Kyriakidis</a>.</p>
+      </div>
+    </div>
+  </div>
+
   <footer class="site-footer">
     <div class="container footer-container">
       <span>© 2025 hagioi — All rights reserved.</span>
@@ -229,6 +241,8 @@
           <a href="https://www.patreon.com/c/thekyria" target="_blank" rel="noopener noreferrer">Patreon</a>
         </div>
       </details>
+      <span class="footer-separator footer-version-separator" aria-hidden="true" hidden>•</span>
+      <span id="footer-version" class="footer-version" hidden></span>
     </div>
   </footer>
   

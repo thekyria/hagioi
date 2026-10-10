@@ -502,20 +502,16 @@ main {
     margin-bottom: 2px;
 }
 
-.about-section {
+.about-group {
     flex-shrink: 0;
-    max-height: 40%;
-    overflow-y: auto;
+    margin: 10px 0 0;
     padding-top: 10px;
-    margin-top: 10px;
     border-top: 1px solid #ddd;
 }
 
-.about-section-header {
-    font-size: 16px;
-    font-weight: bold;
-    color: var(--color-blue-dark);
-    margin: 0 0 8px;
+.about-dialog {
+    text-align: left;
+    overflow-y: auto;
 }
 
 .about-section-content p {
@@ -698,10 +694,6 @@ main {
         gap: 8px;
     }
 
-    .about-section-header {
-        font-size: 14px;
-    }
-
     #saints-panel {
         padding: 12px;
     }
@@ -782,6 +774,14 @@ main {
 .support-links summary:focus-visible {
     outline: 2px solid var(--color-gold);
     outline-offset: 2px;
+}
+
+.footer-version {
+    opacity: 0.85;
+}
+
+.footer-version-commit {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
 }
 
 .support-links {
