@@ -1,5 +1,7 @@
 # hagioi
 
+**English** | [Ελληνικά](README.el.md) | [Italiano](README.it.md) | [Français](README.fr.md) | [Español](README.es.md) | [Deutsch](README.de.md)
+
 An interactive map of Orthodox Christian saints. Click a marker to see the saint's icon, feast day, and a short biography.
 
 Built as a static frontend (vanilla HTML/CSS/JS) with a couple of small Vercel serverless functions — no build step, no framework, no database. Saint data lives in [public/data/saints.json](public/data/saints.json).
