@@ -4,7 +4,7 @@
 
 Un mapa interactivo de los santos cristianos ortodoxos. Haz clic en un marcador para ver el icono del santo, el día de su fiesta y una breve biografía.
 
-Está construido como un frontend estático (HTML/CSS/JS puro) con un par de pequeñas funciones serverless de Vercel — sin paso de compilación, sin framework, sin base de datos. Los datos de los santos están en [public/data/saints.json](public/data/saints.json).
+Está construido como un frontend estático (HTML/CSS/JS puro) con un par de pequeñas funciones serverless de Vercel — sin paso de compilación, sin framework, sin base de datos. Los datos de los santos están en [public/data/saints.json](public/data/saints.json). El sitio está disponible en inglés y en griego (selector de idioma en la cabecera); las traducciones al griego de los santos están en [public/data/saints.el.json](public/data/saints.el.json).
 
 ## Desarrollo local
 

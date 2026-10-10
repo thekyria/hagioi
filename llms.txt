@@ -12,7 +12,12 @@ Static frontend (vanilla HTML/CSS/JS), no build step or framework, backed by a c
 ## Data
 
 - [public/data/saints.json](public/data/saints.json): the full list of saints, each with name, feast day, title, icon filename, bio, and one or more `{ label, lat, lng }` locations
+- [public/data/saints.el.json](public/data/saints.el.json): Greek translations of saints.json (name, title, bio, location labels), keyed by saint id
 - [public/assets/icons/](public/assets/icons/): saint icon images referenced by filename from saints.json, falling back to [public/assets/avatar-placeholder.svg](public/assets/avatar-placeholder.svg) when missing
+
+## Localization
+
+- [public/i18n.js](public/i18n.js): UI strings for English and Greek, language detection (`?lang=`, `/en/` or `/el/`, saved choice, browser language) and translation helpers; language-specific entry pages provide crawler metadata and the header has a flag-based selector
 
 ## API
 

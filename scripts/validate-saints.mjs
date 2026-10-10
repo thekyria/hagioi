@@ -136,6 +136,83 @@ if (!existsSync(ICONS_DIR)) {
   }
 }
 
+// Translation overlays (public/data/saints.<lang>.json): objects keyed by saint
+// id with translated name/title/bio and location labels (matched by index).
+// They must stay in sync with saints.json so every saint is fully translated.
+const TRANSLATION_FILE_REGEX = /^saints\.([a-z]{2})\.json$/;
+const REQUIRED_TRANSLATION_FILES = ['saints.el.json'];
+const TRANSLATION_STRING_FIELDS = ['name', 'title', 'bio'];
+const TRANSLATION_ALLOWED_FIELDS = new Set([...TRANSLATION_STRING_FIELDS, 'locations', 'feastDay']);
+const saintsById = new Map(
+  saints.filter((saint) => saint && isNonEmptyString(saint.id)).map((saint) => [saint.id, saint])
+);
+const translationFiles = [...new Set([
+  ...REQUIRED_TRANSLATION_FILES,
+  ...readdirSync(path.dirname(SAINTS_PATH)).filter((name) => TRANSLATION_FILE_REGEX.test(name)),
+])];
+
+for (const fileName of translationFiles) {
+  const filePath = path.join(path.dirname(SAINTS_PATH), fileName);
+  let translations;
+  try {
+    translations = JSON.parse(readFileSync(filePath, 'utf8'));
+  } catch (error) {
+    errors.push(`${fileName}: failed to read or parse: ${error.message}`);
+    continue;
+  }
+
+  if (!translations || typeof translations !== 'object' || Array.isArray(translations)) {
+    errors.push(`${fileName}: expected a top-level JSON object keyed by saint id`);
+    continue;
+  }
+
+  for (const [id, translation] of Object.entries(translations)) {
+    const saint = saintsById.get(id);
+    if (!saint) {
+      errors.push(`${fileName}: "${id}" does not match any saint id in saints.json`);
+      continue;
+    }
+
+    if (!translation || typeof translation !== 'object' || Array.isArray(translation)) {
+      errors.push(`${fileName}: "${id}" must be an object`);
+      continue;
+    }
+
+    for (const field of Object.keys(translation)) {
+      if (!TRANSLATION_ALLOWED_FIELDS.has(field)) {
+        errors.push(`${fileName}: "${id}" has unexpected field "${field}"`);
+      }
+    }
+
+    for (const field of TRANSLATION_STRING_FIELDS) {
+      if (!isNonEmptyString(translation[field])) {
+        errors.push(`${fileName}: "${id}" field "${field}" must be a non-empty string`);
+      }
+    }
+
+    // Fixed dates are formatted by the app; only movable feasts need a translation.
+    const isFixedFeast = isNonEmptyString(saint.feastDay) && /^[A-Z][a-z]+ \d+$/.test(saint.feastDay);
+    if (!isFixedFeast && !isNonEmptyString(translation.feastDay)) {
+      errors.push(`${fileName}: "${id}" needs a translated "feastDay" for "${saint.feastDay}"`);
+    } else if (isFixedFeast && 'feastDay' in translation) {
+      errors.push(`${fileName}: "${id}" must not translate fixed feastDay "${saint.feastDay}" (formatted by the app)`);
+    }
+
+    const expectedLocations = Array.isArray(saint.locations) ? saint.locations.length : 0;
+    if (!Array.isArray(translation.locations) || translation.locations.length !== expectedLocations) {
+      errors.push(`${fileName}: "${id}" locations must be an array of ${expectedLocations} label(s), matching saints.json order`);
+    } else if (!translation.locations.every(isNonEmptyString)) {
+      errors.push(`${fileName}: "${id}" locations must contain only non-empty strings`);
+    }
+  }
+
+  for (const id of saintsById.keys()) {
+    if (!(id in translations)) {
+      errors.push(`${fileName}: missing translation for "${id}"`);
+    }
+  }
+}
+
 for (const warning of warnings) {
   console.warn(`WARNING: ${warning}`);
 }
@@ -144,6 +221,6 @@ for (const error of errors) {
   console.error(`ERROR: ${error}`);
 }
 
-console.log(`Checked ${saints.length} saint entries; found ${errors.length} error(s) and ${warnings.length} warning(s).`);
+console.log(`Checked ${saints.length} saint entries and ${translationFiles.length} translation file(s); found ${errors.length} error(s) and ${warnings.length} warning(s).`);
 
 process.exit(errors.length > 0 ? 1 : 0);
