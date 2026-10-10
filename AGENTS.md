@@ -8,6 +8,9 @@ Hagioi is an interactive map of Orthodox Christian saints. It's a static fronten
 
 - `public/data/saints.json` — array of saints. Each saint has `id`, `name`, `feastDay`, `title` (rank, e.g. Martyr/Hierarch/Venerable), `icon` (filename under `public/assets/icons/`), `bio` (short paragraph), and `locations` (array of `{ label, lat, lng }` — a saint can have multiple markers, e.g. birthplace and place of martyrdom).
 - `public/assets/icons/` — one icon image per saint, filename referenced from `saints.json`. Only use public-domain icons or ones with clear attribution to the iconographer — this hasn't been vetted yet, treat as a risk before adding real content. If a saint's icon file is missing, the frontend falls back to `public/assets/avatar-placeholder.svg`.
+- When adding saints to `saints.json`:
+  - **Check they don't already exist.** Search for the saint by `id`, by name (including alternate spellings/transliterations, e.g. "Acacius"/"Akakios", "Barbara"/"Varvara", with or without a leading "St."/"Holy"), and by feast day + location before adding. If an entry already exists, update it instead of adding a duplicate. `npm run validate` only catches duplicate `id`s, not the same saint under a different id or spelling.
+  - **Insert in sorted order.** The array is kept alphabetical in the same order the app displays it: by `name` with any leading title/prefix stripped (see `NAME_TITLE_PREFIXES` and `getNameSortKey()` in `public/script.js`), compared with `localeCompare`. E.g. "Apostle Barnabas" sorts under "Barnabas" and "The Ten Martyrs of Crete" under "Crete". If you add a new kind of prefix to a `name`, add it to `NAME_TITLE_PREFIXES` too so the app and the file stay consistent.
 - `script.js` fetches `saints.json` directly (no API round-trip needed since it's static content), flattens `locations` into map markers, and shows icon + bio in an `InfoWindow` on marker click.
 
 ## Runtime & conventions

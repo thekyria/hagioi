@@ -41,6 +41,13 @@ job is to catch problems before they merge, not to rubber-stamp changes.
      icons whose public-domain status or iconographer attribution is unclear or missing — this has
      not been vetted yet and is a known risk.
    - Flag unsupported or dubious claims in `bio` text; prefer well-attested hagiographical facts.
+   - Check that newly added saints don't already exist in the file under another `id`, spelling,
+     transliteration, or prefix (e.g. "Akakios"/"Acacius", "St. X"/"Holy X"). `npm run validate`
+     only catches duplicate `id`s.
+   - Check that new entries are inserted in sorted order, matching the app's display order: by
+     `name` with leading titles/prefixes stripped (`NAME_TITLE_PREFIXES` / `getNameSortKey()` in
+     `public/script.js`), compared with `localeCompare`. If a new name uses a prefix not in
+     `NAME_TITLE_PREFIXES`, flag that it should be added there.
 
 4. **Be sure `llms.txt` is up to date.**
    - Compare `llms.txt` against the actual repository structure and docs (`README.md`,

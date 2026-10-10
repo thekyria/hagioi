@@ -16,3 +16,6 @@ See [README.md](README.md#local-development).
 ## Adding a saint
 
 Add an entry to `public/data/saints.json` and, if you have one, an icon file under `public/assets/icons/`. Only use public-domain icons or ones with clear attribution to the iconographer.
+
+- **Check the saint isn't already there.** Search by `id`, by name (including alternate spellings/transliterations and with/without prefixes like "St."), and by feast day and location. Update the existing entry rather than adding a duplicate — `npm run validate` only catches duplicate `id`s.
+- **Keep the file sorted.** Insert the entry in alphabetical order the same way the app sorts saints: by `name` ignoring leading titles/prefixes such as "St.", "Sts.", "Holy", "Apostle", "The" (see `NAME_TITLE_PREFIXES` / `getNameSortKey()` in `public/script.js`). For example, "Apostle Barnabas" goes under "B". If a new name introduces a new prefix, add it to `NAME_TITLE_PREFIXES` as well.
