@@ -140,12 +140,16 @@ if (!existsSync(ICONS_DIR)) {
 // id with translated name/title/bio and location labels (matched by index).
 // They must stay in sync with saints.json so every saint is fully translated.
 const TRANSLATION_FILE_REGEX = /^saints\.([a-z]{2})\.json$/;
+const REQUIRED_TRANSLATION_FILES = ['saints.el.json'];
 const TRANSLATION_STRING_FIELDS = ['name', 'title', 'bio'];
 const TRANSLATION_ALLOWED_FIELDS = new Set([...TRANSLATION_STRING_FIELDS, 'locations', 'feastDay']);
 const saintsById = new Map(
   saints.filter((saint) => saint && isNonEmptyString(saint.id)).map((saint) => [saint.id, saint])
 );
-const translationFiles = readdirSync(path.dirname(SAINTS_PATH)).filter((name) => TRANSLATION_FILE_REGEX.test(name));
+const translationFiles = [...new Set([
+  ...REQUIRED_TRANSLATION_FILES,
+  ...readdirSync(path.dirname(SAINTS_PATH)).filter((name) => TRANSLATION_FILE_REGEX.test(name)),
+])];
 
 for (const fileName of translationFiles) {
   const filePath = path.join(path.dirname(SAINTS_PATH), fileName);

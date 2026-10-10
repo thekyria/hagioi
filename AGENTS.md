@@ -17,9 +17,9 @@ Hagioi is an interactive map of Orthodox Christian saints. It's a static fronten
 ## Localization
 
 - The site is available in English (default) and Greek. `public/i18n.js` (loaded before `script.js`) holds all UI strings (`STRINGS.en` / `STRINGS.el`), month/weekday names, language detection and the `t(key, params)` helper. Never hard-code user-facing text in `script.js`; add a key to both languages instead.
-- Static markup in `index.html` is translated through `data-i18n="key"` (text) and `data-i18n-attr="attr:key;attr2:key2"` (attributes).
-- Language is chosen by `?lang=en|el` in the URL, then the saved choice (`localStorage` `hagioi.lang`), then the browser language. The header flags are plain `?lang=` links, so switching reloads the page — this also reloads Google Maps with `language=<lang>` (the Maps language can only be set when its script loads).
-- To add a language: add it to `SUPPORTED_LANGUAGES`, `LOCALE_DATA` and `STRINGS` in `i18n.js`, add `public/data/saints.<lang>.json`, a name-prefix list in `NAME_TITLE_PREFIXES_BY_LANGUAGE`, a flag link in the header, and `hreflang` alternates in `index.html`/`sitemap.xml`.
+- Static markup in `index.html` is translated through `data-i18n="key"` (text) and `data-i18n-attr="attr:key;attr2:key2"` (attributes). `public/en/index.html` and `public/el/index.html` provide language-specific initial metadata for crawlers.
+- Language is chosen by `?lang=en|el` in the URL, then by a `/en/` or `/el/` page path, then the saved choice (`localStorage` `hagioi.lang`), then the browser language. Header flags link to the language-specific pages, so switching reloads Google Maps with `language=<lang>` (the Maps language can only be set when its script loads).
+- To add a language: add it to `SUPPORTED_LANGUAGES`, `LOCALE_DATA` and `STRINGS` in `i18n.js`, add `public/data/saints.<lang>.json`, a name-prefix list in `NAME_TITLE_PREFIXES_BY_LANGUAGE`, a localized page under `public/<lang>/`, a flag link in the header, and `hreflang` alternates in the entry pages and `sitemap.xml`.
 
 ## Runtime & conventions
 

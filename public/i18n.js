@@ -219,13 +219,18 @@ function storeLanguage(language) {
     }
 }
 
-// Priority: explicit ?lang= in the URL, then the saved choice, then the
-// browser's preferred languages, then English.
+// Priority: explicit ?lang= in the URL, then a language-specific page path,
+// the saved choice, the browser's preferred languages, then English.
 function detectLanguage() {
     const fromUrl = new URLSearchParams(window.location.search).get('lang');
     if (isSupportedLanguage(fromUrl)) {
         storeLanguage(fromUrl);
         return fromUrl;
+    }
+
+    const fromPath = window.location.pathname.split('/').filter(Boolean)[0];
+    if (isSupportedLanguage(fromPath)) {
+        return fromPath;
     }
 
     const stored = readStoredLanguage();
@@ -288,9 +293,10 @@ function applyStaticTranslations() {
     setMetaContent('meta[name="twitter:title"]', t('meta.title'));
     setMetaContent('meta[name="twitter:description"]', t('meta.description'));
 
-    if (CURRENT_LANGUAGE !== DEFAULT_LANGUAGE) {
+    const requestedLanguage = new URLSearchParams(window.location.search).get('lang');
+    if (isSupportedLanguage(requestedLanguage)) {
         const canonical = document.querySelector('link[rel="canonical"]');
-        const alternate = document.querySelector(`link[rel="alternate"][hreflang="${CURRENT_LANGUAGE}"]`);
+        const alternate = document.querySelector(`link[rel="alternate"][hreflang="${requestedLanguage}"]`);
         if (canonical && alternate) {
             canonical.setAttribute('href', alternate.getAttribute('href'));
         }
@@ -316,9 +322,8 @@ function applyStaticTranslations() {
     });
 }
 
-// Each option is a plain link (`?lang=xx`) so switching works as a normal
-// navigation that reloads the map, data and Google Maps labels in the new
-// language; the click handler only remembers the choice for later visits.
+// Each option is a plain link to a language-specific page so switching reloads
+// the map, data and Google Maps labels in the new language.
 function initLanguageSelector() {
     document.querySelectorAll('.language-option').forEach((link) => {
         const language = link.getAttribute('hreflang');

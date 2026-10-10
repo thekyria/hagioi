@@ -17,7 +17,7 @@ Static frontend (vanilla HTML/CSS/JS), no build step or framework, backed by a c
 
 ## Localization
 
-- [public/i18n.js](public/i18n.js): UI strings for English and Greek, language detection (`?lang=`, saved choice, browser language) and translation helpers; the header has a flag-based language selector
+- [public/i18n.js](public/i18n.js): UI strings for English and Greek, language detection (`?lang=`, `/en/` or `/el/`, saved choice, browser language) and translation helpers; language-specific entry pages provide crawler metadata and the header has a flag-based selector
 
 ## API
 

@@ -862,8 +862,6 @@ async function initMap() {
             return;
         }
 
-        nearbyFindButton.textContent = t('nearby.find', { km: NEARBY_RADIUS_KM });
-
         nearbyFindButton.addEventListener('click', () => {
             if (isLocatingNearby) {
                 return;
@@ -1488,6 +1486,10 @@ async function loadGoogleMapsAPI() {
 document.addEventListener('DOMContentLoaded', () => {
     initPanelToggles();
     initAboutModal();
+    const nearbyFindButton = document.getElementById('nearby-find-button');
+    if (nearbyFindButton) {
+        nearbyFindButton.textContent = t('nearby.find', { km: NEARBY_RADIUS_KM });
+    }
     loadGoogleMapsAPI();
     loadVersionInfo();
 });
