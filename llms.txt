@@ -17,3 +17,4 @@ Static frontend (vanilla HTML/CSS/JS), no build step or framework, backed by a c
 ## API
 
 - [api/v1/config.js](api/v1/config.js): returns the Google Maps API key to the client; secured via HTTP-referrer restriction on the key, not server-side auth
+- [api/v1/version.js](api/v1/version.js): returns the deployed git commit (from Vercel system environment variables) shown as the version in the site footer; the site deploys continuously, so the commit is the version rather than numbered releases

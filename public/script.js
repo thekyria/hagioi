@@ -145,6 +145,124 @@ function initPanelToggles() {
     });
 }
 
+// "About Hagioi" popup. Static content, so it's wired up on DOM ready
+// (independently of the map) and stays usable even if Google Maps fails to load.
+function initAboutModal() {
+    const openButton = document.getElementById('about-open');
+    const modal = document.getElementById('about-modal');
+    if (!openButton || !modal) {
+        return;
+    }
+
+    const closeButton = modal.querySelector('.saint-search-close');
+    let lastFocusedElement = null;
+
+    function openModal() {
+        lastFocusedElement = document.activeElement;
+        modal.hidden = false;
+        openButton.setAttribute('aria-expanded', 'true');
+        closeButton?.focus();
+        document.addEventListener('keydown', handleKeydown);
+    }
+
+    function closeModal() {
+        if (modal.hidden) {
+            return;
+        }
+        modal.hidden = true;
+        openButton.setAttribute('aria-expanded', 'false');
+        document.removeEventListener('keydown', handleKeydown);
+        if (lastFocusedElement instanceof HTMLElement && lastFocusedElement.isConnected) {
+            lastFocusedElement.focus();
+        }
+    }
+
+    function handleKeydown(e) {
+        if (e.key === 'Escape') {
+            e.preventDefault();
+            closeModal();
+            return;
+        }
+
+        if (e.key !== 'Tab') {
+            return;
+        }
+
+        const focusableElements = Array.from(
+            modal.querySelectorAll('button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])')
+        ).filter((element) => !element.hasAttribute('disabled'));
+        if (focusableElements.length === 0) {
+            return;
+        }
+
+        const firstElement = focusableElements[0];
+        const lastElement = focusableElements[focusableElements.length - 1];
+        if (e.shiftKey && document.activeElement === firstElement) {
+            e.preventDefault();
+            lastElement.focus();
+        } else if (!e.shiftKey && document.activeElement === lastElement) {
+            e.preventDefault();
+            firstElement.focus();
+        }
+    }
+
+    openButton.addEventListener('click', openModal);
+    modal.querySelectorAll('[data-about-close]').forEach((el) => {
+        el.addEventListener('click', closeModal);
+    });
+}
+
+// Footer version: the site is deployed continuously, so the deployed git
+// commit (short SHA, linked to the commit when available) acts as the version.
+async function loadVersionInfo() {
+    const versionElement = document.getElementById('footer-version');
+    const separator = document.querySelector('.footer-version-separator');
+    if (!versionElement) {
+        return;
+    }
+
+    let info;
+    try {
+        const response = await fetch('/api/v1/version');
+        if (!response.ok) {
+            return;
+        }
+        info = await response.json();
+    } catch {
+        return;
+    }
+
+    if (!info || typeof info.shortCommit !== 'string' || info.shortCommit.length === 0) {
+        return;
+    }
+
+    versionElement.textContent = 'Version ';
+    let commitNode;
+    if (typeof info.commitUrl === 'string' && info.commitUrl.startsWith('https://')) {
+        commitNode = document.createElement('a');
+        commitNode.href = info.commitUrl;
+        commitNode.target = '_blank';
+        commitNode.rel = 'noopener noreferrer';
+    } else {
+        commitNode = document.createElement('span');
+    }
+    commitNode.className = 'footer-version-commit';
+    commitNode.textContent = info.shortCommit;
+    if (typeof info.commit === 'string') {
+        commitNode.title = `Commit ${info.commit}`;
+    }
+    versionElement.appendChild(commitNode);
+
+    if (typeof info.environment === 'string' && info.environment !== 'production') {
+        versionElement.append(` (${info.environment})`);
+    }
+
+    versionElement.hidden = false;
+    if (separator) {
+        separator.hidden = false;
+    }
+}
+
 async function initMap() {
     const center = { lat: 31.77846303313139, lng: 35.22971821508876 }; // The Holy Sepulchre
     const { Map: GoogleMap, InfoWindow } = await google.maps.importLibrary("maps");
@@ -1287,5 +1405,7 @@ async function loadGoogleMapsAPI() {
 // Start loading after DOM is ready
 document.addEventListener('DOMContentLoaded', () => {
     initPanelToggles();
+    initAboutModal();
     loadGoogleMapsAPI();
+    loadVersionInfo();
 });
