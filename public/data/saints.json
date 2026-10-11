@@ -1349,8 +1349,8 @@
     "locations": [
       {
         "label": "Birthplace — Syria",
-        "lat": 35.0,
-        "lng": 38.0
+        "lat": 35,
+        "lng": 38
       },
       {
         "label": "Hermitage — Mount Auxentios (Kayışdağı), Bithynia",
@@ -1885,7 +1885,7 @@
       {
         "label": "Monastery — Clonfert, Ireland",
         "lat": 53.1647,
-        "lng": -8.0
+        "lng": -8
       }
     ]
   },
@@ -2396,311 +2396,6 @@
         "label": "See — Maiuma, near Gaza",
         "lat": 31.53,
         "lng": 34.44
-      }
-    ]
-  },
-  {
-    "id": "edward-the-martyr",
-    "name": "St. Edward the Martyr",
-    "feastDay": "March 18",
-    "title": "King and Passion-bearer",
-    "icon": "edward-the-martyr.jpg",
-    "bio": "King of England from 975, he was murdered as a youth at Corfe in 978, reportedly at the instigation of his stepmother, and soon venerated as a martyr. His relics were rediscovered at Shaftesbury in 1931 and are now kept in the Orthodox church of St. Edward at Brookwood.",
-    "locations": [
-      {
-        "label": "Martyrdom — Corfe Castle, Dorset",
-        "lat": 50.6402,
-        "lng": -2.0574
-      },
-      {
-        "label": "Shrine — Shaftesbury Abbey",
-        "lat": 51.0059,
-        "lng": -2.1977
-      },
-      {
-        "label": "Present relics — Brookwood, Surrey",
-        "lat": 51.2995,
-        "lng": -0.6331
-      }
-    ]
-  },
-  {
-    "id": "eleftherios-of-illyricum",
-    "name": "St. Eleftherios of Illyricum",
-    "feastDay": "December 15",
-    "title": "Hieromartyr, Bishop",
-    "icon": "eleftherios-of-illyricum.jpg",
-    "bio": "Born in Rome to a Christian mother, St. Anthia, he was consecrated Bishop of Illyricum at a young age. Under Emperor Hadrian he was brought back to Rome and, after enduring many torments, was beheaded together with his mother in the 2nd century.",
-    "locations": [
-      {
-        "label": "Birthplace and martyrdom — Rome",
-        "lat": 41.9028,
-        "lng": 12.4964
-      }
-    ]
-  },
-  {
-    "id": "etheldreda-of-ely",
-    "name": "St. Etheldreda of Ely",
-    "feastDay": "June 23",
-    "title": "Venerable, Abbess",
-    "icon": "etheldreda-of-ely.jpg",
-    "bio": "An East Anglian princess, also known as Audrey, who remained a virgin through two marriages and became a nun. In 673 she founded a double monastery at Ely, which she ruled as abbess until her repose in 679; her body was later found incorrupt.",
-    "locations": [
-      {
-        "label": "Birthplace — Exning, Suffolk",
-        "lat": 52.2696,
-        "lng": 0.3727
-      },
-      {
-        "label": "Founded monastery and repose — Ely",
-        "lat": 52.3986,
-        "lng": 0.2638
-      }
-    ]
-  },
-  {
-    "id": "finnian-of-clonard",
-    "name": "St. Finnian of Clonard",
-    "feastDay": "December 12",
-    "title": "Bishop, Abbot",
-    "icon": "finnian-of-clonard.jpg",
-    "bio": "Irish bishop whose monastic school at Clonard trained many saints, who were later called the Twelve Apostles of Ireland.",
-    "locations": [
-      {
-        "label": "Monastery — Clonard, Ireland",
-        "lat": 53.4283,
-        "lng": -6.9372
-      }
-    ]
-  },
-  {
-    "id": "gall-of-st-gallen",
-    "name": "St. Gall of St. Gallen",
-    "feastDay": "October 16",
-    "title": "Venerable, Enlightener of Switzerland",
-    "icon": "gall-of-st-gallen.jpg",
-    "bio": "Irish disciple of St. Columbanus who remained in the Alps as a hermit and preacher; the Swiss town and monastery of St. Gallen grew up around his cell.",
-    "locations": [
-      {
-        "label": "Hermitage — St. Gallen, Switzerland",
-        "lat": 47.4245,
-        "lng": 9.3767
-      }
-    ]
-  },
-  {
-    "id": "kentigern-of-glasgow",
-    "name": "St. Kentigern (Mungo) of Glasgow",
-    "feastDay": "January 13",
-    "title": "Bishop",
-    "icon": "kentigern-of-glasgow.jpg",
-    "bio": "Apostle of Strathclyde and first bishop of Glasgow, who evangelized the Britons of southwestern Scotland and Cumbria.",
-    "locations": [
-      {
-        "label": "Bishop — Glasgow, Scotland",
-        "lat": 55.8642,
-        "lng": -4.2518
-      }
-    ]
-  },
-  {
-    "id": "lucy-of-syracuse",
-    "name": "St. Lucy of Syracuse",
-    "feastDay": "December 13",
-    "title": "Virgin Martyr",
-    "icon": "lucy-of-syracuse.jpg",
-    "bio": "A young Christian of Syracuse who distributed her dowry to the poor and was denounced by her rejected suitor. She was martyred during the persecution of Diocletian around 304; her relics were later taken to Constantinople and then to Venice.",
-    "locations": [
-      {
-        "label": "Birthplace and martyrdom — Syracuse, Sicily",
-        "lat": 37.0755,
-        "lng": 15.2866
-      },
-      {
-        "label": "Relics — Venice",
-        "lat": 45.4434,
-        "lng": 12.3218
-      }
-    ]
-  },
-  {
-    "id": "ludmila-of-bohemia",
-    "name": "St. Ludmila of Bohemia",
-    "feastDay": "September 16",
-    "title": "Right-Believing Princess, Martyr",
-    "icon": "ludmila-of-bohemia.jpg",
-    "bio": "Bohemian princess who taught the Christian faith to her grandson St. Wenceslaus and was strangled at the instigation of her daughter-in-law.",
-    "locations": [
-      {
-        "label": "Martyrdom — Tetín, Czech Republic",
-        "lat": 49.9418,
-        "lng": 14.0883
-      }
-    ]
-  },
-  {
-    "id": "lydia-of-thyatira",
-    "name": "St. Lydia of Thyatira",
-    "feastDay": "May 20",
-    "title": "Equal-to-the-Apostles",
-    "icon": "lydia-of-thyatira.jpg",
-    "bio": "A seller of purple cloth from Thyatira who heard the Apostle Paul preach by the river at Philippi and became the first recorded convert in Europe (Acts 16). She was baptized with her household and opened her home to the apostles.",
-    "locations": [
-      {
-        "label": "Birthplace — Thyatira (Akhisar)",
-        "lat": 38.9186,
-        "lng": 27.84
-      },
-      {
-        "label": "Baptism — Philippi",
-        "lat": 41.013,
-        "lng": 24.286
-      }
-    ]
-  },
-  {
-    "id": "macarius-of-kalyazin",
-    "name": "St. Macarius of Kalyazin",
-    "feastDay": "March 17",
-    "title": "Venerable",
-    "icon": "macarius-of-kalyazin.jpg",
-    "bio": "A 15th-century nobleman from near Kashin who became a monk after the death of his wife and founded the Holy Trinity Monastery at Kalyazin on the Volga. Known as a wonderworker, he reposed in 1483; his monastery was later flooded by the Uglich Reservoir.",
-    "locations": [
-      {
-        "label": "Founded Trinity Monastery — Kalyazin",
-        "lat": 57.24,
-        "lng": 37.85
-      }
-    ]
-  },
-  {
-    "id": "methodius-of-olympus",
-    "name": "St. Methodius of Olympus",
-    "feastDay": "June 20",
-    "title": "Hieromartyr, Bishop",
-    "icon": "methodius-of-olympus.jpg",
-    "bio": "Bishop of Olympus in Lycia and an early Christian writer, best known for his dialogue the Symposium in praise of virginity and for his writings against Origen's teachings. He suffered martyrdom around 311 during the last great persecution.",
-    "locations": [
-      {
-        "label": "Episcopal see — Olympus, Lycia",
-        "lat": 36.3983,
-        "lng": 30.4733
-      }
-    ]
-  },
-  {
-    "id": "olaf-of-norway",
-    "name": "St. Olaf of Norway",
-    "feastDay": "July 29",
-    "title": "King and Martyr",
-    "icon": "olaf-of-norway.jpg",
-    "bio": "King of Norway who worked to establish Christianity throughout his realm. Driven into exile, he returned to reclaim his kingdom and fell at the Battle of Stiklestad in 1030; he was soon venerated as a martyr and his shrine at Nidaros became a major place of pilgrimage.",
-    "locations": [
-      {
-        "label": "Death in battle — Stiklestad",
-        "lat": 63.7965,
-        "lng": 11.56
-      },
-      {
-        "label": "Shrine — Nidaros (Trondheim)",
-        "lat": 63.4269,
-        "lng": 10.3969
-      }
-    ]
-  },
-  {
-    "id": "paraskeva-of-iconium",
-    "name": "St. Paraskeva of Iconium",
-    "feastDay": "October 28",
-    "title": "Great Martyr",
-    "icon": "paraskeva-of-iconium.jpg",
-    "bio": "A virgin of Iconium who dedicated her life to Christ and to preaching the faith, martyred under Emperor Diocletian. Known in Slavic lands as Paraskeva Pyatnitsa (\"Friday\"), she is venerated as a protector of family life and trade.",
-    "locations": [
-      {
-        "label": "Birthplace and martyrdom — Iconium (Konya)",
-        "lat": 37.8714,
-        "lng": 32.4846
-      }
-    ]
-  },
-  {
-    "id": "paul-the-simple",
-    "name": "St. Paul the Simple",
-    "feastDay": "March 7",
-    "title": "Venerable",
-    "icon": "paul-the-simple.jpg",
-    "bio": "Disciple of St. Anthony the Great, a guileless farmer who left his wife and took up the ascetic life in the Egyptian desert, receiving the gift of discerning spirits.",
-    "locations": [
-      {
-        "label": "Ascetic life — Egyptian desert",
-        "lat": 30.45,
-        "lng": 30.35
-      }
-    ]
-  },
-  {
-    "id": "petroc-of-cornwall",
-    "name": "St. Petroc of Cornwall",
-    "feastDay": "June 4",
-    "title": "Abbot",
-    "icon": "petroc-of-cornwall.jpg",
-    "bio": "Welsh prince who became a monk and abbot, founding the monastery of Padstow and numerous churches throughout Cornwall and Devon.",
-    "locations": [
-      {
-        "label": "Monastery — Padstow, Cornwall",
-        "lat": 50.5426,
-        "lng": -4.9366
-      }
-    ]
-  },
-  {
-    "id": "piran-of-cornwall",
-    "name": "St. Piran of Cornwall",
-    "feastDay": "March 5",
-    "title": "Abbot",
-    "icon": "piran-of-cornwall.jpg",
-    "bio": "Irish-born abbot who settled on the Cornish coast, where he founded a monastery and evangelized the local people; he is the patron saint of Cornwall.",
-    "locations": [
-      {
-        "label": "Hermitage — Perranzabuloe, Cornwall",
-        "lat": 50.334,
-        "lng": -5.15
-      }
-    ]
-  },
-  {
-    "id": "samson-of-dol",
-    "name": "St. Samson of Dol",
-    "feastDay": "July 28",
-    "title": "Bishop",
-    "icon": "samson-of-dol.jpg",
-    "bio": "Welsh-born monk and bishop who evangelized Cornwall and Brittany and founded the monastery of Dol.",
-    "locations": [
-      {
-        "label": "Bishop — Dol-de-Bretagne, France",
-        "lat": 48.55,
-        "lng": -1.75
-      }
-    ]
-  },
-  {
-    "id": "seraphim-sobolev",
-    "name": "St. Seraphim (Sobolev) of Sofia",
-    "feastDay": "February 26",
-    "title": "Archbishop, Wonderworker",
-    "icon": "seraphim-sobolev.jpg",
-    "bio": "Born in Ryazan in 1881, he served as a bishop in Russia before emigrating and becoming Archbishop of Bogucharsk in Sofia, where he shepherded the Russian community and taught Orthodox theology. He reposed in 1950 and was glorified in 2016; his relics rest in the Russian Church of St. Nicholas in Sofia.",
-    "locations": [
-      {
-        "label": "Birthplace — Ryazan",
-        "lat": 54.6269,
-        "lng": 39.6916
-      },
-      {
-        "label": "Ministry, repose and relics — Sofia",
-        "lat": 42.6955,
-        "lng": 23.3279
       }
     ]
   },
@@ -3365,6 +3060,46 @@
     ]
   },
   {
+    "id": "edward-the-martyr",
+    "name": "St. Edward the Martyr",
+    "feastDay": "March 18",
+    "title": "King and Passion-bearer",
+    "icon": "edward-the-martyr.jpg",
+    "bio": "King of England from 975, he was murdered as a youth at Corfe in 978, reportedly at the instigation of his stepmother, and soon venerated as a martyr. His relics were rediscovered at Shaftesbury in 1931 and are now kept in the Orthodox church of St. Edward at Brookwood.",
+    "locations": [
+      {
+        "label": "Martyrdom — Corfe Castle, Dorset",
+        "lat": 50.6402,
+        "lng": -2.0574
+      },
+      {
+        "label": "Shrine — Shaftesbury Abbey",
+        "lat": 51.0059,
+        "lng": -2.1977
+      },
+      {
+        "label": "Present relics — Brookwood, Surrey",
+        "lat": 51.2995,
+        "lng": -0.6331
+      }
+    ]
+  },
+  {
+    "id": "eleftherios-of-illyricum",
+    "name": "St. Eleftherios of Illyricum",
+    "feastDay": "December 15",
+    "title": "Hieromartyr, Bishop",
+    "icon": "eleftherios-of-illyricum.jpg",
+    "bio": "Born in Rome to a Christian mother, St. Anthia, he was consecrated Bishop of Illyricum at a young age. Under Emperor Hadrian he was brought back to Rome and, after enduring many torments, was beheaded together with his mother in the 2nd century.",
+    "locations": [
+      {
+        "label": "Birthplace and martyrdom — Rome",
+        "lat": 41.9028,
+        "lng": 12.4964
+      }
+    ]
+  },
+  {
     "id": "prophet-elijah",
     "name": "Holy Prophet Elijah",
     "feastDay": "July 20",
@@ -3546,6 +3281,26 @@
         "label": "Birthplace and first monastery — near Eleutheropolis, Palestine",
         "lat": 31.6097,
         "lng": 34.8958
+      }
+    ]
+  },
+  {
+    "id": "etheldreda-of-ely",
+    "name": "St. Etheldreda of Ely",
+    "feastDay": "June 23",
+    "title": "Venerable, Abbess",
+    "icon": "etheldreda-of-ely.jpg",
+    "bio": "An East Anglian princess, also known as Audrey, who remained a virgin through two marriages and became a nun. In 673 she founded a double monastery at Ely, which she ruled as abbess until her repose in 679; her body was later found incorrupt.",
+    "locations": [
+      {
+        "label": "Birthplace — Exning, Suffolk",
+        "lat": 52.2696,
+        "lng": 0.3727
+      },
+      {
+        "label": "Founded monastery and repose — Ely",
+        "lat": 52.3986,
+        "lng": 0.2638
       }
     ]
   },
@@ -3850,6 +3605,21 @@
     ]
   },
   {
+    "id": "finnian-of-clonard",
+    "name": "St. Finnian of Clonard",
+    "feastDay": "December 12",
+    "title": "Bishop, Abbot",
+    "icon": "finnian-of-clonard.jpg",
+    "bio": "Irish bishop whose monastic school at Clonard trained many saints, who were later called the Twelve Apostles of Ireland.",
+    "locations": [
+      {
+        "label": "Monastery — Clonard, Ireland",
+        "lat": 53.4283,
+        "lng": -6.9372
+      }
+    ]
+  },
+  {
     "id": "flavian-of-constantinople",
     "name": "St. Flavian of Constantinople",
     "feastDay": "February 16",
@@ -3886,6 +3656,21 @@
         "label": "Monastery — Samtavro Convent, Mtskheta",
         "lat": 41.8467,
         "lng": 44.7183
+      }
+    ]
+  },
+  {
+    "id": "gall-of-st-gallen",
+    "name": "St. Gall of St. Gallen",
+    "feastDay": "October 16",
+    "title": "Venerable, Enlightener of Switzerland",
+    "icon": "gall-of-st-gallen.jpg",
+    "bio": "Irish disciple of St. Columbanus who remained in the Alps as a hermit and preacher; the Swiss town and monastery of St. Gallen grew up around his cell.",
+    "locations": [
+      {
+        "label": "Hermitage — St. Gallen, Switzerland",
+        "lat": 47.4245,
+        "lng": 9.3767
       }
     ]
   },
@@ -4635,21 +4420,6 @@
     ]
   },
   {
-    "id": "hesychius-of-jerusalem",
-    "name": "St. Hesychios of Jerusalem",
-    "feastDay": "March 28",
-    "title": "Presbyter and Theologian",
-    "icon": "hesychius-of-jerusalem.jpg",
-    "bio": "5th-century priest and biblical commentator in Jerusalem, a disciple of Gregory the Theologian. His writings include sermons and scriptural commentaries.",
-    "locations": [
-      {
-        "label": "Ministry — Jerusalem",
-        "lat": 31.7683,
-        "lng": 35.2137
-      }
-    ]
-  },
-  {
     "id": "panteleimon-companions",
     "name": "St. Hermolaus of Nicomedia",
     "feastDay": "July 26",
@@ -4661,6 +4431,21 @@
         "label": "Place of martyrdom — Nicomedia",
         "lat": 40.7654,
         "lng": 29.9408
+      }
+    ]
+  },
+  {
+    "id": "hesychius-of-jerusalem",
+    "name": "St. Hesychios of Jerusalem",
+    "feastDay": "March 28",
+    "title": "Presbyter and Theologian",
+    "icon": "hesychius-of-jerusalem.jpg",
+    "bio": "5th-century priest and biblical commentator in Jerusalem, a disciple of Gregory the Theologian. His writings include sermons and scriptural commentaries.",
+    "locations": [
+      {
+        "label": "Ministry — Jerusalem",
+        "lat": 31.7683,
+        "lng": 35.2137
       }
     ]
   },
@@ -6095,26 +5880,6 @@
     ]
   },
   {
-    "id": "thirteen-martyrs-of-kantara",
-    "name": "The Thirteen Martyrs of Kantara",
-    "feastDay": "May 19",
-    "title": "Venerable Martyrs",
-    "icon": "thirteen-martyrs-of-kantara.jpg",
-    "bio": "Orthodox monks of the Monastery of the Panagia Kantariotissa in the Pentadaktylos mountains of Cyprus. During the Latin rule of the island they refused to accept the Latin use of unleavened bread in the Eucharist, were imprisoned for three years, and in 1231 were executed in Nicosia by being dragged behind horses and burned.",
-    "locations": [
-      {
-        "label": "Monastery — Panagia Kantariotissa, near Kantara, Cyprus",
-        "lat": 35.3849,
-        "lng": 33.8991
-      },
-      {
-        "label": "Place of martyrdom — Nicosia",
-        "lat": 35.1725,
-        "lng": 33.365
-      }
-    ]
-  },
-  {
     "id": "kassiani",
     "name": "St. Kassiani the Hymnographer",
     "feastDay": "September 7",
@@ -6126,6 +5891,21 @@
         "label": "Convent founded — Constantinople",
         "lat": 41.0082,
         "lng": 28.9784
+      }
+    ]
+  },
+  {
+    "id": "kentigern-of-glasgow",
+    "name": "St. Kentigern (Mungo) of Glasgow",
+    "feastDay": "January 13",
+    "title": "Bishop",
+    "icon": "kentigern-of-glasgow.jpg",
+    "bio": "Apostle of Strathclyde and first bishop of Glasgow, who evangelized the Britons of southwestern Scotland and Cumbria.",
+    "locations": [
+      {
+        "label": "Bishop — Glasgow, Scotland",
+        "lat": 55.8642,
+        "lng": -4.2518
       }
     ]
   },
@@ -6405,6 +6185,41 @@
     ]
   },
   {
+    "id": "lucy-of-syracuse",
+    "name": "St. Lucy of Syracuse",
+    "feastDay": "December 13",
+    "title": "Virgin Martyr",
+    "icon": "lucy-of-syracuse.jpg",
+    "bio": "A young Christian of Syracuse who distributed her dowry to the poor and was denounced by her rejected suitor. She was martyred during the persecution of Diocletian around 304; her relics were later taken to Constantinople and then to Venice.",
+    "locations": [
+      {
+        "label": "Birthplace and martyrdom — Syracuse, Sicily",
+        "lat": 37.0755,
+        "lng": 15.2866
+      },
+      {
+        "label": "Relics — Venice",
+        "lat": 45.4434,
+        "lng": 12.3218
+      }
+    ]
+  },
+  {
+    "id": "ludmila-of-bohemia",
+    "name": "St. Ludmila of Bohemia",
+    "feastDay": "September 16",
+    "title": "Right-Believing Princess, Martyr",
+    "icon": "ludmila-of-bohemia.jpg",
+    "bio": "Bohemian princess who taught the Christian faith to her grandson St. Wenceslaus and was strangled at the instigation of her daughter-in-law.",
+    "locations": [
+      {
+        "label": "Martyrdom — Tetín, Czech Republic",
+        "lat": 49.9418,
+        "lng": 14.0883
+      }
+    ]
+  },
+  {
     "id": "apostle-luke",
     "name": "Apostle and Evangelist Luke",
     "feastDay": "October 18",
@@ -6505,6 +6320,26 @@
     ]
   },
   {
+    "id": "lydia-of-thyatira",
+    "name": "St. Lydia of Thyatira",
+    "feastDay": "May 20",
+    "title": "Equal-to-the-Apostles",
+    "icon": "lydia-of-thyatira.jpg",
+    "bio": "A seller of purple cloth from Thyatira who heard the Apostle Paul preach by the river at Philippi and became the first recorded convert in Europe (Acts 16). She was baptized with her household and opened her home to the apostles.",
+    "locations": [
+      {
+        "label": "Birthplace — Thyatira (Akhisar)",
+        "lat": 38.9186,
+        "lng": 27.84
+      },
+      {
+        "label": "Baptism — Philippi",
+        "lat": 41.013,
+        "lng": 24.286
+      }
+    ]
+  },
+  {
     "id": "macarius-of-alexandria",
     "name": "St. Macarius of Alexandria",
     "feastDay": "January 19",
@@ -6521,6 +6356,21 @@
         "label": "Ascetic life — Scetis Desert",
         "lat": 30.85,
         "lng": 30.33
+      }
+    ]
+  },
+  {
+    "id": "macarius-of-kalyazin",
+    "name": "St. Macarius of Kalyazin",
+    "feastDay": "March 17",
+    "title": "Venerable",
+    "icon": "macarius-of-kalyazin.jpg",
+    "bio": "A 15th-century nobleman from near Kashin who became a monk after the death of his wife and founded the Holy Trinity Monastery at Kalyazin on the Volga. Known as a wonderworker, he reposed in 1483; his monastery was later flooded by the Uglich Reservoir.",
+    "locations": [
+      {
+        "label": "Founded Trinity Monastery — Kalyazin",
+        "lat": 57.24,
+        "lng": 37.85
       }
     ]
   },
@@ -7186,6 +7036,21 @@
         "label": "See — Constantinople",
         "lat": 41.0082,
         "lng": 28.9784
+      }
+    ]
+  },
+  {
+    "id": "methodius-of-olympus",
+    "name": "St. Methodius of Olympus",
+    "feastDay": "June 20",
+    "title": "Hieromartyr, Bishop",
+    "icon": "methodius-of-olympus.jpg",
+    "bio": "Bishop of Olympus in Lycia and an early Christian writer, best known for his dialogue the Symposium in praise of virginity and for his writings against Origen's teachings. He suffered martyrdom around 311 during the last great persecution.",
+    "locations": [
+      {
+        "label": "Episcopal see — Olympus, Lycia",
+        "lat": 36.3983,
+        "lng": 30.4733
       }
     ]
   },
@@ -8070,6 +7935,26 @@
     ]
   },
   {
+    "id": "olaf-of-norway",
+    "name": "St. Olaf of Norway",
+    "feastDay": "July 29",
+    "title": "King and Martyr",
+    "icon": "olaf-of-norway.jpg",
+    "bio": "King of Norway who worked to establish Christianity throughout his realm. Driven into exile, he returned to reclaim his kingdom and fell at the Battle of Stiklestad in 1030; he was soon venerated as a martyr and his shrine at Nidaros became a major place of pilgrimage.",
+    "locations": [
+      {
+        "label": "Death in battle — Stiklestad",
+        "lat": 63.7965,
+        "lng": 11.56
+      },
+      {
+        "label": "Shrine — Nidaros (Trondheim)",
+        "lat": 63.4269,
+        "lng": 10.3969
+      }
+    ]
+  },
+  {
     "id": "olga-of-alaska",
     "name": "Matushka Olga of Alaska",
     "feastDay": "November 8",
@@ -8350,6 +8235,21 @@
     ]
   },
   {
+    "id": "paraskeva-of-iconium",
+    "name": "St. Paraskeva of Iconium",
+    "feastDay": "October 28",
+    "title": "Great Martyr",
+    "icon": "paraskeva-of-iconium.jpg",
+    "bio": "A virgin of Iconium who dedicated her life to Christ and to preaching the faith, martyred under Emperor Diocletian. Known in Slavic lands as Paraskeva Pyatnitsa (\"Friday\"), she is venerated as a protector of family life and trade.",
+    "locations": [
+      {
+        "label": "Birthplace and martyrdom — Iconium (Konya)",
+        "lat": 37.8714,
+        "lng": 32.4846
+      }
+    ]
+  },
+  {
     "id": "paraskeva-of-epibatos",
     "name": "St. Paraskeva the New of Epivates",
     "feastDay": "October 14",
@@ -8476,6 +8376,21 @@
         "label": "Place of martyrdom — Constantinople",
         "lat": 41.0082,
         "lng": 28.9784
+      }
+    ]
+  },
+  {
+    "id": "paul-the-simple",
+    "name": "St. Paul the Simple",
+    "feastDay": "March 7",
+    "title": "Venerable",
+    "icon": "paul-the-simple.jpg",
+    "bio": "Disciple of St. Anthony the Great, a guileless farmer who left his wife and took up the ascetic life in the Egyptian desert, receiving the gift of discerning spirits.",
+    "locations": [
+      {
+        "label": "Ascetic life — Egyptian desert",
+        "lat": 30.45,
+        "lng": 30.35
       }
     ]
   },
@@ -8700,6 +8615,21 @@
     ]
   },
   {
+    "id": "petroc-of-cornwall",
+    "name": "St. Petroc of Cornwall",
+    "feastDay": "June 4",
+    "title": "Abbot",
+    "icon": "petroc-of-cornwall.jpg",
+    "bio": "Welsh prince who became a monk and abbot, founding the monastery of Padstow and numerous churches throughout Cornwall and Devon.",
+    "locations": [
+      {
+        "label": "Monastery — Padstow, Cornwall",
+        "lat": 50.5426,
+        "lng": -4.9366
+      }
+    ]
+  },
+  {
     "id": "philaret-the-merciful",
     "name": "St. Philaret the Merciful",
     "feastDay": "December 1",
@@ -8866,6 +8796,21 @@
         "label": "Patriarchate — Constantinople",
         "lat": 41.0082,
         "lng": 28.9784
+      }
+    ]
+  },
+  {
+    "id": "piran-of-cornwall",
+    "name": "St. Piran of Cornwall",
+    "feastDay": "March 5",
+    "title": "Abbot",
+    "icon": "piran-of-cornwall.jpg",
+    "bio": "Irish-born abbot who settled on the Cornish coast, where he founded a monastery and evangelized the local people; he is the patron saint of Cornwall.",
+    "locations": [
+      {
+        "label": "Hermitage — Perranzabuloe, Cornwall",
+        "lat": 50.334,
+        "lng": -5.15
       }
     ]
   },
@@ -9185,6 +9130,21 @@
     ]
   },
   {
+    "id": "samson-of-dol",
+    "name": "St. Samson of Dol",
+    "feastDay": "July 28",
+    "title": "Bishop",
+    "icon": "samson-of-dol.jpg",
+    "bio": "Welsh-born monk and bishop who evangelized Cornwall and Brittany and founded the monastery of Dol.",
+    "locations": [
+      {
+        "label": "Bishop — Dol-de-Bretagne, France",
+        "lat": 48.55,
+        "lng": -1.75
+      }
+    ]
+  },
+  {
     "id": "sarah-of-egypt",
     "name": "St. Sarah of the Desert",
     "feastDay": "July 13",
@@ -9355,6 +9315,26 @@
     ]
   },
   {
+    "id": "seraphim-sobolev",
+    "name": "St. Seraphim (Sobolev) of Sofia",
+    "feastDay": "February 26",
+    "title": "Archbishop, Wonderworker",
+    "icon": "seraphim-sobolev.jpg",
+    "bio": "Born in Ryazan in 1881, he served as a bishop in Russia before emigrating and becoming Archbishop of Bogucharsk in Sofia, where he shepherded the Russian community and taught Orthodox theology. He reposed in 1950 and was glorified in 2016; his relics rest in the Russian Church of St. Nicholas in Sofia.",
+    "locations": [
+      {
+        "label": "Birthplace — Ryazan",
+        "lat": 54.6269,
+        "lng": 39.6916
+      },
+      {
+        "label": "Ministry, repose and relics — Sofia",
+        "lat": 42.6955,
+        "lng": 23.3279
+      }
+    ]
+  },
+  {
     "id": "seraphim-of-sarov",
     "name": "St. Seraphim of Sarov",
     "feastDay": "January 15",
@@ -9410,21 +9390,6 @@
     ]
   },
   {
-    "id": "sergei-of-optina",
-    "name": "St. Sergius of Optina, Confessor",
-    "feastDay": "May 24",
-    "title": "Confessor",
-    "icon": "sergei-of-optina.jpg",
-    "bio": "A twentieth-century monk of Optina who preserved the eldership tradition through Soviet persecution and exile.",
-    "locations": [
-      {
-        "label": "Hermitage — Optina Pustyn",
-        "lat": 54.05,
-        "lng": 35.9833
-      }
-    ]
-  },
-  {
     "id": "sergius-and-bacchus",
     "name": "Sts. Sergius and Bacchus",
     "feastDay": "October 7",
@@ -9436,6 +9401,21 @@
         "label": "Martyrdom of Sergius — Resafa (Sergiopolis), Syria",
         "lat": 35.6333,
         "lng": 38.7556
+      }
+    ]
+  },
+  {
+    "id": "sergei-of-optina",
+    "name": "St. Sergius of Optina, Confessor",
+    "feastDay": "May 24",
+    "title": "Confessor",
+    "icon": "sergei-of-optina.jpg",
+    "bio": "A twentieth-century monk of Optina who preserved the eldership tradition through Soviet persecution and exile.",
+    "locations": [
+      {
+        "label": "Hermitage — Optina Pustyn",
+        "lat": 54.05,
+        "lng": 35.9833
       }
     ]
   },
@@ -9895,7 +9875,7 @@
       {
         "label": "Ascetic life — Paphlagonia, Asia Minor",
         "lat": 41.5,
-        "lng": 33.0
+        "lng": 33
       }
     ]
   },
@@ -10651,6 +10631,26 @@
         "label": "Ministry — Nyssa, Cappadocia",
         "lat": 38.55,
         "lng": 34.7
+      }
+    ]
+  },
+  {
+    "id": "thirteen-martyrs-of-kantara",
+    "name": "The Thirteen Martyrs of Kantara",
+    "feastDay": "May 19",
+    "title": "Venerable Martyrs",
+    "icon": "thirteen-martyrs-of-kantara.jpg",
+    "bio": "Orthodox monks of the Monastery of the Panagia Kantariotissa in the Pentadaktylos mountains of Cyprus. During the Latin rule of the island they refused to accept the Latin use of unleavened bread in the Eucharist, were imprisoned for three years, and in 1231 were executed in Nicosia by being dragged behind horses and burned.",
+    "locations": [
+      {
+        "label": "Monastery — Panagia Kantariotissa, near Kantara, Cyprus",
+        "lat": 35.3849,
+        "lng": 33.8991
+      },
+      {
+        "label": "Place of martyrdom — Nicosia",
+        "lat": 35.1725,
+        "lng": 33.365
       }
     ]
   },
