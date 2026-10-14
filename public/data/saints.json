@@ -59,8 +59,8 @@
     "locations": [
       {
         "label": "Avraamiev Monastery — Rostov",
-        "lat": 57.1802,
-        "lng": 39.4206
+        "lat": 57.1964,
+        "lng": 39.4511
       }
     ]
   },
@@ -3492,7 +3492,7 @@
   {
     "id": "cyril-of-gortyna",
     "name": "St. Cyril of Gortyna",
-    "feastDay": "June 9",
+    "feastDay": "June 14",
     "title": "Hieromartyr, Bishop",
     "icon": "cyril-of-gortyna.jpg",
     "bio": "Bishop of Gortyna in Crete who in old age was condemned to be burned; when the flames did not harm him, he was beheaded, according to tradition around 300.",
