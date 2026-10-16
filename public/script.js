@@ -1457,16 +1457,38 @@ async function initMap() {
     initNearbyDiscovery();
 }
 
+// Covers the map area with a translated error message. It's a sibling of
+// #map rather than a child, so Google rendering its own error screen into #map
+// can't overwrite it. Technical details stay in the console.
+function showMapError() {
+    const mapElement = document.getElementById('map');
+    if (!mapElement || document.querySelector('.map-error')) return;
+    const message = document.createElement('p');
+    message.className = 'map-error';
+    message.setAttribute('role', 'alert');
+    message.textContent = t('map.loadError');
+    mapElement.after(message);
+}
+
+// Called by the Maps JS API when the key is rejected (e.g. the page URL isn't
+// in the key's allowed HTTP referrers, invalid key, billing disabled).
+window.gm_authFailure = () => {
+    console.error('Google Maps rejected the API key. Check its HTTP referrer restrictions.');
+    showMapError();
+};
+
 async function loadGoogleMapsAPI() {
     const config_response = await fetch('/api/v1/config');
     if (!config_response.ok) {
         console.error('Failed to load config.');
+        showMapError();
         return null;
     }
     const config = await config_response.json();
     const apiKey = config.apiKey;
     if (!apiKey) {
         console.error('API key is not available.');
+        showMapError();
         return null;
     }
 
@@ -1479,6 +1501,7 @@ async function loadGoogleMapsAPI() {
 
     script.onerror = function () {
         console.error('Google Maps API failed to load.');
+        showMapError();
     };
 }
 
