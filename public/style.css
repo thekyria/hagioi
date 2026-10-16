@@ -156,6 +156,21 @@ main {
     inset: 0;
     width: 100%;
     height: 100%;
+    /* Keeps Google's internal z-indexes contained so .map-error can cover it. */
+    isolation: isolate;
+}
+
+.map-error {
+    position: absolute;
+    inset: 0;
+    margin: 0;
+    padding: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: var(--color-cream);
+    color: var(--color-navy);
 }
 
 .menu-toggle {
