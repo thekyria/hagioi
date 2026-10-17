@@ -2,7 +2,7 @@
 
 [English](README.md) | [Ελληνικά](README.el.md) | **Italiano** | [Français](README.fr.md) | [Español](README.es.md) | [Deutsch](README.de.md)
 
-Una mappa interattiva dei santi cristiani ortodossi. Fai clic su un segnaposto per vedere l'icona del santo, il giorno della sua festa e una breve biografia.
+Una mappa interattiva dei santi cristiani ortodossi. Fai clic su un segnaposto per vedere l'icona del santo, il giorno della sua festa e una breve biografia. Si può installare come app su telefoni e computer («Installa» o «Aggiungi a schermata Home» nel browser).
 
 È realizzata come frontend statico (HTML/CSS/JS puro) con un paio di piccole funzioni serverless su Vercel — nessuna fase di build, nessun framework, nessun database. I dati dei santi si trovano in [public/data/saints.json](public/data/saints.json). Il sito è disponibile in inglese e in greco (selettore della lingua nell'intestazione); le traduzioni greche dei santi si trovano in [public/data/saints.el.json](public/data/saints.el.json).
 

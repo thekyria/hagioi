@@ -2,7 +2,7 @@
 
 [English](README.md) | [Ελληνικά](README.el.md) | [Italiano](README.it.md) | [Français](README.fr.md) | [Español](README.es.md) | **Deutsch**
 
-Eine interaktive Karte orthodoxer christlicher Heiliger. Klicke auf eine Markierung, um die Ikone des Heiligen, seinen Festtag und eine kurze Biografie zu sehen.
+Eine interaktive Karte orthodoxer christlicher Heiliger. Klicke auf eine Markierung, um die Ikone des Heiligen, seinen Festtag und eine kurze Biografie zu sehen. Sie lässt sich als App auf Smartphones und Computern installieren („Installieren“ oder „Zum Home-Bildschirm“ im Browser).
 
 Umgesetzt als statisches Frontend (reines HTML/CSS/JS) mit ein paar kleinen Vercel-Serverless-Funktionen — kein Build-Schritt, kein Framework, keine Datenbank. Die Daten der Heiligen befinden sich in [public/data/saints.json](public/data/saints.json). Die Website ist auf Englisch und Griechisch verfügbar (Sprachauswahl in der Kopfzeile); die griechischen Übersetzungen der Heiligen befinden sich in [public/data/saints.el.json](public/data/saints.el.json).
 
