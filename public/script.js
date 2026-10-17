@@ -1516,3 +1516,8 @@ document.addEventListener('DOMContentLoaded', () => {
     loadGoogleMapsAPI();
     loadVersionInfo();
 });
+
+// Lets the site be installed as an app; see sw.js for what works offline.
+if ('serviceWorker' in navigator) {
+    navigator.serviceWorker.register('/sw.js').catch(() => {});
+}

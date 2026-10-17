@@ -2,7 +2,7 @@
 
 [English](README.md) | [Ελληνικά](README.el.md) | [Italiano](README.it.md) | **Français** | [Español](README.es.md) | [Deutsch](README.de.md)
 
-Une carte interactive des saints chrétiens orthodoxes. Cliquez sur un marqueur pour voir l'icône du saint, le jour de sa fête et une courte biographie.
+Une carte interactive des saints chrétiens orthodoxes. Cliquez sur un marqueur pour voir l'icône du saint, le jour de sa fête et une courte biographie. Il peut être installé comme application sur téléphone et ordinateur (« Installer » ou « Sur l’écran d’accueil » dans le navigateur).
 
 Conçue comme un frontend statique (HTML/CSS/JS natif) avec quelques petites fonctions serverless Vercel — pas d'étape de build, pas de framework, pas de base de données. Les données des saints se trouvent dans [public/data/saints.json](public/data/saints.json). Le site est disponible en anglais et en grec (sélecteur de langue dans l'en-tête) ; les traductions grecques des saints se trouvent dans [public/data/saints.el.json](public/data/saints.el.json).
 

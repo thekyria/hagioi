@@ -2,7 +2,7 @@
 
 **English** | [Ελληνικά](README.el.md) | [Italiano](README.it.md) | [Français](README.fr.md) | [Español](README.es.md) | [Deutsch](README.de.md)
 
-An interactive map of Orthodox Christian saints. Click a marker to see the saint's icon, feast day, and a short biography.
+An interactive map of Orthodox Christian saints. Click a marker to see the saint's icon, feast day, and a short biography. It can be installed as an app on phones and desktops ("Install" or "Add to Home Screen" in the browser).
 
 Built as a static frontend (vanilla HTML/CSS/JS) with a couple of small Vercel serverless functions — no build step, no framework, no database. Saint data lives in [public/data/saints.json](public/data/saints.json). The site is available in English and Greek (language selector in the header); Greek saint translations live in [public/data/saints.el.json](public/data/saints.el.json).
 

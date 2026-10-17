@@ -29,6 +29,7 @@ Hagioi is an interactive map of Orthodox Christian saints. It's a static fronten
 - Never log or expose secrets; validate required env vars exist before using them and return `500` if missing.
 - `api/v1/config.js` returns the Google Maps API key to the client. Security relies on restricting that key to allowed HTTP referrers in Google Cloud Console, not on server-side auth — keep it that way unless there's a real reason to add auth back.
 - `api/v1/version.js` returns the deployed git commit as the app version (shown in the footer). The site deploys continuously, so there are no numbered releases; the short commit SHA links to the exact source. It reads Vercel's system env vars (`VERCEL_GIT_COMMIT_SHA`, `VERCEL_ENV`, `VERCEL_GIT_PROVIDER`, `VERCEL_GIT_REPO_OWNER`, `VERCEL_GIT_REPO_SLUG`), which are optional — when missing (e.g. local dev) it returns nulls and the footer hides the version.
+- The site is an installable web app: `public/manifest.webmanifest` (icons in `public/assets/app-icons/`, linked from all three entry pages) and `public/sw.js`, registered at the end of `script.js`. The service worker fetches same-origin files network-first and only falls back to its cache offline, so deploys show up immediately; `/api/` and Google Maps are never cached, so the map itself needs a connection. When adding a new entry page, link the manifest and apple-touch-icon there too; when renaming a file listed in `CORE` in `sw.js`, update the list (a missing file makes the service worker fail to install) and bump `CACHE`.
 
 ## Environment variables
 
