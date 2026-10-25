@@ -4340,12 +4340,12 @@
     "feastDay": "November 1",
     "title": "Unmercenary Healers",
     "icon": "cosmas-and-damian-unmercenaries.jpg",
-    "bio": "Twin brothers and physicians in Asia Minor who healed the sick free of charge before their martyrdom.",
+    "bio": "Brothers and physicians of Asia Minor, raised in the faith by their widowed mother St. Theodota, who healed people and animals without payment. Unlike the Roman and Arabian saints of the same names, they were not martyred but reposed in peace and were buried together at Pheremane. Orthodox tradition distinguishes the three pairs.",
     "locations": [
       {
-        "label": "Place of ministry — Cilicia",
-        "lat": 36.9161,
-        "lng": 34.8958
+        "label": "Homeland and ministry — Asia Minor (approximate)",
+        "lat": 39.0,
+        "lng": 31.0
       }
     ]
   },
