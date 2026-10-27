@@ -1,0 +1,20 @@
+# Install with `pre-commit install`; run on everything with
+# `pre-commit run --all-files`.
+repos:
+  # Secret scanning (OSPS-BR-07.01)
+  - repo: https://github.com/gitleaks/gitleaks
+    rev: v8.28.0
+    hooks:
+      - id: gitleaks
+
+  # No binary artifacts (OSPS-QA-05.01 / OSPS-QA-05.02). Website images under
+  # public/assets/ are allowed; keep in sync with
+  # .github/workflows/binary-artifacts.yml.
+  - repo: local
+    hooks:
+      - id: no-binary-files
+        name: forbid binary files
+        language: fail
+        entry: 'Binary files are not allowed in this repository'
+        types: [binary]
+        exclude: ^public/assets/.+\.(png|jpe?g|webp)$
