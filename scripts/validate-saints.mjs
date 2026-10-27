@@ -9,7 +9,12 @@ const SAINTS_PATH = path.join(REPO_ROOT, 'public', 'data', 'saints.json');
 const ICONS_DIR = path.join(REPO_ROOT, 'public', 'assets', 'icons');
 
 const REQUIRED_FIELDS = ['id', 'name', 'feastDay', 'title', 'icon', 'bio', 'locations'];
-const FEAST_DAY_REGEX = /^(?:(?:January|February|March|April|May|June|July|August|September|October|November|December) (?:[1-9]|[12]\d|3[01])|Third Sunday of Pascha)$/;
+// Fixed feasts are "<Month> <day>"; movable feasts have a free-text feastDay
+// label plus an integer `paschaOffset` (days after Pascha, negative before).
+const FIXED_FEAST_DAY_REGEX = /^(?:January|February|March|April|May|June|July|August|September|October|November|December) (?:[1-9]|[12]\d|3[01])$/;
+// The Pascha cycle runs from the Sunday of the Publican and the Pharisee
+// (Pascha - 70) to All Saints (Pascha + 56); allow a little slack around it.
+const MAX_PASCHA_OFFSET = 100;
 
 function describeSaint(saint, index) {
   if (saint && typeof saint === 'object') {
@@ -85,8 +90,15 @@ saints.forEach((saint, index) => {
     }
   }
 
-  if (isNonEmptyString(saint.feastDay) && !FEAST_DAY_REGEX.test(saint.feastDay)) {
-    addError(errors, saint, index, `feastDay "${saint.feastDay}" does not match expected format`);
+  if ('paschaOffset' in saint) {
+    if (!Number.isInteger(saint.paschaOffset) || Math.abs(saint.paschaOffset) > MAX_PASCHA_OFFSET) {
+      addError(errors, saint, index, `paschaOffset must be an integer between -${MAX_PASCHA_OFFSET} and ${MAX_PASCHA_OFFSET}`);
+    }
+    if (isNonEmptyString(saint.feastDay) && FIXED_FEAST_DAY_REGEX.test(saint.feastDay)) {
+      addError(errors, saint, index, `fixed feastDay "${saint.feastDay}" must not have a paschaOffset`);
+    }
+  } else if (isNonEmptyString(saint.feastDay) && !FIXED_FEAST_DAY_REGEX.test(saint.feastDay)) {
+    addError(errors, saint, index, `feastDay "${saint.feastDay}" is not "<Month> <day>"; movable feasts need a paschaOffset`);
   }
 
   if (isNonEmptyString(saint.icon)) {

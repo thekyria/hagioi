@@ -102,6 +102,8 @@ const STRINGS = {
         'saint.iconAlt': 'Icon of {name}',
         'saint.backToList': '\u2190 Back to list',
         'saint.meta': '{title} — Feast day: {feastDay}',
+        // movable feast with the date of its next occurrence
+        'feast.movable': ({ feast, date, year }) => `${feast}, next on ${date}, ${year}`,
         'about.open': 'About Hagioi…',
         'about.title': 'About Hagioi',
         'about.close': 'Close about',
@@ -185,6 +187,7 @@ const STRINGS = {
         'saint.iconAlt': 'Εικόνα: {name}',
         'saint.backToList': '\u2190 Πίσω στη λίστα',
         'saint.meta': '{title} — Εορτή: {feastDay}',
+        'feast.movable': ({ feast, date, year }) => `${feast}, επόμενη στις ${date} ${year}`,
         'about.open': 'Σχετικά με το Hagioi…',
         'about.title': 'Σχετικά με το Hagioi',
         'about.close': 'Κλείσιμο',
