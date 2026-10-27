@@ -17,9 +17,31 @@ Built as a static frontend (vanilla HTML/CSS/JS) with a couple of small Vercel s
 
 See [AGENTS.md](AGENTS.md) for more on the data model and conventions.
 
+### Pre-commit hooks
+
+Optional but recommended: install [pre-commit](https://pre-commit.com) and run `pre-commit install`. The hooks in [.pre-commit-config.yaml](.pre-commit-config.yaml) scan for secrets (gitleaks) and reject binary files other than website images under `public/assets/`. CI runs the same checks.
+
+## Dependencies
+
+There are no npm dependencies, so [package.json](package.json) lists none. What the site does use:
+
+| Dependency | Used for | Version | Declared in |
+| --- | --- | --- | --- |
+| Google Maps JavaScript API | Runtime: the map | Google's current release (loaded from `maps.googleapis.com`) | [public/script.js](public/script.js) |
+| [@googlemaps/markerclusterer](https://github.com/googlemaps/js-markerclusterer) | Runtime: marker clustering | 2.6.2 (vendored) | [public/vendor/markerclusterer.min.js](public/vendor/markerclusterer.min.js) header |
+| Vercel Web Analytics | Runtime: page view counts | Served by Vercel (`/_vercel/insights/script.js`) | The entry pages (`public/index.html`, `public/en/`, `public/el/`) |
+| Vercel Node.js runtime | Runtime: serverless functions in `api/` | Vercel default | Vercel project settings |
+| Node.js | Dev/CI only: `npm run validate` | LTS | [.github/workflows/validate-data.yml](.github/workflows/validate-data.yml) |
+| Vercel CLI | Dev only: `npx vercel dev` | Latest via `npx` | [README](#local-development) |
+| pre-commit, gitleaks | Dev/CI only: secret and binary-file checks | gitleaks 8.28.0 | [.pre-commit-config.yaml](.pre-commit-config.yaml), [.github/workflows/](.github/workflows/) |
+
+## Subprojects
+
+None. Everything — site, serverless functions and saint data — lives in this one repository.
+
 ## Contributing
 
-See [CONTRIBUTING.md](CONTRIBUTING.md). For security concerns, see [SECURITY.md](SECURITY.md).
+See [CONTRIBUTING.md](CONTRIBUTING.md), including [how to report a bug](CONTRIBUTING.md#reporting-a-bug). For security issues, see [SECURITY.md](SECURITY.md) — please report them privately.
 
 ## Support
 
