@@ -44,4 +44,5 @@ Required (set locally in `.env.local`, never committed):
 - No general-purpose test suite or linter is currently configured — don't invent one unless asked. A dedicated data validator exists at `scripts/validate-saints.mjs`; keep `npm run validate` passing when editing `public/data/saints.json`.
 - Keep changes minimal; this is a small static site, avoid introducing build tooling/frameworks unless explicitly requested.
 - This project has an educational purpose for its author — don't take prior design decisions for granted, call out trade-offs when relevant.
+- CI (and the optional pre-commit hooks in `.pre-commit-config.yaml`) run gitleaks and reject tracked binary files; only `.png`/`.jpg`/`.webp` images under `public/assets/` are allowlisted. If you need another binary type, widen the allowlist in both `.github/workflows/binary-artifacts.yml` and `.pre-commit-config.yaml`, and never commit build output.
 - When adding a new API route, mirror the existing handlers' style: method guard, env var validation.

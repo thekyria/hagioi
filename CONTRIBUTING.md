@@ -6,11 +6,16 @@ This is a small, mostly educational project — keep changes simple and avoid in
 
 See [README.md](README.md#local-development).
 
+## Reporting a bug
+
+[Open an issue](https://github.com/thekyria/hagioi/issues/new) describing what you expected, what happened instead, and how to reproduce it (page URL, language, browser/device, and the saint involved if it's a data error such as a wrong feast day or location). Screenshots help. For security issues, follow [SECURITY.md](SECURITY.md) instead — don't file them publicly.
+
 ## Before opening a PR
 
 - Follow the conventions in [AGENTS.md](AGENTS.md) (ESM only, method guards + env var validation in API handlers, etc.).
 - There's no test suite or linter configured — don't add one as part of an unrelated change.
 - If you edited `public/data/saints.json`, run `npm run validate` before opening your PR.
+- Optionally install [pre-commit](https://pre-commit.com) and run `pre-commit install` to get the secret-scanning and no-binary-files checks locally; CI runs them anyway. Only website images (`.png`, `.jpg`, `.webp`) under `public/assets/` may be binary.
 - Keep commits focused; explain any non-obvious trade-offs in the PR description.
 
 ## Adding a saint
