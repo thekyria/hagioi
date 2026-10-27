@@ -367,15 +367,13 @@ async function initMap() {
 
     let activeMarkers = [];
     let activeInfoWindows = [];
+    // marker whose shared-location picker is open; kept out of clusters so the
+    // picker's info window stays anchored to something visible
+    let pickerMarker = null;
 
     function clearSelection() {
-        activeMarkers.forEach((marker) => {
-            const group = groupByMarker.get(marker);
-            if (group) {
-                marker.content = group.defaultPinElement;
-            }
-        });
-        activeMarkers = [];
+        pickerMarker = null;
+        setActiveMarkers([]);
         activeInfoWindows.forEach((infoWin) => infoWin.close());
         activeInfoWindows = [];
         infoWindow.close();
@@ -395,6 +393,83 @@ async function initMap() {
                 marker.content = group.activePinElement;
             }
         });
+        updateClustering();
+    }
+
+    // Out-of-range (dimmed) markers are grouped into clusters so the map stays
+    // readable when zoomed out; markers in the selected date range, selected
+    // markers and the open location picker's marker always stay visible on
+    // their own. If the vendored clusterer script didn't load, every marker is
+    // simply shown, as before clustering existed.
+    const clusterer = window.markerClusterer
+        ? new markerClusterer.MarkerClusterer({
+            map,
+            renderer: { render: renderCluster },
+        })
+        : null;
+    // markers placed on the map directly instead of through the clusterer;
+    // all of them until the date filter is first applied
+    const unclusteredMarkers = new Set();
+    let inRangeMarkers = null;
+
+    function renderCluster({ markers, position }) {
+        const count = markers.reduce((sum, marker) => sum + groupByMarker.get(marker).placements.length, 0);
+        const content = document.createElement('div');
+        content.className = 'marker-cluster';
+        content.textContent = count;
+        return new AdvancedMarkerElement({
+            position,
+            content,
+            title: t('map.cluster', { count }),
+            // below the in-range pins, which matter more
+            zIndex: 0,
+        });
+    }
+
+    // The clusterer hides every marker it has removed (and any it rendered
+    // alone last time), so put the unclustered ones back after each pass.
+    function showUnclusteredMarkers() {
+        unclusteredMarkers.forEach((marker) => {
+            if (!marker.map) {
+                marker.map = map;
+            }
+        });
+    }
+
+    if (clusterer) {
+        google.maps.event.addListener(clusterer, 'clusteringend', showUnclusteredMarkers);
+    }
+
+    function updateClustering() {
+        if (!clusterer || !inRangeMarkers) {
+            return;
+        }
+        const keepVisible = new Set([...inRangeMarkers, ...activeMarkers]);
+        if (pickerMarker) {
+            keepVisible.add(pickerMarker);
+        }
+
+        const toCluster = [];
+        const toRelease = [];
+        markerGroups.forEach(({ marker }) => {
+            if (keepVisible.has(marker) && !unclusteredMarkers.has(marker)) {
+                toRelease.push(marker);
+            } else if (!keepVisible.has(marker) && unclusteredMarkers.has(marker)) {
+                toCluster.push(marker);
+            }
+        });
+        if (toCluster.length === 0 && toRelease.length === 0) {
+            return;
+        }
+
+        toRelease.forEach((marker) => unclusteredMarkers.add(marker));
+        toCluster.forEach((marker) => unclusteredMarkers.delete(marker));
+        clusterer.removeMarkers(toRelease, true);
+        clusterer.addMarkers(toCluster, true);
+        clusterer.render();
+        // render() does nothing until the map has a projection, so don't rely
+        // on its 'clusteringend' event alone
+        showUnclusteredMarkers();
     }
 
     infoWindow.addListener('closeclick', () => clearSelection());
@@ -528,6 +603,8 @@ async function initMap() {
         });
 
         content.appendChild(list);
+        pickerMarker = marker;
+        updateClustering();
         infoWindow.setContent(content);
         infoWindow.open(map, marker);
     }
@@ -588,6 +665,7 @@ async function initMap() {
         group.defaultPinElement = defaultPin.element;
         group.activePinElement = activePin.element;
         groupByMarker.set(marker, group);
+        unclusteredMarkers.add(marker);
     });
 
     // one entry per saint, with all of its markers and its parsed feast day
@@ -702,6 +780,8 @@ async function initMap() {
             defaultPinElement.classList.toggle('marker-dimmed', dimmed);
             activePinElement.classList.toggle('marker-dimmed', dimmed);
         });
+        inRangeMarkers = visibleMarkers;
+        updateClustering();
     }
 
     const nearbyLocationCandidates = Array.from(
