@@ -24,6 +24,7 @@ Hagioi is an interactive map of Orthodox Christian saints. It's a static fronten
 
 ## Runtime & conventions
 
+- Third-party browser code is vendored under `public/vendor/` (no npm install/bundling for the frontend). Currently only `markerclusterer.min.js` (`@googlemaps/markerclusterer`, Apache-2.0), which groups out-of-range markers into clusters; `script.js` falls back to plain markers if it's missing. To upgrade it, replace the file with the package's `dist/index.min.js` and update the version in its header comment.
 - ESM syntax only (`import`/`export default`), no CommonJS.
 - API handlers follow the Vercel Node function signature: `export default function/async function handler(req, res) { ... }`.
 - Guard unsupported HTTP methods with `405 Method Not Allowed` before handling logic.
