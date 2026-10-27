@@ -1,6 +1,7 @@
 name: Secret scanning
 
-# Scans the full git history for leaked secrets (OSPS-BR-07.01).
+# Scans for leaked secrets (OSPS-BR-07.01): pushes and pull requests scan
+# their new commits; the weekly and manual runs scan the full history.
 on:
   push:
     branches:
