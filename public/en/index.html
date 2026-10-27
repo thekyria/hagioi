@@ -241,6 +241,7 @@
         <p data-i18n="about.p1">Hagioi is an interactive map of Orthodox Christian saints, showing where each saint was born, lived, or was martyred.</p>
         <p data-i18n="about.p2">Use the Feast Days panel to open the monthly feast calendar, filter saints by date range, search by name, or optionally find historical saint-associated locations near you.</p>
         <p data-i18n="about.p3">The near-me lookup is opt-in and runs only in your browser; it does not verify present-day shrines, churches, or pilgrimage facilities.</p>
+        <p data-i18n="about.p4">Page views are counted with Vercel Web Analytics, which uses no cookies and does not identify you. Your location from the near-me lookup is never sent.</p>
         <p><span data-i18n="about.builtBy">Built with ❤️ by </span><a href="http://thekyria.com" target="_blank" rel="noopener noreferrer">Theodoros Kyriakidis</a>.</p>
       </div>
     </div>
@@ -266,6 +267,12 @@
     </div>
   </footer>
   
+  <!-- Vercel Web Analytics: page views only, no cookies. Served by Vercel once
+       Web Analytics is enabled for the project; a 404 elsewhere (e.g. local dev) is harmless. -->
+  <script>
+    window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  </script>
+  <script defer src="/_vercel/insights/script.js"></script>
   <script src="i18n.js" defer></script>
   <script src="vendor/markerclusterer.min.js" defer></script>
   <script src="script.js" defer></script>

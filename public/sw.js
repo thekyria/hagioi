@@ -2,8 +2,9 @@
 // network-first (the cache is only a fallback), because the pages, script.js,
 // i18n.js and style.css change together on every deploy and must not be
 // mixed across versions. The Google font is served from the cache and
-// refreshed in the background. /api/ responses and Google Maps itself are
-// never cached, so the map still needs a connection.
+// refreshed in the background. /api/ responses, Vercel Web Analytics
+// (/_vercel/) and Google Maps itself are never cached, so the map still needs a
+// connection.
 const CACHE = 'hagioi-v2';
 const CORE = [
     '/',
@@ -43,7 +44,7 @@ self.addEventListener('fetch', (event) => {
     const sameOrigin = url.origin === location.origin;
     const isFont = url.hostname === 'fonts.googleapis.com' || url.hostname === 'fonts.gstatic.com';
 
-    if (sameOrigin && !url.pathname.startsWith('/api/')) {
+    if (sameOrigin && !url.pathname.startsWith('/api/') && !url.pathname.startsWith('/_vercel/')) {
         // ?lang=… and other settings live in the query; any of them can use the cached page.
         event.respondWith(
             fetch(req)
