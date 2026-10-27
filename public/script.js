@@ -93,6 +93,45 @@ function dayCode(month, day) {
     return month * 100 + day;
 }
 
+// Orthodox Pascha for a year, as a Gregorian (civil) date. Uses Meeus' Julian
+// computus, then shifts the Julian date by the calendars' gap (13 days in
+// 1900-2099). Old- and New-calendar churches share this Pascha date.
+function getOrthodoxPascha(year) {
+    const a = year % 4;
+    const b = year % 7;
+    const c = year % 19;
+    const d = (19 * c + 15) % 30;
+    const e = (2 * a + 4 * b - d + 34) % 7;
+    const julianMonth = Math.floor((d + e + 114) / 31); // 3 = March, 4 = April
+    const julianDay = ((d + e + 114) % 31) + 1;
+    const julianToGregorianDays = Math.floor(year / 100) - Math.floor(year / 400) - 2;
+    return new Date(Date.UTC(year, julianMonth - 1, julianDay + julianToGregorianDays));
+}
+
+// Month/day of a movable feast `paschaOffset` days after (negative: before)
+// that year's Pascha.
+function getMovableFeastDate(paschaOffset, year) {
+    const date = getOrthodoxPascha(year);
+    date.setUTCDate(date.getUTCDate() + paschaOffset);
+    return { month: date.getUTCMonth(), day: date.getUTCDate() };
+}
+
+// Next occurrence (today or later) of a movable feast, with its year.
+function getNextMovableFeast(paschaOffset, from = new Date()) {
+    const fromCode = dayCode(from.getMonth(), from.getDate());
+    let year = from.getFullYear();
+    let feast = getMovableFeastDate(paschaOffset, year);
+    if (dayCode(feast.month, feast.day) < fromCode) {
+        year += 1;
+        feast = getMovableFeastDate(paschaOffset, year);
+    }
+    return { ...feast, year };
+}
+
+function isMovableFeast(saint) {
+    return Number.isInteger(saint.paschaOffset);
+}
+
 function isLeapYear(year) {
     return new Date(year, 1, 29).getMonth() === 1;
 }
@@ -306,16 +345,31 @@ async function loadSaints() {
 
     return saints.map((saint) => {
         const translation = translations[saint.id] || {};
-        const feast = parseFeastDay(saint.feastDay);
-        const feastDay = feast
-            ? formatLocalizedMonthDay(feast.month, feast.day)
-            : (translation.feastDay || saint.feastDay);
+        let feastDay;
+        let movableFeastLabel;
+        if (isMovableFeast(saint)) {
+            const next = getNextMovableFeast(saint.paschaOffset);
+            movableFeastLabel = translation.feastDay || saint.feastDay;
+            feastDay = t('feast.movable', {
+                feast: movableFeastLabel,
+                date: formatLocalizedMonthDay(next.month, next.day),
+                year: next.year,
+            });
+        } else {
+            const feast = parseFeastDay(saint.feastDay);
+            feastDay = feast
+                ? formatLocalizedMonthDay(feast.month, feast.day)
+                : (translation.feastDay || saint.feastDay);
+        }
         return {
             ...saint,
             name: translation.name || saint.name,
             title: translation.title || saint.title,
             bio: translation.bio || saint.bio,
             feastDay,
+            // the movable feast's name without its next date, for the calendar,
+            // which already shows the date
+            movableFeastLabel,
             sourceName: saint.name,
             sourceFeastDay: saint.feastDay,
             locations: saint.locations.map((location, index) => ({
@@ -591,6 +645,7 @@ async function initMap() {
     });
 
     // one entry per saint, with all of its markers and its parsed feast day
+    // (for movable feasts, the date of their next occurrence)
     const entries = saints.map((saint) => {
         const markers = saint.locations.map((location) => {
             const group = markerGroupsByKey.get(`${location.lat},${location.lng}`);
@@ -600,7 +655,10 @@ async function initMap() {
                 placements: group.placements,
             };
         });
-        return { saint, feast: parseFeastDay(saint.sourceFeastDay), markers };
+        const feast = isMovableFeast(saint)
+            ? getNextMovableFeast(saint.paschaOffset)
+            : parseFeastDay(saint.sourceFeastDay);
+        return { saint, feast, markers };
     });
 
     const saintMarkersById = new Map(entries.map(({ saint, markers }) => [saint.id, markers]));
@@ -935,10 +993,12 @@ async function initMap() {
         toDaySelect.addEventListener('change', applyFilter);
     }
 
-    // Movable feasts such as "Third Sunday of Pascha" cannot be placed in this
-    // fixed month/day calendar, so only entries with concrete annual dates are shown.
+    // Movable feasts (e.g. "Third Sunday of Pascha") fall on a different date
+    // each year, so they're placed per displayed year in getCalendarDayEntries().
+    const compareEntriesByName = (a, b) => a.saint.name.localeCompare(b.saint.name, CURRENT_LANGUAGE);
+    const movableFeastEntries = entries.filter(({ saint }) => isMovableFeast(saint));
     const fixedFeastEntries = entries
-        .filter(({ feast }) => feast)
+        .filter(({ saint, feast }) => feast && !isMovableFeast(saint))
         .sort((a, b) => {
             if (a.feast.month !== b.feast.month) {
                 return a.feast.month - b.feast.month;
@@ -946,7 +1006,7 @@ async function initMap() {
             if (a.feast.day !== b.feast.day) {
                 return a.feast.day - b.feast.day;
             }
-            return a.saint.name.localeCompare(b.saint.name, CURRENT_LANGUAGE);
+            return compareEntriesByName(a, b);
         });
 
     const feastEntriesByDay = fixedFeastEntries.reduce((daysMap, entry) => {
@@ -966,8 +1026,18 @@ async function initMap() {
         return formatLocalizedMonthDay(month, day);
     }
 
-    function getCalendarDayEntries(month, day) {
-        return feastEntriesByDay.get(dayCode(month, day)) || [];
+    function getCalendarDayEntries(year, month, day) {
+        // February 29 is shown only to preserve leap-year weekday layout; the
+        // fixed annual feast dataset does not assign entries to it.
+        const isLeapDay = month === 1 && day === 29;
+        const fixedEntries = isLeapDay ? [] : (feastEntriesByDay.get(dayCode(month, day)) || []);
+        const movableEntries = movableFeastEntries.filter(({ saint }) => {
+            const feast = getMovableFeastDate(saint.paschaOffset, year);
+            return feast.month === month && feast.day === day;
+        });
+        return movableEntries.length === 0
+            ? fixedEntries
+            : [...fixedEntries, ...movableEntries].sort(compareEntriesByName);
     }
 
     function getUniqueLocationLabels(markers) {
@@ -986,7 +1056,7 @@ async function initMap() {
             return;
         }
 
-        const selectedEntries = getCalendarDayEntries(currentCalendarMonth, selectedCalendarDay);
+        const selectedEntries = getCalendarDayEntries(currentCalendarYear, currentCalendarMonth, selectedCalendarDay);
         const selectedLabel = formatMonthDay(currentCalendarMonth, selectedCalendarDay);
 
         if (selectedEntries.length === 0) {
@@ -999,6 +1069,7 @@ async function initMap() {
         selectedEntries.forEach(({ saint, markers }) => {
             const item = document.createElement('li');
             item.className = 'calendar-result';
+            const feastDay = isMovableFeast(saint) ? saint.movableFeastLabel : saint.feastDay;
 
             const button = document.createElement('button');
             button.type = 'button';
@@ -1010,7 +1081,7 @@ async function initMap() {
 
             const metaSpan = document.createElement('span');
             metaSpan.className = 'saint-list-meta';
-            metaSpan.textContent = `${saint.title} — ${saint.feastDay}`;
+            metaSpan.textContent = `${saint.title} — ${feastDay}`;
 
             const locationSpan = document.createElement('span');
             locationSpan.className = 'calendar-result-location';
@@ -1025,7 +1096,7 @@ async function initMap() {
                 t('calendar.resultLabel', {
                     name: saint.name,
                     title: saint.title,
-                    feastDay: saint.feastDay,
+                    feastDay,
                     count: locationLabels.length,
                 })
             );
@@ -1108,10 +1179,8 @@ async function initMap() {
                     continue;
                 }
 
-                // February 29 is shown only to preserve leap-year weekday layout;
-                // the fixed annual feast dataset does not assign entries to it.
                 const isLeapDay = currentCalendarMonth === 1 && day === 29;
-                const dayEntries = isLeapDay ? [] : getCalendarDayEntries(currentCalendarMonth, day);
+                const dayEntries = getCalendarDayEntries(currentCalendarYear, currentCalendarMonth, day);
                 if (dayEntries.length > 0) {
                     feastDayCount += 1;
                     feastSaintCount += dayEntries.length;

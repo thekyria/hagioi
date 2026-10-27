@@ -10328,6 +10328,7 @@
     "id": "the-myrrhbearing-women",
     "name": "The Holy Myrrhbearing Women",
     "feastDay": "Third Sunday of Pascha",
+    "paschaOffset": 14,
     "title": "Myrrhbearers",
     "icon": "the-myrrhbearing-women.jpg",
     "bio": "The women disciples who came to anoint Christ's body and were the first to learn of His Resurrection.",
