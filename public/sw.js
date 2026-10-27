@@ -5,7 +5,7 @@
 // refreshed in the background. /api/ responses, Vercel Web Analytics
 // (/_vercel/) and Google Maps itself are never cached, so the map still needs a
 // connection.
-const CACHE = 'hagioi-v1';
+const CACHE = 'hagioi-v2';
 const CORE = [
     '/',
     '/en/',
@@ -13,6 +13,7 @@ const CORE = [
     '/style.css',
     '/i18n.js',
     '/script.js',
+    '/vendor/markerclusterer.min.js',
     '/data/saints.json',
     '/data/saints.el.json',
     '/manifest.webmanifest',
