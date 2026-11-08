@@ -2,6 +2,7 @@
 // continuously, the deployed git commit is the version. Values come from
 // Vercel's system environment variables (exposed automatically to functions);
 // they are optional, so missing values yield nulls rather than an error.
+// The values are fixed per deployment, so Vercel's CDN may cache the response.
 export default function handler(req, res) {
   if (req.method !== 'GET') {
     return res.status(405).json({ message: 'Method Not Allowed' });
@@ -17,6 +18,7 @@ export default function handler(req, res) {
     ? `https://github.com/${encodeURIComponent(owner)}/${encodeURIComponent(slug)}/commit/${encodeURIComponent(commit)}`
     : null;
 
+  res.setHeader('Cache-Control', 'public, s-maxage=86400');
   res.status(200).json({
     commit,
     shortCommit: commit ? commit.slice(0, 7) : null,
